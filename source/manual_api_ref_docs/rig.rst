@@ -1,0 +1,1 @@
+Perform CRUD operations on ``rig`` resources and data elements.

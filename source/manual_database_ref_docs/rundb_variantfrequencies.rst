@@ -1,0 +1,1 @@
+Variant frequencies data model. 

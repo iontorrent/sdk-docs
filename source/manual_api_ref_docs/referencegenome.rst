@@ -1,0 +1,1 @@
+Perform read-only operations on ``referencegenome`` resources and data elements.

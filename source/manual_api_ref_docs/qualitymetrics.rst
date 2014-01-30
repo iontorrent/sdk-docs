@@ -1,0 +1,1 @@
+Perform read-only operations on ``qualitymetrics`` resources and data elements.

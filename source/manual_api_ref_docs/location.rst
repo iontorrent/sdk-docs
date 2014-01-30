@@ -1,0 +1,1 @@
+Perform read-only operations on ``location`` resources and data elements.

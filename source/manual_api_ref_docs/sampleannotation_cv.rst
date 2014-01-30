@@ -1,0 +1,1 @@
+Perform read-only operations on ``sampleannotation_cv`` resources. This resource corresponds to the supported sample relationships (Self | Proband, Tumor, Normal, Mother, Father, etc) in Ion Reporter™ Software.

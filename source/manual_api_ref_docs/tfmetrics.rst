@@ -1,0 +1,1 @@
+Perform read-only operations on ``tfmetrics`` resources and data elements.

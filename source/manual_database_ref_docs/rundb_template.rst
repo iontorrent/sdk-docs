@@ -1,0 +1,1 @@
+Test fragment template description data model.

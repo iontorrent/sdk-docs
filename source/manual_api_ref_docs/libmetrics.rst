@@ -1,0 +1,1 @@
+Perform read-only operations on ``libmetrics`` resources and data elements.

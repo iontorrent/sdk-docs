@@ -1,0 +1,1 @@
+Perform read-only operations on ``fileserver`` resources and data elements.

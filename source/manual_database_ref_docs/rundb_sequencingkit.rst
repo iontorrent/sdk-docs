@@ -1,0 +1,1 @@
+Sequencing kit data model. 

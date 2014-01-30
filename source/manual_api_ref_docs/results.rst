@@ -1,0 +1,1 @@
+Perform CRUD operations on ``results`` resources and data elements.

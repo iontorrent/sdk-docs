@@ -1,0 +1,1 @@
+Perform CRUD operations on ``plannedexperiment`` resources and data elements.

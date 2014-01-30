@@ -1,0 +1,1 @@
+Data management file statistics data model. 

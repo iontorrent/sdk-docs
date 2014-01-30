@@ -1,0 +1,1 @@
+Perform read-only operations on ``analysismetrics`` resources and data elements.

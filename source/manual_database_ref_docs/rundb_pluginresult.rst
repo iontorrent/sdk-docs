@@ -1,0 +1,1 @@
+Plugin result data model. 

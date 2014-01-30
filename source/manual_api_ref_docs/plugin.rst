@@ -1,0 +1,1 @@
+Perform read-only operations on ``plugin`` resources and data elements

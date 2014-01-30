@@ -1,0 +1,2 @@
+Content description data model.
+

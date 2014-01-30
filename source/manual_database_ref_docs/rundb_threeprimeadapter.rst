@@ -1,0 +1,1 @@
+Three prime adapter data model.
