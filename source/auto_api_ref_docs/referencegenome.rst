@@ -39,7 +39,7 @@ field              help text                                            default 
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **celery_task_id** Unicode string data. Ex: "Hello World"                                                false    false    true  false  string   
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
-**date**           A date & time as a string. Ex: "2010-11-10T03:07:43" 2014-01-30T23:41:53.000157+00:00 false    false    false false  datetime 
+**date**           A date & time as a string. Ex: "2010-11-10T03:07:43" 2014-05-01T21:00:13.000345+00:00 false    false    false false  datetime 
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **verbose_error**  Unicode string data. Ex: "Hello World"                                                false    false    true  false  string   
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
@@ -78,7 +78,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 89, 
+	        "total_count": 25, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/referencegenome/?offset=1&limit=1&format=json"
@@ -86,21 +86,21 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "status": "complete", 
-	            "reference_path": "/results/referenceLibrary/tmap-f3/ampl_400_hsm_v12_1_noJAK2", 
-	            "name": "ampl_400_hsm_v12_1_noJAK2", 
-	            "short_name": "ampl_400_hsm_v12_1_noJAK2", 
+	            "reference_path": "/results/referenceLibrary/tmap-f3/4_New_P2TF", 
+	            "name": "Four new P2 TF sequences (DA, DB, KA, KT)", 
+	            "short_name": "4_New_P2TF", 
 	            "index_version": "tmap-f3", 
-	            "notes": "Amplicon 74598 removed from ref (JAK2 amplicon)", 
+	            "notes": "", 
 	            "enabled": true, 
 	            "species": "", 
 	            "identity_hash": null, 
 	            "source": "", 
 	            "version": "1", 
-	            "celery_task_id": "", 
-	            "date": "2012-02-20T15:23:22.000916+00:00", 
-	            "verbose_error": "[\"\", \"/usr/local/bin/build_genome_index.pl: output directory ampl_400_hsm_v12_1_noJAK2 already exits, aborting.\\n\", 9]", 
-	            "id": 237, 
-	            "resource_uri": "/rundb/api/v1/referencegenome/237/"
+	            "celery_task_id": "fb4dcf06-a859-47fd-a20d-ea98858fbb83", 
+	            "date": "2013-10-01T22:35:17.000150+00:00", 
+	            "verbose_error": "", 
+	            "id": 35, 
+	            "resource_uri": "/rundb/api/v1/referencegenome/35/"
 	        }
 	    ]
 	}

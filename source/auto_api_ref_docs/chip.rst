@@ -68,22 +68,24 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "slots": 1, 
-	            "prebasecallerargs": "BaseCaller --keypass-filter on --phasing-residual-filter=2.0 --trim-qual-cutoff 15 --trim-qual-window-size 30 --trim-adapter-cutoff 16 --num-unfiltered 1000 --calibration-training=100000 --flow-signals-type scaled-residual", 
-	            "description": "P0", 
-	            "prethumbnailbasecallerargs": "BaseCaller --keypass-filter on --phasing-residual-filter=2.0 --trim-qual-cutoff 15 --trim-qual-window-size 30 --trim-adapter-cutoff 16 --num-unfiltered 100000 --calibration-training=100000 --flow-signals-type scaled-residual", 
+	            "calibrateargs": "calibrate --skipDroop", 
+	            "prebasecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 20 --calibration-training=100000 --flow-signals-type scaled-residual", 
+	            "description": "316v2", 
+	            "prethumbnailbasecallerargs": "", 
 	            "alignmentargs": "stage1 map4", 
-	            "thumbnailbasecallerargs": "BaseCaller --keypass-filter on --phasing-residual-filter=2.0 --trim-qual-cutoff 15 --trim-qual-window-size 30 --trim-adapter-cutoff 16 --num-unfiltered 100000", 
-	            "analysisargs": "Analysis --from-beadfind --clonal-filter-bkgmodel on --region-size=80x112 --bkg-bfmask-update off --gpuWorkLoad 1 --total-timeout 600 --bkg-use-proton-well-correction off --bkg-exp-tail-fit off --bkg-pca-dark-matter on", 
-	            "basecallerargs": "BaseCaller --keypass-filter on --phasing-residual-filter=2.0 --trim-qual-cutoff 15 --trim-qual-window-size 30 --trim-adapter-cutoff 16 --num-unfiltered 1000", 
-	            "thumbnailbeadfindargs": "justBeadFind --beadfind-minlivesnr 3 --region-size=50x50 --beadfind-thumbnail 1 --bkg-use-proton-well-correction off --bkg-exp-tail-fit off --bkg-pca-dark-matter on", 
-	            "thumbnailalignmentargs": "stage1 map4", 
-	            "thumbnailanalysisargs": "Analysis --from-beadfind --clonal-filter-bkgmodel on --region-size=50x50 --bkg-bfmask-update off --gpuWorkLoad 1 --bkg-debug-param 1 --beadfind-thumbnail 1 --bkg-use-proton-well-correction off --bkg-exp-tail-fit off --bkg-pca-dark-matter on", 
-	            "instrumentType": "proton", 
-	            "beadfindargs": "justBeadFind --beadfind-minlivesnr 3 --region-size=80x112 --total-timeout 600 --bkg-use-proton-well-correction off --bkg-exp-tail-fit off --bkg-pca-dark-matter on", 
-	            "resource_uri": "/rundb/api/v1/chip/9/", 
-	            "id": 9, 
-	            "isActive": false, 
-	            "name": "P1.0.19"
+	            "thumbnailbasecallerargs": "", 
+	            "analysisargs": "Analysis --from-beadfind --use-alternative-etbR-equation", 
+	            "thumbnailcalibrateargs": "", 
+	            "basecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 20", 
+	            "thumbnailbeadfindargs": "", 
+	            "thumbnailalignmentargs": "", 
+	            "thumbnailanalysisargs": "", 
+	            "instrumentType": "pgm", 
+	            "beadfindargs": "justBeadFind", 
+	            "resource_uri": "/rundb/api/v1/chip/6/", 
+	            "id": 6, 
+	            "isActive": true, 
+	            "name": "316v2"
 	        }
 	    ]
 	}

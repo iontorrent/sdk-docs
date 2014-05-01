@@ -94,7 +94,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 94, 
+	        "total_count": 95, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/plugin/?offset=1&limit=1&format=json"
@@ -102,18 +102,18 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "active": true, 
-	            "id": 40, 
+	            "id": 753, 
 	            "isPlanConfig": false, 
 	            "autorunMutable": true, 
 	            "script": "launch.sh", 
 	            "selected": true, 
-	            "version": "1.2.0", 
+	            "version": "1.0.0", 
 	            "hasAbout": false, 
 	            "input": "False", 
 	            "majorBlock": false, 
 	            "status": {}, 
-	            "description": "Ion Torrent Plugin - 'PerBaseQualEval' v1.2.0", 
-	            "autorun": true, 
+	            "description": "", 
+	            "autorun": false, 
 	            "pluginsettings": {
 	                "runtype": [
 	                    "wholechip", 
@@ -123,16 +123,16 @@ Torrent Server response
 	                "features": [], 
 	                "runlevel": []
 	            }, 
-	            "date": "2010-10-19T17:49:02.000239+00:00", 
-	            "path": "/results/plugins/PerBaseQualEval", 
+	            "date": "2014-04-11T18:41:44.000767+00:00", 
+	            "path": "/results/plugins/gcAnalysis", 
 	            "isConfig": false, 
-	            "name": "PerBaseQualEval", 
+	            "name": "gcAnalysis", 
 	            "userinputfields": {}, 
 	            "url": "", 
 	            "config": {}, 
-	            "versionedName": "PerBaseQualEval--v1.2.0", 
+	            "versionedName": "gcAnalysis--v1.0.0", 
 	            "isInstance": false, 
-	            "resource_uri": "/rundb/api/v1/plugin/40/"
+	            "resource_uri": "/rundb/api/v1/plugin/753/"
 	        }
 	    ]
 	}

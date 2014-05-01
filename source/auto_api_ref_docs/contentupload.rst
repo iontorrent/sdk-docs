@@ -56,7 +56,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 106, 
+	        "total_count": 27, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/contentupload/?offset=1&limit=1&format=json"
@@ -68,9 +68,9 @@ Torrent Server response
 	                "reference": "hg19", 
 	                "hotspot": false
 	            }, 
-	            "file_path": "/results/uploads/BED/88/IAD34929_Amplicons.bed", 
-	            "resource_uri": "/rundb/api/v1/contentupload/88/", 
-	            "id": 88
+	            "file_path": "/results/uploads/BED/17/TargetSeq_exome_named_targets_hg19_revB.bed", 
+	            "resource_uri": "/rundb/api/v1/contentupload/17/", 
+	            "id": 17
 	        }
 	    ]
 	}

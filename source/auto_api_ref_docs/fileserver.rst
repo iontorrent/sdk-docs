@@ -58,19 +58,19 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 6, 
+	        "total_count": 2, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/fileserver/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "percentfull": 87.0540594893493, 
-	            "name": "ion-nas7.ite", 
-	            "filesPrefix": "/results7/", 
-	            "comments": "", 
-	            "id": 7, 
-	            "resource_uri": "/rundb/api/v1/fileserver/7/"
+	            "percentfull": 89.7534648330382, 
+	            "name": "gs1-nfs", 
+	            "filesPrefix": "/ion-data/results/", 
+	            "comments": "gs1-nfs:/gs1/ion-data", 
+	            "id": 2, 
+	            "resource_uri": "/rundb/api/v1/fileserver/2/"
 	        }
 	    ]
 	}

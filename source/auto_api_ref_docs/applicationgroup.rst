@@ -60,7 +60,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 4, 
+	        "total_count": 5, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/applicationgroup/?offset=1&limit=1&format=json"
@@ -87,15 +87,16 @@ Torrent Server response
 	                }, 
 	                {
 	                    "applicationGroups": [
-	                        "/rundb/api/v1/applicationgroup/1/"
+	                        "/rundb/api/v1/applicationgroup/1/", 
+	                        "/rundb/api/v1/applicationgroup/5/"
 	                    ], 
-	                    "description": "AmpliSeq DNA ", 
+	                    "description": "AmpliSeq DNA", 
 	                    "nucleotideType": "dna", 
 	                    "barcode": "", 
 	                    "meta": {}, 
 	                    "runType": "AMPS", 
 	                    "id": 2, 
-	                    "alternate_name": "AmpliSeq DNA ", 
+	                    "alternate_name": "AmpliSeq DNA", 
 	                    "resource_uri": "/rundb/api/v1/runtype/2/"
 	                }, 
 	                {

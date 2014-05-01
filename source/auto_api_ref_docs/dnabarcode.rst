@@ -72,7 +72,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 152, 
+	        "total_count": 146, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/dnabarcode/?offset=1&limit=1&format=json"
@@ -80,18 +80,18 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "index": 1, 
-	            "name": "js_test", 
+	            "name": "MuSeek_5prime_tag", 
 	            "score_cutoff": 2.0, 
-	            "sequence": "GGGCAGTCGGTGATCC", 
+	            "sequence": "TTCA", 
 	            "floworder": "", 
-	            "adapter": "TCAGC", 
-	            "id": 217, 
-	            "length": 16, 
-	            "id_str": "js_test_1", 
+	            "adapter": "", 
+	            "id": 1346, 
+	            "length": 4, 
+	            "id_str": "MuSeek_5prime_tag_001", 
 	            "score_mode": 1, 
 	            "type": "none", 
 	            "annotation": "", 
-	            "resource_uri": "/rundb/api/v1/dnabarcode/217/"
+	            "resource_uri": "/rundb/api/v1/dnabarcode/1346/"
 	        }
 	    ]
 	}

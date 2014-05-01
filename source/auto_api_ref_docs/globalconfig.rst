@@ -19,6 +19,8 @@ field                         help text                              default nul
 ----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **site_name**                 Unicode string data. Ex: "Hello World"         false    false    true  false  string  
 ----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**enable_support_upload**     Boolean data. Ex: True                 false   false    false    true  false  boolean 
+----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **plugin_output_folder**      Unicode string data. Ex: "Hello World"         false    false    true  false  string  
 ----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **auto_archive_ack**          Boolean data. Ex: True                 false   false    false    true  false  boolean 
@@ -27,9 +29,11 @@ field                         help text                              default nul
 ----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **id**                        Integer data. Ex: 2673                         false    false    true  true   integer 
 ----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**resource_uri**              Unicode string data. Ex: "Hello World" n/a     false    true     false false  string  
+----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **default_storage_options**   Unicode string data. Ex: "Hello World" D       false    false    true  false  string  
 ----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**selected**                  Boolean data. Ex: True                 false   false    false    true  false  boolean 
+**selected**                  Boolean data. Ex: True                         false    false    true  false  boolean 
 ----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **check_news_posts**          Boolean data. Ex: True                 true    false    false    true  false  boolean 
 ----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
@@ -45,9 +49,13 @@ field                         help text                              default nul
 ----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **reference_path**            Unicode string data. Ex: "Hello World"         false    false    true  false  string  
 ----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**enable_auto_security**      Boolean data. Ex: True                 true    false    false    true  false  boolean 
+----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **fasta_path**                Unicode string data. Ex: "Hello World"         false    false    true  false  string  
 ----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **barcode_args**              Unicode string data. Ex: "Hello World" {}      false    false    true  false  string  
+----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**sec_update_status**         Unicode string data. Ex: "Hello World"         false    false    true  false  string  
 ----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **default_flow_order**        Unicode string data. Ex: "Hello World"         false    false    true  false  string  
 ----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
@@ -65,7 +73,7 @@ field                         help text                              default nul
 ----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **enable_auto_pkg_dl**        Boolean data. Ex: True                 true    false    false    true  false  boolean 
 ----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**resource_uri**              Unicode string data. Ex: "Hello World" n/a     false    true     false false  string  
+**enable_compendia_OCP**      Boolean data. Ex: True                 false   false    false    true  false  boolean 
 ============================= ====================================== ======= ======== ======== ===== ====== ======= 
 
 Example request
@@ -106,33 +114,37 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "enable_version_lock": false, 
-	            "site_name": "IonEast", 
+	            "site_name": "Blackbird-IW", 
+	            "enable_support_upload": false, 
 	            "plugin_output_folder": "plugin_out", 
 	            "auto_archive_ack": true, 
 	            "default_plugin_script": "launch.sh", 
 	            "id": 1, 
+	            "resource_uri": "/rundb/api/v1/globalconfig/1/", 
 	            "default_storage_options": "D", 
-	            "selected": true, 
+	            "selected": false, 
 	            "check_news_posts": true, 
 	            "realign": false, 
-	            "ts_update_status": "No updates", 
+	            "ts_update_status": "Available", 
 	            "mark_duplicates": false, 
 	            "plugin_folder": "plugins", 
-	            "auto_archive_enable": false, 
+	            "auto_archive_enable": true, 
 	            "reference_path": "", 
+	            "enable_auto_security": false, 
 	            "fasta_path": "", 
 	            "barcode_args": {
 	                "filter": "0.01"
 	            }, 
+	            "sec_update_status": "", 
 	            "default_flow_order": "TACG", 
 	            "name": "Config", 
-	            "records_to_display": 20, 
+	            "records_to_display": 100, 
 	            "base_recalibrate": true, 
 	            "default_library_key": "TCAG", 
-	            "web_root": "http://ioneast.ite", 
+	            "web_root": "http://blackbird.itw", 
 	            "default_test_fragment_key": "ATCG", 
-	            "enable_auto_pkg_dl": true, 
-	            "resource_uri": "/rundb/api/v1/globalconfig/1/"
+	            "enable_auto_pkg_dl": false, 
+	            "enable_compendia_OCP": false
 	        }
 	    ]
 	}

@@ -86,33 +86,33 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 241421, 
+	        "total_count": 761214, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/pluginresult/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "size": "132952", 
-	            "apikey": null, 
-	            "plugin": "/rundb/api/v1/plugin/220/", 
-	            "resultName": "reanalyze_bpp", 
-	            "reportLink": "/output17/IonEast/reanalyze_bpp_16215/", 
-	            "pluginVersion": "0.2", 
-	            "jobid": 31978, 
-	            "owner": "/rundb/api/v1/user/1/", 
-	            "pluginName": "flowErr", 
-	            "state": "Completed", 
-	            "result": "/rundb/api/v1/results/16215/", 
-	            "starttime": null, 
-	            "duration": "0", 
-	            "path": "/results17/analysis/output/IonEast/reanalyze_bpp_16215/plugin_out/flowErr_out.308061", 
+	            "size": "-1", 
+	            "apikey": "13bcc5b989d73fe93947a676ba03f1342dac9870", 
+	            "plugin": "/rundb/api/v1/plugin/490/", 
+	            "resultName": "C1--479-fc-BC-reanal", 
+	            "reportLink": "/output/Home/C1--479-fc-BC-reanal_56256/", 
+	            "pluginVersion": "0.2.0", 
+	            "jobid": 2810200, 
+	            "owner": "/rundb/api/v1/user/2/", 
+	            "pluginName": "BarcodeAlignStats", 
+	            "state": "Started", 
+	            "result": "/rundb/api/v1/results/56256/", 
+	            "starttime": "2014-05-01T20:22:07.000235+00:00", 
+	            "duration": "0:37:17.162974", 
+	            "path": "/results/analysis/output/Home/C1--479-fc-BC-reanal_56256/plugin_out/BarcodeAlignStats_out.768624", 
 	            "store": {}, 
 	            "endtime": null, 
 	            "config": {}, 
-	            "id": 308061, 
-	            "inodes": "10", 
-	            "resource_uri": "/rundb/api/v1/pluginresult/308061/"
+	            "id": 768624, 
+	            "inodes": "-1", 
+	            "resource_uri": "/rundb/api/v1/pluginresult/768624/"
 	        }
 	    ]
 	}

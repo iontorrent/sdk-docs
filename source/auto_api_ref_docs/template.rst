@@ -60,20 +60,20 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 35, 
+	        "total_count": 22, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/template/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "isofficial": false, 
-	            "name": "Ecoli-TF2", 
-	            "sequence": "TTAGGTGGTCGTCCTACGCTACCGATTCTCGGTAATCTGCCTGAGACTGCCAAGGCACACAGGGGATAGG", 
-	            "comments": " ", 
-	            "key": "TCAG", 
-	            "id": 7, 
-	            "resource_uri": "/rundb/api/v1/template/7/"
+	            "isofficial": true, 
+	            "name": "TFLO", 
+	            "sequence": "CTGAAGGTATACAGTGTAAACATGGGCCACCCTTTGCCTACTCAATCACGACGCGGAGATCTCCCGTGGTCGAAATAGTTTAACTGCAGCTTGACCAAGAGGGATTGGACACTATGTCTTCCATCGCTGAGACTGCCAAGGCACACAGGGG", 
+	            "comments": "126bp insert P1", 
+	            "key": "ATCG", 
+	            "id": 21, 
+	            "resource_uri": "/rundb/api/v1/template/21/"
 	        }
 	    ]
 	}

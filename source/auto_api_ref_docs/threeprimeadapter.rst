@@ -74,15 +74,15 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "direction": "Forward", 
-	            "name": "generic", 
-	            "sequence": "CTGAGACTGCCAAGGCACACAGGGGATAGG", 
+	            "name": "P1_ad_28", 
+	            "sequence": "CATAGAGAGGAAAGCGGAGGCGTAGTGG", 
 	            "chemistryType": "", 
 	            "runMode": "single", 
-	            "uid": "generic_CTGAGACTGCCAAGGCACACAGGG", 
+	            "uid": "FWD_0007", 
 	            "resource_uri": "/rundb/api/v1/threeprimeadapter/8/", 
 	            "id": 8, 
 	            "isDefault": false, 
-	            "description": "generic"
+	            "description": "P1_ad_28"
 	        }
 	    ]
 	}

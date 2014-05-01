@@ -76,7 +76,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 13696, 
+	        "total_count": 37659, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/compositeresult/?offset=1&limit=1&format=json"
@@ -86,51 +86,76 @@ Torrent Server response
 	            "status": "Completed", 
 	            "processedflows": 0, 
 	            "analysis_metrics": {
-	                "ignored": 0, 
-	                "lib": 255561, 
-	                "total_wells": 1474560, 
-	                "pinned": 70346, 
-	                "live": 283253, 
-	                "excluded": 222544, 
-	                "bead": 803436, 
+	                "ignored": 4938030, 
+	                "lib": 104318813, 
+	                "total_wells": 164699136, 
+	                "pinned": 416177, 
+	                "live": 104333175, 
+	                "excluded": 16095180, 
+	                "bead": 111451410, 
 	                "resource_uri": "", 
-	                "id": 988, 
-	                "empty": 378234, 
-	                "libFinal": 230854
+	                "id": 30862, 
+	                "empty": 31798339, 
+	                "libFinal": 59559295
 	            }, 
-	            "timeStamp": "2010-07-30T21:05:37.000219+00:00", 
+	            "timeStamp": "2014-01-30T07:52:22.000647+00:00", 
 	            "analysismetrics": {
-	                "ignored": 0, 
-	                "lib": 255561, 
-	                "total_wells": 1474560, 
-	                "pinned": 70346, 
-	                "live": 283253, 
-	                "excluded": 222544, 
-	                "bead": 803436, 
+	                "ignored": 4938030, 
+	                "lib": 104318813, 
+	                "total_wells": 164699136, 
+	                "pinned": 416177, 
+	                "live": 104333175, 
+	                "excluded": 16095180, 
+	                "bead": 111451410, 
 	                "resource_uri": "", 
-	                "id": 988, 
-	                "empty": 378234, 
-	                "libFinal": 230854
+	                "id": 30862, 
+	                "empty": 31798339, 
+	                "libFinal": 59559295
 	            }, 
-	            "reportLink": "/output/IonEast/v5_1145/Detailed_Report.php", 
-	            "id": 1145, 
-	            "reportStatus": "Pruned", 
-	            "quality_metrics": null, 
-	            "resultsName": "v5", 
-	            "projects": [], 
-	            "qualitymetrics": null, 
+	            "reportLink": "/output/Home/Auto_user_G35-494--R55155-500M_IC_loading_19558_52046/", 
+	            "id": 52046, 
+	            "reportStatus": "Nothing", 
+	            "quality_metrics": {
+	                "q0_mean_read_length": 142.0, 
+	                "q0_reads": 59559295, 
+	                "q0_bases": "8485928995", 
+	                "q20_reads": 59559295, 
+	                "q20_bases": "6280960963", 
+	                "q20_mean_read_length": 69, 
+	                "id": 30474, 
+	                "resource_uri": ""
+	            }, 
+	            "resultsName": "Auto_user_G35-494--R55155-500M_IC_loading_19558", 
+	            "projects": [
+	                {
+	                    "resource_uri": "", 
+	                    "id": 169, 
+	                    "name": "loading", 
+	                    "modified": "2014-05-01T17:53:34.000096+00:00"
+	                }
+	            ], 
+	            "qualitymetrics": {
+	                "q0_mean_read_length": 142.0, 
+	                "q0_reads": 59559295, 
+	                "q0_bases": "8485928995", 
+	                "q20_reads": 59559295, 
+	                "q20_bases": "6280960963", 
+	                "q20_mean_read_length": 69, 
+	                "id": 30474, 
+	                "resource_uri": ""
+	            }, 
 	            "eas": {
 	                "resource_uri": "", 
-	                "reference": "e_coli_dh10b", 
-	                "barcodeKitName": ""
+	                "reference": "hg19", 
+	                "barcodeKitName": "IonXpress"
 	            }, 
-	            "resource_uri": "/rundb/api/v1/compositeresult/1145/", 
+	            "resource_uri": "/rundb/api/v1/compositeresult/52046/", 
 	            "libmetrics": {
-	                "i100Q20_reads": 96, 
-	                "aveKeyCounts": 50.0, 
-	                "id": 1019, 
+	                "i100Q20_reads": 26629976, 
+	                "aveKeyCounts": 59.0, 
+	                "id": 31090, 
 	                "resource_uri": "", 
-	                "q20_mean_alignment_length": 37
+	                "q20_mean_alignment_length": 109
 	            }, 
 	            "autoExempt": false, 
 	            "representative": false

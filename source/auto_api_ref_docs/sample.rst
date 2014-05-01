@@ -66,7 +66,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 3627, 
+	        "total_count": 7750, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/sample/?offset=1&limit=1&format=json"
@@ -75,16 +75,17 @@ Torrent Server response
 	        {
 	            "status": "run", 
 	            "sampleSets": [], 
-	            "description": "", 
-	            "displayedName": "E122524-lq405-L_", 
+	            "description": null, 
+	            "displayedName": "e5272-wfa-l165", 
 	            "experiments": [
-	                "/rundb/api/v1/experiment/11902/"
+	                "/rundb/api/v1/experiment/12497/", 
+	                "/rundb/api/v1/experiment/9827/"
 	            ], 
 	            "externalId": "", 
-	            "date": "2013-07-23T18:37:27.000107+00:00", 
-	            "resource_uri": "/rundb/api/v1/sample/3532/", 
-	            "id": 3532, 
-	            "name": "E122524-lq405-L_"
+	            "date": "2013-03-27T22:07:32.000436+00:00", 
+	            "resource_uri": "/rundb/api/v1/sample/4365/", 
+	            "id": 4365, 
+	            "name": "e5272-wfa-l165"
 	        }
 	    ]
 	}

@@ -63,11 +63,11 @@ Torrent Server response
 	    }, 
 	    "objects": [
 	        {
-	            "name": "IonEast", 
-	            "resource_uri": "/rundb/api/v1/location/2/", 
+	            "name": "Home", 
+	            "resource_uri": "/rundb/api/v1/location/1/", 
 	            "defaultlocation": true, 
-	            "comments": "IonEast primary node is ecto5", 
-	            "id": 2
+	            "comments": "", 
+	            "id": 1
 	        }
 	    ]
 	}

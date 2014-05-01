@@ -64,7 +64,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 8, 
+	        "total_count": 9, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/runtype/?offset=1&limit=1&format=json"

@@ -84,45 +84,38 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 114, 
+	        "total_count": 174, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/rig/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "version": {
-	                "Datacollect": "210", 
-	                "Graphics": "18", 
-	                "hw8560": "113", 
-	                "LiveView": "345", 
-	                "Scripts": "18.1.6", 
-	                "OS": "19"
-	            }, 
-	            "name": "PEPE", 
-	            "state": "Idle", 
-	            "ftprootdir": "/results", 
+	            "version": {}, 
+	            "name": "PGM_test", 
+	            "state": "", 
+	            "ftprootdir": "results", 
 	            "last_clean_date": "", 
-	            "updatehome": "rnd1.ite/beta", 
-	            "ftpserver": "ion-nas7.ite", 
+	            "updatehome": "192.168.201.1", 
+	            "ftpserver": "192.168.201.1", 
 	            "comments": "", 
 	            "last_experiment": "", 
 	            "ftppassword": "ionguest", 
 	            "updateflag": false, 
 	            "location": {
-	                "name": "IonEast", 
-	                "resource_uri": "/rundb/api/v1/location/2/", 
+	                "name": "Home", 
+	                "resource_uri": "/rundb/api/v1/location/1/", 
 	                "defaultlocation": true, 
-	                "comments": "IonEast primary node is ecto5", 
-	                "id": 2
+	                "comments": "", 
+	                "id": 1
 	            }, 
 	            "last_init_date": "", 
 	            "alarms": {}, 
-	            "serial": "sn10c011205", 
+	            "serial": "", 
 	            "host_address": "", 
 	            "type": "", 
-	            "ftpusername": "anonymous", 
-	            "resource_uri": "/rundb/api/v1/rig/PEPE/"
+	            "ftpusername": "ionguest", 
+	            "resource_uri": "/rundb/api/v1/rig/PGM_test/"
 	        }
 	    ]
 	}

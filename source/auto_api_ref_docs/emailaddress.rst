@@ -15,7 +15,7 @@ Fields table
 ================ ====================================== ======= ======== ======== ===== ====== ======= 
 field            help text                              default nullable readonly blank unique type    
 ================ ====================================== ======= ======== ======== ===== ====== ======= 
-**selected**     Boolean data. Ex: True                 false   false    false    true  false  boolean 
+**selected**     Boolean data. Ex: True                         false    false    true  false  boolean 
 ---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **resource_uri** Unicode string data. Ex: "Hello World" n/a     false    true     false false  string  
 ---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
@@ -54,17 +54,17 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 4, 
+	        "total_count": 1, 
 	        "offset": 0, 
 	        "limit": 1, 
-	        "next": "/rundb/api/v1/emailaddress/?offset=1&limit=1&format=json"
+	        "next": null
 	    }, 
 	    "objects": [
 	        {
 	            "selected": true, 
-	            "resource_uri": "/rundb/api/v1/emailaddress/8/", 
-	            "email": "!ion-software@lifetech.com", 
-	            "id": 8
+	            "resource_uri": "/rundb/api/v1/emailaddress/1/", 
+	            "email": "!ION-Blackbird@Lifetech.com", 
+	            "id": 1
 	        }
 	    ]
 	}

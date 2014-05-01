@@ -15,7 +15,9 @@ Fields table
 ======================= ============================================================================== ======= ======== ======== ===== ====== ======== 
 field                   help text                                                                      default nullable readonly blank unique type     
 ======================= ============================================================================== ======= ======== ======== ===== ====== ======== 
-**sampleSetStatus**     Unicode string data. Ex: "Hello World"                                         n/a     true     true     true  false  string   
+**sample**              A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    true  false  related  
+----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**sampleSetPk**         Integer data. Ex: 2673                                                         n/a     true     true     true  false  integer  
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **sampleExternalId**    Unicode string data. Ex: "Hello World"                                         n/a     true     true     true  false  string   
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
@@ -25,25 +27,29 @@ field                   help text                                               
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **relationshipGroup**   Integer data. Ex: 2673                                                         n/a     true     true     true  false  integer  
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**dnabarcode**          A single related resource. Can be either a URI or set of nested resource data. n/a     true     true     true  false  related  
+**cellularityPct**      Integer data. Ex: 2673                                                         n/a     true     false    false false  integer  
+----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**dnabarcodeKit**       Unicode string data. Ex: "Hello World"                                         n/a     true     true     true  false  string   
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **sampleDescription**   Unicode string data. Ex: "Hello World"                                         n/a     true     true     true  false  string   
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**sample**              A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    true  false  related  
------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **relationshipRole**    Unicode string data. Ex: "Hello World"                                         n/a     true     true     true  false  string   
+----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**cancerType**          Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **samplePk**            Integer data. Ex: 2673                                                         n/a     true     true     true  false  integer  
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**sampleSetPk**         Integer data. Ex: 2673                                                         n/a     true     true     true  false  integer  
------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **lastModifiedDate**    A date & time as a string. Ex: "2010-11-10T03:07:43"                           true    false    false    true  false  datetime 
+----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**dnabarcode**          A single related resource. Can be either a URI or set of nested resource data. n/a     true     true     true  false  related  
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **sampleSet**           A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    true  false  related  
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **creationDate**        A date & time as a string. Ex: "2010-11-10T03:07:43"                           true    false    false    true  false  datetime 
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **id**                  Integer data. Ex: 2673                                                                 false    false    true  true   integer  
+----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**sampleSetStatus**     Unicode string data. Ex: "Hello World"                                         n/a     true     true     true  false  string   
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **resource_uri**        Unicode string data. Ex: "Hello World"                                         n/a     false    true     false false  string   
 ======================= ============================================================================== ======= ======== ======== ===== ====== ======== 

@@ -34,6 +34,7 @@ Torrent Server REST API v1 Resources
 	auto_api_ref_docs/eventlog.rst
 	auto_api_ref_docs/experiment.rst
 	auto_api_ref_docs/experimentanalysissettings.rst
+	auto_api_ref_docs/filemonitor.rst
 	auto_api_ref_docs/fileserver.rst
 	auto_api_ref_docs/globalconfig.rst
 	auto_api_ref_docs/ionchefplantemplate.rst
@@ -56,6 +57,7 @@ Torrent Server REST API v1 Resources
 	auto_api_ref_docs/plannedexperiment.rst
 	auto_api_ref_docs/plannedexperimentdb.rst
 	auto_api_ref_docs/plannedexperimentqc.rst
+	auto_api_ref_docs/plantemplatebasicinfo.rst
 	auto_api_ref_docs/plantemplatesummary.rst
 	auto_api_ref_docs/plugin.rst
 	auto_api_ref_docs/pluginresult.rst
@@ -76,6 +78,7 @@ Torrent Server REST API v1 Resources
 	auto_api_ref_docs/samplesetiteminfo.rst
 	auto_api_ref_docs/sequencingkitinfo.rst
 	auto_api_ref_docs/sequencingkitpart.rst
+	auto_api_ref_docs/supportupload.rst
 	auto_api_ref_docs/template.rst
 	auto_api_ref_docs/tfmetrics.rst
 	auto_api_ref_docs/threeprimeadapter.rst

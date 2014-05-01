@@ -15,19 +15,23 @@ Fields table
 ===================== ============================================================================== ======= ======== ======== ===== ====== ======== 
 field                 help text                                                                      default nullable readonly blank unique type     
 ===================== ============================================================================== ======= ======== ======== ===== ====== ======== 
+**sample**            A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    true  false  related  
+--------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **gender**            Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 --------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **relationshipGroup** Integer data. Ex: 2673                                                         n/a     false    false    false false  integer  
 --------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**dnabarcode**        A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    true  false  related  
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**sample**            A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    true  false  related  
+**cellularityPct**    Integer data. Ex: 2673                                                         n/a     true     false    false false  integer  
 --------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **relationshipRole**  Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
+--------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**cancerType**        Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 --------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **sampleSet**         A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    true  false  related  
 --------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **lastModifiedDate**  A date & time as a string. Ex: "2010-11-10T03:07:43"                           true    false    false    true  false  datetime 
+--------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**dnabarcode**        A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    true  false  related  
 --------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **creationDate**      A date & time as a string. Ex: "2010-11-10T03:07:43"                           true    false    false    true  false  datetime 
 --------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 

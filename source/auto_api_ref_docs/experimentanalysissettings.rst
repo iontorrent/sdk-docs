@@ -37,6 +37,10 @@ field                          help text                                        
 ------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **analysisargs**               Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**thumbnailcalibrateargs**     Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**realign**                    Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
+------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **selectedPlugins**            Unicode string data. Ex: "Hello World"                                                             {}      true     false    false false  string   
 ------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **experiment**                 A single related resource. Can be either a URI or set of nested resource data.                     n/a     true     false    true  false  related  
@@ -67,9 +71,13 @@ field                          help text                                        
 ------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **thumbnailbeadfindargs**      Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**calibrateargs**              Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **tfKey**                      Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **libraryKitBarcode**          Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**base_recalibrate**           Boolean data. Ex: True                                                                             true    false    false    true  false  boolean  
 ------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **basecallerargs**             Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -106,43 +114,49 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 11564, 
+	        "total_count": 21172, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/experimentanalysissettings/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "isEditable": true, 
+	            "isEditable": false, 
 	            "hotSpotRegionBedFile": "", 
-	            "results": [], 
+	            "results": [
+	                "/rundb/api/v1/results/28122/"
+	            ], 
 	            "targetRegionBedFile": "", 
 	            "thumbnailalignmentargs": "", 
 	            "thumbnailanalysisargs": "", 
-	            "id": 4, 
+	            "id": 21, 
 	            "barcodedSamples": {}, 
-	            "reference": "", 
+	            "reference": "hg19", 
 	            "isOneTimeOverride": false, 
 	            "analysisargs": "", 
+	            "thumbnailcalibrateargs": "", 
+	            "realign": false, 
 	            "selectedPlugins": {}, 
-	            "experiment": "/rundb/api/v1/experiment/10955/", 
+	            "experiment": "/rundb/api/v1/experiment/5605/", 
 	            "barcodeKitName": "", 
 	            "beadfindargs": "", 
 	            "threePrimeAdapter": "ATCACCGACTGCCCATAGAGAGGCTGAGAC", 
 	            "thumbnailbasecallerargs": "", 
-	            "status": "planned", 
+	            "status": "run", 
 	            "prebasecallerargs": "", 
 	            "prethumbnailbasecallerargs": "", 
 	            "alignmentargs": "", 
 	            "isDuplicateReads": false, 
 	            "libraryKey": "TCAG", 
-	            "date": "2012-11-20T13:49:55.000699+00:00", 
-	            "libraryKitName": "Ion Xpress Plus Fragment Library Kit", 
+	            "date": "2013-01-29T19:23:04.000499+00:00", 
+	            "libraryKitName": "", 
 	            "thumbnailbeadfindargs": "", 
+	            "calibrateargs": "", 
 	            "tfKey": "", 
 	            "libraryKitBarcode": null, 
+	            "base_recalibrate": true, 
 	            "basecallerargs": "", 
-	            "resource_uri": "/rundb/api/v1/experimentanalysissettings/4/"
+	            "resource_uri": "/rundb/api/v1/experimentanalysissettings/21/"
 	        }
 	    ]
 	}

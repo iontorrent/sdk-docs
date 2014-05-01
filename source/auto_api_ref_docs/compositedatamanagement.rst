@@ -78,7 +78,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 13696, 
+	        "total_count": 37646, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/compositedatamanagement/?offset=1&limit=1&format=json"
@@ -86,25 +86,25 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "misc_diskspace": 0.0, 
-	            "expName": "R_2009_12_04_14_44_12_TAC_VE_41.TF5", 
+	            "expName": "R_2011_11_16_00_02_37_user_P1--5", 
 	            "basecall_state": "Deleted", 
 	            "in_process": false, 
 	            "misc_state": "Deleted", 
-	            "timeStamp": "2010-06-14T14:07:57.000416+00:00", 
+	            "timeStamp": "2011-11-16T08:08:53.000842+00:00", 
 	            "basecall_keep": null, 
 	            "misc_keep": null, 
-	            "output_keep": false, 
-	            "basecall_diskspace": 0.0703840255737305, 
-	            "resultsName": "gfdgfsd", 
-	            "output_state": "Local", 
+	            "output_keep": null, 
+	            "basecall_diskspace": 0.0, 
+	            "resultsName": "Auto_P1--5_2", 
+	            "output_state": "Deleted", 
 	            "sigproc_state": "Deleted", 
 	            "sigproc_keep": null, 
-	            "sigproc_diskspace": 0.0, 
-	            "diskusage": 1, 
-	            "resource_uri": "/rundb/api/v1/compositedatamanagement/2/", 
-	            "expDir": "/results1/TestPGM/R_2010_06_13_00_00_00_mgd_testrun", 
-	            "id": 2, 
-	            "output_diskspace": 1.99794769287109
+	            "sigproc_diskspace": null, 
+	            "diskusage": 0, 
+	            "resource_uri": "/rundb/api/v1/compositedatamanagement/11/", 
+	            "expDir": "/ion-data/results/p1/R_2011_11_16_00_02_37_user_P1--5", 
+	            "id": 11, 
+	            "output_diskspace": 0.0
 	        }
 	    ]
 	}

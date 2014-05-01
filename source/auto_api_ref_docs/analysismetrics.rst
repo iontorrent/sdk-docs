@@ -21,6 +21,8 @@ field                     help text                                             
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **washout_ambiguous**     Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**tfLive**                Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **sysIE**                 Floating point numeric data. Ex: 26.73                                         n/a     false    false    false false  float   
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **bead**                  Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
@@ -32,6 +34,8 @@ field                     help text                                             
 **id**                    Integer data. Ex: 2673                                                                 false    false    true  true   integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **libFinal**              Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**loading**               Floating point numeric data. Ex: 26.73                                         0.0     false    false    false false  float   
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **lib**                   Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
@@ -67,9 +71,11 @@ field                     help text                                             
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **libKp**                 Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**tfLive**                Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+**adjusted_addressable**  Integer data. Ex: 2673                                                         0       false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **sysDR**                 Floating point numeric data. Ex: 26.73                                         n/a     false    false    false false  float   
+------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**total**                 Integer data. Ex: 2673                                                         0       false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **washout_test_fragment** Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
@@ -112,46 +118,49 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 11924, 
+	        "total_count": 33893, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/analysismetrics/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "libLive": 3060, 
-	            "ignored": 682, 
+	            "libLive": 0, 
+	            "ignored": 110120, 
 	            "washout_ambiguous": 0, 
-	            "sysIE": 0.00814, 
-	            "bead": 3062, 
+	            "tfLive": 0, 
+	            "sysIE": 0.480743078515, 
+	            "bead": 221577, 
 	            "tfKp": 0, 
 	            "washout_live": 0, 
-	            "id": 1, 
-	            "libFinal": 3028, 
-	            "lib": 3042, 
-	            "keypass_all_beads": 3028, 
-	            "dud": 1, 
-	            "sysCF": 0.01348, 
-	            "pinned": 23, 
-	            "live": 3044, 
+	            "id": 9690, 
+	            "libFinal": 13628, 
+	            "loading": 0.0, 
+	            "lib": 160480, 
+	            "keypass_all_beads": 0, 
+	            "dud": 49709, 
+	            "sysCF": 2.95668412, 
+	            "pinned": 66458, 
+	            "live": 171868, 
 	            "excluded": 0, 
-	            "tf": 2, 
-	            "empty": 6915, 
-	            "tfFinal": 0, 
-	            "amb": 17, 
-	            "lib_pass_basecaller": 3042, 
-	            "lib_pass_cafie": 3042, 
+	            "tf": 11388, 
+	            "empty": 561845, 
+	            "tfFinal": 81, 
+	            "amb": 0, 
+	            "lib_pass_basecaller": 0, 
+	            "lib_pass_cafie": 0, 
 	            "washout_dud": 0, 
 	            "libMix": 0, 
-	            "report": "/rundb/api/v1/results/2/", 
-	            "libKp": 3028, 
-	            "tfLive": 2, 
-	            "sysDR": 0.00127, 
+	            "report": "/rundb/api/v1/results/29334/", 
+	            "libKp": 0, 
+	            "adjusted_addressable": 0, 
+	            "sysDR": 0.23268898949, 
+	            "total": 0, 
 	            "washout_test_fragment": 0, 
 	            "washout_library": 0, 
 	            "washout": 0, 
 	            "tfMix": 0, 
-	            "resource_uri": "/rundb/api/v1/analysismetrics/1/"
+	            "resource_uri": "/rundb/api/v1/analysismetrics/9690/"
 	        }
 	    ]
 	}

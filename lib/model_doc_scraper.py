@@ -4,8 +4,9 @@ import bs4
 
 
 class ModelDocScraper:
-    def __init__(self, ts_base_url, target_app="rundb",
-                 admin_username="ionadmin", admin_password="ionadmin", pg_db_name = "iondb"):
+    def __init__(self, ts_base_url, auth, target_app="rundb", pg_db_name="iondb"):
+
+        admin_username, admin_password = auth
 
         self.target_app = target_app
         self.pg_db_name = pg_db_name
@@ -105,18 +106,18 @@ class ModelDocScraper:
     def get_model_docs_html(self):
         for model_name, model_link in self.models:
 
-                pg_db_name = self.pg_db_name
-                pg_table_name = self.target_app + "_" + model_name.lower()
+            pg_db_name = self.pg_db_name
+            pg_table_name = self.target_app + "_" + model_name.lower()
 
-                model_docs_header = "<h2>%s Table</h2><p>Postgresql db: <strong>%s</strong><br>Postgresql table: <strong>%s</strong></p>\n<br>\n" \
-                                    % (model_name, pg_db_name, pg_table_name)
+            model_docs_header = "<h2>%s Table</h2><p>Postgresql db: <strong>%s</strong><br>Postgresql table: <strong>%s</strong></p>\n<br>\n" \
+                                % (model_name, pg_db_name, pg_table_name)
 
-                model_docs_html = str(self._fetch_single_model_docs_soup(model_link))
+            model_docs_html = str(self._fetch_single_model_docs_soup(model_link))
 
-                #Switch docs naming to more databaseish terms
-                model_docs_html = model_docs_html.replace("object", "row")
+            #Switch docs naming to more databaseish terms
+            model_docs_html = model_docs_html.replace("object", "row")
 
-                yield locals()
+            yield locals()
 
     def dump_model_docs_jive_html(self, path="build/model_docs_jive.html"):
         with open(path, "w") as jive_html_file:
@@ -136,7 +137,6 @@ class ModelDocScraper:
                 jive_html_file.write(model_docs_header)
                 jive_html_file.write(model_docs_html)
                 jive_html_file.write("<br>")
-
 
 
     def dump_model_docs_confluence_markup(self, path="build/model_docs_jive.html"):

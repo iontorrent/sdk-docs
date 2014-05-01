@@ -80,7 +80,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 20435, 
+	        "total_count": 12499, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/tfmetrics/?offset=1&limit=1&format=json"
@@ -88,22 +88,22 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "corrHPSNR": "", 
-	            "Q10Mean": 41.6, 
-	            "SysSNR": 3.46, 
-	            "HPAccuracy": "0 : 137931/168077, 1 : 135718/167266, 2 : 2833/7002, 3 : 199/2918, 4 : 0/0, 5 : 0/0, 6 : 0/0, 7 : 0/0", 
-	            "Q17ReadCount": 450.0, 
-	            "sequence": "TAGCGTACATCGCGCATCTATATATCGTCAACTACGCTGAGTCGGAGACACGCAGGGATGAGATGG", 
-	            "Q17Histo": "71 30 30 12 56 15 13 0 9 38 19 21 16 9 85 28 110 6 34 15 118 27 79 22 57 45 97 23 224 560 0 41 11 72 103 3 62 6 21 13 19 4 50 216 0 54 16 12 1 4 67 95 71 142 20 17 10 3 5 2 4 5 1 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0", 
-	            "name": "TF5", 
-	            "aveKeyCount": 0.0, 
-	            "number": 3024.0, 
+	            "Q10Mean": 81.8, 
+	            "SysSNR": 19.41, 
+	            "HPAccuracy": "0 : 257730/269219, 1 : 165695/174283, 2 : 18132/21031, 3 : 0/0, 4 : 1574/2067, 5 : 0/0, 6 : 0/0, 7 : 0/0", 
+	            "Q17ReadCount": 2037.0, 
+	            "sequence": "TTGCGCGCGCTGTGAATGCGCTGCTGTCGAATCGCGCTGCGCTGAACGTCGCGTGCGCGAACGATCTGAGACTGCCAAGGCACACAGGGGATAGG", 
+	            "Q17Histo": "31 0 0 2 0 1 1 3 4 261 5 4 1 3 8 0 4 1 1 0 3 2 3 2 3 2 5 3 3 11 0 1 0 0 3 4 4 0 1 3 2 3 2 2 23 0 2 2 2 0 2 4 2 1 3 2 1 2 9 1 3 1 8 1 3 4 5 2 5 10 7 7 5 12 6 59 0 10 0 9 2 3 5 4 5 47 30 28 0 5 17 25 133 1 413 1135 0 0 0 0 0", 
+	            "name": "TF_D", 
+	            "aveKeyCount": 70.0, 
+	            "number": 2458.0, 
 	            "id": 1, 
-	            "keypass": 3027.0, 
-	            "Q10ReadCount": 1285.0, 
-	            "report": "/rundb/api/v1/results/2/", 
+	            "keypass": 2458.0, 
+	            "Q10ReadCount": 2097.0, 
+	            "report": "/rundb/api/v1/results/591/", 
 	            "resource_uri": "/rundb/api/v1/tfmetrics/1/", 
-	            "Q17Mean": 29.95, 
-	            "Q10Histo": "33 16 20 7 1 0 10 0 4 0 2 1 5 20 21 85 18 6 73 0 9 9 37 35 144 28 20 29 88 14 84 14 147 38 6 70 39 20 77 11 34 33 34 64 42 45 74 65 72 38 134 122 110 106 118 126 101 94 17 11 25 38 51 45 55 38 94 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+	            "Q17Mean": 78.34, 
+	            "Q10Histo": "5 0 0 0 0 1 0 1 0 0 274 6 3 5 2 3 3 2 1 2 2 2 0 6 1 1 3 5 4 1 0 1 2 0 2 4 0 0 0 1 1 4 3 0 1 1 1 4 3 0 2 4 2 1 1 2 1 3 0 1 0 3 0 2 2 2 2 1 2 2 2 3 5 5 3 7 0 3 1 0 7 2 5 2 3 2 3 1 9 6 6 10 57 135 355 1432 0 0 0 0 0"
 	        }
 	    ]
 	}
