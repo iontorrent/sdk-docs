@@ -14,10 +14,11 @@ Make a settings file
 -----
 Create a python file nameed `settings.py` in the root directory.
 
-.. code-block:: python
-    TS_URL = "http://mytorrentserver"
-    TS_USERNAME = "user"
-    TS_PASSWORD = "pass"
+```python
+TS_URL = "http://mytorrentserver"
+TS_USERNAME = "user"
+TS_PASSWORD = "pass"
+```
 
 Build
 -----
