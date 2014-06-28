@@ -1,0 +1,3 @@
+TS_URL = "http://mytorrentserver.internal"
+TS_USERNAME = "demo"
+TS_PASSWORD = "demo"
