@@ -72,26 +72,26 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 146, 
+	        "total_count": 9387, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/dnabarcode/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "index": 1, 
-	            "name": "MuSeek_5prime_tag", 
+	            "index": 9, 
+	            "name": "IonXpress", 
 	            "score_cutoff": 2.0, 
-	            "sequence": "TTCA", 
+	            "sequence": "TGAGCGGAAC", 
 	            "floworder": "", 
-	            "adapter": "", 
-	            "id": 1346, 
-	            "length": 4, 
-	            "id_str": "MuSeek_5prime_tag_001", 
+	            "adapter": "GAT", 
+	            "id": 761, 
+	            "length": 10, 
+	            "id_str": "IonXpress_009", 
 	            "score_mode": 1, 
-	            "type": "none", 
+	            "type": "", 
 	            "annotation": "", 
-	            "resource_uri": "/rundb/api/v1/dnabarcode/1346/"
+	            "resource_uri": "/rundb/api/v1/dnabarcode/761/"
 	        }
 	    ]
 	}

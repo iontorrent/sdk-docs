@@ -68,12 +68,31 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 0, 
+	        "total_count": 1, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": null
 	    }, 
-	    "objects": []
+	    "objects": [
+	        {
+	            "status": "created", 
+	            "description": "", 
+	            "sampleCount": 4, 
+	            "displayedName": "Set", 
+	            "SampleGroupType_CV": "/rundb/api/v1/samplegrouptype_cv/3/", 
+	            "samples": [
+	                "/rundb/api/v1/samplesetitem/14/", 
+	                "/rundb/api/v1/samplesetitem/15/", 
+	                "/rundb/api/v1/samplesetitem/16/", 
+	                "/rundb/api/v1/samplesetitem/17/"
+	            ], 
+	            "lastModifiedDate": "2013-10-07T12:04:51.000432+00:00", 
+	            "sampleGroupTypeName": "Tumor_Normal", 
+	            "creationDate": "2013-10-07T12:04:51.000432+00:00", 
+	            "id": 5, 
+	            "resource_uri": "/rundb/api/v1/sampleset/5/"
+	        }
+	    ]
 	}
 
 Allowed HTTP methods

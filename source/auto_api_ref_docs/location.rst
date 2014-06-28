@@ -56,18 +56,18 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 1, 
+	        "total_count": 2, 
 	        "offset": 0, 
 	        "limit": 1, 
-	        "next": null
+	        "next": "/rundb/api/v1/location/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "name": "Home", 
-	            "resource_uri": "/rundb/api/v1/location/1/", 
-	            "defaultlocation": true, 
+	            "name": "Local", 
+	            "resource_uri": "/rundb/api/v1/location/3/", 
+	            "defaultlocation": false, 
 	            "comments": "", 
-	            "id": 1
+	            "id": 3
 	        }
 	    ]
 	}

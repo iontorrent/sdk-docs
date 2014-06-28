@@ -78,7 +78,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 37646, 
+	        "total_count": 43343, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/compositedatamanagement/?offset=1&limit=1&format=json"
@@ -86,24 +86,24 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "misc_diskspace": 0.0, 
-	            "expName": "R_2011_11_16_00_02_37_user_P1--5", 
-	            "basecall_state": "Deleted", 
-	            "in_process": false, 
+	            "expName": "", 
+	            "basecall_state": "Deleting", 
+	            "in_process": true, 
 	            "misc_state": "Deleted", 
-	            "timeStamp": "2011-11-16T08:08:53.000842+00:00", 
+	            "timeStamp": "2011-09-08T18:19:32.000098+00:00", 
 	            "basecall_keep": null, 
 	            "misc_keep": null, 
 	            "output_keep": null, 
 	            "basecall_diskspace": 0.0, 
-	            "resultsName": "Auto_P1--5_2", 
+	            "resultsName": "Auto__1", 
 	            "output_state": "Deleted", 
 	            "sigproc_state": "Deleted", 
 	            "sigproc_keep": null, 
 	            "sigproc_diskspace": null, 
 	            "diskusage": 0, 
-	            "resource_uri": "/rundb/api/v1/compositedatamanagement/11/", 
-	            "expDir": "/ion-data/results/p1/R_2011_11_16_00_02_37_user_P1--5", 
-	            "id": 11, 
+	            "resource_uri": "/rundb/api/v1/compositedatamanagement/1/", 
+	            "expDir": "/results1/BBDefault/R_2011_08_25_16_44_20_user_BBD-43", 
+	            "id": 1, 
 	            "output_diskspace": 0.0
 	        }
 	    ]

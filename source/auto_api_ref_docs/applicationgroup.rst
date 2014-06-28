@@ -68,7 +68,7 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "name": "DNA", 
-	            "description": null, 
+	            "description": "DNA", 
 	            "applications": [
 	                {
 	                    "applicationGroups": [
@@ -87,8 +87,7 @@ Torrent Server response
 	                }, 
 	                {
 	                    "applicationGroups": [
-	                        "/rundb/api/v1/applicationgroup/1/", 
-	                        "/rundb/api/v1/applicationgroup/5/"
+	                        "/rundb/api/v1/applicationgroup/1/"
 	                    ], 
 	                    "description": "AmpliSeq DNA", 
 	                    "nucleotideType": "dna", 

@@ -54,17 +54,17 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 62, 
+	        "total_count": 64, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/sequencingkitpart/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "barcode": "4468997", 
-	            "id": 20001, 
-	            "resource_uri": "/rundb/api/v1/sequencingkitpart/20001/", 
-	            "kit": "/rundb/api/v1/kitinfo/20001/"
+	            "barcode": "A25592", 
+	            "id": 20132, 
+	            "resource_uri": "/rundb/api/v1/sequencingkitpart/20132/", 
+	            "kit": "/rundb/api/v1/kitinfo/20063/"
 	        }
 	    ]
 	}

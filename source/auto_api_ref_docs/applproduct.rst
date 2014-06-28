@@ -172,8 +172,7 @@ Torrent Server response
 	            "isPairedEndSupported": false, 
 	            "appl": {
 	                "applicationGroups": [
-	                    "/rundb/api/v1/applicationgroup/1/", 
-	                    "/rundb/api/v1/applicationgroup/5/"
+	                    "/rundb/api/v1/applicationgroup/1/"
 	                ], 
 	                "description": "AmpliSeq DNA", 
 	                "nucleotideType": "dna", 

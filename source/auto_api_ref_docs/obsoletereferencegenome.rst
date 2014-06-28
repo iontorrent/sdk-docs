@@ -39,7 +39,7 @@ field              help text                                            default 
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **celery_task_id** Unicode string data. Ex: "Hello World"                                                false    false    true  false  string   
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
-**date**           A date & time as a string. Ex: "2010-11-10T03:07:43" 2014-05-01T20:58:58.000746+00:00 false    false    false false  datetime 
+**date**           A date & time as a string. Ex: "2010-11-10T03:07:43" 2014-06-28T14:03:44.000226+00:00 false    false    false false  datetime 
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **verbose_error**  Unicode string data. Ex: "Hello World"                                                false    false    true  false  string   
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
@@ -78,31 +78,12 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 5, 
+	        "total_count": 0, 
 	        "offset": 0, 
 	        "limit": 1, 
-	        "next": "/rundb/api/v1/obsoletereferencegenome/?offset=1&limit=1&format=json"
+	        "next": null
 	    }, 
-	    "objects": [
-	        {
-	            "status": "complete", 
-	            "reference_path": "/results/referenceLibrary/tmap-f2/CFTR_38amp_v2", 
-	            "name": "CFTR_38amp_v2", 
-	            "short_name": "CFTR_38amp_v2", 
-	            "index_version": "tmap-f2", 
-	            "notes": "", 
-	            "enabled": true, 
-	            "species": "", 
-	            "identity_hash": null, 
-	            "source": "", 
-	            "version": "CFTR_38amp_v2", 
-	            "celery_task_id": "", 
-	            "date": "2012-01-31T21:31:18.000852+00:00", 
-	            "verbose_error": "[\"\", \"\\nSequence name 'CFTR.13.120s' contains a non-alphanumeric character at line 1 !\\n\\n/usr/local/bin/build_genome_index.pl: /results/referenceLibrary/tmap-f2/CFTR_38amp_v2/CFTR_38amp_v2.fasta is fixed and the original is kept as /results/referenceLibrary/tmap-f2/CFTR_38amp_v2/CFTR_38amp_v2.fasta.orig \\n\\n/usr/local/bin/build_genome_index.pl: output directory CFTR_38amp_v2 already exits, aborting.\\n\", 9]", 
-	            "id": 8, 
-	            "resource_uri": "/rundb/api/v1/obsoletereferencegenome/8/"
-	        }
-	    ]
+	    "objects": []
 	}
 
 Allowed HTTP methods

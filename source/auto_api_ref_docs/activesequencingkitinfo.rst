@@ -74,7 +74,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 11, 
+	        "total_count": 9, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/activesequencingkitinfo/?offset=1&limit=1&format=json"
@@ -83,43 +83,43 @@ Torrent Server response
 	        {
 	            "isActive": true, 
 	            "kitType": "SequencingKit", 
-	            "description": "(100bp) Ion Sequencing Kit", 
+	            "description": "(200bp) Ion PGM 200 Sequencing Kit", 
 	            "nucleotideType": "", 
 	            "instrumentType": "pgm", 
 	            "runMode": "", 
 	            "parts": [
 	                {
-	                    "barcode": "4468997", 
-	                    "id": 20001, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20001/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20001/"
+	                    "barcode": "4474004", 
+	                    "id": 20009, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20009/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20003/"
 	                }, 
 	                {
-	                    "barcode": "4468996", 
-	                    "id": 20002, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20002/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20001/"
+	                    "barcode": "4474005", 
+	                    "id": 20010, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20010/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20003/"
 	                }, 
 	                {
-	                    "barcode": "4468995", 
-	                    "id": 20003, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20003/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20001/"
+	                    "barcode": "4474006", 
+	                    "id": 20011, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20011/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20003/"
 	                }, 
 	                {
-	                    "barcode": "4468994", 
-	                    "id": 20004, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20004/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20001/"
+	                    "barcode": "4474007", 
+	                    "id": 20012, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20012/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20003/"
 	                }
 	            ], 
-	            "flowCount": 260, 
+	            "flowCount": 500, 
 	            "applicationType": "", 
-	            "uid": "SEQ0001", 
-	            "resource_uri": "/rundb/api/v1/activesequencingkitinfo/20001/", 
-	            "id": 20001, 
+	            "uid": "SEQ0003", 
+	            "resource_uri": "/rundb/api/v1/activesequencingkitinfo/20003/", 
+	            "id": 20003, 
 	            "categories": "", 
-	            "name": "IonSeqKit"
+	            "name": "IonPGM200Kit"
 	        }
 	    ]
 	}

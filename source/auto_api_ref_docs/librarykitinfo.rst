@@ -74,14 +74,14 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 16, 
+	        "total_count": 18, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/librarykitinfo/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "isActive": false, 
+	            "isActive": true, 
 	            "kitType": "LibraryKit", 
 	            "description": "Ion Fragment Library Kit", 
 	            "nucleotideType": "dna", 
@@ -89,19 +89,19 @@ Torrent Server response
 	            "runMode": "", 
 	            "parts": [
 	                {
-	                    "barcode": "4462907", 
-	                    "id": 20013, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20013/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20004/"
+	                    "barcode": "4466464", 
+	                    "id": 20014, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20014/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20005/"
 	                }
 	            ], 
 	            "flowCount": 0, 
 	            "applicationType": "", 
-	            "uid": "LIB0001", 
-	            "resource_uri": "/rundb/api/v1/librarykitinfo/20004/", 
-	            "id": 20004, 
+	            "uid": "LIB0002", 
+	            "resource_uri": "/rundb/api/v1/librarykitinfo/20005/", 
+	            "id": 20005, 
 	            "categories": "", 
-	            "name": "IonFragmentLibKit"
+	            "name": "IonFragmentLibKit2"
 	        }
 	    ]
 	}

@@ -78,39 +78,198 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 16616, 
+	        "total_count": 20366, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/compositeexperiment/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "chipDescription": "PI", 
+	            "chipInstrumentType": "proton", 
 	            "chipType": "P1.1.17", 
-	            "results": [], 
-	            "sample": "", 
+	            "results": [
+	                {
+	                    "status": "Completed", 
+	                    "processedflows": 0, 
+	                    "analysis_metrics": {
+	                        "ignored": 1364892, 
+	                        "lib": 118063544, 
+	                        "total_wells": 164699136, 
+	                        "pinned": 463867, 
+	                        "live": 118074386, 
+	                        "excluded": 16095180, 
+	                        "bead": 118525043, 
+	                        "resource_uri": "", 
+	                        "id": 41726, 
+	                        "empty": 28250154, 
+	                        "libFinal": 85604279
+	                    }, 
+	                    "timeStamp": "2014-06-28T07:11:58.000789+00:00", 
+	                    "analysismetrics": {
+	                        "ignored": 1364892, 
+	                        "lib": 118063544, 
+	                        "total_wells": 164699136, 
+	                        "pinned": 463867, 
+	                        "live": 118074386, 
+	                        "excluded": 16095180, 
+	                        "bead": 118525043, 
+	                        "resource_uri": "", 
+	                        "id": 41726, 
+	                        "empty": 28250154, 
+	                        "libFinal": 85604279
+	                    }, 
+	                    "reportLink": "/output/Home/Auto_user_Z28-428--r65714-pou4_dbsa_23958_304393/", 
+	                    "id": 304393, 
+	                    "reportStatus": "Nothing", 
+	                    "quality_metrics": {
+	                        "q0_mean_read_length": 178.362197969099, 
+	                        "q0_reads": 85604279, 
+	                        "q0_bases": "15268567358", 
+	                        "q20_reads": 85604279, 
+	                        "q20_bases": "13060288783", 
+	                        "q20_mean_read_length": 178, 
+	                        "id": 39683, 
+	                        "resource_uri": ""
+	                    }, 
+	                    "resultsName": "Auto_user_Z28-428--r65714-pou4_dbsa_23958", 
+	                    "projects": [
+	                        {
+	                            "resource_uri": "", 
+	                            "id": 1385, 
+	                            "name": "auto_chip", 
+	                            "modified": "2014-06-27T21:21:43.000081+00:00"
+	                        }
+	                    ], 
+	                    "qualitymetrics": {
+	                        "q0_mean_read_length": 178.362197969099, 
+	                        "q0_reads": 85604279, 
+	                        "q0_bases": "15268567358", 
+	                        "q20_reads": 85604279, 
+	                        "q20_bases": "13060288783", 
+	                        "q20_mean_read_length": 178, 
+	                        "id": 39683, 
+	                        "resource_uri": ""
+	                    }, 
+	                    "eas": {
+	                        "resource_uri": "", 
+	                        "reference": "hg19", 
+	                        "barcodeKitName": "IonXpress"
+	                    }, 
+	                    "resource_uri": "/rundb/api/v1/compositeresult/304393/", 
+	                    "libmetrics": {
+	                        "i100Q20_reads": 61016174, 
+	                        "aveKeyCounts": 89.0, 
+	                        "id": 41874, 
+	                        "resource_uri": "", 
+	                        "q20_mean_alignment_length": 159
+	                    }, 
+	                    "autoExempt": false, 
+	                    "representative": false
+	                }, 
+	                {
+	                    "status": "Completed", 
+	                    "processedflows": 520, 
+	                    "analysis_metrics": {
+	                        "ignored": 9939, 
+	                        "lib": 726685, 
+	                        "total_wells": 960000, 
+	                        "pinned": 44080, 
+	                        "live": 726723, 
+	                        "excluded": 0, 
+	                        "bead": 738396, 
+	                        "resource_uri": "", 
+	                        "id": 41695, 
+	                        "empty": 167585, 
+	                        "libFinal": 517179
+	                    }, 
+	                    "timeStamp": "2014-06-28T00:18:42.000351+00:00", 
+	                    "analysismetrics": {
+	                        "ignored": 9939, 
+	                        "lib": 726685, 
+	                        "total_wells": 960000, 
+	                        "pinned": 44080, 
+	                        "live": 726723, 
+	                        "excluded": 0, 
+	                        "bead": 738396, 
+	                        "resource_uri": "", 
+	                        "id": 41695, 
+	                        "empty": 167585, 
+	                        "libFinal": 517179
+	                    }, 
+	                    "reportLink": "/output/Home/Auto_user_Z28-428--r65714-pou4_dbsa_23958_tn_304394/", 
+	                    "id": 304394, 
+	                    "reportStatus": "Nothing", 
+	                    "quality_metrics": {
+	                        "q0_mean_read_length": 176.041268110267, 
+	                        "q0_reads": 517179, 
+	                        "q0_bases": "91044847", 
+	                        "q20_reads": 517179, 
+	                        "q20_bases": "77321419", 
+	                        "q20_mean_read_length": 176, 
+	                        "id": 39658, 
+	                        "resource_uri": ""
+	                    }, 
+	                    "resultsName": "Auto_user_Z28-428--r65714-pou4_dbsa_23958_tn", 
+	                    "projects": [
+	                        {
+	                            "resource_uri": "", 
+	                            "id": 1385, 
+	                            "name": "auto_chip", 
+	                            "modified": "2014-06-27T21:21:43.000081+00:00"
+	                        }
+	                    ], 
+	                    "qualitymetrics": {
+	                        "q0_mean_read_length": 176.041268110267, 
+	                        "q0_reads": 517179, 
+	                        "q0_bases": "91044847", 
+	                        "q20_reads": 517179, 
+	                        "q20_bases": "77321419", 
+	                        "q20_mean_read_length": 176, 
+	                        "id": 39658, 
+	                        "resource_uri": ""
+	                    }, 
+	                    "eas": {
+	                        "resource_uri": "", 
+	                        "reference": "hg19", 
+	                        "barcodeKitName": "IonXpress"
+	                    }, 
+	                    "resource_uri": "/rundb/api/v1/compositeresult/304394/", 
+	                    "libmetrics": {
+	                        "i100Q20_reads": 358815, 
+	                        "aveKeyCounts": 88.0, 
+	                        "id": 41849, 
+	                        "resource_uri": "", 
+	                        "q20_mean_alignment_length": 155
+	                    }, 
+	                    "autoExempt": false, 
+	                    "representative": false
+	                }
+	            ], 
+	            "library": "hg19", 
+	            "sample": "148541", 
 	            "runMode": "single", 
 	            "storage_options": "D", 
-	            "repResult": null, 
-	            "id": 22493, 
+	            "repResult": "/rundb/api/v1/compositeresult/304394/", 
+	            "id": 23958, 
 	            "archived": false, 
+	            "barcodeId": "IonXpress", 
 	            "sampleSetName": "", 
 	            "star": false, 
-	            "resultDate": "2014-05-01T20:22:50.000059+00:00", 
-	            "flows": 2, 
+	            "resultDate": "2014-06-28T07:11:58.000789+00:00", 
+	            "flows": 520, 
 	            "plan": {
-	                "runType": "GENS", 
-	                "id": 104225, 
+	                "runType": "AMPS_EXOME", 
+	                "id": 102195, 
 	                "resource_uri": ""
 	            }, 
-	            "date": "2014-05-01T23:02:42+00:00", 
-	            "ftpStatus": "0", 
+	            "date": "2014-06-27T21:19:01+00:00", 
+	            "ftpStatus": "Complete", 
 	            "notes": "", 
-	            "chipInstrumentType": "proton", 
-	            "pgmName": "FDR", 
+	            "chipDescription": "PI", 
+	            "pgmName": "Z28", 
 	            "keep": false, 
-	            "expName": "R_2014_05_01_16_00_58_user_FDR-92", 
-	            "resource_uri": "/rundb/api/v1/compositeexperiment/22493/"
+	            "expName": "R_2014_06_27_17_13_22_user_Z28-428--r65714-pou4_dbsa", 
+	            "resource_uri": "/rundb/api/v1/compositeexperiment/23958/"
 	        }
 	    ]
 	}

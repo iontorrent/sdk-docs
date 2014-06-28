@@ -56,18 +56,18 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 69712, 
+	        "total_count": 858, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/log/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "text": "Warning: DOS line ending(s) found. Correcting.", 
-	            "timeStamp": "2012-11-21T23:35:12.000406+00:00", 
-	            "upload": "/rundb/api/v1/contentupload/20/", 
-	            "id": 385, 
-	            "resource_uri": "/rundb/api/v1/log/385/"
+	            "text": "FATAL ERROR: '/.fasta.fai' does not exist.", 
+	            "timeStamp": "2013-05-30T15:09:03.000306+00:00", 
+	            "upload": "/rundb/api/v1/contentupload/26/", 
+	            "id": 885, 
+	            "resource_uri": "/rundb/api/v1/log/885/"
 	        }
 	    ]
 	}

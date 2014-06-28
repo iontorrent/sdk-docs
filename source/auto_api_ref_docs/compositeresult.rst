@@ -76,7 +76,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 37659, 
+	        "total_count": 43354, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/compositeresult/?offset=1&limit=1&format=json"
@@ -86,62 +86,62 @@ Torrent Server response
 	            "status": "Completed", 
 	            "processedflows": 0, 
 	            "analysis_metrics": {
-	                "ignored": 4938030, 
-	                "lib": 104318813, 
+	                "ignored": 3003404, 
+	                "lib": 134282829, 
 	                "total_wells": 164699136, 
-	                "pinned": 416177, 
-	                "live": 104333175, 
+	                "pinned": 472926, 
+	                "live": 135574135, 
 	                "excluded": 16095180, 
-	                "bead": 111451410, 
+	                "bead": 135800957, 
 	                "resource_uri": "", 
-	                "id": 30862, 
-	                "empty": 31798339, 
-	                "libFinal": 59559295
+	                "id": 31763, 
+	                "empty": 9326669, 
+	                "libFinal": 91521301
 	            }, 
-	            "timeStamp": "2014-01-30T07:52:22.000647+00:00", 
+	            "timeStamp": "2014-01-23T07:39:52.000803+00:00", 
 	            "analysismetrics": {
-	                "ignored": 4938030, 
-	                "lib": 104318813, 
+	                "ignored": 3003404, 
+	                "lib": 134282829, 
 	                "total_wells": 164699136, 
-	                "pinned": 416177, 
-	                "live": 104333175, 
+	                "pinned": 472926, 
+	                "live": 135574135, 
 	                "excluded": 16095180, 
-	                "bead": 111451410, 
+	                "bead": 135800957, 
 	                "resource_uri": "", 
-	                "id": 30862, 
-	                "empty": 31798339, 
-	                "libFinal": 59559295
+	                "id": 31763, 
+	                "empty": 9326669, 
+	                "libFinal": 91521301
 	            }, 
-	            "reportLink": "/output/Home/Auto_user_G35-494--R55155-500M_IC_loading_19558_52046/", 
-	            "id": 52046, 
+	            "reportLink": "/output/Home/Auto_user_D1--632--R54651-p8s2_827b2_20m_man-cf_17446_293943/", 
+	            "id": 293943, 
 	            "reportStatus": "Nothing", 
 	            "quality_metrics": {
-	                "q0_mean_read_length": 142.0, 
-	                "q0_reads": 59559295, 
-	                "q0_bases": "8485928995", 
-	                "q20_reads": 59559295, 
-	                "q20_bases": "6280960963", 
-	                "q20_mean_read_length": 69, 
-	                "id": 30474, 
+	                "q0_mean_read_length": 168.0, 
+	                "q0_reads": 91521301, 
+	                "q0_bases": "15380233572", 
+	                "q20_reads": 91521301, 
+	                "q20_bases": "12209924742", 
+	                "q20_mean_read_length": 103, 
+	                "id": 31678, 
 	                "resource_uri": ""
 	            }, 
-	            "resultsName": "Auto_user_G35-494--R55155-500M_IC_loading_19558", 
+	            "resultsName": "Auto_user_D1--632--R54651-p8s2_827b2_20m_man-cf_17446", 
 	            "projects": [
 	                {
 	                    "resource_uri": "", 
-	                    "id": 169, 
-	                    "name": "loading", 
-	                    "modified": "2014-05-01T17:53:34.000096+00:00"
+	                    "id": 1080, 
+	                    "name": "chef_827_909_20min_ext", 
+	                    "modified": "2014-01-22T18:50:10.000920+00:00"
 	                }
 	            ], 
 	            "qualitymetrics": {
-	                "q0_mean_read_length": 142.0, 
-	                "q0_reads": 59559295, 
-	                "q0_bases": "8485928995", 
-	                "q20_reads": 59559295, 
-	                "q20_bases": "6280960963", 
-	                "q20_mean_read_length": 69, 
-	                "id": 30474, 
+	                "q0_mean_read_length": 168.0, 
+	                "q0_reads": 91521301, 
+	                "q0_bases": "15380233572", 
+	                "q20_reads": 91521301, 
+	                "q20_bases": "12209924742", 
+	                "q20_mean_read_length": 103, 
+	                "id": 31678, 
 	                "resource_uri": ""
 	            }, 
 	            "eas": {
@@ -149,13 +149,13 @@ Torrent Server response
 	                "reference": "hg19", 
 	                "barcodeKitName": "IonXpress"
 	            }, 
-	            "resource_uri": "/rundb/api/v1/compositeresult/52046/", 
+	            "resource_uri": "/rundb/api/v1/compositeresult/293943/", 
 	            "libmetrics": {
-	                "i100Q20_reads": 26629976, 
-	                "aveKeyCounts": 59.0, 
-	                "id": 31090, 
+	                "i100Q20_reads": 56284561, 
+	                "aveKeyCounts": 71.0, 
+	                "id": 32368, 
 	                "resource_uri": "", 
-	                "q20_mean_alignment_length": 109
+	                "q20_mean_alignment_length": 142
 	            }, 
 	            "autoExempt": false, 
 	            "representative": false

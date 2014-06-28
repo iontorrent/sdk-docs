@@ -56,7 +56,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 28134, 
+	        "total_count": 22524, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/plannedexperimentqc/?offset=1&limit=1&format=json"
@@ -64,18 +64,18 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "threshold": 30, 
-	            "plannedExperiment": "/rundb/api/v1/plannedexperiment/89091/", 
-	            "id": 259834, 
+	            "plannedExperiment": "/rundb/api/v1/plannedexperiment/86049/", 
+	            "id": 247513, 
 	            "qcType": {
 	                "description": "", 
 	                "minThreshold": 0, 
 	                "maxThreshold": 100, 
 	                "defaultThreshold": 30, 
-	                "qcName": "Usable Sequence (%)", 
-	                "id": 3, 
-	                "resource_uri": "/rundb/api/v1/qctype/3/"
+	                "qcName": "Bead Loading (%)", 
+	                "id": 1, 
+	                "resource_uri": "/rundb/api/v1/qctype/1/"
 	            }, 
-	            "resource_uri": "/rundb/api/v1/plannedexperimentqc/259834/"
+	            "resource_uri": "/rundb/api/v1/plannedexperimentqc/247513/"
 	        }
 	    ]
 	}

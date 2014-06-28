@@ -94,7 +94,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 95, 
+	        "total_count": 102, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/plugin/?offset=1&limit=1&format=json"
@@ -102,17 +102,17 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "active": true, 
-	            "id": 753, 
+	            "id": 493, 
 	            "isPlanConfig": false, 
 	            "autorunMutable": true, 
 	            "script": "launch.sh", 
 	            "selected": true, 
-	            "version": "1.0.0", 
+	            "version": "0.2.0", 
 	            "hasAbout": false, 
 	            "input": "False", 
 	            "majorBlock": false, 
 	            "status": {}, 
-	            "description": "", 
+	            "description": "Ion Torrent Plugin - 'BarcodeAlignStats' v0.2.0", 
 	            "autorun": false, 
 	            "pluginsettings": {
 	                "runtype": [
@@ -123,16 +123,16 @@ Torrent Server response
 	                "features": [], 
 	                "runlevel": []
 	            }, 
-	            "date": "2014-04-11T18:41:44.000767+00:00", 
-	            "path": "/results/plugins/gcAnalysis", 
+	            "date": "2013-05-30T21:32:15.000437+00:00", 
+	            "path": "/results/plugins/BarcodeAlignStats", 
 	            "isConfig": false, 
-	            "name": "gcAnalysis", 
+	            "name": "BarcodeAlignStats", 
 	            "userinputfields": {}, 
 	            "url": "", 
 	            "config": {}, 
-	            "versionedName": "gcAnalysis--v1.0.0", 
+	            "versionedName": "BarcodeAlignStats--v0.2.0", 
 	            "isInstance": false, 
-	            "resource_uri": "/rundb/api/v1/plugin/753/"
+	            "resource_uri": "/rundb/api/v1/plugin/493/"
 	        }
 	    ]
 	}

@@ -60,7 +60,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 22, 
+	        "total_count": 9, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/template/?offset=1&limit=1&format=json"
@@ -68,12 +68,12 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "isofficial": true, 
-	            "name": "TFLO", 
-	            "sequence": "CTGAAGGTATACAGTGTAAACATGGGCCACCCTTTGCCTACTCAATCACGACGCGGAGATCTCCCGTGGTCGAAATAGTTTAACTGCAGCTTGACCAAGAGGGATTGGACACTATGTCTTCCATCGCTGAGACTGCCAAGGCACACAGGGG", 
-	            "comments": "126bp insert P1", 
-	            "key": "ATCG", 
-	            "id": 21, 
-	            "resource_uri": "/rundb/api/v1/template/21/"
+	            "name": "TF1.2(tA-tB30') Hyb extend", 
+	            "sequence": "GTTTTAGGGTCCCCGGGGTTAAAAGGTTTCGAACACGATGTCGGAGACACGCAGGGATGAGATGG", 
+	            "comments": "", 
+	            "key": "ATCGT", 
+	            "id": 7, 
+	            "resource_uri": "/rundb/api/v1/template/7/"
 	        }
 	    ]
 	}

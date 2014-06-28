@@ -64,24 +64,12 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 3, 
+	        "total_count": 0, 
 	        "offset": 0, 
 	        "limit": 1, 
-	        "next": "/rundb/api/v1/message/?offset=1&limit=1&format=json"
+	        "next": null
 	    }, 
-	    "objects": [
-	        {
-	            "body": "Ion packages failed to download!", 
-	            "status": "unread", 
-	            "level": 40, 
-	            "route": "updates", 
-	            "expires": "read", 
-	            "time": "2013-06-11T20:15:51.000164+00:00", 
-	            "id": 131, 
-	            "tags": "", 
-	            "resource_uri": "/rundb/api/v1/message/131/"
-	        }
-	    ]
+	    "objects": []
 	}
 
 Allowed HTTP methods

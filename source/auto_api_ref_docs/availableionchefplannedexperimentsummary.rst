@@ -65,8 +65,6 @@ field                           help text                                       
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **runType**                     Unicode string data. Ex: "Hello World"               GENS    false    false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**instrumentType**              Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
-------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planPGM**                     Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **chefProgress**                Floating point numeric data. Ex: 26.73               0.0     false    false    true  false  float    
@@ -82,6 +80,8 @@ field                           help text                                       
 **isSystem**                    Boolean data. Ex: True                               false   false    false    true  false  boolean  
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **libkit**                      Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
+------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**categories**                  Unicode string data. Ex: "Hello World"                       true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planName**                    Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -148,7 +148,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 6, 
+	        "total_count": 10, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/availableionchefplannedexperimentsummary/?offset=1&limit=1&format=json"
@@ -156,21 +156,21 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "isReverseRun": false, 
-	            "planDisplayedName": "140311_Ion Chef GUI AmpliSeq Exome", 
+	            "planDisplayedName": "C18S2_package1_Thur_psp4", 
 	            "storage_options": "A", 
 	            "preAnalysis": true, 
 	            "isSystemDefault": false, 
-	            "planShortID": "UMH0X", 
+	            "planShortID": "0KXAK", 
 	            "planStatus": "pending", 
 	            "chefLastUpdate": null, 
 	            "templatingKitBarcode": null, 
-	            "sampleTubeLabel": "", 
+	            "sampleTubeLabel": "00049613", 
 	            "planExecutedDate": null, 
 	            "chefStatus": "", 
 	            "samplePrepKitName": "Ion AmpliSeq Exome Kit", 
 	            "reverse_primer": null, 
 	            "seqKitBarcode": null, 
-	            "id": 103204, 
+	            "id": 102054, 
 	            "metaData": {}, 
 	            "sampleSet_uid": null, 
 	            "isFavorite": false, 
@@ -180,16 +180,16 @@ Torrent Server response
 	            "sampleSet_planTotal": 0, 
 	            "templatingKitName": "Ion PI IC 200 Kit", 
 	            "runType": "AMPS_EXOME", 
-	            "instrumentType": "", 
 	            "planPGM": null, 
 	            "chefProgress": 0.0, 
 	            "autoName": null, 
 	            "isReusable": false, 
 	            "controlSequencekitname": "", 
-	            "date": "2014-03-11T22:55:18.000737+00:00", 
+	            "date": "2014-06-26T04:47:43.000023+00:00", 
 	            "isSystem": false, 
 	            "libkit": null, 
-	            "planName": "140311_Ion_Chef_GUI_AmpliSeq_Exome", 
+	            "categories": "", 
+	            "planName": "C18S2_package1_Thur_psp4", 
 	            "chefMessage": "", 
 	            "pairedEndLibraryAdapterName": "", 
 	            "runMode": "single", 
@@ -197,15 +197,15 @@ Torrent Server response
 	            "irworkflow": "", 
 	            "chipBarcode": null, 
 	            "planExecuted": false, 
-	            "username": "ionadmin", 
+	            "username": "ionuser", 
 	            "usePostBeadfind": false, 
 	            "storageHost": null, 
 	            "expName": "", 
 	            "runname": null, 
 	            "usePreBeadfind": true, 
-	            "planGUID": "a6b76a9c-3d85-4bc0-937a-2558434d5669", 
+	            "planGUID": "994fd167-7d5a-43e5-acca-c8ffa069350e", 
 	            "cycles": null, 
-	            "resource_uri": "/rundb/api/v1/availableionchefplannedexperimentsummary/103204/"
+	            "resource_uri": "/rundb/api/v1/availableionchefplannedexperimentsummary/102054/"
 	        }
 	    ]
 	}

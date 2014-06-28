@@ -27,7 +27,7 @@ field            help text                                                      
 ---------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **email**        Unicode string data. Ex: "Hello World"                                                                                                 false    false    true  false  string   
 ---------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
-**last_login**   A date & time as a string. Ex: "2010-11-10T03:07:43"                                                  2014-05-01T20:59:18.000014+00:00 false    false    false false  datetime 
+**last_login**   A date & time as a string. Ex: "2010-11-10T03:07:43"                                                  2014-06-28T14:04:05.000090+00:00 false    false    false false  datetime 
 ---------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **full_name**    Unicode string data. Ex: "Hello World"                                                                n/a                              false    false    false false  string   
 ---------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
@@ -35,7 +35,7 @@ field            help text                                                      
 ---------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **id**           Integer data. Ex: 2673                                                                                                                 false    false    true  true   integer  
 ---------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
-**date_joined**  A date & time as a string. Ex: "2010-11-10T03:07:43"                                                  2014-05-01T20:59:18.000014+00:00 false    false    false false  datetime 
+**date_joined**  A date & time as a string. Ex: "2010-11-10T03:07:43"                                                  2014-06-28T14:04:05.000090+00:00 false    false    false false  datetime 
 ================ ===================================================================================================== ================================ ======== ======== ===== ====== ======== 
 
 Example request
@@ -68,7 +68,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 27, 
+	        "total_count": 20, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/user/?offset=1&limit=1&format=json"
@@ -76,24 +76,24 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "profile": {
-	                "phone_number": "123-456-7890", 
-	                "name": "Other Guy", 
-	                "title": "Lab Contact", 
-	                "last_read_news_post": "1984-11-05T08:00:00+00:00", 
+	                "phone_number": "", 
+	                "name": "", 
+	                "title": "user", 
+	                "last_read_news_post": "1984-11-05T05:00:00+00:00", 
 	                "note": "", 
-	                "id": 1, 
+	                "id": 6, 
 	                "resource_uri": ""
 	            }, 
-	            "username": "lab_contact", 
-	            "first_name": "Other Guy", 
+	            "username": "dm_contact", 
+	            "first_name": "", 
 	            "last_name": "", 
 	            "is_active": true, 
-	            "email": "otherguy@work.com", 
-	            "last_login": "2011-12-01T22:24:40.000813+00:00", 
-	            "full_name": "Other Guy", 
-	            "resource_uri": "/rundb/api/v1/user/3/", 
-	            "id": 3, 
-	            "date_joined": "2011-12-01T22:24:40.000813+00:00"
+	            "email": "ts-admin@mailman.itw", 
+	            "last_login": "2013-03-13T17:28:05.000596+00:00", 
+	            "full_name": "", 
+	            "resource_uri": "/rundb/api/v1/user/6/", 
+	            "id": 6, 
+	            "date_joined": "2013-03-13T17:28:05.000596+00:00"
 	        }
 	    ]
 	}

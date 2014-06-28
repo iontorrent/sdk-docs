@@ -86,33 +86,42 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 761214, 
+	        "total_count": 788680, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/pluginresult/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "size": "-1", 
-	            "apikey": "13bcc5b989d73fe93947a676ba03f1342dac9870", 
-	            "plugin": "/rundb/api/v1/plugin/490/", 
-	            "resultName": "C1--479-fc-BC-reanal", 
-	            "reportLink": "/output/Home/C1--479-fc-BC-reanal_56256/", 
-	            "pluginVersion": "0.2.0", 
-	            "jobid": 2810200, 
-	            "owner": "/rundb/api/v1/user/2/", 
-	            "pluginName": "BarcodeAlignStats", 
-	            "state": "Started", 
-	            "result": "/rundb/api/v1/results/56256/", 
-	            "starttime": "2014-05-01T20:22:07.000235+00:00", 
-	            "duration": "0:37:17.162974", 
-	            "path": "/results/analysis/output/Home/C1--479-fc-BC-reanal_56256/plugin_out/BarcodeAlignStats_out.768624", 
+	            "size": "3484344", 
+	            "apikey": null, 
+	            "plugin": "/rundb/api/v1/plugin/823/", 
+	            "resultName": "Auto_user_Z28-428--r65714-pou4_dbsa_23958", 
+	            "reportLink": "/output/Home/Auto_user_Z28-428--r65714-pou4_dbsa_23958_304393/", 
+	            "pluginVersion": "4.2-r88266", 
+	            "jobid": 3145172, 
+	            "owner": "/rundb/api/v1/user/1/", 
+	            "pluginName": "AssemblerSPAdes", 
+	            "state": "Completed", 
+	            "result": "/rundb/api/v1/results/304393/", 
+	            "starttime": "2014-06-28T13:49:00.000133+00:00", 
+	            "duration": "0:01:54.098431", 
+	            "path": "/results/analysis/output/Home/Auto_user_Z28-428--r65714-pou4_dbsa_23958_304393/plugin_out/AssemblerSPAdes_out.815369", 
 	            "store": {}, 
-	            "endtime": null, 
-	            "config": {}, 
-	            "id": 768624, 
-	            "inodes": "-1", 
-	            "resource_uri": "/rundb/api/v1/pluginresult/768624/"
+	            "endtime": "2014-06-28T13:50:54.000232+00:00", 
+	            "config": {
+	                "only_barcodes": "", 
+	                "spadesOptions": "-k 21,33,55,77,99", 
+	                "spadesversion": "3.1.0", 
+	                "RAM": "32G", 
+	                "min_reads": "500", 
+	                "bgenome": "None", 
+	                "runSpades": "1", 
+	                "fraction_of_reads": "1"
+	            }, 
+	            "id": 815369, 
+	            "inodes": "396", 
+	            "resource_uri": "/rundb/api/v1/pluginresult/815369/"
 	        }
 	    ]
 	}

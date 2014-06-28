@@ -53,6 +53,8 @@ field                         help text                              default nul
 ----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **fasta_path**                Unicode string data. Ex: "Hello World"         false    false    true  false  string  
 ----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**enable_nightly_email**      Boolean data. Ex: True                 true    false    false    true  false  boolean 
+----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **barcode_args**              Unicode string data. Ex: "Hello World" {}      false    false    true  false  string  
 ----------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **sec_update_status**         Unicode string data. Ex: "Hello World"         false    false    true  false  string  
@@ -114,7 +116,7 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "enable_version_lock": false, 
-	            "site_name": "Blackbird-IW", 
+	            "site_name": "blackbird-east", 
 	            "enable_support_upload": false, 
 	            "plugin_output_folder": "plugin_out", 
 	            "auto_archive_ack": true, 
@@ -125,26 +127,27 @@ Torrent Server response
 	            "selected": false, 
 	            "check_news_posts": true, 
 	            "realign": false, 
-	            "ts_update_status": "Available", 
+	            "ts_update_status": "No updates", 
 	            "mark_duplicates": false, 
 	            "plugin_folder": "plugins", 
 	            "auto_archive_enable": true, 
 	            "reference_path": "", 
 	            "enable_auto_security": false, 
 	            "fasta_path": "", 
+	            "enable_nightly_email": true, 
 	            "barcode_args": {
 	                "filter": "0.01"
 	            }, 
 	            "sec_update_status": "", 
 	            "default_flow_order": "TACG", 
 	            "name": "Config", 
-	            "records_to_display": 100, 
+	            "records_to_display": 50, 
 	            "base_recalibrate": true, 
 	            "default_library_key": "TCAG", 
-	            "web_root": "http://blackbird.itw", 
+	            "web_root": "http://blackbird.ite", 
 	            "default_test_fragment_key": "ATCG", 
 	            "enable_auto_pkg_dl": false, 
-	            "enable_compendia_OCP": false
+	            "enable_compendia_OCP": true
 	        }
 	    ]
 	}

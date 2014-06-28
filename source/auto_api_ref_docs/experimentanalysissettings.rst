@@ -114,49 +114,55 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 21172, 
+	        "total_count": 23666, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/experimentanalysissettings/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "isEditable": false, 
+	            "isEditable": true, 
 	            "hotSpotRegionBedFile": "", 
-	            "results": [
-	                "/rundb/api/v1/results/28122/"
-	            ], 
-	            "targetRegionBedFile": "", 
+	            "results": [], 
+	            "targetRegionBedFile": "/results/uploads/BED/15/hg19/unmerged/detail/Ion-TargetSeq-Exome-50Mb-hg19.bed", 
 	            "thumbnailalignmentargs": "", 
 	            "thumbnailanalysisargs": "", 
-	            "id": 21, 
+	            "id": 138, 
 	            "barcodedSamples": {}, 
 	            "reference": "hg19", 
 	            "isOneTimeOverride": false, 
 	            "analysisargs": "", 
 	            "thumbnailcalibrateargs": "", 
 	            "realign": false, 
-	            "selectedPlugins": {}, 
-	            "experiment": "/rundb/api/v1/experiment/5605/", 
+	            "selectedPlugins": {
+	                "coverageAnalysis": {
+	                    "userInput": "", 
+	                    "version": "3.4.47670", 
+	                    "features": [], 
+	                    "name": "coverageAnalysis", 
+	                    "id": "319"
+	                }
+	            }, 
+	            "experiment": "/rundb/api/v1/experiment/6822/", 
 	            "barcodeKitName": "", 
 	            "beadfindargs": "", 
 	            "threePrimeAdapter": "ATCACCGACTGCCCATAGAGAGGCTGAGAC", 
 	            "thumbnailbasecallerargs": "", 
-	            "status": "run", 
+	            "status": "planned", 
 	            "prebasecallerargs": "", 
 	            "prethumbnailbasecallerargs": "", 
 	            "alignmentargs": "", 
 	            "isDuplicateReads": false, 
 	            "libraryKey": "TCAG", 
-	            "date": "2013-01-29T19:23:04.000499+00:00", 
-	            "libraryKitName": "", 
+	            "date": "2012-12-04T00:09:21.000461+00:00", 
+	            "libraryKitName": "Ion Xpress Plus Fragment Library Kit", 
 	            "thumbnailbeadfindargs": "", 
 	            "calibrateargs": "", 
 	            "tfKey": "", 
 	            "libraryKitBarcode": null, 
 	            "base_recalibrate": true, 
 	            "basecallerargs": "", 
-	            "resource_uri": "/rundb/api/v1/experimentanalysissettings/21/"
+	            "resource_uri": "/rundb/api/v1/experimentanalysissettings/138/"
 	        }
 	    ]
 	}

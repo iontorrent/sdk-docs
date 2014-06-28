@@ -90,35 +90,35 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 25, 
+	        "total_count": 27, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/analysisargs/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "chipType": "900v2", 
-	            "thumbnailalignmentargs": "stage1 map4", 
-	            "thumbnailanalysisargs": "Analysis --from-beadfind --clonal-filter-bkgmodel true --region-size=100,100 --bkg-bfmask-update false --gpuWorkLoad 1 --bkg-debug-param 1 --beadfind-thumbnail 1", 
+	            "chipType": "314v2", 
+	            "thumbnailalignmentargs": "", 
+	            "thumbnailanalysisargs": "", 
 	            "samplePrepKitName": "", 
-	            "id": 8, 
+	            "id": 5, 
 	            "sequenceKitName": "", 
-	            "analysisargs": "Analysis --from-beadfind --clonal-filter-bkgmodel true --region-size=216,224 --bkg-bfmask-update false --gpuWorkLoad 1 --total-timeout 600", 
-	            "thumbnailcalibrateargs": "calibrate --skipDroop", 
+	            "analysisargs": "Analysis --from-beadfind --use-alternative-etbR-equation", 
+	            "thumbnailcalibrateargs": "", 
 	            "chip_default": true, 
-	            "beadfindargs": "justBeadFind --beadfind-minlivesnr 3 --region-size=216,224 --total-timeout 600", 
+	            "beadfindargs": "justBeadFind", 
 	            "templateKitName": "", 
-	            "prebasecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 10 --keypass-filter on --phasing-residual-filter=2.0 --num-unfiltered 1000 --calibration-training=100000 --flow-signals-type scaled-residual --max-phasing-levels 2", 
-	            "prethumbnailbasecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 10 --keypass-filter on --phasing-residual-filter=2.0  --num-unfiltered 100000 --calibration-training=100000 --flow-signals-type scaled-residual", 
+	            "prebasecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 20 --calibration-training=100000 --flow-signals-type scaled-residual", 
+	            "prethumbnailbasecallerargs": "", 
 	            "alignmentargs": "stage1 map4", 
-	            "thumbnailbasecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 10 --keypass-filter on --phasing-residual-filter=2.0  --num-unfiltered 100000", 
+	            "thumbnailbasecallerargs": "", 
 	            "active": true, 
-	            "thumbnailbeadfindargs": "justBeadFind --beadfind-minlivesnr 3 --region-size=100,100 --beadfind-thumbnail 1", 
+	            "thumbnailbeadfindargs": "", 
 	            "calibrateargs": "calibrate --skipDroop", 
 	            "libraryKitName": "", 
-	            "name": "default_900v2", 
-	            "basecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 10 --keypass-filter on --phasing-residual-filter=2.0 --num-unfiltered 1000 --barcode-filter-postpone 1", 
-	            "resource_uri": "/rundb/api/v1/analysisargs/8/"
+	            "name": "default_314v2", 
+	            "basecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 20", 
+	            "resource_uri": "/rundb/api/v1/analysisargs/5/"
 	        }
 	    ]
 	}

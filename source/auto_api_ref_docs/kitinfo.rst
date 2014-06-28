@@ -74,7 +74,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 63, 
+	        "total_count": 67, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/kitinfo/?offset=1&limit=1&format=json"
@@ -82,44 +82,19 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "isActive": true, 
-	            "kitType": "SequencingKit", 
-	            "description": "(100bp) Ion Sequencing Kit", 
-	            "nucleotideType": "", 
-	            "instrumentType": "pgm", 
+	            "kitType": "ControlSequenceKitType", 
+	            "description": "ERCC Mix 1", 
+	            "nucleotideType": "rna", 
+	            "instrumentType": "", 
 	            "runMode": "", 
-	            "parts": [
-	                {
-	                    "barcode": "4468997", 
-	                    "id": 20001, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20001/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20001/"
-	                }, 
-	                {
-	                    "barcode": "4468996", 
-	                    "id": 20002, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20002/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20001/"
-	                }, 
-	                {
-	                    "barcode": "4468995", 
-	                    "id": 20003, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20003/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20001/"
-	                }, 
-	                {
-	                    "barcode": "4468994", 
-	                    "id": 20004, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20004/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20001/"
-	                }
-	            ], 
-	            "flowCount": 260, 
-	            "applicationType": "", 
-	            "uid": "SEQ0001", 
-	            "resource_uri": "/rundb/api/v1/kitinfo/20001/", 
-	            "id": 20001, 
+	            "parts": [], 
+	            "flowCount": 0, 
+	            "applicationType": "RNA", 
+	            "uid": "CONSEQ0006", 
+	            "resource_uri": "/rundb/api/v1/kitinfo/20061/", 
+	            "id": 20061, 
 	            "categories": "", 
-	            "name": "IonSeqKit"
+	            "name": "ERCC Mix 1"
 	        }
 	    ]
 	}

@@ -66,7 +66,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 8, 
+	        "total_count": 17, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/threeprimeadapter/?offset=1&limit=1&format=json"
@@ -74,15 +74,15 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "direction": "Forward", 
-	            "name": "P1_ad_28", 
-	            "sequence": "CATAGAGAGGAAAGCGGAGGCGTAGTGG", 
+	            "name": "Ion P1B", 
+	            "sequence": "ATCACCGACTGCCCATAGAGAGGCTGAGAC", 
 	            "chemistryType": "", 
 	            "runMode": "single", 
-	            "uid": "FWD_0007", 
-	            "resource_uri": "/rundb/api/v1/threeprimeadapter/8/", 
-	            "id": 8, 
-	            "isDefault": false, 
-	            "description": "P1_ad_28"
+	            "uid": "FWD_0001", 
+	            "resource_uri": "/rundb/api/v1/threeprimeadapter/1/", 
+	            "id": 1, 
+	            "isDefault": true, 
+	            "description": "Default forward adapter"
 	        }
 	    ]
 	}

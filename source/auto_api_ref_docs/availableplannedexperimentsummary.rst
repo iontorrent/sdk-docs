@@ -65,8 +65,6 @@ field                           help text                                       
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **runType**                     Unicode string data. Ex: "Hello World"               GENS    false    false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**instrumentType**              Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
-------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planPGM**                     Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **chefProgress**                Floating point numeric data. Ex: 26.73               0.0     false    false    true  false  float    
@@ -82,6 +80,8 @@ field                           help text                                       
 **isSystem**                    Boolean data. Ex: True                               false   false    false    true  false  boolean  
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **libkit**                      Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
+------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**categories**                  Unicode string data. Ex: "Hello World"                       true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planName**                    Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -148,7 +148,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 204, 
+	        "total_count": 399, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/availableplannedexperimentsummary/?offset=1&limit=1&format=json"
@@ -156,11 +156,11 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "isReverseRun": false, 
-	            "planDisplayedName": "-R61916-4BC_910-smn-", 
+	            "planDisplayedName": "-R65726-pat25_treatment_dbsa", 
 	            "storage_options": "A", 
 	            "preAnalysis": true, 
 	            "isSystemDefault": false, 
-	            "planShortID": "C2AJH", 
+	            "planShortID": "076B8", 
 	            "planStatus": "planned", 
 	            "chefLastUpdate": null, 
 	            "templatingKitBarcode": null, 
@@ -170,26 +170,26 @@ Torrent Server response
 	            "samplePrepKitName": "Ion AmpliSeq Exome Kit", 
 	            "reverse_primer": null, 
 	            "seqKitBarcode": null, 
-	            "id": 104224, 
+	            "id": 102183, 
 	            "metaData": {}, 
 	            "sampleSet_uid": null, 
-	            "isFavorite": true, 
+	            "isFavorite": false, 
 	            "sampleSet_planIndex": 0, 
 	            "chefLogPath": null, 
 	            "isPlanGroup": false, 
 	            "sampleSet_planTotal": 0, 
 	            "templatingKitName": "Ion PI Template OT2 200 Kit v3", 
 	            "runType": "AMPS_EXOME", 
-	            "instrumentType": "", 
 	            "planPGM": null, 
 	            "chefProgress": 0.0, 
 	            "autoName": null, 
 	            "isReusable": false, 
 	            "controlSequencekitname": "", 
-	            "date": "2014-05-01T19:35:00.000743+00:00", 
+	            "date": "2014-06-27T17:51:43.000186+00:00", 
 	            "isSystem": false, 
 	            "libkit": null, 
-	            "planName": "-R61916-4BC_910-smn-", 
+	            "categories": "", 
+	            "planName": "-R65726-pat25_treatment_dbsa", 
 	            "chefMessage": "", 
 	            "pairedEndLibraryAdapterName": "", 
 	            "runMode": "single", 
@@ -203,9 +203,9 @@ Torrent Server response
 	            "expName": "", 
 	            "runname": null, 
 	            "usePreBeadfind": true, 
-	            "planGUID": "cef01668-ca4f-4a0f-a469-5394d4756a3a", 
+	            "planGUID": "3e94bf7c-ec86-4474-8884-3ae8c16827b8", 
 	            "cycles": null, 
-	            "resource_uri": "/rundb/api/v1/availableplannedexperimentsummary/104224/"
+	            "resource_uri": "/rundb/api/v1/availableplannedexperimentsummary/102183/"
 	        }
 	    ]
 	}

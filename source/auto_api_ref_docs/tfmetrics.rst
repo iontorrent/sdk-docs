@@ -80,7 +80,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 12499, 
+	        "total_count": 7320, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/tfmetrics/?offset=1&limit=1&format=json"
@@ -88,22 +88,22 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "corrHPSNR": "", 
-	            "Q10Mean": 81.8, 
-	            "SysSNR": 19.41, 
-	            "HPAccuracy": "0 : 257730/269219, 1 : 165695/174283, 2 : 18132/21031, 3 : 0/0, 4 : 1574/2067, 5 : 0/0, 6 : 0/0, 7 : 0/0", 
-	            "Q17ReadCount": 2037.0, 
+	            "Q10Mean": 79.7, 
+	            "SysSNR": 20.19, 
+	            "HPAccuracy": "0 : 560244/582614, 1 : 356550/377171, 2 : 35115/45374, 3 : 0/0, 4 : 521/4373, 5 : 0/0, 6 : 0/0, 7 : 0/0", 
+	            "Q17ReadCount": 3992.0, 
 	            "sequence": "TTGCGCGCGCTGTGAATGCGCTGCTGTCGAATCGCGCTGCGCTGAACGTCGCGTGCGCGAACGATCTGAGACTGCCAAGGCACACAGGGGATAGG", 
-	            "Q17Histo": "31 0 0 2 0 1 1 3 4 261 5 4 1 3 8 0 4 1 1 0 3 2 3 2 3 2 5 3 3 11 0 1 0 0 3 4 4 0 1 3 2 3 2 2 23 0 2 2 2 0 2 4 2 1 3 2 1 2 9 1 3 1 8 1 3 4 5 2 5 10 7 7 5 12 6 59 0 10 0 9 2 3 5 4 5 47 30 28 0 5 17 25 133 1 413 1135 0 0 0 0 0", 
+	            "Q17Histo": "951 0 0 1 9 5 2 7 6 277 5 0 1 2 3 0 2 1 6 1 7 2 3 3 0 0 10 1 0 26 0 2 0 1 2 3 5 1 1 0 2 6 2 1 9 0 3 5 2 0 7 0 2 5 4 2 6 2 34 4 13 1 15 5 18 7 8 6 12 7 9 12 1 9 1 44 0 67 0 29 2 37 7 3 6 305 356 544 0 35 14 1116 1019 52 150 16 0 0 0 0 0", 
 	            "name": "TF_D", 
-	            "aveKeyCount": 70.0, 
-	            "number": 2458.0, 
+	            "aveKeyCount": 71.0, 
+	            "number": 4119.0, 
 	            "id": 1, 
-	            "keypass": 2458.0, 
-	            "Q10ReadCount": 2097.0, 
-	            "report": "/rundb/api/v1/results/591/", 
+	            "keypass": 5368.0, 
+	            "Q10ReadCount": 4586.0, 
+	            "report": "/rundb/api/v1/results/89/", 
 	            "resource_uri": "/rundb/api/v1/tfmetrics/1/", 
-	            "Q17Mean": 78.34, 
-	            "Q10Histo": "5 0 0 0 0 1 0 1 0 0 274 6 3 5 2 3 3 2 1 2 2 2 0 6 1 1 3 5 4 1 0 1 2 0 2 4 0 0 0 1 1 4 3 0 1 1 1 4 3 0 2 4 2 1 1 2 1 3 0 1 0 3 0 2 2 2 2 1 2 2 2 3 5 5 3 7 0 3 1 0 7 2 5 2 3 2 3 1 9 6 6 10 57 135 355 1432 0 0 0 0 0"
+	            "Q17Mean": 66.56, 
+	            "Q10Histo": "40 0 0 1 8 3 0 4 2 1 587 5 3 5 1 8 0 2 6 1 5 1 3 3 2 1 5 9 0 0 2 0 2 1 5 1 0 4 0 2 5 8 7 7 5 2 5 8 9 3 5 3 1 5 1 1 2 4 4 1 1 2 4 5 5 4 4 21 6 1 5 14 9 13 3 1 1 2 15 10 25 18 36 18 20 18 40 78 138 109 95 399 1340 1471 383 245 0 0 0 0 0"
 	        }
 	    ]
 	}

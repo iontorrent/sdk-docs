@@ -39,7 +39,7 @@ field              help text                                            default 
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **celery_task_id** Unicode string data. Ex: "Hello World"                                                false    false    true  false  string   
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
-**date**           A date & time as a string. Ex: "2010-11-10T03:07:43" 2014-05-01T21:00:13.000345+00:00 false    false    false false  datetime 
+**date**           A date & time as a string. Ex: "2010-11-10T03:07:43" 2014-06-28T14:05:04.000158+00:00 false    false    false false  datetime 
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **verbose_error**  Unicode string data. Ex: "Hello World"                                                false    false    true  false  string   
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
@@ -78,7 +78,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 25, 
+	        "total_count": 5, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/referencegenome/?offset=1&limit=1&format=json"
@@ -86,21 +86,21 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "status": "complete", 
-	            "reference_path": "/results/referenceLibrary/tmap-f3/4_New_P2TF", 
-	            "name": "Four new P2 TF sequences (DA, DB, KA, KT)", 
-	            "short_name": "4_New_P2TF", 
+	            "reference_path": "/results/referenceLibrary/tmap-f3/CFTR_38amp_v2", 
+	            "name": "CFTR_38amp_v2", 
+	            "short_name": "CFTR_38amp_v2", 
 	            "index_version": "tmap-f3", 
 	            "notes": "", 
 	            "enabled": true, 
 	            "species": "", 
 	            "identity_hash": null, 
 	            "source": "", 
-	            "version": "1", 
-	            "celery_task_id": "fb4dcf06-a859-47fd-a20d-ea98858fbb83", 
-	            "date": "2013-10-01T22:35:17.000150+00:00", 
-	            "verbose_error": "", 
-	            "id": 35, 
-	            "resource_uri": "/rundb/api/v1/referencegenome/35/"
+	            "version": "CFTR_38amp_v2", 
+	            "celery_task_id": "", 
+	            "date": "2012-03-21T12:32:00.000382+00:00", 
+	            "verbose_error": "[\"\", \"\\nSequence name 'CFTR.13.120s' contains a non-alphanumeric character at line 1 !\\n\\n/usr/local/bin/build_genome_index.pl: /results/referenceLibrary/tmap-f2/CFTR_38amp_v2/CFTR_38amp_v2.fasta is fixed and the original is kept as /results/referenceLibrary/tmap-f2/CFTR_38amp_v2/CFTR_38amp_v2.fasta.orig \\n\\n/usr/local/bin/build_genome_index.pl: output directory CFTR_38amp_v2 already exits, aborting.\\n\", 9]", 
+	            "id": 7, 
+	            "resource_uri": "/rundb/api/v1/referencegenome/7/"
 	        }
 	    ]
 	}

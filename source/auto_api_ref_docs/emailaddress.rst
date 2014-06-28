@@ -54,17 +54,17 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 1, 
+	        "total_count": 2, 
 	        "offset": 0, 
 	        "limit": 1, 
-	        "next": null
+	        "next": "/rundb/api/v1/emailaddress/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
 	            "selected": true, 
-	            "resource_uri": "/rundb/api/v1/emailaddress/1/", 
-	            "email": "!ION-Blackbird@Lifetech.com", 
-	            "id": 1
+	            "resource_uri": "/rundb/api/v1/emailaddress/2/", 
+	            "email": "bernard.puc@lifetech.com", 
+	            "id": 2
 	        }
 	    ]
 	}

@@ -69,11 +69,9 @@ field                           help text                                       
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **experiment**                  A single related resource. Can be either a URI or set of nested resource data.                     n/a     true     false    true  false  related  
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**templatingKitName**           Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+**projects**                    Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related  
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **runType**                     Unicode string data. Ex: "Hello World"                                                             GENS    false    false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**instrumentType**              Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **sampleSet**                   A single related resource. Can be either a URI or set of nested resource data.                     n/a     true     false    true  false  related  
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -93,7 +91,7 @@ field                           help text                                       
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **libkit**                      Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**projects**                    Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related  
+**categories**                  Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planName**                    Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -102,6 +100,8 @@ field                           help text                                       
 **parentPlan**                  Unicode string data. Ex: "Hello World"                                                             None    false    false    true  false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **childPlans**                  A list of data. Ex: ['abc', 26.73, 8]                                                              []      false    false    false false  list     
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**templatingKitName**           Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **pairedEndLibraryAdapterName** Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -166,7 +166,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 13985, 
+	        "total_count": 18369, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/plannedexperimentdb/?offset=1&limit=1&format=json"
@@ -174,12 +174,12 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "isReverseRun": false, 
-	            "planDisplayedName": "CopyOfSystemDefault_R_2014_05_01_16_00_58_user_FDR-92", 
+	            "planDisplayedName": "CopyOfSystemDefault_R_2014_06_27_14_19_01_user_P19-606", 
 	            "storage_options": "A", 
 	            "preAnalysis": true, 
 	            "isSystemDefault": false, 
 	            "username": null, 
-	            "planShortID": "XX6RW", 
+	            "planShortID": "G5B50", 
 	            "planStatus": "run", 
 	            "chefLastUpdate": null, 
 	            "templatingKitBarcode": null, 
@@ -190,7 +190,7 @@ Torrent Server response
 	            "reverse_primer": null, 
 	            "applicationGroup": "/rundb/api/v1/applicationgroup/1/", 
 	            "seqKitBarcode": null, 
-	            "id": 104225, 
+	            "id": 102212, 
 	            "metaData": {}, 
 	            "sampleSet_uid": null, 
 	            "isFavorite": false, 
@@ -198,8 +198,8 @@ Torrent Server response
 	            "qcValues": [
 	                {
 	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/104225/", 
-	                    "id": 280110, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/102212/", 
+	                    "id": 266571, 
 	                    "qcType": {
 	                        "description": "", 
 	                        "minThreshold": 0, 
@@ -209,12 +209,12 @@ Torrent Server response
 	                        "id": 1, 
 	                        "resource_uri": "/rundb/api/v1/qctype/1/"
 	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/280110/"
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/266571/"
 	                }, 
 	                {
 	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/104225/", 
-	                    "id": 280109, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/102212/", 
+	                    "id": 266570, 
 	                    "qcType": {
 	                        "description": "", 
 	                        "minThreshold": 1, 
@@ -224,12 +224,12 @@ Torrent Server response
 	                        "id": 2, 
 	                        "resource_uri": "/rundb/api/v1/qctype/2/"
 	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/280109/"
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/266570/"
 	                }, 
 	                {
 	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/104225/", 
-	                    "id": 280108, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/102212/", 
+	                    "id": 266569, 
 	                    "qcType": {
 	                        "description": "", 
 	                        "minThreshold": 0, 
@@ -239,30 +239,30 @@ Torrent Server response
 	                        "id": 3, 
 	                        "resource_uri": "/rundb/api/v1/qctype/3/"
 	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/280108/"
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/266569/"
 	                }
 	            ], 
 	            "chefLogPath": null, 
 	            "isPlanGroup": false, 
 	            "sampleSet_planTotal": 0, 
-	            "experiment": "/rundb/api/v1/experiment/22493/", 
-	            "templatingKitName": "Ion PI Template OT2 200 Kit v3", 
+	            "experiment": "/rundb/api/v1/experiment/23975/", 
+	            "projects": [], 
 	            "runType": "GENS", 
-	            "instrumentType": "proton", 
 	            "sampleSet": null, 
 	            "planPGM": null, 
-	            "chefProgress": 0, 
+	            "chefProgress": 0.0, 
 	            "autoName": null, 
 	            "isReusable": false, 
 	            "controlSequencekitname": null, 
-	            "date": "2014-05-01T20:22:50.000166+00:00", 
+	            "date": "2014-06-27T23:36:06.000229+00:00", 
 	            "isSystem": false, 
 	            "libkit": null, 
-	            "projects": [], 
-	            "planName": "CopyOfSystemDefault_R_2014_05_01_16_00_58_user_FDR-92", 
+	            "categories": "", 
+	            "planName": "CopyOfSystemDefault_R_2014_06_27_14_19_01_user_P19-606", 
 	            "chefMessage": "", 
 	            "parentPlan": null, 
 	            "childPlans": [], 
+	            "templatingKitName": "Ion PI Template OT2 200 Kit v3", 
 	            "pairedEndLibraryAdapterName": null, 
 	            "runMode": "single", 
 	            "adapter": null, 
@@ -273,12 +273,12 @@ Torrent Server response
 	            "project": "", 
 	            "usePostBeadfind": false, 
 	            "storageHost": null, 
-	            "expName": "R_2014_05_01_16_00_58_user_FDR-92", 
+	            "expName": "R_2014_06_27_14_19_01_user_P19-606", 
 	            "runname": null, 
 	            "usePreBeadfind": true, 
-	            "planGUID": "b060ecad-0173-4db4-960a-16b84cdc1fc3", 
+	            "planGUID": "80384c15-e0e2-4909-9d4c-950731bf1cf4", 
 	            "cycles": null, 
-	            "resource_uri": "/rundb/api/v1/plannedexperimentdb/104225/"
+	            "resource_uri": "/rundb/api/v1/plannedexperimentdb/102212/"
 	        }
 	    ]
 	}

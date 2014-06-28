@@ -65,8 +65,6 @@ field                           help text                                       
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **runType**                     Unicode string data. Ex: "Hello World"               GENS    false    false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**instrumentType**              Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
-------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planPGM**                     Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **chefProgress**                Floating point numeric data. Ex: 26.73               0.0     false    false    true  false  float    
@@ -82,6 +80,8 @@ field                           help text                                       
 **isSystem**                    Boolean data. Ex: True                               false   false    false    true  false  boolean  
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **libkit**                      Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
+------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**categories**                  Unicode string data. Ex: "Hello World"                       true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planName**                    Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -148,7 +148,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 51, 
+	        "total_count": 66, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/plantemplatesummary/?offset=1&limit=1&format=json"
@@ -156,11 +156,11 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "isReverseRun": false, 
-	            "planDisplayedName": "Ampliseq Exome modified primers", 
+	            "planDisplayedName": "chef_nonGUI_Exome Panel_AmpliSeqExome.20131001", 
 	            "storage_options": "A", 
 	            "preAnalysis": true, 
 	            "isSystemDefault": false, 
-	            "planShortID": "DPG5W", 
+	            "planShortID": "2OXYZ", 
 	            "planStatus": "planned", 
 	            "chefLastUpdate": null, 
 	            "templatingKitBarcode": null, 
@@ -170,7 +170,7 @@ Torrent Server response
 	            "samplePrepKitName": "Ion AmpliSeq Exome Kit", 
 	            "reverse_primer": null, 
 	            "seqKitBarcode": null, 
-	            "id": 103987, 
+	            "id": 100224, 
 	            "metaData": {}, 
 	            "sampleSet_uid": null, 
 	            "isFavorite": true, 
@@ -180,16 +180,16 @@ Torrent Server response
 	            "sampleSet_planTotal": 0, 
 	            "templatingKitName": "Ion PI Template OT2 200 Kit v3", 
 	            "runType": "AMPS_EXOME", 
-	            "instrumentType": "", 
 	            "planPGM": null, 
 	            "chefProgress": 0.0, 
 	            "autoName": null, 
 	            "isReusable": true, 
 	            "controlSequencekitname": "", 
-	            "date": "2014-04-10T21:04:14.000540+00:00", 
+	            "date": "2014-05-20T13:55:02.000398+00:00", 
 	            "isSystem": false, 
 	            "libkit": null, 
-	            "planName": "Ampliseq_Exome_modified_primers", 
+	            "categories": "", 
+	            "planName": "chef_nonGUI_Exome_Panel_AmpliSeqExome.20131001", 
 	            "chefMessage": "", 
 	            "pairedEndLibraryAdapterName": "", 
 	            "runMode": "single", 
@@ -203,9 +203,9 @@ Torrent Server response
 	            "expName": "", 
 	            "runname": null, 
 	            "usePreBeadfind": true, 
-	            "planGUID": "18a08975-ff66-437d-ad2a-e0470fbbefd4", 
+	            "planGUID": "a81c02b6-e8f7-411f-aeeb-302fa16baa51", 
 	            "cycles": null, 
-	            "resource_uri": "/rundb/api/v1/plantemplatesummary/103987/"
+	            "resource_uri": "/rundb/api/v1/plantemplatesummary/100224/"
 	        }
 	    ]
 	}

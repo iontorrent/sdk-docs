@@ -136,7 +136,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 17848, 
+	        "total_count": 21008, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/experiment/?offset=1&limit=1&format=json"
@@ -148,43 +148,122 @@ Torrent Server response
 	            "chipType": "", 
 	            "user_ack": "U", 
 	            "results": [], 
-	            "sample": "E107855-a39g52_pool-L7007", 
+	            "sample": "E115943-lq204-01-L8095", 
 	            "runMode": "", 
 	            "reverse_primer": null, 
 	            "seqKitBarcode": "", 
-	            "id": 8766, 
+	            "id": 10132, 
 	            "metaData": {}, 
 	            "log": {}, 
 	            "sequencekitbarcode": "", 
-	            "resource_uri": "/rundb/api/v1/experiment/8766/", 
+	            "resource_uri": "/rundb/api/v1/experiment/10132/", 
 	            "eas_set": [
 	                {
 	                    "isEditable": true, 
 	                    "hotSpotRegionBedFile": "", 
 	                    "results": [], 
-	                    "targetRegionBedFile": "", 
+	                    "targetRegionBedFile": "/results/uploads/BED/19/hg19/unmerged/detail/Ion-TargetSeq-Exome-50Mb-hg19_revA.bed", 
 	                    "thumbnailalignmentargs": "", 
 	                    "thumbnailanalysisargs": "", 
-	                    "id": 9129, 
+	                    "id": 10575, 
 	                    "barcodedSamples": {}, 
 	                    "reference": "hg19", 
 	                    "isOneTimeOverride": false, 
 	                    "analysisargs": "", 
 	                    "thumbnailcalibrateargs": "", 
 	                    "realign": false, 
-	                    "selectedPlugins": {}, 
-	                    "experiment": "/rundb/api/v1/experiment/8766/", 
+	                    "selectedPlugins": {
+	                        "pinsPerFlow": {
+	                            "name": "pinsPerFlow"
+	                        }, 
+	                        "duplicateReads_useZC": {
+	                            "name": "duplicateReads_useZC"
+	                        }, 
+	                        "libClonality": {
+	                            "name": "libClonality"
+	                        }, 
+	                        "ProtonErrors": {
+	                            "name": "ProtonErrors"
+	                        }, 
+	                        "PhasingReport": {
+	                            "name": "PhasingReport"
+	                        }, 
+	                        "detailedReport": {
+	                            "name": "detailedReport"
+	                        }, 
+	                        "extended_chip_check": {
+	                            "name": "extended_chip_check"
+	                        }, 
+	                        "1_Torrent_Accuracy": {
+	                            "name": "1_Torrent_Accuracy"
+	                        }, 
+	                        "ConversionRate": {
+	                            "name": "ConversionRate"
+	                        }, 
+	                        "rawTrace": {
+	                            "name": "rawTrace"
+	                        }, 
+	                        "filterAndTrim": {
+	                            "name": "filterAndTrim"
+	                        }, 
+	                        "fsRecalibration": {
+	                            "name": "fsRecalibration"
+	                        }, 
+	                        "timingPerformance": {
+	                            "name": "timingPerformance"
+	                        }, 
+	                        "NucRiseParams": {
+	                            "name": "NucRiseParams"
+	                        }, 
+	                        "AvgTrace": {
+	                            "name": "AvgTrace"
+	                        }, 
+	                        "autoCal": {
+	                            "name": "autoCal"
+	                        }, 
+	                        "flowCell": {
+	                            "name": "flowCell"
+	                        }, 
+	                        "chipDiagnostics": {
+	                            "name": "chipDiagnostics"
+	                        }, 
+	                        "rawPlots": {
+	                            "name": "rawPlots"
+	                        }, 
+	                        "spatialPlots": {
+	                            "name": "spatialPlots"
+	                        }, 
+	                        "RateMapEDA": {
+	                            "name": "RateMapEDA"
+	                        }, 
+	                        "barcodeMixtureAnalysis": {
+	                            "name": "barcodeMixtureAnalysis"
+	                        }, 
+	                        "z_homopolymerAnalysis": {
+	                            "name": "z_homopolymerAnalysis"
+	                        }, 
+	                        "separator": {
+	                            "name": "separator"
+	                        }, 
+	                        "GC_seq_performance": {
+	                            "name": "GC_seq_performance"
+	                        }, 
+	                        "flowErr": {
+	                            "name": "flowErr"
+	                        }
+	                    }, 
+	                    "experiment": "/rundb/api/v1/experiment/10132/", 
 	                    "barcodeKitName": "", 
 	                    "beadfindargs": "", 
-	                    "threePrimeAdapter": "", 
+	                    "threePrimeAdapter": "ATCACCGACTGCCCATAGAGAGGCTGAGAC", 
 	                    "thumbnailbasecallerargs": "", 
 	                    "status": "planned", 
 	                    "prebasecallerargs": "", 
 	                    "prethumbnailbasecallerargs": "", 
 	                    "alignmentargs": "", 
 	                    "isDuplicateReads": false, 
-	                    "libraryKey": "", 
-	                    "date": "2013-03-01T18:54:26.000817+00:00", 
+	                    "libraryKey": "TCAG", 
+	                    "date": "2013-05-15T18:30:24.000115+00:00", 
 	                    "libraryKitName": "", 
 	                    "thumbnailbeadfindargs": "", 
 	                    "calibrateargs": "", 
@@ -192,46 +271,26 @@ Torrent Server response
 	                    "libraryKitBarcode": null, 
 	                    "base_recalibrate": true, 
 	                    "basecallerargs": "", 
-	                    "resource_uri": "/rundb/api/v1/experimentanalysissettings/9129/"
+	                    "resource_uri": "/rundb/api/v1/experimentanalysissettings/10575/"
 	                }
 	            ], 
 	            "runtype": "GENS", 
 	            "platform": "PGM", 
 	            "samples": [
 	                {
-	                    "status": "planned", 
+	                    "status": "run", 
 	                    "sampleSets": [], 
 	                    "description": null, 
-	                    "displayedName": "E107855-a39g52_pool-L7007", 
+	                    "displayedName": "E115943-lq204-01-L8095", 
 	                    "experiments": [
-	                        "/rundb/api/v1/experiment/8932/", 
-	                        "/rundb/api/v1/experiment/8931/", 
-	                        "/rundb/api/v1/experiment/8930/", 
-	                        "/rundb/api/v1/experiment/8929/", 
-	                        "/rundb/api/v1/experiment/8928/", 
-	                        "/rundb/api/v1/experiment/8927/", 
-	                        "/rundb/api/v1/experiment/8926/", 
-	                        "/rundb/api/v1/experiment/8925/", 
-	                        "/rundb/api/v1/experiment/8924/", 
-	                        "/rundb/api/v1/experiment/8923/", 
-	                        "/rundb/api/v1/experiment/8922/", 
-	                        "/rundb/api/v1/experiment/8771/", 
-	                        "/rundb/api/v1/experiment/8770/", 
-	                        "/rundb/api/v1/experiment/8769/", 
-	                        "/rundb/api/v1/experiment/8768/", 
-	                        "/rundb/api/v1/experiment/8767/", 
-	                        "/rundb/api/v1/experiment/8766/", 
-	                        "/rundb/api/v1/experiment/8765/", 
-	                        "/rundb/api/v1/experiment/8764/", 
-	                        "/rundb/api/v1/experiment/8763/", 
-	                        "/rundb/api/v1/experiment/8762/", 
-	                        "/rundb/api/v1/experiment/8761/"
+	                        "/rundb/api/v1/experiment/10142/", 
+	                        "/rundb/api/v1/experiment/10132/"
 	                    ], 
 	                    "externalId": "", 
-	                    "date": "2013-02-27T23:47:37.000898+00:00", 
-	                    "resource_uri": "/rundb/api/v1/sample/3961/", 
-	                    "id": 3961, 
-	                    "name": "E107855-a39g52_pool-L7007"
+	                    "date": "2013-05-15T18:30:24.000176+00:00", 
+	                    "resource_uri": "/rundb/api/v1/sample/2379/", 
+	                    "id": 2379, 
+	                    "name": "E115943-lq204-01-L8095"
 	                }
 	            ], 
 	            "pinnedRepResult": false, 
@@ -239,24 +298,24 @@ Torrent Server response
 	            "star": false, 
 	            "isProton": "False", 
 	            "expCompInfo": "", 
-	            "resultDate": "2013-03-01T18:54:26.000936+00:00", 
-	            "flows": 340, 
-	            "plan": "/rundb/api/v1/plannedexperiment/90493/", 
-	            "date": "2013-03-01T18:54:26.000877+00:00", 
-	            "diskusage": 0, 
-	            "unique": "e22b2870-72b2-426a-a7d9-47111a877879", 
+	            "resultDate": "2013-05-15T18:30:24.000171+00:00", 
+	            "flows": 400, 
+	            "plan": "/rundb/api/v1/plannedexperiment/88364/", 
+	            "date": "2013-05-15T18:30:24.000167+00:00", 
+	            "diskusage": null, 
+	            "unique": "ea5aefc7-e1ec-4c79-9843-b0e299253a9a", 
 	            "expDir": "", 
 	            "autoAnalyze": true, 
 	            "ftpStatus": "Complete", 
 	            "flowsInOrder": "", 
 	            "baselineRun": false, 
-	            "displayName": "e22b2870-72b2-426a-a7d9-47111a877879", 
-	            "notes": "OT2 a39g52_pool Lib7007 248bp lr2 ", 
+	            "displayName": "ea5aefc7-e1ec-4c79-9843-b0e299253a9a", 
+	            "notes": "OT2 lq204_01 Lib8095 275bp lr2 4B bead 1.2B lib SDS_10mMEDTA break ", 
 	            "sequencekitname": "", 
 	            "chipBarcode": "", 
 	            "pgmName": "", 
 	            "storageHost": null, 
-	            "expName": "e22b2870-72b2-426a-a7d9-47111a877879", 
+	            "expName": "ea5aefc7-e1ec-4c79-9843-b0e299253a9a", 
 	            "status": "planned", 
 	            "usePreBeadfind": false, 
 	            "cycles": 0, 

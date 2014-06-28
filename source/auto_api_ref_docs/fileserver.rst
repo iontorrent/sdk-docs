@@ -65,12 +65,12 @@ Torrent Server response
 	    }, 
 	    "objects": [
 	        {
-	            "percentfull": 89.7534648330382, 
+	            "percentfull": 82.6372068824745, 
 	            "name": "gs1-nfs", 
 	            "filesPrefix": "/ion-data/results/", 
 	            "comments": "gs1-nfs:/gs1/ion-data", 
-	            "id": 2, 
-	            "resource_uri": "/rundb/api/v1/fileserver/2/"
+	            "id": 5, 
+	            "resource_uri": "/rundb/api/v1/fileserver/5/"
 	        }
 	    ]
 	}

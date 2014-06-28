@@ -60,7 +60,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 104, 
+	        "total_count": 72, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/content/?offset=1&limit=1&format=json"
@@ -68,15 +68,18 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "publisher": "/rundb/api/v1/publisher/BED/", 
-	            "contentupload": "/rundb/api/v1/contentupload/2/", 
+	            "contentupload": "/rundb/api/v1/contentupload/16/", 
 	            "meta": {
+	                "is_ampliseq": false, 
+	                "hotspot_bed": null, 
 	                "reference": "hg19", 
+	                "primary_bed": "/results/uploads/BED/16/testPanel30.bed", 
 	                "hotspot": false
 	            }, 
-	            "file": "/results/uploads/BED/2/hg19/unmerged/plain/HSMv2_HA.bed", 
-	            "path": "/hg19/unmerged/plain/HSMv2_HA.bed", 
-	            "id": 1, 
-	            "resource_uri": "/rundb/api/v1/content/1/"
+	            "file": "/results/uploads/BED/16/hg19/unmerged/plain/testPanel30.bed", 
+	            "path": "/hg19/unmerged/plain/testPanel30.bed", 
+	            "id": 53, 
+	            "resource_uri": "/rundb/api/v1/content/53/"
 	        }
 	    ]
 	}

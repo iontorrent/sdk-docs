@@ -62,6 +62,7 @@ Torrent Server REST API v1 Resources
 	auto_api_ref_docs/plugin.rst
 	auto_api_ref_docs/pluginresult.rst
 	auto_api_ref_docs/project.rst
+	auto_api_ref_docs/projectresults.rst
 	auto_api_ref_docs/qctype.rst
 	auto_api_ref_docs/qualitymetrics.rst
 	auto_api_ref_docs/referencegenome.rst
