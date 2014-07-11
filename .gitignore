@@ -3,3 +3,5 @@
 /.idea
 settings.py
 settings.pyc
+*.pyc
+.DS_Store
