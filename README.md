@@ -1,10 +1,13 @@
 Install the python packages
 -----
+
+```bash
 sudo easy_install pip
 sudo aptitude install virtualenv
 virtualenv --no-site-packages venv
 source venv/bin/activate
 pip install -r requirements.txt
+```
 
 Install pandoc
 -----
