@@ -41,7 +41,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Torrent SDK'
-copyright = u'2013, Ion Torrent'
+copyright = u'2015 Thermo Fisher Scientific Inc.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
