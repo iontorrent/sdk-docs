@@ -60,20 +60,20 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 9, 
+	        "total_count": 11, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/template/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "isofficial": true, 
-	            "name": "TF1.2(tA-tB30') Hyb extend", 
-	            "sequence": "GTTTTAGGGTCCCCGGGGTTAAAAGGTTTCGAACACGATGTCGGAGACACGCAGGGATGAGATGG", 
-	            "comments": "", 
-	            "key": "ATCGT", 
-	            "id": 7, 
-	            "resource_uri": "/rundb/api/v1/template/7/"
+	            "isofficial": false, 
+	            "name": "DxTF-1", 
+	            "sequence": "GAATAATCCAGCCCGCCAGGCATGGAAGAGCGTCGTAAAGTATTGCAGGTTCAGGCGGCGGAAAGCGTGATTGACTACTGGCAAATAAAGTACGTTCCACCTTTGACACCATTTTCCGTAGTGAACTGACGCTGCCAAACGCCGACCGCG", 
+	            "comments": "Disabled J.Sabina, 12/7/2014; Same as TF_1.", 
+	            "key": "ATCG", 
+	            "id": 10, 
+	            "resource_uri": "/rundb/api/v1/template/10/"
 	        }
 	    ]
 	}

@@ -39,7 +39,7 @@ field              help text                                            default 
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **celery_task_id** Unicode string data. Ex: "Hello World"                                                false    false    true  false  string   
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
-**date**           A date & time as a string. Ex: "2010-11-10T03:07:43" 2014-06-28T14:05:04.000158+00:00 false    false    false false  datetime 
+**date**           A date & time as a string. Ex: "2010-11-10T03:07:43" 2015-02-03T02:30:36.000120+00:00 false    false    false false  datetime 
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **verbose_error**  Unicode string data. Ex: "Hello World"                                                false    false    true  false  string   
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
@@ -78,7 +78,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 5, 
+	        "total_count": 23, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/referencegenome/?offset=1&limit=1&format=json"

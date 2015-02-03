@@ -15,6 +15,8 @@ Fields table
 ================================= ============================================================================== ======= ======== ======== ===== ====== ======== 
 field                             help text                                                                      default nullable readonly blank unique type     
 ================================= ============================================================================== ======= ======== ======== ===== ====== ======== 
+**templatingSize**                Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
+--------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **isReverseRun**                  Boolean data. Ex: True                                                         false   false    false    true  false  boolean  
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **planDisplayedName**             Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
@@ -25,23 +27,19 @@ field                             help text                                     
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **reference**                     Unicode string data. Ex: "Hello World"                                                 true     true     true  false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**isSystemDefault**               Boolean data. Ex: True                                                         false   false    false    true  false  boolean  
+**planShortID**                   Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **hotSpotRegionBedFile**          Unicode string data. Ex: "Hello World"                                                 true     true     true  false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**planShortID**                   Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
---------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **planStatus**                    Unicode string data. Ex: "Hello World"                                                 false    false    true  false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**chefLastUpdate**                A date & time as a string. Ex: "2010-11-10T03:07:43"                           n/a     true     false    false false  datetime 
+**runMode**                       Unicode string data. Ex: "Hello World"                                                 false    false    true  false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **templatingKitBarcode**          Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **sampleTubeLabel**               Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **planExecutedDate**              A date & time as a string. Ex: "2010-11-10T03:07:43"                           n/a     true     false    false false  datetime 
---------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**chefStatus**                    Unicode string data. Ex: "Hello World"                                                 false    false    true  false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **samplePrepKitName**             Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
@@ -63,8 +61,6 @@ field                             help text                                     
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **seqKitBarcode**                 Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**chefLogPath**                   Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
---------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **isPlanGroup**                   Boolean data. Ex: True                                                         false   false    false    true  false  boolean  
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **sampleGroupName**               Unicode string data. Ex: "Hello World"                                         n/a     true     true     true  false  string   
@@ -77,7 +73,7 @@ field                             help text                                     
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **planPGM**                       Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**chefProgress**                  Floating point numeric data. Ex: 26.73                                         0.0     false    false    true  false  float    
+**isSystemDefault**               Boolean data. Ex: True                                                         false   false    false    true  false  boolean  
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **autoName**                      Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
@@ -85,11 +81,7 @@ field                             help text                                     
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **controlSequencekitname**        Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**irAccountName**                 Unicode string data. Ex: "Hello World"                                         n/a     true     true     true  false  string   
---------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **sequencingInstrumentType**      Unicode string data. Ex: "Hello World"                                         n/a     true     true     true  false  string   
---------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**targetRegionBedFile**           Unicode string data. Ex: "Hello World"                                                 true     true     true  false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **date**                          A date & time as a string. Ex: "2010-11-10T03:07:43"                           n/a     true     false    false false  datetime 
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
@@ -101,13 +93,13 @@ field                             help text                                     
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **planName**                      Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**chefMessage**                   Unicode string data. Ex: "Hello World"                                                 false    false    true  false  string   
+**irAccountName**                 Unicode string data. Ex: "Hello World"                                         n/a     true     true     true  false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **templatePrepInstrumentType**    Unicode string data. Ex: "Hello World"                                         n/a     true     true     true  false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **pairedEndLibraryAdapterName**   Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**runMode**                       Unicode string data. Ex: "Hello World"                                                 false    false    true  false  string   
+**targetRegionBedFile**           Unicode string data. Ex: "Hello World"                                                 true     true     true  false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **adapter**                       Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
@@ -124,6 +116,8 @@ field                             help text                                     
 **storageHost**                   Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **expName**                       Unicode string data. Ex: "Hello World"                                                 false    false    true  false  string   
+--------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**libraryReadLength**             Integer data. Ex: 2673                                                         0       false    false    false false  integer  
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **runname**                       Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 --------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
@@ -170,60 +164,56 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 66, 
+	        "total_count": 129, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/plantemplatebasicinfo/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
+	            "templatingSize": "200", 
 	            "isReverseRun": false, 
-	            "planDisplayedName": "chef_nonGUI_Exome Panel_AmpliSeqExome.20131001", 
+	            "planDisplayedName": "IC_P1v2_VAL_ccp", 
 	            "storage_options": "A", 
 	            "preAnalysis": true, 
 	            "reference": "hg19", 
-	            "isSystemDefault": false, 
-	            "hotSpotRegionBedFile": "", 
-	            "planShortID": "2OXYZ", 
-	            "planStatus": "planned", 
-	            "chefLastUpdate": null, 
+	            "planShortID": "IL9TF", 
+	            "hotSpotRegionBedFile": "/results/uploads/BED/47/hg19/unmerged/detail/CCP.20131001.hotspots.bed", 
+	            "planStatus": "pending", 
+	            "runMode": "single", 
 	            "templatingKitBarcode": null, 
 	            "sampleTubeLabel": "", 
 	            "planExecutedDate": null, 
-	            "chefStatus": "", 
-	            "samplePrepKitName": "Ion AmpliSeq Exome Kit", 
+	            "samplePrepKitName": "", 
 	            "reverse_primer": null, 
 	            "applicationGroup": "/rundb/api/v1/applicationgroup/1/", 
 	            "applicationGroupDisplayedName": "DNA", 
-	            "id": 100224, 
+	            "id": 111154, 
 	            "metaData": {}, 
 	            "sampleSet_uid": null, 
 	            "isFavorite": true, 
 	            "sampleSet_planIndex": 0, 
 	            "seqKitBarcode": null, 
-	            "chefLogPath": null, 
 	            "isPlanGroup": false, 
 	            "sampleGroupName": "", 
-	            "templatingKitName": "Ion PI Template OT2 200 Kit v3", 
+	            "templatingKitName": "Ion PROTON IC v2 Universal", 
 	            "barcodeKitName": "IonXpress", 
-	            "runType": "AMPS_EXOME", 
+	            "runType": "AMPS", 
 	            "planPGM": null, 
-	            "chefProgress": 0.0, 
+	            "isSystemDefault": false, 
 	            "autoName": null, 
 	            "isReusable": true, 
 	            "controlSequencekitname": "", 
-	            "irAccountName": "None", 
 	            "sequencingInstrumentType": "PROTON", 
-	            "targetRegionBedFile": "/results/uploads/BED/46/hg19/unmerged/detail/AmpliSeqExome.20131001.designed.bed", 
-	            "date": "2014-05-20T13:55:02.000398+00:00", 
+	            "date": "2015-01-28T19:57:42.000445+00:00", 
 	            "isSystem": false, 
 	            "libkit": null, 
 	            "categories": "", 
-	            "planName": "chef_nonGUI_Exome_Panel_AmpliSeqExome.20131001", 
-	            "chefMessage": "", 
-	            "templatePrepInstrumentType": "OneTouch", 
+	            "planName": "IC_P1v2_VAL_ccp", 
+	            "irAccountName": "None", 
+	            "templatePrepInstrumentType": "IonChef", 
 	            "pairedEndLibraryAdapterName": "", 
-	            "runMode": "single", 
+	            "targetRegionBedFile": "/results/uploads/BED/44/hg19/unmerged/detail/CCP.20131001.designed.bed", 
 	            "adapter": null, 
 	            "irworkflow": "", 
 	            "chipBarcode": null, 
@@ -232,13 +222,14 @@ Torrent Server response
 	            "usePostBeadfind": false, 
 	            "storageHost": null, 
 	            "expName": "", 
+	            "libraryReadLength": 200, 
 	            "runname": null, 
 	            "usePreBeadfind": true, 
-	            "planGUID": "a81c02b6-e8f7-411f-aeeb-302fa16baa51", 
+	            "planGUID": "b55face2-df5f-434c-89df-210f384170cb", 
 	            "cycles": null, 
-	            "notes": "Uploaded from amplseq.com and available at-jira.itw_wiki_x_HAHcAg\r\nReplace _ with slashes for link to Document collection on JIRA\r\nAdded AmpliseqExome.germline_lowstringency_p1.4_0.20130920.parameters.json parameter file.", 
+	            "notes": "", 
 	            "sampleSet_planTotal": 0, 
-	            "resource_uri": "/rundb/api/v1/plantemplatebasicinfo/100224/"
+	            "resource_uri": "/rundb/api/v1/plantemplatebasicinfo/111154/"
 	        }
 	    ]
 	}

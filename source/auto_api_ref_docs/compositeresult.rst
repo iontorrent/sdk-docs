@@ -76,7 +76,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 43354, 
+	        "total_count": 56103, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/compositeresult/?offset=1&limit=1&format=json"
@@ -116,7 +116,7 @@ Torrent Server response
 	            "id": 293943, 
 	            "reportStatus": "Nothing", 
 	            "quality_metrics": {
-	                "q0_mean_read_length": 168.0, 
+	                "q0_mean_read_length": 168, 
 	                "q0_reads": 91521301, 
 	                "q0_bases": "15380233572", 
 	                "q20_reads": 91521301, 
@@ -135,7 +135,7 @@ Torrent Server response
 	                }
 	            ], 
 	            "qualitymetrics": {
-	                "q0_mean_read_length": 168.0, 
+	                "q0_mean_read_length": 168, 
 	                "q0_reads": 91521301, 
 	                "q0_bases": "15380233572", 
 	                "q20_reads": 91521301, 
@@ -152,7 +152,7 @@ Torrent Server response
 	            "resource_uri": "/rundb/api/v1/compositeresult/293943/", 
 	            "libmetrics": {
 	                "i100Q20_reads": 56284561, 
-	                "aveKeyCounts": 71.0, 
+	                "aveKeyCounts": 71, 
 	                "id": 32368, 
 	                "resource_uri": "", 
 	                "q20_mean_alignment_length": 142

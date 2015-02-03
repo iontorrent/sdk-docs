@@ -60,7 +60,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 20, 
+	        "total_count": 12, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/chip/?offset=1&limit=1&format=json"
@@ -68,23 +68,24 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "slots": 1, 
-	            "calibrateargs": "calibrate", 
-	            "prebasecallerargs": "BaseCaller", 
-	            "description": "PIv2", 
-	            "prethumbnailbasecallerargs": "BaseCaller", 
-	            "alignmentargs": "", 
-	            "thumbnailbasecallerargs": "BaseCaller", 
-	            "analysisargs": "Analysis", 
-	            "basecallerargs": "BaseCaller", 
-	            "thumbnailbeadfindargs": "justBeadFind", 
+	            "calibrateargs": "calibrate --skipDroop", 
+	            "prebasecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 20", 
+	            "description": "314", 
+	            "prethumbnailbasecallerargs": "", 
+	            "alignmentargs": "stage1 map4", 
+	            "thumbnailbasecallerargs": "", 
+	            "analysisargs": "Analysis --from-beadfind --use-alternative-etbR-equation", 
+	            "thumbnailcalibrateargs": "", 
+	            "basecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 20", 
+	            "thumbnailbeadfindargs": "", 
 	            "thumbnailalignmentargs": "", 
-	            "thumbnailanalysisargs": "Analysis", 
-	            "instrumentType": "proton", 
+	            "thumbnailanalysisargs": "", 
+	            "instrumentType": "pgm", 
 	            "beadfindargs": "justBeadFind", 
-	            "resource_uri": "/rundb/api/v1/chip/16/", 
-	            "id": 16, 
-	            "isActive": false, 
-	            "name": "900AMPS_EXOME"
+	            "resource_uri": "/rundb/api/v1/chip/1/", 
+	            "id": 1, 
+	            "isActive": true, 
+	            "name": "314"
 	        }
 	    ]
 	}

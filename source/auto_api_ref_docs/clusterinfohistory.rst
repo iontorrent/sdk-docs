@@ -1,13 +1,13 @@
-Datamanagementhistory Resource
+Clusterinfohistory Resource
 ==========================================================================
 
-Resource URL: ``http://mytorrentserver/rundb/api/v1/datamanagementhistory/``
+Resource URL: ``http://mytorrentserver/rundb/api/v1/clusterinfohistory/``
 
 
-Schema URL: ``http://mytorrentserver/rundb/api/v1/datamanagementhistory/schema/``
+Schema URL: ``http://mytorrentserver/rundb/api/v1/clusterinfohistory/schema/``
 
 
-.. include:: ../manual_api_ref_docs/datamanagementhistory.rst
+.. include:: ../manual_api_ref_docs/clusterinfohistory.rst
 
 Fields table
 ------------
@@ -17,13 +17,13 @@ field            help text                                            default nu
 ================ ==================================================== ======= ======== ======== ===== ====== ======== 
 **username**     Unicode string data. Ex: "Hello World"               ION     false    false    true  false  string   
 ---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**name**         Unicode string data. Ex: "Hello World"               n/a     true     true     false false  string   
+---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **created**      A date & time as a string. Ex: "2010-11-10T03:07:43" true    false    false    true  false  datetime 
 ---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **text**         Unicode string data. Ex: "Hello World"                       false    false    false false  string   
 ---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **object_pk**    Integer data. Ex: 2673                               n/a     false    false    false false  integer  
----------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**resultsName**  Unicode string data. Ex: "Hello World"               n/a     true     true     false false  string   
 ---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **id**           Integer data. Ex: 2673                                       false    false    true  true   integer  
 ---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -33,7 +33,7 @@ field            help text                                            default nu
 Example request
 ---------------
 
-Request URL: ``http://mytorrentserver/rundb/api/v1/datamanagementhistory/?format=json&limit=1``
+Request URL: ``http://mytorrentserver/rundb/api/v1/clusterinfohistory/?format=json&limit=1``
 
 
 Python example
@@ -44,13 +44,13 @@ Python example
 	
 	import requests
 	
-	ts_api_request = requests.get("http://mytorrentserver/rundb/api/v1/datamanagementhistory/", params={"format": "json", "limit": 1})
+	ts_api_request = requests.get("http://mytorrentserver/rundb/api/v1/clusterinfohistory/", params={"format": "json", "limit": 1})
 	ts_api_response = ts_api_request.json()
 	
-	datamanagementhistorys = ts_api_response["objects"]
+	clusterinfohistorys = ts_api_response["objects"]
 	
-	for datamanagementhistory in datamanagementhistorys:
-	    print datamanagementhistory
+	for clusterinfohistory in clusterinfohistorys:
+	    print clusterinfohistory
 	
 Torrent Server response
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -60,20 +60,25 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 610567, 
+	        "total_count": 27, 
 	        "offset": 0, 
 	        "limit": 1, 
-	        "next": "/rundb/api/v1/datamanagementhistory/?offset=1&limit=1&format=json"
+	        "next": "/rundb/api/v1/clusterinfohistory/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "username": "ION", 
-	            "created": "2013-03-05T15:15:09.000925+00:00", 
-	            "text": "Created DMFileStat (Signal Processing Input)", 
-	            "object_pk": 274692, 
-	            "resultsName": null, 
-	            "id": 114023, 
-	            "resource_uri": "/rundb/api/v1/datamanagementhistory/114023/"
+	            "username": "system", 
+	            "name": null, 
+	            "created": "2014-07-28T17:39:23.000473+00:00", 
+	            "network_test": "success", 
+	            "object_pk": 1, 
+	            "state": "Error", 
+	            "address_test": "success", 
+	            "text": "charm01 state changed from Good to Error<br>Error: Host key verification failed.\r\nCannot access server charm01 with secure shell\n <br>address_test: success<br>network_test: success<br>access_test: failure<br>", 
+	            "error": "Host key verification failed.\r\nCannot access server charm01 with secure shell\n ", 
+	            "access_test": "failure", 
+	            "id": 650559, 
+	            "resource_uri": "/rundb/api/v1/clusterinfohistory/650559/"
 	        }
 	    ]
 	}

@@ -68,29 +68,27 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 1, 
+	        "total_count": 2, 
 	        "offset": 0, 
 	        "limit": 1, 
-	        "next": null
+	        "next": "/rundb/api/v1/sampleset/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "status": "created", 
+	            "status": "planned", 
 	            "description": "", 
-	            "sampleCount": 4, 
-	            "displayedName": "Set", 
-	            "SampleGroupType_CV": "/rundb/api/v1/samplegrouptype_cv/3/", 
+	            "sampleCount": 2, 
+	            "displayedName": "Test", 
+	            "SampleGroupType_CV": null, 
 	            "samples": [
-	                "/rundb/api/v1/samplesetitem/14/", 
-	                "/rundb/api/v1/samplesetitem/15/", 
-	                "/rundb/api/v1/samplesetitem/16/", 
-	                "/rundb/api/v1/samplesetitem/17/"
+	                "/rundb/api/v1/samplesetitem/18/", 
+	                "/rundb/api/v1/samplesetitem/19/"
 	            ], 
-	            "lastModifiedDate": "2013-10-07T12:04:51.000432+00:00", 
-	            "sampleGroupTypeName": "Tumor_Normal", 
-	            "creationDate": "2013-10-07T12:04:51.000432+00:00", 
-	            "id": 5, 
-	            "resource_uri": "/rundb/api/v1/sampleset/5/"
+	            "lastModifiedDate": "2014-11-14T06:28:07.000121+00:00", 
+	            "sampleGroupTypeName": "", 
+	            "creationDate": "2014-11-14T01:04:50.000223+00:00", 
+	            "id": 7, 
+	            "resource_uri": "/rundb/api/v1/sampleset/7/"
 	        }
 	    ]
 	}

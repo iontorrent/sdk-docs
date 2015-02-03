@@ -86,42 +86,33 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 788680, 
+	        "total_count": 1139160, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/pluginresult/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "size": "3484344", 
-	            "apikey": null, 
-	            "plugin": "/rundb/api/v1/plugin/823/", 
-	            "resultName": "Auto_user_Z28-428--r65714-pou4_dbsa_23958", 
-	            "reportLink": "/output/Home/Auto_user_Z28-428--r65714-pou4_dbsa_23958_304393/", 
-	            "pluginVersion": "4.2-r88266", 
-	            "jobid": 3145172, 
-	            "owner": "/rundb/api/v1/user/1/", 
-	            "pluginName": "AssemblerSPAdes", 
-	            "state": "Completed", 
-	            "result": "/rundb/api/v1/results/304393/", 
-	            "starttime": "2014-06-28T13:49:00.000133+00:00", 
-	            "duration": "0:01:54.098431", 
-	            "path": "/results/analysis/output/Home/Auto_user_Z28-428--r65714-pou4_dbsa_23958_304393/plugin_out/AssemblerSPAdes_out.815369", 
+	            "size": "-1", 
+	            "apikey": "8181ec3b22ee3629484f708729e6d8ca9ff2a2b2", 
+	            "plugin": "/rundb/api/v1/plugin/131/", 
+	            "resultName": "Auto_user_F3--909--R78811-mosaic1tru4_1xot2_na12878_1400Mmol_4chips-co_33084", 
+	            "reportLink": "/output/Home/Auto_user_F3--909--R78811-mosaic1tru4_1xot2_na12878_1400Mmol_4chips-co_33084_317423/", 
+	            "pluginVersion": "0.2", 
+	            "jobid": 4654296, 
+	            "owner": "/rundb/api/v1/user/2/", 
+	            "pluginName": "flowErr", 
+	            "state": "Started", 
+	            "result": "/rundb/api/v1/results/317423/", 
+	            "starttime": "2015-02-03T02:21:15.000116+00:00", 
+	            "duration": "0:08:36.532955", 
+	            "path": "/results/analysis/output/Home/Auto_user_F3--909--R78811-mosaic1tru4_1xot2_na12878_1400Mmol_4chips-co_33084_317423/plugin_out/flowErr_out.1171946", 
 	            "store": {}, 
-	            "endtime": "2014-06-28T13:50:54.000232+00:00", 
-	            "config": {
-	                "only_barcodes": "", 
-	                "spadesOptions": "-k 21,33,55,77,99", 
-	                "spadesversion": "3.1.0", 
-	                "RAM": "32G", 
-	                "min_reads": "500", 
-	                "bgenome": "None", 
-	                "runSpades": "1", 
-	                "fraction_of_reads": "1"
-	            }, 
-	            "id": 815369, 
-	            "inodes": "396", 
-	            "resource_uri": "/rundb/api/v1/pluginresult/815369/"
+	            "endtime": null, 
+	            "config": {}, 
+	            "id": 1171946, 
+	            "inodes": "-1", 
+	            "resource_uri": "/rundb/api/v1/pluginresult/1171946/"
 	        }
 	    ]
 	}

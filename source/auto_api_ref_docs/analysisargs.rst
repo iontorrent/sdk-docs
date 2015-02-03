@@ -90,25 +90,25 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 27, 
+	        "total_count": 19, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/analysisargs/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "chipType": "314v2", 
+	            "chipType": "314", 
 	            "thumbnailalignmentargs": "", 
 	            "thumbnailanalysisargs": "", 
 	            "samplePrepKitName": "", 
-	            "id": 5, 
+	            "id": 1, 
 	            "sequenceKitName": "", 
 	            "analysisargs": "Analysis --from-beadfind --use-alternative-etbR-equation", 
 	            "thumbnailcalibrateargs": "", 
 	            "chip_default": true, 
 	            "beadfindargs": "justBeadFind", 
 	            "templateKitName": "", 
-	            "prebasecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 20 --calibration-training=100000 --flow-signals-type scaled-residual", 
+	            "prebasecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 20", 
 	            "prethumbnailbasecallerargs": "", 
 	            "alignmentargs": "stage1 map4", 
 	            "thumbnailbasecallerargs": "", 
@@ -116,9 +116,9 @@ Torrent Server response
 	            "thumbnailbeadfindargs": "", 
 	            "calibrateargs": "calibrate --skipDroop", 
 	            "libraryKitName": "", 
-	            "name": "default_314v2", 
+	            "name": "default_314", 
 	            "basecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 20", 
-	            "resource_uri": "/rundb/api/v1/analysisargs/5/"
+	            "resource_uri": "/rundb/api/v1/analysisargs/1/"
 	        }
 	    ]
 	}

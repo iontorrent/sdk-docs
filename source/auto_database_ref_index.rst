@@ -51,7 +51,6 @@ Torrent Server Database Tables
 	auto_database_ref_docs/rundb_reportstorage.rst
 	auto_database_ref_docs/rundb_results.rst
 	auto_database_ref_docs/rundb_rig.rst
-	auto_database_ref_docs/rundb_runscript.rst
 	auto_database_ref_docs/rundb_runtype.rst
 	auto_database_ref_docs/rundb_sample.rst
 	auto_database_ref_docs/rundb_sampleannotation_cv.rst
@@ -62,6 +61,7 @@ Torrent Server Database Tables
 	auto_database_ref_docs/rundb_sampleset.rst
 	auto_database_ref_docs/rundb_samplesetitem.rst
 	auto_database_ref_docs/rundb_sequencingkit.rst
+	auto_database_ref_docs/rundb_sharedserver.rst
 	auto_database_ref_docs/rundb_supportupload.rst
 	auto_database_ref_docs/rundb_template.rst
 	auto_database_ref_docs/rundb_tfmetrics.rst

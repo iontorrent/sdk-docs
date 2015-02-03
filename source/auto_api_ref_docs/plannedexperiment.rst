@@ -43,6 +43,8 @@ field                             help text                                     
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **sequencekitname**               Unicode string data. Ex: "Hello World"                                                                     true     false    true  false  string   
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**base_recalibration_mode**       Unicode string data. Ex: "Hello World"                                                                     true     false    true  false  string   
+--------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **storageHost**                   Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **expName**                       Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
@@ -55,7 +57,7 @@ field                             help text                                     
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **chipType**                      Unicode string data. Ex: "Hello World"                                                                     false    false    false false  string   
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefProgress**                  Floating point numeric data. Ex: 26.73                                                             0.0     false    false    true  false  float    
+**chefProgress**                  Floating point numeric data. Ex: 26.73                                                             0       false    false    true  false  float    
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **library**                       Unicode string data. Ex: "Hello World"                                                                     true     false    true  false  string   
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -67,7 +69,7 @@ field                             help text                                     
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **barcodeId**                     Unicode string data. Ex: "Hello World"                                                                     true     false    true  false  string   
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefLogPath**                   Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+**chefLogPath**                   Unicode string data. Ex: "Hello World"                                                             n/a     true     false    true  false  string   
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **isPlanGroup**                   Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -92,8 +94,6 @@ field                             help text                                     
 **parentPlan**                    Unicode string data. Ex: "Hello World"                                                             None    false    false    true  false  string   
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **forward3primeadapter**          Unicode string data. Ex: "Hello World"                                                                     true     false    true  false  string   
---------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefLastUpdate**                A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     true     false    false false  datetime 
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **samplePrepKitName**             Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -125,6 +125,8 @@ field                             help text                                     
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **chefMessage**                   Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**templatingSize**                Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string   
+--------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **childPlans**                    A list of data. Ex: ['abc', 26.73, 8]                                                              []      false    false    false false  list     
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **pairedEndLibraryAdapterName**   Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
@@ -138,6 +140,8 @@ field                             help text                                     
 **project**                       Unicode string data. Ex: "Hello World"                                                             n/a     false    true     true  false  string   
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **usePostBeadfind**               Boolean data. Ex: True                                                                                     false    false    true  false  boolean  
+--------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**libraryReadLength**             Integer data. Ex: 2673                                                                             0       false    false    false false  integer  
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **runname**                       Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -183,8 +187,6 @@ field                             help text                                     
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **sampleGrouping**                A single related resource. Can be either a URI or set of nested resource data.                     n/a     true     false    true  false  related  
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**base_recalibrate**              Boolean data. Ex: True                                                                             n/a     false    false    false false  boolean  
---------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **chipBarcode**                   Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 --------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **usePreBeadfind**                Boolean data. Ex: True                                                                                     false    false    true  false  boolean  
@@ -224,15 +226,15 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 18369, 
+	        "total_count": 24558, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/plannedexperiment/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "planDisplayedName": "CopyOfSystemDefault_R_2014_06_27_14_19_01_user_P19-606", 
-	            "autoAnalyze": true, 
+	            "planDisplayedName": "CopyOfSystemDefault_R_2015_02_02_17_43_41_user_GT1-126", 
+	            "autoAnalyze": false, 
 	            "templatingKitBarcode": null, 
 	            "preAnalysis": true, 
 	            "chefStatus": "", 
@@ -241,21 +243,22 @@ Torrent Server response
 	            "platform": "PROTON", 
 	            "categories": "", 
 	            "planPGM": null, 
-	            "prebasecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 10 --keypass-filter on --phasing-residual-filter=2.0  --num-unfiltered 1000 --calibration-training=100000 --flow-signals-type scaled-residual", 
+	            "prebasecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 10 --disable-all-filters on --phasing-residual-filter=2.0 --num-unfiltered 1000", 
 	            "alignmentargs": "stage1 map4", 
-	            "thumbnailbasecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 10 --keypass-filter on --phasing-residual-filter=2.0  --num-unfiltered 100000", 
+	            "thumbnailbasecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 10 --barcode-bam-tag --disable-all-filters on --phasing-residual-filter=2.0 --num-unfiltered 100000", 
 	            "sampleSet_planTotal": 0, 
 	            "projects": [], 
 	            "notes": "", 
 	            "sequencekitname": "ProtonI200Kit-v3", 
+	            "base_recalibration_mode": "standard_recal", 
 	            "storageHost": null, 
-	            "expName": "R_2014_06_27_14_19_01_user_P19-606", 
+	            "expName": "R_2015_02_02_17_43_41_user_GT1-126", 
 	            "cycles": null, 
 	            "isReverseRun": false, 
 	            "storage_options": "A", 
 	            "thumbnailalignmentargs": "stage1 map4", 
-	            "chipType": "P1.0.20", 
-	            "chefProgress": 0.0, 
+	            "chipType": "P2.2.1", 
+	            "chefProgress": 0, 
 	            "library": "hg19", 
 	            "reverselibrarykey": "", 
 	            "sampleTubeLabel": null, 
@@ -265,19 +268,18 @@ Torrent Server response
 	            "isPlanGroup": false, 
 	            "realign": false, 
 	            "sampleGroupingName": "", 
-	            "experiment": "/rundb/api/v1/experiment/23975/", 
+	            "experiment": "/rundb/api/v1/experiment/33090/", 
 	            "bedfile": "", 
 	            "isReusable": false, 
 	            "isDuplicateReads": false, 
-	            "thumbnailbeadfindargs": "justBeadFind --beadfind-minlivesnr 3 --region-size=50,50 --beadfind-thumbnail 1 --bkg-use-proton-well-correction false --bkg-exp-tail-fit false --bkg-pca-dark-matter true", 
+	            "thumbnailbeadfindargs": "justBeadFind --beadfind-minlivesnr 3 --region-size=100,100 --beadfind-thumbnail 1 --beadfind-diagnostics 2", 
 	            "librarykitname": "Ion Xpress Plus Fragment Library Kit", 
 	            "adapter": null, 
-	            "basecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 10 --keypass-filter on --phasing-residual-filter=2.0  --num-unfiltered 1000 --barcode-filter-postpone 1", 
+	            "basecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 10 --disable-all-filters on --phasing-residual-filter=2.0 --num-unfiltered 1000 --barcode-filter-postpone 1 --barcode-bam-tag", 
 	            "tfKey": "ATCG", 
 	            "parentPlan": null, 
 	            "forward3primeadapter": "ATCACCGACTGCCCATAGAGAGGCTGAGAC", 
 	            "planStatus": "run", 
-	            "chefLastUpdate": null, 
 	            "samplePrepKitName": null, 
 	            "applicationGroupDisplayedName": "DNA", 
 	            "metaData": {}, 
@@ -287,8 +289,8 @@ Torrent Server response
 	            "qcValues": [
 	                {
 	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/102212/", 
-	                    "id": 266571, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/111327/", 
+	                    "id": 289776, 
 	                    "qcType": {
 	                        "description": "", 
 	                        "minThreshold": 0, 
@@ -298,12 +300,12 @@ Torrent Server response
 	                        "id": 1, 
 	                        "resource_uri": "/rundb/api/v1/qctype/1/"
 	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/266571/"
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/289776/"
 	                }, 
 	                {
 	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/102212/", 
-	                    "id": 266570, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/111327/", 
+	                    "id": 289775, 
 	                    "qcType": {
 	                        "description": "", 
 	                        "minThreshold": 1, 
@@ -313,12 +315,12 @@ Torrent Server response
 	                        "id": 2, 
 	                        "resource_uri": "/rundb/api/v1/qctype/2/"
 	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/266570/"
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/289775/"
 	                }, 
 	                {
 	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/102212/", 
-	                    "id": 266569, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/111327/", 
+	                    "id": 289774, 
 	                    "qcType": {
 	                        "description": "", 
 	                        "minThreshold": 0, 
@@ -328,19 +330,20 @@ Torrent Server response
 	                        "id": 3, 
 	                        "resource_uri": "/rundb/api/v1/qctype/3/"
 	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/266569/"
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/289774/"
 	                }
 	            ], 
-	            "analysisargs": "Analysis --from-beadfind --clonal-filter-bkgmodel true --region-size=80,112 --bkg-bfmask-update false --gpuWorkLoad 1 --total-timeout 600 --bkg-use-proton-well-correction false --bkg-exp-tail-fit false --bkg-pca-dark-matter true", 
+	            "analysisargs": "Analysis --from-beadfind --clonal-filter-bkgmodel false --region-size=216,224 --bkg-bfmask-update false --gpuWorkLoad 1 --total-timeout 600 --bkg-well-xtalk-name /opt/ion/config/xtalk.p2.2.1.settings.20140120.json", 
 	            "thumbnailcalibrateargs": "calibrate --skipDroop", 
 	            "templatingKitName": "Ion PI Template OT2 200 Kit v3", 
 	            "runType": "GENS", 
 	            "username": null, 
-	            "planName": "CopyOfSystemDefault_R_2014_06_27_14_19_01_user_P19-606", 
+	            "planName": "CopyOfSystemDefault_R_2015_02_02_17_43_41_user_GT1-126", 
 	            "sampleDisplayedName": "", 
-	            "prethumbnailbasecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 10 --keypass-filter on --phasing-residual-filter=2.0  --num-unfiltered 100000 --calibration-training=100000 --flow-signals-type scaled-residual", 
+	            "prethumbnailbasecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 10 --disable-all-filters on --phasing-residual-filter=2.0 --num-unfiltered 100000", 
 	            "controlSequencekitname": null, 
 	            "chefMessage": "", 
+	            "templatingSize": "", 
 	            "childPlans": [], 
 	            "pairedEndLibraryAdapterName": null, 
 	            "runMode": "single", 
@@ -348,35 +351,35 @@ Torrent Server response
 	            "planExecuted": true, 
 	            "project": "", 
 	            "usePostBeadfind": false, 
+	            "libraryReadLength": 0, 
 	            "runname": null, 
-	            "planGUID": "80384c15-e0e2-4909-9d4c-950731bf1cf4", 
-	            "planShortID": "G5B50", 
+	            "planGUID": "8aad7839-ccf2-46c2-9158-4f76b8b6d491", 
+	            "planShortID": "G76FR", 
 	            "sampleSetGroupType": null, 
 	            "sample": "", 
 	            "planExecutedDate": null, 
 	            "reverse_primer": null, 
-	            "id": 102212, 
+	            "id": 111327, 
 	            "barcodedSamples": {}, 
 	            "regionfile": "", 
 	            "selectedPlugins": {}, 
-	            "beadfindargs": "justBeadFind --beadfind-minlivesnr 3 --region-size=80,112 --total-timeout 600 --bkg-use-proton-well-correction false --bkg-exp-tail-fit false --bkg-pca-dark-matter true", 
+	            "beadfindargs": "justBeadFind --beadfind-minlivesnr 3 --region-size=216,224 --total-timeout 600", 
 	            "sampleSet": null, 
 	            "isSystemDefault": false, 
 	            "autoName": null, 
 	            "libraryKey": "TCAG", 
-	            "flows": 260, 
-	            "thumbnailanalysisargs": "Analysis --from-beadfind --clonal-filter-bkgmodel true --region-size=50,50 --bkg-bfmask-update false --gpuWorkLoad 1 --bkg-debug-param 1 --beadfind-thumbnail 1 --bkg-use-proton-well-correction false --bkg-exp-tail-fit false --bkg-pca-dark-matter true", 
-	            "date": "2014-06-27T23:36:06.000229+00:00", 
+	            "flows": 60, 
+	            "thumbnailanalysisargs": "Analysis --from-beadfind --clonal-filter-bkgmodel false --region-size=100,100 --bkg-bfmask-update false --gpuWorkLoad 1 --bkg-debug-param 0 --beadfind-thumbnail 1 --bkg-debug-files --bkg-well-xtalk-name /opt/ion/config/xtalk.p2.2.1.settings.20140120.json", 
+	            "date": "2015-02-02T22:44:33.000729+00:00", 
 	            "isSystem": false, 
 	            "variantfrequency": "", 
 	            "sampleSetDisplayedName": "", 
 	            "calibrateargs": "calibrate --skipDroop", 
 	            "flowsInOrder": "TACGTACGTCTGAGCATCGATCGATGTACAGC", 
 	            "sampleGrouping": null, 
-	            "base_recalibrate": true, 
 	            "chipBarcode": null, 
 	            "usePreBeadfind": true, 
-	            "resource_uri": "/rundb/api/v1/plannedexperiment/102212/", 
+	            "resource_uri": "/rundb/api/v1/plannedexperiment/111327/", 
 	            "reverse3primeadapter": ""
 	        }
 	    ]

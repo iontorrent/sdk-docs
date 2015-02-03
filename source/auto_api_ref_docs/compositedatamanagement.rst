@@ -78,23 +78,23 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 43343, 
+	        "total_count": 56041, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/compositedatamanagement/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "misc_diskspace": 0.0, 
+	            "misc_diskspace": 0, 
 	            "expName": "", 
-	            "basecall_state": "Deleting", 
-	            "in_process": true, 
+	            "basecall_state": "Deleted", 
+	            "in_process": false, 
 	            "misc_state": "Deleted", 
 	            "timeStamp": "2011-09-08T18:19:32.000098+00:00", 
 	            "basecall_keep": null, 
 	            "misc_keep": null, 
 	            "output_keep": null, 
-	            "basecall_diskspace": 0.0, 
+	            "basecall_diskspace": 0, 
 	            "resultsName": "Auto__1", 
 	            "output_state": "Deleted", 
 	            "sigproc_state": "Deleted", 
@@ -104,7 +104,7 @@ Torrent Server response
 	            "resource_uri": "/rundb/api/v1/compositedatamanagement/1/", 
 	            "expDir": "/results1/BBDefault/R_2011_08_25_16_44_20_user_BBD-43", 
 	            "id": 1, 
-	            "output_diskspace": 0.0
+	            "output_diskspace": 0
 	        }
 	    ]
 	}

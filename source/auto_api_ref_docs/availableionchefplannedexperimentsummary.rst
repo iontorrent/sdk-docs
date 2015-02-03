@@ -23,21 +23,17 @@ field                           help text                                       
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **preAnalysis**                 Boolean data. Ex: True                                       false    false    true  false  boolean  
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**isSystemDefault**             Boolean data. Ex: True                               false   false    false    true  false  boolean  
-------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planShortID**                 Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planStatus**                  Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefLastUpdate**              A date & time as a string. Ex: "2010-11-10T03:07:43" n/a     true     false    false false  datetime 
+**runMode**                     Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **templatingKitBarcode**        Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **sampleTubeLabel**             Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planExecutedDate**            A date & time as a string. Ex: "2010-11-10T03:07:43" n/a     true     false    false false  datetime 
-------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefStatus**                  Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **samplePrepKitName**           Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -55,8 +51,6 @@ field                           help text                                       
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **sampleSet_planIndex**         Integer data. Ex: 2673                               0       false    false    false false  integer  
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefLogPath**                 Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
-------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **isPlanGroup**                 Boolean data. Ex: True                               false   false    false    true  false  boolean  
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **sampleSet_planTotal**         Integer data. Ex: 2673                               0       false    false    false false  integer  
@@ -67,7 +61,7 @@ field                           help text                                       
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planPGM**                     Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefProgress**                Floating point numeric data. Ex: 26.73               0.0     false    false    true  false  float    
+**isSystemDefault**             Boolean data. Ex: True                               false   false    false    true  false  boolean  
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **autoName**                    Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -85,11 +79,9 @@ field                           help text                                       
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planName**                    Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefMessage**                 Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
+**templatingSize**              Unicode string data. Ex: "Hello World"                       true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **pairedEndLibraryAdapterName** Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
-------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**runMode**                     Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **adapter**                     Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -106,6 +98,8 @@ field                           help text                                       
 **storageHost**                 Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **expName**                     Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
+------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**libraryReadLength**           Integer data. Ex: 2673                               0       false    false    false false  integer  
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **runname**                     Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -148,66 +142,12 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 10, 
+	        "total_count": 0, 
 	        "offset": 0, 
 	        "limit": 1, 
-	        "next": "/rundb/api/v1/availableionchefplannedexperimentsummary/?offset=1&limit=1&format=json"
+	        "next": null
 	    }, 
-	    "objects": [
-	        {
-	            "isReverseRun": false, 
-	            "planDisplayedName": "C18S2_package1_Thur_psp4", 
-	            "storage_options": "A", 
-	            "preAnalysis": true, 
-	            "isSystemDefault": false, 
-	            "planShortID": "0KXAK", 
-	            "planStatus": "pending", 
-	            "chefLastUpdate": null, 
-	            "templatingKitBarcode": null, 
-	            "sampleTubeLabel": "00049613", 
-	            "planExecutedDate": null, 
-	            "chefStatus": "", 
-	            "samplePrepKitName": "Ion AmpliSeq Exome Kit", 
-	            "reverse_primer": null, 
-	            "seqKitBarcode": null, 
-	            "id": 102054, 
-	            "metaData": {}, 
-	            "sampleSet_uid": null, 
-	            "isFavorite": false, 
-	            "sampleSet_planIndex": 0, 
-	            "chefLogPath": null, 
-	            "isPlanGroup": false, 
-	            "sampleSet_planTotal": 0, 
-	            "templatingKitName": "Ion PI IC 200 Kit", 
-	            "runType": "AMPS_EXOME", 
-	            "planPGM": null, 
-	            "chefProgress": 0.0, 
-	            "autoName": null, 
-	            "isReusable": false, 
-	            "controlSequencekitname": "", 
-	            "date": "2014-06-26T04:47:43.000023+00:00", 
-	            "isSystem": false, 
-	            "libkit": null, 
-	            "categories": "", 
-	            "planName": "C18S2_package1_Thur_psp4", 
-	            "chefMessage": "", 
-	            "pairedEndLibraryAdapterName": "", 
-	            "runMode": "single", 
-	            "adapter": null, 
-	            "irworkflow": "", 
-	            "chipBarcode": null, 
-	            "planExecuted": false, 
-	            "username": "ionuser", 
-	            "usePostBeadfind": false, 
-	            "storageHost": null, 
-	            "expName": "", 
-	            "runname": null, 
-	            "usePreBeadfind": true, 
-	            "planGUID": "994fd167-7d5a-43e5-acca-c8ffa069350e", 
-	            "cycles": null, 
-	            "resource_uri": "/rundb/api/v1/availableionchefplannedexperimentsummary/102054/"
-	        }
-	    ]
+	    "objects": []
 	}
 
 Allowed HTTP methods

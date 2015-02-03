@@ -15,7 +15,7 @@ Fields table
 ================ ====================================== ======= ======== ======== ===== ====== ======= 
 field            help text                              default nullable readonly blank unique type    
 ================ ====================================== ======= ======== ======== ===== ====== ======= 
-**percentfull**  Floating point numeric data. Ex: 26.73 0.0     true     false    false false  float   
+**percentfull**  Floating point numeric data. Ex: 26.73 0       true     false    false false  float   
 ---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **name**         Unicode string data. Ex: "Hello World" n/a     false    false    false false  string  
 ---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
@@ -58,19 +58,19 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 2, 
+	        "total_count": 3, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/fileserver/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "percentfull": 82.6372068824745, 
-	            "name": "gs1-nfs", 
-	            "filesPrefix": "/ion-data/results/", 
-	            "comments": "gs1-nfs:/gs1/ion-data", 
-	            "id": 5, 
-	            "resource_uri": "/rundb/api/v1/fileserver/5/"
+	            "percentfull": 0.0130563724119952, 
+	            "name": "ddn2", 
+	            "filesPrefix": "/ion-data2/results", 
+	            "comments": "1.1 petabytes storage", 
+	            "id": 10, 
+	            "resource_uri": "/rundb/api/v1/fileserver/10/"
 	        }
 	    ]
 	}

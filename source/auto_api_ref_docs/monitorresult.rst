@@ -82,7 +82,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 159, 
+	        "total_count": 49, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/monitorresult/?offset=1&limit=1&format=json"
@@ -92,44 +92,44 @@ Torrent Server response
 	            "status": "Completed", 
 	            "processedflows": 0, 
 	            "libmetrics": {
-	                "i100Q20_reads": 61016174, 
-	                "aveKeyCounts": 89.0, 
-	                "id": 41874, 
+	                "i100Q20_reads": 63353502, 
+	                "aveKeyCounts": 84, 
+	                "id": 52457, 
 	                "resource_uri": "", 
-	                "q20_mean_alignment_length": 159
+	                "q20_mean_alignment_length": 180
 	            }, 
-	            "timeStamp": "2014-06-28T07:11:58.000789+00:00", 
+	            "timeStamp": "2015-02-03T02:21:07.000963+00:00", 
 	            "analysismetrics": {
-	                "ignored": 1364892, 
-	                "lib": 118063544, 
+	                "ignored": 1416707, 
+	                "lib": 122792563, 
 	                "total_wells": 164699136, 
-	                "pinned": 463867, 
-	                "live": 118074386, 
+	                "pinned": 345310, 
+	                "live": 122796187, 
 	                "excluded": 16095180, 
-	                "bead": 118525043, 
+	                "bead": 123099544, 
 	                "resource_uri": "", 
-	                "id": 41726, 
-	                "empty": 28250154, 
-	                "libFinal": 85604279
+	                "id": 54528, 
+	                "empty": 23742395, 
+	                "libFinal": 85173747
 	            }, 
-	            "reportLink": "/output/Home/Auto_user_Z28-428--r65714-pou4_dbsa_23958_304393/", 
+	            "reportLink": "/output/Home/Auto_user_F3--909--R78811-mosaic1tru4_1xot2_na12878_1400Mmol_4chips-co_33084_317423/", 
 	            "library": "hg19", 
-	            "id": 304393, 
+	            "id": 317423, 
 	            "reportStatus": "Nothing", 
 	            "experiment": {
 	                "ftpStatus": "Complete", 
 	                "chipInstrumentType": "proton", 
-	                "displayName": "user Z28-428--r65714-pou4 dbsa", 
+	                "displayName": "user F3--909--R78811-mosaic1tru4 1xot2 na12878 1400Mmol 4chips-co", 
 	                "chipType": "P1.1.17", 
-	                "notes": "", 
+	                "notes": "mosaic 1 ot 4 chips 1400M molecules", 
 	                "chipDescription": "PI", 
-	                "resultDate": "2014-06-28T07:11:58.000789+00:00", 
+	                "resultDate": "2015-02-03T02:21:07.000963+00:00", 
 	                "flows": 520, 
 	                "runMode": "single", 
-	                "expName": "R_2014_06_27_17_13_22_user_Z28-428--r65714-pou4_dbsa", 
+	                "expName": "R_2015_02_02_13_18_20_user_F3--909--R78811-mosaic1tru4_1xot2_na12878_1400Mmol_4chips-co", 
 	                "storage_options": "D", 
-	                "pgmName": "Z28", 
-	                "date": "2014-06-27T21:19:01+00:00", 
+	                "pgmName": "f3", 
+	                "date": "2015-02-02T18:23:59+00:00", 
 	                "star": false, 
 	                "resource_uri": "", 
 	                "qcThresholds": {
@@ -137,30 +137,30 @@ Torrent Server response
 	                    "Usable Sequence (%)": 30, 
 	                    "Bead Loading (%)": 30
 	                }, 
-	                "id": 23958, 
+	                "id": 33084, 
 	                "plan": {
-	                    "runType": "AMPS_EXOME", 
-	                    "id": 102195, 
+	                    "runType": "WGNM", 
+	                    "id": 111321, 
 	                    "resource_uri": ""
 	                }
 	            }, 
-	            "resultsName": "Auto_user_Z28-428--r65714-pou4_dbsa_23958", 
+	            "resultsName": "Auto_user_F3--909--R78811-mosaic1tru4_1xot2_na12878_1400Mmol_4chips-co_33084", 
 	            "projects": [
 	                {
 	                    "resource_uri": "", 
-	                    "id": 1385, 
-	                    "name": "auto_chip", 
-	                    "modified": "2014-06-27T21:21:43.000081+00:00"
+	                    "id": 1622, 
+	                    "name": "mosaic_enterprise", 
+	                    "modified": "2015-02-02T18:26:29.000916+00:00"
 	                }
 	            ], 
 	            "qualitymetrics": {
-	                "q0_mean_read_length": 178.362197969099, 
-	                "q0_reads": 85604279, 
-	                "q0_bases": "15268567358", 
-	                "q20_reads": 85604279, 
-	                "q20_bases": "13060288783", 
-	                "q20_mean_read_length": 178, 
-	                "id": 39683, 
+	                "q0_mean_read_length": 203.07748070541, 
+	                "q0_reads": 85173747, 
+	                "q0_bases": "17296869963", 
+	                "q20_reads": 85173747, 
+	                "q20_bases": "15168226464", 
+	                "q20_mean_read_length": 203, 
+	                "id": 50272, 
 	                "resource_uri": ""
 	            }, 
 	            "eas": {
@@ -168,7 +168,7 @@ Torrent Server response
 	                "reference": "hg19", 
 	                "barcodeKitName": "IonXpress"
 	            }, 
-	            "resource_uri": "/rundb/api/v1/monitorresult/304393/", 
+	            "resource_uri": "/rundb/api/v1/monitorresult/317423/", 
 	            "barcodeId": "IonXpress", 
 	            "autoExempt": false, 
 	            "representative": false

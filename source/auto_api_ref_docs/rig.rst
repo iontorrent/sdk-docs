@@ -41,6 +41,8 @@ field               help text                                                   
 ------------------- ------------------------------------------------------------------------------ ------------- -------- -------- ----- ------ ------- 
 **last_init_date**  Unicode string data. Ex: "Hello World"                                                       false    false    true  false  string  
 ------------------- ------------------------------------------------------------------------------ ------------- -------- -------- ----- ------ ------- 
+**updateCommand**   Unicode string data. Ex: "Hello World"                                         {}            false    false    true  false  string  
+------------------- ------------------------------------------------------------------------------ ------------- -------- -------- ----- ------ ------- 
 **alarms**          Unicode string data. Ex: "Hello World"                                         {}            false    false    true  false  string  
 ------------------- ------------------------------------------------------------------------------ ------------- -------- -------- ----- ------ ------- 
 **serial**          Unicode string data. Ex: "Hello World"                                         n/a           true     false    false false  string  
@@ -84,7 +86,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 175, 
+	        "total_count": 203, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/rig/?offset=1&limit=1&format=json"
@@ -110,6 +112,7 @@ Torrent Server response
 	                "id": 1
 	            }, 
 	            "last_init_date": "", 
+	            "updateCommand": {}, 
 	            "alarms": {}, 
 	            "serial": "", 
 	            "host_address": "", 

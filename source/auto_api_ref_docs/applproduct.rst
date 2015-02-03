@@ -12,73 +12,85 @@ Schema URL: ``http://mytorrentserver/rundb/api/v1/applproduct/schema/``
 Fields table
 ------------
 
-========================================= ============================================================================== ======= ======== ======== ===== ====== ======= 
-field                                     help text                                                                      default nullable readonly blank unique type    
-========================================= ============================================================================== ======= ======== ======== ===== ====== ======= 
-**isDualNucleotideTypeBySampleSupported** Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**defaultHotSpotRegionBedFileName**       Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string  
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**isTargetRegionBEDFileSupported**        Boolean data. Ex: True                                                         true    false    false    true  false  boolean 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**isSamplePrepKitSupported**              Boolean data. Ex: True                                                         true    false    false    true  false  boolean 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**defaultPESeqKit**                       A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    false false  related 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**defaultPELibKit**                       A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    false false  related 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**defaultSeqKit**                         A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    false false  related 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**defaultBarcodeKitName**                 Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string  
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**id**                                    Integer data. Ex: 2673                                                                 false    false    true  true   integer 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**productCode**                           Unicode string data. Ex: "Hello World"                                         any     false    false    false true   string  
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**isControlSeqTypeBySampleSupported**     Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**defaultChipType**                       Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string  
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**isPairedEndSupported**                  Boolean data. Ex: True                                                         true    false    false    true  false  boolean 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**appl**                                  A single related resource. Can be either a URI or set of nested resource data. n/a     false    false    false false  related 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**instrumentType**                        Unicode string data. Ex: "Hello World"                                                 false    false    true  false  string  
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**isDefault**                             Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**isTargetTechniqueSelectionSupported**   Boolean data. Ex: True                                                         true    false    false    true  false  boolean 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**description**                           Unicode string data. Ex: "Hello World"                                                 false    false    true  false  string  
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**isHotspotRegionBEDFileSuppported**      Boolean data. Ex: True                                                         true    false    false    true  false  boolean 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**productName**                           Unicode string data. Ex: "Hello World"                                         n/a     false    false    false false  string  
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**isBarcodeKitSelectionRequired**         Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**isDefaultBarcoded**                     Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**defaultTargetRegionBedFileName**        Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string  
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**isActive**                              Boolean data. Ex: True                                                         true    false    false    true  false  boolean 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**isReferenceBySampleSupported**          Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**defaultFlowCount**                      Integer data. Ex: 2673                                                         0       false    false    false false  integer 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**defaultLibKit**                         A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    false false  related 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**barcodeKitSelectableType**              Unicode string data. Ex: "Hello World"                                                 false    false    true  false  string  
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**defaultGenomeRefName**                  Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string  
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**isVisible**                             Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**isDefaultPairedEnd**                    Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
------------------------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**resource_uri**                          Unicode string data. Ex: "Hello World"                                         n/a     false    true     false false  string  
-========================================= ============================================================================== ======= ======== ======== ===== ====== ======= 
+========================================================= ============================================================================== ======= ======== ======== ===== ====== ======= 
+field                                                     help text                                                                      default nullable readonly blank unique type    
+========================================================= ============================================================================== ======= ======== ======== ===== ====== ======= 
+**isDualNucleotideTypeBySampleSupported**                 Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**defaultHotSpotRegionBedFileName**                       Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string  
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**isTargetRegionBEDFileSupported**                        Boolean data. Ex: True                                                         true    false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**isSamplePrepKitSupported**                              Boolean data. Ex: True                                                         true    false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**defaultSeqKit**                                         A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    false false  related 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**defaultBarcodeKitName**                                 Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string  
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**isHotSpotBEDFileBySampleSupported**                     Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**id**                                                    Integer data. Ex: 2673                                                                 false    false    true  true   integer 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**isTargetRegionBEDFileBySampleSupported**                Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**productCode**                                           Unicode string data. Ex: "Hello World"                                         any     false    false    false true   string  
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**isControlSeqTypeBySampleSupported**                     Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**defaultChipType**                                       Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string  
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**isPairedEndSupported**                                  Boolean data. Ex: True                                                         true    false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**appl**                                                  A single related resource. Can be either a URI or set of nested resource data. n/a     false    false    false false  related 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**isTargetRegionBEDFileSelectionRequiredForRefSelection** Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**instrumentType**                                        Unicode string data. Ex: "Hello World"                                                 false    false    true  false  string  
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**isDefault**                                             Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**isTargetTechniqueSelectionSupported**                   Boolean data. Ex: True                                                         true    false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**description**                                           Unicode string data. Ex: "Hello World"                                                 false    false    true  false  string  
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**isHotspotRegionBEDFileSuppported**                      Boolean data. Ex: True                                                         true    false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**isVisible**                                             Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**productName**                                           Unicode string data. Ex: "Hello World"                                         n/a     false    false    false false  string  
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**isBarcodeKitSelectionRequired**                         Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**isDefaultBarcoded**                                     Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**defaultTargetRegionBedFileName**                        Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string  
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**isActive**                                              Boolean data. Ex: True                                                         true    false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**isReferenceBySampleSupported**                          Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**defaultFlowCount**                                      Integer data. Ex: 2673                                                         0       false    false    false false  integer 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**defaultLibKit**                                         A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    false false  related 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**barcodeKitSelectableType**                              Unicode string data. Ex: "Hello World"                                                 false    false    true  false  string  
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**defaultGenomeRefName**                                  Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string  
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**defaultSamplePrepKit**                                  A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    false false  related 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**defaultControlSeqKit**                                  A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    false false  related 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**defaultIonChefPrepKit**                                 A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    false false  related 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**resource_uri**                                          Unicode string data. Ex: "Hello World"                                         n/a     false    true     false false  string  
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**defaultIonChefSequencingKit**                           A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    false false  related 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**isDefaultPairedEnd**                                    Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**defaultTemplateKit**                                    A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    false false  related 
+========================================================= ============================================================================== ======= ======== ======== ===== ====== ======= 
 
 Example request
 ---------------
@@ -110,7 +122,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 12, 
+	        "total_count": 14, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/applproduct/?offset=1&limit=1&format=json"
@@ -121,14 +133,14 @@ Torrent Server response
 	            "defaultHotSpotRegionBedFileName": "", 
 	            "isTargetRegionBEDFileSupported": true, 
 	            "isSamplePrepKitSupported": true, 
-	            "defaultPESeqKit": null, 
-	            "defaultPELibKit": null, 
 	            "defaultSeqKit": {
 	                "isActive": true, 
+	                "templatingSize": "", 
 	                "kitType": "SequencingKit", 
 	                "description": "Ion PGM Sequencing 200 Kit v2", 
 	                "nucleotideType": "", 
 	                "instrumentType": "pgm", 
+	                "samplePrep_instrumentType": "", 
 	                "runMode": "", 
 	                "parts": [
 	                    {
@@ -159,13 +171,16 @@ Torrent Server response
 	                "flowCount": 500, 
 	                "applicationType": "", 
 	                "uid": "SEQ0009", 
+	                "libraryReadLength": 0, 
 	                "resource_uri": "/rundb/api/v1/kitinfo/20033/", 
 	                "id": 20033, 
-	                "categories": "", 
+	                "categories": "readLengthDerivableFromFlows;flowsDerivableFromReadLength;", 
 	                "name": "IonPGM200Kit-v2"
 	            }, 
 	            "defaultBarcodeKitName": null, 
+	            "isHotSpotBEDFileBySampleSupported": false, 
 	            "id": 20001, 
+	            "isTargetRegionBEDFileBySampleSupported": true, 
 	            "productCode": "AMPS_0", 
 	            "isControlSeqTypeBySampleSupported": false, 
 	            "defaultChipType": null, 
@@ -183,24 +198,28 @@ Torrent Server response
 	                "alternate_name": "AmpliSeq DNA", 
 	                "resource_uri": "/rundb/api/v1/runtype/2/"
 	            }, 
+	            "isTargetRegionBEDFileSelectionRequiredForRefSelection": true, 
 	            "instrumentType": "pgm", 
 	            "isDefault": true, 
 	            "isTargetTechniqueSelectionSupported": true, 
 	            "description": "", 
 	            "isHotspotRegionBEDFileSuppported": true, 
+	            "isVisible": true, 
 	            "productName": "AMPS_default", 
 	            "isBarcodeKitSelectionRequired": false, 
 	            "isDefaultBarcoded": false, 
 	            "defaultTargetRegionBedFileName": "", 
 	            "isActive": true, 
-	            "isReferenceBySampleSupported": false, 
+	            "isReferenceBySampleSupported": true, 
 	            "defaultFlowCount": 500, 
 	            "defaultLibKit": {
 	                "isActive": true, 
+	                "templatingSize": "", 
 	                "kitType": "LibraryKit", 
 	                "description": "Ion AmpliSeq 2.0 Library Kit", 
 	                "nucleotideType": "dna", 
 	                "instrumentType": "", 
+	                "samplePrep_instrumentType": "", 
 	                "runMode": "", 
 	                "parts": [
 	                    {
@@ -213,6 +232,7 @@ Torrent Server response
 	                "flowCount": 0, 
 	                "applicationType": "", 
 	                "uid": "LIB0008", 
+	                "libraryReadLength": 0, 
 	                "resource_uri": "/rundb/api/v1/kitinfo/20012/", 
 	                "id": 20012, 
 	                "categories": "", 
@@ -220,9 +240,13 @@ Torrent Server response
 	            }, 
 	            "barcodeKitSelectableType": "all", 
 	            "defaultGenomeRefName": "hg19", 
-	            "isVisible": true, 
+	            "defaultSamplePrepKit": null, 
+	            "defaultControlSeqKit": null, 
+	            "defaultIonChefPrepKit": "/rundb/api/v1/kitinfo/20042/", 
+	            "resource_uri": "/rundb/api/v1/applproduct/20001/", 
+	            "defaultIonChefSequencingKit": "/rundb/api/v1/kitinfo/20033/", 
 	            "isDefaultPairedEnd": false, 
-	            "resource_uri": "/rundb/api/v1/applproduct/20001/"
+	            "defaultTemplateKit": "/rundb/api/v1/kitinfo/20034/"
 	        }
 	    ]
 	}

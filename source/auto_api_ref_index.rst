@@ -23,6 +23,7 @@ Torrent Server REST API v1 Resources
 	auto_api_ref_docs/availableonetouchplannedexperimentsummary.rst
 	auto_api_ref_docs/availableplannedexperimentsummary.rst
 	auto_api_ref_docs/chip.rst
+	auto_api_ref_docs/clusterinfohistory.rst
 	auto_api_ref_docs/compositedatamanagement.rst
 	auto_api_ref_docs/compositeexperiment.rst
 	auto_api_ref_docs/compositeresult.rst

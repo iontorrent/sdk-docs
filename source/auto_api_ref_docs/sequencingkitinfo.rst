@@ -12,37 +12,43 @@ Schema URL: ``http://mytorrentserver/rundb/api/v1/sequencingkitinfo/schema/``
 Fields table
 ------------
 
-=================== ================================================================================================== ======= ======== ======== ===== ====== ======= 
-field               help text                                                                                          default nullable readonly blank unique type    
-=================== ================================================================================================== ======= ======== ======== ===== ====== ======= 
-**isActive**        Boolean data. Ex: True                                                                             true    false    false    true  false  boolean 
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**kitType**         Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string  
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**description**     Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**nucleotideType**  Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**instrumentType**  Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**runMode**         Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**parts**           Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     false    false    false false  related 
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**flowCount**       Integer data. Ex: 2673                                                                             n/a     false    false    false false  integer 
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**applicationType** Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string  
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**uid**             Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false true   string  
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**resource_uri**    Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string  
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**id**              Integer data. Ex: 2673                                                                                     false    false    true  true   integer 
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**categories**      Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string  
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**name**            Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false true   string  
-=================== ================================================================================================== ======= ======== ======== ===== ====== ======= 
+============================= ================================================================================================== ======= ======== ======== ===== ====== ======= 
+field                         help text                                                                                          default nullable readonly blank unique type    
+============================= ================================================================================================== ======= ======== ======== ===== ====== ======= 
+**isActive**                  Boolean data. Ex: True                                                                             true    false    false    true  false  boolean 
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**templatingSize**            Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**kitType**                   Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**description**               Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**nucleotideType**            Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**instrumentType**            Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**samplePrep_instrumentType** Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**runMode**                   Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**parts**                     Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     false    false    false false  related 
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**flowCount**                 Integer data. Ex: 2673                                                                             n/a     false    false    false false  integer 
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**applicationType**           Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**uid**                       Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false true   string  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**libraryReadLength**         Integer data. Ex: 2673                                                                             0       false    false    false false  integer 
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**resource_uri**              Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**id**                        Integer data. Ex: 2673                                                                                     false    false    true  true   integer 
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**categories**                Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**name**                      Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false true   string  
+============================= ================================================================================================== ======= ======== ======== ===== ====== ======= 
 
 Example request
 ---------------
@@ -74,52 +80,49 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 18, 
+	        "total_count": 21, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/sequencingkitinfo/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "isActive": false, 
+	            "isActive": true, 
+	            "templatingSize": "", 
 	            "kitType": "SequencingKit", 
-	            "description": "(200bp) Ion Sequencing 200 Kit", 
+	            "description": "Ion PGM Install Kit", 
 	            "nucleotideType": "", 
 	            "instrumentType": "pgm", 
+	            "samplePrep_instrumentType": "", 
 	            "runMode": "", 
 	            "parts": [
 	                {
-	                    "barcode": "4471258", 
-	                    "id": 20005, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20005/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20002/"
+	                    "barcode": "4480217", 
+	                    "id": 20019, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20019/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20020/"
 	                }, 
 	                {
-	                    "barcode": "4471257", 
-	                    "id": 20006, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20006/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20002/"
+	                    "barcode": "4480282", 
+	                    "id": 20020, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20020/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20020/"
 	                }, 
 	                {
-	                    "barcode": "4471259", 
-	                    "id": 20007, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20007/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20002/"
-	                }, 
-	                {
-	                    "barcode": "4471260", 
-	                    "id": 20008, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20008/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20002/"
+	                    "barcode": "4480284", 
+	                    "id": 20021, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20021/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20020/"
 	                }
 	            ], 
-	            "flowCount": 520, 
+	            "flowCount": 100, 
 	            "applicationType": "", 
-	            "uid": "SEQ0002", 
-	            "resource_uri": "/rundb/api/v1/sequencingkitinfo/20002/", 
-	            "id": 20002, 
-	            "categories": "", 
-	            "name": "IonSeq200Kit"
+	            "uid": "SEQ0006", 
+	            "libraryReadLength": 0, 
+	            "resource_uri": "/rundb/api/v1/sequencingkitinfo/20020/", 
+	            "id": 20020, 
+	            "categories": "readLengthDerivableFromFlows;flowsDerivableFromReadLength;", 
+	            "name": "IonPGMInstallKit"
 	        }
 	    ]
 	}

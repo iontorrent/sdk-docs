@@ -98,7 +98,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 43354, 
+	        "total_count": 56103, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/projectresults/?offset=1&limit=1&format=json"
@@ -121,47 +121,7 @@ Torrent Server response
 	            "tfSffLink": "/output/Home/Auto_user_D1--632--R54651-p8s2_827b2_20m_man-cf_17446_293943/R_2014_01_22_16_30_23_user_D1--632--R54651-p8s2_827b2_20m_man-cf_Auto_user_D1--632--R54651-p8s2_827b2_20m_man-cf_17446.tf.sff", 
 	            "diskusage": 151, 
 	            "projects": [
-	                {
-	                    "name": "chef_827_909_20min_ext", 
-	                    "creator": "/rundb/api/v1/user/1/", 
-	                    "created": "2014-01-22T18:50:10.000920+00:00", 
-	                    "results": [
-	                        "/rundb/api/v1/results/294145/", 
-	                        "/rundb/api/v1/results/293993/", 
-	                        "/rundb/api/v1/results/293992/", 
-	                        "/rundb/api/v1/results/293991/", 
-	                        "/rundb/api/v1/results/293990/", 
-	                        "/rundb/api/v1/results/293946/", 
-	                        "/rundb/api/v1/results/293945/", 
-	                        "/rundb/api/v1/results/293944/", 
-	                        "/rundb/api/v1/results/293943/", 
-	                        "/rundb/api/v1/results/293934/", 
-	                        "/rundb/api/v1/results/293933/", 
-	                        "/rundb/api/v1/results/293930/", 
-	                        "/rundb/api/v1/results/293929/", 
-	                        "/rundb/api/v1/results/293928/", 
-	                        "/rundb/api/v1/results/293927/", 
-	                        "/rundb/api/v1/results/293917/", 
-	                        "/rundb/api/v1/results/293916/", 
-	                        "/rundb/api/v1/results/293915/", 
-	                        "/rundb/api/v1/results/293914/", 
-	                        "/rundb/api/v1/results/293913/", 
-	                        "/rundb/api/v1/results/293912/", 
-	                        "/rundb/api/v1/results/293908/", 
-	                        "/rundb/api/v1/results/293907/", 
-	                        "/rundb/api/v1/results/293906/", 
-	                        "/rundb/api/v1/results/293905/", 
-	                        "/rundb/api/v1/results/293904/", 
-	                        "/rundb/api/v1/results/293903/", 
-	                        "/rundb/api/v1/results/293902/", 
-	                        "/rundb/api/v1/results/293901/"
-	                    ], 
-	                    "modified": "2014-01-22T18:50:10.000920+00:00", 
-	                    "id": 1080, 
-	                    "resultsCount": 29, 
-	                    "public": true, 
-	                    "resource_uri": "/rundb/api/v1/project/1080/"
-	                }
+	                "/rundb/api/v1/project/1080/"
 	            ], 
 	            "resultsType": "", 
 	            "tfFastq": "_", 

@@ -59,6 +59,7 @@ EXCLUDE_RESOURCES = [
     "ionreporter",  #400
     "network",  #500
     "torrentsuite",  #500
+    "prepopulatedplanningsession", #500
 ]
 API_VERSION = "v1"
 DEMO_API_BASE_URL = "http://mytorrentserver/rundb/api/v1/"

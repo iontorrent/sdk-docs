@@ -23,23 +23,19 @@ field                           help text                                       
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **preAnalysis**                 Boolean data. Ex: True                                                                                     false    false    true  false  boolean  
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**isSystemDefault**             Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
+**planShortID**                 Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **username**                    Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**planShortID**                 Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planStatus**                  Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefLastUpdate**              A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     true     false    false false  datetime 
+**runMode**                     Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **templatingKitBarcode**        Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **sampleTubeLabel**             Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planExecutedDate**            A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     true     false    false false  datetime 
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefStatus**                  Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **samplePrepKitName**           Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -61,8 +57,6 @@ field                           help text                                       
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **qcValues**                    Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related  
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefLogPath**                 Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **isPlanGroup**                 Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **sampleSet_planTotal**         Integer data. Ex: 2673                                                                             0       false    false    false false  integer  
@@ -77,7 +71,7 @@ field                           help text                                       
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planPGM**                     Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefProgress**                Floating point numeric data. Ex: 26.73                                                             0.0     false    false    true  false  float    
+**isSystemDefault**             Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **autoName**                    Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -95,7 +89,7 @@ field                           help text                                       
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planName**                    Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefMessage**                 Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+**templatingSize**              Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **parentPlan**                  Unicode string data. Ex: "Hello World"                                                             None    false    false    true  false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -105,11 +99,9 @@ field                           help text                                       
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **pairedEndLibraryAdapterName** Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**runMode**                     Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+**sampleGrouping**              A single related resource. Can be either a URI or set of nested resource data.                     n/a     true     false    true  false  related  
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **adapter**                     Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**sampleGrouping**              A single related resource. Can be either a URI or set of nested resource data.                     n/a     true     false    true  false  related  
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **irworkflow**                  Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -124,6 +116,8 @@ field                           help text                                       
 **storageHost**                 Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **expName**                     Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**libraryReadLength**           Integer data. Ex: 2673                                                                             0       false    false    false false  integer  
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **runname**                     Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -166,7 +160,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 18369, 
+	        "total_count": 24558, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/plannedexperimentdb/?offset=1&limit=1&format=json"
@@ -174,23 +168,21 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "isReverseRun": false, 
-	            "planDisplayedName": "CopyOfSystemDefault_R_2014_06_27_14_19_01_user_P19-606", 
+	            "planDisplayedName": "CopyOfSystemDefault_R_2015_02_02_17_43_41_user_GT1-126", 
 	            "storage_options": "A", 
 	            "preAnalysis": true, 
-	            "isSystemDefault": false, 
+	            "planShortID": "G76FR", 
 	            "username": null, 
-	            "planShortID": "G5B50", 
 	            "planStatus": "run", 
-	            "chefLastUpdate": null, 
+	            "runMode": "single", 
 	            "templatingKitBarcode": null, 
 	            "sampleTubeLabel": null, 
 	            "planExecutedDate": null, 
-	            "chefStatus": "", 
 	            "samplePrepKitName": null, 
 	            "reverse_primer": null, 
 	            "applicationGroup": "/rundb/api/v1/applicationgroup/1/", 
 	            "seqKitBarcode": null, 
-	            "id": 102212, 
+	            "id": 111327, 
 	            "metaData": {}, 
 	            "sampleSet_uid": null, 
 	            "isFavorite": false, 
@@ -198,8 +190,8 @@ Torrent Server response
 	            "qcValues": [
 	                {
 	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/102212/", 
-	                    "id": 266571, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/111327/", 
+	                    "id": 289776, 
 	                    "qcType": {
 	                        "description": "", 
 	                        "minThreshold": 0, 
@@ -209,12 +201,12 @@ Torrent Server response
 	                        "id": 1, 
 	                        "resource_uri": "/rundb/api/v1/qctype/1/"
 	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/266571/"
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/289776/"
 	                }, 
 	                {
 	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/102212/", 
-	                    "id": 266570, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/111327/", 
+	                    "id": 289775, 
 	                    "qcType": {
 	                        "description": "", 
 	                        "minThreshold": 1, 
@@ -224,12 +216,12 @@ Torrent Server response
 	                        "id": 2, 
 	                        "resource_uri": "/rundb/api/v1/qctype/2/"
 	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/266570/"
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/289775/"
 	                }, 
 	                {
 	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/102212/", 
-	                    "id": 266569, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/111327/", 
+	                    "id": 289774, 
 	                    "qcType": {
 	                        "description": "", 
 	                        "minThreshold": 0, 
@@ -239,46 +231,45 @@ Torrent Server response
 	                        "id": 3, 
 	                        "resource_uri": "/rundb/api/v1/qctype/3/"
 	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/266569/"
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/289774/"
 	                }
 	            ], 
-	            "chefLogPath": null, 
 	            "isPlanGroup": false, 
 	            "sampleSet_planTotal": 0, 
-	            "experiment": "/rundb/api/v1/experiment/23975/", 
+	            "experiment": "/rundb/api/v1/experiment/33090/", 
 	            "projects": [], 
 	            "runType": "GENS", 
 	            "sampleSet": null, 
 	            "planPGM": null, 
-	            "chefProgress": 0.0, 
+	            "isSystemDefault": false, 
 	            "autoName": null, 
 	            "isReusable": false, 
 	            "controlSequencekitname": null, 
-	            "date": "2014-06-27T23:36:06.000229+00:00", 
+	            "date": "2015-02-02T22:44:33.000729+00:00", 
 	            "isSystem": false, 
 	            "libkit": null, 
 	            "categories": "", 
-	            "planName": "CopyOfSystemDefault_R_2014_06_27_14_19_01_user_P19-606", 
-	            "chefMessage": "", 
+	            "planName": "CopyOfSystemDefault_R_2015_02_02_17_43_41_user_GT1-126", 
+	            "templatingSize": "", 
 	            "parentPlan": null, 
 	            "childPlans": [], 
 	            "templatingKitName": "Ion PI Template OT2 200 Kit v3", 
 	            "pairedEndLibraryAdapterName": null, 
-	            "runMode": "single", 
-	            "adapter": null, 
 	            "sampleGrouping": null, 
+	            "adapter": null, 
 	            "irworkflow": "", 
 	            "chipBarcode": null, 
 	            "planExecuted": true, 
 	            "project": "", 
 	            "usePostBeadfind": false, 
 	            "storageHost": null, 
-	            "expName": "R_2014_06_27_14_19_01_user_P19-606", 
+	            "expName": "R_2015_02_02_17_43_41_user_GT1-126", 
+	            "libraryReadLength": 0, 
 	            "runname": null, 
 	            "usePreBeadfind": true, 
-	            "planGUID": "80384c15-e0e2-4909-9d4c-950731bf1cf4", 
+	            "planGUID": "8aad7839-ccf2-46c2-9158-4f76b8b6d491", 
 	            "cycles": null, 
-	            "resource_uri": "/rundb/api/v1/plannedexperimentdb/102212/"
+	            "resource_uri": "/rundb/api/v1/plannedexperimentdb/111327/"
 	        }
 	    ]
 	}

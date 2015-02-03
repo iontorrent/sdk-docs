@@ -106,7 +106,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 37351, 
+	        "total_count": 47862, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/qualitymetrics/?offset=1&limit=1&format=json"
@@ -118,7 +118,7 @@ Torrent Server response
 	            "q20_median_read_length": 0, 
 	            "q20_reads": 0, 
 	            "report": "/rundb/api/v1/results/269819/", 
-	            "q17_mean_read_length": 0.0, 
+	            "q17_mean_read_length": 0, 
 	            "q17_100bp_reads": 0, 
 	            "resource_uri": "/rundb/api/v1/qualitymetrics/9943/", 
 	            "q0_max_read_length": 0, 
@@ -134,11 +134,11 @@ Torrent Server response
 	            "q0_50bp_reads": 0, 
 	            "q17_150bp_reads": 0, 
 	            "q0_150bp_reads": 0, 
-	            "q0_mean_read_length": 0.0, 
+	            "q0_mean_read_length": 0, 
 	            "q17_bases": "0", 
 	            "q0_mode_read_length": 0, 
 	            "q20_mode_read_length": 0, 
-	            "q20_max_read_length": 0.0, 
+	            "q20_max_read_length": 0, 
 	            "q20_bases": "0", 
 	            "q0_median_read_length": 0, 
 	            "q0_100bp_reads": 0, 

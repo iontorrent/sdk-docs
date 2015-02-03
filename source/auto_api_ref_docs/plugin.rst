@@ -94,7 +94,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 102, 
+	        "total_count": 113, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/plugin/?offset=1&limit=1&format=json"
@@ -102,17 +102,17 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "active": true, 
-	            "id": 493, 
+	            "id": 64, 
 	            "isPlanConfig": false, 
 	            "autorunMutable": true, 
 	            "script": "launch.sh", 
-	            "selected": true, 
-	            "version": "0.2.0", 
+	            "selected": false, 
+	            "version": "0.2", 
 	            "hasAbout": false, 
 	            "input": "False", 
 	            "majorBlock": false, 
 	            "status": {}, 
-	            "description": "Ion Torrent Plugin - 'BarcodeAlignStats' v0.2.0", 
+	            "description": "Ion Torrent Plugin - 'bubbleRun' v0.2", 
 	            "autorun": false, 
 	            "pluginsettings": {
 	                "runtype": [
@@ -123,16 +123,16 @@ Torrent Server response
 	                "features": [], 
 	                "runlevel": []
 	            }, 
-	            "date": "2013-05-30T21:32:15.000437+00:00", 
-	            "path": "/results/plugins/BarcodeAlignStats", 
+	            "date": "2011-11-30T19:29:06.000945+00:00", 
+	            "path": "/results/plugins/bubbleRun", 
 	            "isConfig": false, 
-	            "name": "BarcodeAlignStats", 
+	            "name": "bubbleRun", 
 	            "userinputfields": {}, 
 	            "url": "", 
 	            "config": {}, 
-	            "versionedName": "BarcodeAlignStats--v0.2.0", 
+	            "versionedName": "bubbleRun--v0.2", 
 	            "isInstance": false, 
-	            "resource_uri": "/rundb/api/v1/plugin/493/"
+	            "resource_uri": "/rundb/api/v1/plugin/64/"
 	        }
 	    ]
 	}

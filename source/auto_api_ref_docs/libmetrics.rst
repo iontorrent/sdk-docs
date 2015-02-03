@@ -242,7 +242,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 39455, 
+	        "total_count": 49960, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/libmetrics/?offset=1&limit=1&format=json"
@@ -257,7 +257,7 @@ Torrent Server response
 	            "i250Q17_reads": 0, 
 	            "q10_longest_alignment": 137, 
 	            "i50Q10_reads": 5244, 
-	            "aveKeyCounts": 82.0, 
+	            "aveKeyCounts": 82, 
 	            "i50Q17_reads": 5050, 
 	            "total_mapped_target_bases": "0", 
 	            "i200Q7_reads": 0, 
@@ -322,7 +322,7 @@ Torrent Server response
 	            "i150Q7_reads": 0, 
 	            "i400Q10_reads": 0, 
 	            "q10_mean_alignment_length": 104, 
-	            "raw_accuracy": 0.0, 
+	            "raw_accuracy": 0, 
 	            "sysSNR": 17.32, 
 	            "q17_mapped_bases": "524626", 
 	            "Index_Version": "tmap-f2", 

@@ -35,7 +35,7 @@ field                     help text                                             
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **libFinal**              Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**loading**               Floating point numeric data. Ex: 26.73                                         0.0     false    false    false false  float   
+**loading**               Floating point numeric data. Ex: 26.73                                         0       false    false    false false  float   
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **lib**                   Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
@@ -118,7 +118,7 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 38886, 
+	        "total_count": 51527, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/analysismetrics/?offset=1&limit=1&format=json"
@@ -135,7 +135,7 @@ Torrent Server response
 	            "washout_live": 0, 
 	            "id": 1, 
 	            "libFinal": 0, 
-	            "loading": 0.0, 
+	            "loading": 0, 
 	            "lib": 7197, 
 	            "keypass_all_beads": 0, 
 	            "dud": 208, 

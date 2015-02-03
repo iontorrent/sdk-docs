@@ -70,13 +70,13 @@ Torrent Server response
 	    "objects": [
 	        {
 	            "direction": "Forward", 
-	            "name": "Ion TCAG", 
-	            "sequence": "TCAG", 
-	            "description": "Default forward library key", 
+	            "name": "bc01_seq_primer", 
+	            "sequence": "CGAT", 
+	            "description": "bc01only", 
 	            "runMode": "single", 
-	            "id": 3, 
-	            "isDefault": true, 
-	            "resource_uri": "/rundb/api/v1/librarykey/3/"
+	            "id": 6, 
+	            "isDefault": false, 
+	            "resource_uri": "/rundb/api/v1/librarykey/6/"
 	        }
 	    ]
 	}

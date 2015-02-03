@@ -1,13 +1,13 @@
-Database Table rundb_dm_prune_group
+Database Table rundb_sharedserver
 ============================================================================
 
 Postgres database: ``iondb``
 
 
-Postgres table: ``rundb_dm_prune_group``
+Postgres table: ``rundb_sharedserver``
 
 
-.. include:: ../manual_database_ref_docs/rundb_dm_prune_group.rst
+.. include:: ../manual_database_ref_docs/rundb_sharedserver.rst
 
 Schema
 -------
@@ -15,12 +15,18 @@ Schema
 +------------+----------------------------------+---------------+
 | Field      | Type                             | Description   |
 +============+==================================+===============+
-| editable   | Boolean (Either True or False)   | editable      |
+| active     | Boolean (Either True or False)   | active        |
++------------+----------------------------------+---------------+
+| address    | String (up to 128)               | address       |
++------------+----------------------------------+---------------+
+| comments   | Text                             | comments      |
 +------------+----------------------------------+---------------+
 | id         | Integer                          | ID            |
 +------------+----------------------------------+---------------+
 | name       | String (up to 128)               | name          |
 +------------+----------------------------------+---------------+
-| ruleNums   | Comma-separated integers         | ruleNums      |
+| password   | String (up to 64)                | password      |
++------------+----------------------------------+---------------+
+| username   | String (up to 64)                | username      |
 +------------+----------------------------------+---------------+
 

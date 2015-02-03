@@ -63,11 +63,11 @@ Torrent Server response
 	    }, 
 	    "objects": [
 	        {
-	            "name": "Local", 
-	            "resource_uri": "/rundb/api/v1/location/3/", 
-	            "defaultlocation": false, 
+	            "name": "Home", 
+	            "resource_uri": "/rundb/api/v1/location/1/", 
+	            "defaultlocation": true, 
 	            "comments": "", 
-	            "id": 3
+	            "id": 1
 	        }
 	    ]
 	}

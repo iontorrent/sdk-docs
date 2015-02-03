@@ -70,25 +70,25 @@ Torrent Server response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 4, 
+	        "total_count": 6, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/samplesetitem/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "sample": "/rundb/api/v1/sample/4877/", 
-	            "gender": "Female", 
-	            "relationshipGroup": 1, 
+	            "sample": "/rundb/api/v1/sample/11104/", 
+	            "gender": "", 
+	            "relationshipGroup": 0, 
 	            "cellularityPct": null, 
-	            "relationshipRole": "Self", 
-	            "cancerType": null, 
-	            "sampleSet": "/rundb/api/v1/sampleset/5/", 
-	            "lastModifiedDate": "2013-10-07T12:04:51.000440+00:00", 
+	            "relationshipRole": "", 
+	            "cancerType": "", 
+	            "sampleSet": "/rundb/api/v1/sampleset/7/", 
+	            "lastModifiedDate": "2014-11-14T01:04:50.000314+00:00", 
 	            "dnabarcode": null, 
-	            "creationDate": "2013-10-07T12:04:51.000440+00:00", 
-	            "id": 14, 
-	            "resource_uri": "/rundb/api/v1/samplesetitem/14/"
+	            "creationDate": "2014-11-14T01:04:50.000314+00:00", 
+	            "id": 18, 
+	            "resource_uri": "/rundb/api/v1/samplesetitem/18/"
 	        }
 	    ]
 	}
