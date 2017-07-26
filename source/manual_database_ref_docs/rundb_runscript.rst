@@ -1,1 +1,0 @@
-Run script data model. The run script is the Python script that runs the analysis pipeline, adds metrics to the database, and generates reports.

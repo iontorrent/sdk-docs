@@ -1,2 +1,0 @@
-Monitor Data data model.
-

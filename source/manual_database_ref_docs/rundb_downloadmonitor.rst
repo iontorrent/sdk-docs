@@ -1,1 +1,0 @@
-Download monitor data model. 

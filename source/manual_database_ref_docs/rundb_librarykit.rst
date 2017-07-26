@@ -1,1 +1,0 @@
-Library kit data model. 

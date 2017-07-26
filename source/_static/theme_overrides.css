@@ -1,0 +1,11 @@
+.logo {
+    max-width: 262px !important;
+}
+
+body, h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.wy-side-nav-search {
+    background-color: #6cace4;
+}

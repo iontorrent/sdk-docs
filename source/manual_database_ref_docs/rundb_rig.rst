@@ -1,1 +1,0 @@
-PGM or Proton description data model.

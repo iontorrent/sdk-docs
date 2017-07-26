@@ -1,4 +1,0 @@
-Application product data model. 
-
-
-

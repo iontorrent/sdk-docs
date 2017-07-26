@@ -1,1 +1,0 @@
-User profile data model. 
