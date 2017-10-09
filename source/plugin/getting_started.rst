@@ -39,8 +39,8 @@ Enter the following python code into a file called *MyPlugin.py* inside a new di
     if __name__ == "__main__":
         PluginCLI()
 
-Zip the *MyPlugin* directory. See :ref:`plugin_packaging` for help. Click *Install or Upgrade Plugin* to upload the archive 
-on the TS plugins page. Navigate to an existing TS run report, click *Select Plugins to Run*, then select *MyPlugin*. 
+Compress the *MyPlugin* directory (ZIP file format). See :ref:`plugin_packaging` for help. Click *Install or Upgrade Plugin* to upload the archive
+on the |TS| plugins page. Navigate to an existing |TS| run report, click *Select Plugins to Run*, then select *MyPlugin*.
 The plugin code executes and the output displays in an iframe on the report
 
 
@@ -52,7 +52,7 @@ Plugins are fundamentally an ability to extend the functionality of the analysis
 Configuration
 ^^^^^^^^^^^^^
 
-Occasionaly, you need to configure plugins before their execution. 
+Occasionally, you need to configure plugins before their execution.
 To do this, the Plugin Framework offers three different caches for storing the configurations for the two different workflows for executing a plugin.
 
 **Automated Pipeline Workflow**
@@ -99,6 +99,20 @@ This strategy is the default for non-block-level specific run levels and is used
 * SEPARATOR: Do not use.
 
 
+.. _getting_started_run_types:
+
+Run Types
+^^^^^^^^^
+
+Run Types define which type of data the plugin is capable of running on, this controls whether the plugin is executed on a
+specific report type when it is selected during planning. If no run types are defined the plugin will be launched for thumbnail
+and |PGM| reports only, in order to auto-run on |S5|/|PROTON| reports the plugin must include COMPOSITE in its runtypes specification.
+
+* COMPOSITE: Plugin will run on |S5|/|PROTON| report.
+* THUMB: Plugin will run on |S5|/|PROTON| thumbnail report.
+* FULLCHIP: Plugin will run on |PGM| report.
+
+
 Dependencies
 ^^^^^^^^^^^^
 
@@ -110,7 +124,7 @@ OIA Integration
 
 Currently, the "On Instrument Analysis" (OIA) is responsible for the first two portions of the pipeline execution.  
 The OIA does not normally interfere with plugin execution. However, if you select the PRE run level, any OIA-based 
-workflows are executed after the signal processing step. A pure TS implementation's PRE step is executed before the 
+workflows are executed after the signal processing step. A pure |TS| implementation's PRE step is executed before the
 signal processing step.
 
 Plugin Code
@@ -163,5 +177,5 @@ plugin. All other contents are a child of this root folder:
 
 Linux Bash Shell: 'zip -r --exclude=*.git* PluginName.zip PluginDirectory'
 
-After you create the archive, go to http://TS_hostname/configure/plugins/ on the Torrent Suite Server, then 
+After you create the archive, go to http://TS_hostname/configure/plugins/ on the |TS| Server, then
 click "Install or Upgrade Plugin" to submit your new archive.

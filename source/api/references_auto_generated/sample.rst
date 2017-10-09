@@ -44,12 +44,27 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 0, 
+	        "total_count": 4, 
 	        "offset": 0, 
 	        "limit": 1, 
-	        "next": null
+	        "next": "/rundb/api/v1/sample/?offset=1&limit=1&format=json"
 	    }, 
-	    "objects": []
+	    "objects": [
+	        {
+	            "status": "run", 
+	            "sampleSets": [], 
+	            "description": null, 
+	            "displayedName": "e5272-wfa-l165", 
+	            "experiments": [
+	                "/rundb/api/v1/experiment/94/"
+	            ], 
+	            "externalId": "", 
+	            "date": "2017-08-23T21:42:01.000299+00:00", 
+	            "resource_uri": "/rundb/api/v1/sample/4/", 
+	            "id": 4, 
+	            "name": "e5272-wfa-l165"
+	        }
+	    ]
 	}
 
 Allowed HTTP methods

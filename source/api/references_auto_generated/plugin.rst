@@ -87,44 +87,44 @@ Example Response
 	        {
 	            "active": true, 
 	            "availableVersions": [
-	                "5.4.0.0", 
-	                "5.4.0.1", 
-	                "5.4.0.3"
+	                "5.6.0.0"
 	            ], 
-	            "id": 26, 
-	            "isPlanConfig": false, 
+	            "id": 16, 
+	            "isPlanConfig": true, 
 	            "isSupported": true, 
-	            "script": "FieldSupport.py", 
+	            "script": "smallRNA.py", 
 	            "selected": true, 
-	            "version": "5.4.0.3", 
+	            "version": "5.6.0.0", 
 	            "hasAbout": false, 
-	            "input": "False", 
-	            "majorBlock": false, 
+	            "input": "/configure/plugins/plugin/16/configure/report/", 
+	            "majorBlock": true, 
 	            "status": {}, 
-	            "description": "Generate an enhanced CSA", 
-	            "defaultSelected": true, 
+	            "description": "Run the small RNA pipeline.", 
+	            "defaultSelected": false, 
 	            "pluginsettings": {
 	                "depends": [], 
 	                "features": [], 
 	                "runtypes": [
-	                    "wholechip"
+	                    "wholechip", 
+	                    "thumbnail", 
+	                    "composite"
 	                ], 
 	                "runlevels": [
-	                    "last"
+	                    "default"
 	                ]
 	            }, 
-	            "date": "2017-04-10T04:57:14.000270+00:00", 
-	            "path": "/results/plugins/FieldSupport", 
-	            "isConfig": false, 
-	            "isInstance": false, 
-	            "name": "FieldSupport", 
+	            "date": "2017-08-01T20:08:28.000127+00:00", 
+	            "path": "/results/plugins/smallRNA", 
+	            "isConfig": true, 
+	            "isInstance": true, 
+	            "name": "smallRNA", 
 	            "userinputfields": {}, 
 	            "url": "", 
 	            "config": {}, 
-	            "packageName": "ion-plugin-fieldsupport", 
-	            "versionedName": "FieldSupport--v5.4.0.3", 
+	            "packageName": "ion-plugin-smallrna", 
+	            "versionedName": "smallRNA--v5.6.0.0", 
 	            "isUpgradable": false, 
-	            "resource_uri": "/rundb/api/v1/plugin/26/"
+	            "resource_uri": "/rundb/api/v1/plugin/16/"
 	        }
 	    ]
 	}

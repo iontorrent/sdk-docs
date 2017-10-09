@@ -39,7 +39,7 @@ field              help text                                            default 
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **celery_task_id** Unicode string data. Ex: "Hello World"                                                false    false    true  false  string   
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
-**date**           A date & time as a string. Ex: "2010-11-10T03:07:43" 2017-04-26T00:50:31.000661+00:00 false    false    false false  datetime 
+**date**           A date & time as a string. Ex: "2010-11-10T03:07:43" 2017-09-20T05:16:15.000679+00:00 false    false    false false  datetime 
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **verbose_error**  Unicode string data. Ex: "Hello World"                                                false    false    true  false  string   
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
@@ -75,7 +75,7 @@ Example Response
 	            "source": "", 
 	            "version": "1", 
 	            "celery_task_id": "", 
-	            "date": "2017-03-14T03:40:08.000071+00:00", 
+	            "date": "2017-07-22T06:50:25.000233+00:00", 
 	            "verbose_error": "", 
 	            "id": 1, 
 	            "resource_uri": "/rundb/api/v1/referencegenome/1/"

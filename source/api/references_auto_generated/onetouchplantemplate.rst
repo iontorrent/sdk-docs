@@ -204,7 +204,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 36, 
+	        "total_count": 35, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/onetouchplantemplate/?offset=1&limit=1&format=json"
@@ -226,7 +226,7 @@ Example Response
 	            "libkit": null, 
 	            "projects": [], 
 	            "notes": "", 
-	            "sequencekitname": "    ProtonI200Kit-v3", 
+	            "sequencekitname": "ProtonI200Kit-v3", 
 	            "base_recalibration_mode": "standard_recal", 
 	            "storageHost": null, 
 	            "expName": "", 
@@ -236,7 +236,7 @@ Example Response
 	            "storage_options": "A", 
 	            "thumbnailalignmentargs": "", 
 	            "chipType": "P1.1.17", 
-	            "library": "mm10", 
+	            "library": "AmpliSeq_Mouse_Transcriptome_v1", 
 	            "runMode": "single", 
 	            "planName": "Ion_AmpliSeq_Transcriptome_Mouse_Gene_Expression_Panel_OT2-Proton", 
 	            "seqKitBarcode": null, 
@@ -245,7 +245,7 @@ Example Response
 	            "realign": false, 
 	            "sampleGroupingName": "Self", 
 	            "experiment": "/rundb/api/v1/experiment/81/", 
-	            "bedfile": "", 
+	            "bedfile": "/AmpliSeq_Mouse_Transcriptome_v1/unmerged/detail/AmpliSeq_Mouse_Transcriptome_V1.Designed.bed", 
 	            "applicationCategoryDisplayedName": "", 
 	            "isReusable": true, 
 	            "isDuplicateReads": false, 
@@ -257,7 +257,7 @@ Example Response
 	            "basecallerargs": "", 
 	            "earlyDatFileDeletion": false, 
 	            "parentPlan": null, 
-	            "origin": "|5.4.0.RC1", 
+	            "origin": "|5.6.0.RC1", 
 	            "forward3primeadapter": "ATCACCGACTGCCCATAGAGAGGCTGAGAC", 
 	            "planStatus": "inactive", 
 	            "samplePrepKitName": null, 
@@ -316,7 +316,7 @@ Example Response
 	            "templatingKitName": "Ion PI Template OT2 200 Kit v3", 
 	            "runType": "AMPS_RNA", 
 	            "username": null, 
-	            "planShortID": "OAA43", 
+	            "planShortID": "FDXPW", 
 	            "sampleDisplayedName": "", 
 	            "prethumbnailbasecallerargs": "", 
 	            "controlSequencekitname": null, 
@@ -332,7 +332,7 @@ Example Response
 	            "libraryReadLength": 0, 
 	            "runname": null, 
 	            "chefInfo": {}, 
-	            "planGUID": "852369c4-c659-45ad-95f0-653c9516c661", 
+	            "planGUID": "c5299ab6-9142-4034-95f9-c1d178c67dda", 
 	            "sampleTubeLabel": null, 
 	            "ionstatsargs": "", 
 	            "samplePrepProtocol": "", 
@@ -346,10 +346,10 @@ Example Response
 	            "selectedPlugins": {
 	                "ampliSeqRNA": {
 	                    "userInput": {}, 
-	                    "version": "5.4.0.1", 
+	                    "version": "5.6.0.3", 
 	                    "features": [], 
 	                    "name": "ampliSeqRNA", 
-	                    "id": 1
+	                    "id": 20
 	                }
 	            }, 
 	            "beadfindargs": "", 
@@ -357,7 +357,7 @@ Example Response
 	            "autoName": null, 
 	            "libraryKey": "TCAG", 
 	            "flows": 500, 
-	            "date": "2017-04-10T04:54:04.000174+00:00", 
+	            "date": "2017-08-10T22:57:27.000213+00:00", 
 	            "isSystem": true, 
 	            "variantfrequency": "", 
 	            "sampleSetDisplayedName": "", 

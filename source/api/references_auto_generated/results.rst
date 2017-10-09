@@ -101,7 +101,7 @@ Example Response
 	    }, 
 	    "objects": [
 	        {
-	            "reference": "hg19", 
+	            "reference": "", 
 	            "processedflows": 0, 
 	            "reportStatus": "Nothing", 
 	            "reportstorage": {
@@ -112,58 +112,50 @@ Example Response
 	                "id": 1, 
 	                "resource_uri": ""
 	            }, 
-	            "analysisVersion": "db:5.4.15-1,an:5.4.3-1,", 
-	            "runid": "Z6MPC", 
-	            "id": 6, 
-	            "filesystempath": "/results/analysis/output/Home/Reanalyze_006", 
+	            "analysisVersion": "db:5.6.18-1,an:5.6.5-1,", 
+	            "runid": "MJMQ3", 
+	            "id": 3, 
+	            "filesystempath": "/results/analysis/output/Home/Auto_S5-540_WholeTranscriptomeRNA_91_003", 
 	            "metaData": {}, 
-	            "log": "/output/Home/Reanalyze_006/log.html", 
-	            "timeStamp": "2017-04-04T04:29:06.000356+00:00", 
+	            "log": "/output/Home/Auto_S5-540_WholeTranscriptomeRNA_91_003/log.html", 
+	            "timeStamp": "2017-07-22T13:15:56.000197+00:00", 
 	            "libmetrics": [
-	                "/rundb/api/v1/libmetrics/4/"
+	                "/rundb/api/v1/libmetrics/1/"
 	            ], 
-	            "experiment": "/rundb/api/v1/experiment/89/", 
-	            "resultsName": "Reanalyze", 
+	            "experiment": "/rundb/api/v1/experiment/91/", 
+	            "resultsName": "Auto_S5-540_WholeTranscriptomeRNA_91", 
 	            "status": "Completed", 
-	            "planShortID": "1BFQJ", 
+	            "planShortID": "RI63N", 
 	            "processedCycles": 0, 
-	            "bamLink": "/output/Home/Reanalyze_006/download_links/S5-530_cfDNA_Reanalyze.bam", 
+	            "bamLink": "/output/Home/Auto_S5-540_WholeTranscriptomeRNA_91_003/download_links/S5-540_WholeTranscriptomeRNA_Auto_S5-540_WholeTranscriptomeRNA_91.bam", 
 	            "representative": false, 
 	            "qualitymetrics": [
-	                "/rundb/api/v1/qualitymetrics/4/"
+	                "/rundb/api/v1/qualitymetrics/1/"
 	            ], 
-	            "diskusage": 73494, 
-	            "eas": "/rundb/api/v1/experimentanalysissettings/92/", 
+	            "diskusage": 229301, 
+	            "eas": "/rundb/api/v1/experimentanalysissettings/90/", 
 	            "projects": [
 	                "/rundb/api/v1/project/1/"
 	            ], 
 	            "resultsType": "", 
 	            "tfmetrics": [
-	                "/rundb/api/v1/tfmetrics/8/", 
-	                "/rundb/api/v1/tfmetrics/7/"
+	                "/rundb/api/v1/tfmetrics/2/", 
+	                "/rundb/api/v1/tfmetrics/1/"
 	            ], 
 	            "parentIDs": "", 
 	            "analysismetrics": [
-	                "/rundb/api/v1/analysismetrics/6/"
+	                "/rundb/api/v1/analysismetrics/1/"
 	            ], 
 	            "timeToComplete": "0", 
-	            "reportLink": "/output/Home/Reanalyze_006/", 
+	            "reportLink": "/output/Home/Auto_S5-540_WholeTranscriptomeRNA_91_003/", 
 	            "pluginresults": [
-	                "/rundb/api/v1/pluginresult/30/", 
-	                "/rundb/api/v1/pluginresult/17/", 
-	                "/rundb/api/v1/pluginresult/16/", 
-	                "/rundb/api/v1/pluginresult/15/", 
-	                "/rundb/api/v1/pluginresult/14/", 
-	                "/rundb/api/v1/pluginresult/13/", 
-	                "/rundb/api/v1/pluginresult/12/", 
-	                "/rundb/api/v1/pluginresult/11/", 
-	                "/rundb/api/v1/pluginresult/10/", 
 	                "/rundb/api/v1/pluginresult/9/", 
-	                "/rundb/api/v1/pluginresult/8/"
+	                "/rundb/api/v1/pluginresult/8/", 
+	                "/rundb/api/v1/pluginresult/3/"
 	            ], 
 	            "framesProcessed": 0, 
 	            "autoExempt": false, 
-	            "resource_uri": "/rundb/api/v1/results/6/"
+	            "resource_uri": "/rundb/api/v1/results/3/"
 	        }
 	    ]
 	}

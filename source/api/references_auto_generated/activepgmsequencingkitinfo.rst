@@ -70,65 +70,41 @@ Example Response
 	    "objects": [
 	        {
 	            "isActive": true, 
-	            "samplePrep_instrumentType": "IC", 
+	            "samplePrep_instrumentType": "", 
 	            "templatingSize": "", 
 	            "kitType": "SequencingKit", 
-	            "description": "Ion PGM IC 200 Sequencing Kit", 
-	            "name": "IonPGMIC200Kit", 
+	            "description": "Ion PGM Install Kit", 
+	            "name": "IonPGMInstallKit", 
 	            "nucleotideType": "", 
 	            "instrumentType": "pgm", 
 	            "chipTypes": "", 
 	            "runMode": "", 
 	            "parts": [
 	                {
-	                    "barcode": "4484084", 
-	                    "id": 20119, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20119/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20056/"
+	                    "barcode": "4480217", 
+	                    "id": 20019, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20019/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20020/"
 	                }, 
 	                {
-	                    "barcode": "4488376", 
-	                    "id": 20120, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20120/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20056/"
+	                    "barcode": "4480282", 
+	                    "id": 20020, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20020/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20020/"
 	                }, 
 	                {
-	                    "barcode": "4488375", 
-	                    "id": 20121, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20121/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20056/"
-	                }, 
-	                {
-	                    "barcode": "4484271", 
-	                    "id": 20122, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20122/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20056/"
-	                }, 
-	                {
-	                    "barcode": "4484080", 
-	                    "id": 20116, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20116/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20056/"
-	                }, 
-	                {
-	                    "barcode": "4484083", 
-	                    "id": 20117, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20117/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20056/"
-	                }, 
-	                {
-	                    "barcode": "4484085", 
-	                    "id": 20118, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20118/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20056/"
+	                    "barcode": "4480284", 
+	                    "id": 20021, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20021/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20020/"
 	                }
 	            ], 
-	            "flowCount": 500, 
+	            "flowCount": 100, 
 	            "applicationType": "", 
-	            "uid": "SEQ0016", 
+	            "uid": "SEQ0006", 
 	            "libraryReadLength": 0, 
-	            "resource_uri": "/rundb/api/v1/activepgmsequencingkitinfo/20056/", 
-	            "id": 20056, 
+	            "resource_uri": "/rundb/api/v1/activepgmsequencingkitinfo/20020/", 
+	            "id": 20020, 
 	            "categories": "readLengthDerivableFromFlows;", 
 	            "defaultFlowOrder": null
 	        }

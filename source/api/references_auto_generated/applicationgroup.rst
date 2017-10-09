@@ -55,7 +55,7 @@ Example Response
 	                        "/rundb/api/v1/applicationgroup/4/"
 	                    ], 
 	                    "description": "Generic Sequencing", 
-	                    "nucleotideType": "", 
+	                    "nucleotideType": "dna", 
 	                    "barcode": "", 
 	                    "meta": {}, 
 	                    "alternate_name": "Other", 

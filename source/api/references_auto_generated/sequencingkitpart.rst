@@ -41,11 +41,11 @@ Example Response
 	    }, 
 	    "objects": [
 	        {
-	            "resource_uri": "/rundb/api/v1/sequencingkitpart/20080/", 
-	            "barcode": "4482285", 
+	            "resource_uri": "/rundb/api/v1/sequencingkitpart/20021/", 
+	            "barcode": "4480284", 
 	            "defaultFlowOrder": null, 
-	            "kit": "/rundb/api/v1/kitinfo/20041/", 
-	            "id": 20080
+	            "kit": "/rundb/api/v1/kitinfo/20020/", 
+	            "id": 20021
 	        }
 	    ]
 	}

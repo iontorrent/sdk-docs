@@ -116,19 +116,19 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 36, 
+	        "total_count": 35, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/onetouchplantemplatesummary/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "origin": "|5.4.0.RC1", 
+	            "origin": "|5.6.0.RC1", 
 	            "isReverseRun": false, 
 	            "planDisplayedName": "Ion AmpliSeq Transcriptome Mouse Gene Expression Panel OT2-Proton", 
 	            "storage_options": "A", 
 	            "preAnalysis": true, 
-	            "planShortID": "OAA43", 
+	            "planShortID": "FDXPW", 
 	            "planStatus": "inactive", 
 	            "runMode": "single", 
 	            "templatingKitBarcode": null, 
@@ -149,7 +149,7 @@ Example Response
 	            "autoName": null, 
 	            "isReusable": true, 
 	            "controlSequencekitname": null, 
-	            "date": "2017-04-10T04:54:04.000174+00:00", 
+	            "date": "2017-08-10T22:57:27.000213+00:00", 
 	            "isSystem": true, 
 	            "libkit": null, 
 	            "categories": "", 
@@ -166,7 +166,7 @@ Example Response
 	            "libraryReadLength": 0, 
 	            "runname": null, 
 	            "usePreBeadfind": true, 
-	            "planGUID": "852369c4-c659-45ad-95f0-653c9516c661", 
+	            "planGUID": "c5299ab6-9142-4034-95f9-c1d178c67dda", 
 	            "cycles": null, 
 	            "resource_uri": "/rundb/api/v1/onetouchplantemplatesummary/89/"
 	        }

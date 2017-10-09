@@ -32,7 +32,7 @@ Example Response
 	{
 	    "eth_device": true, 
 	    "external_ip": "12.27.71.34", 
-	    "internal_ip": "192.168.122.135", 
+	    "internal_ip": "10.45.2.119", 
 	    "route": true
 	}
 

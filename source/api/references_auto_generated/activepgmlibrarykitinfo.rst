@@ -71,27 +71,20 @@ Example Response
 	            "samplePrep_instrumentType": "", 
 	            "templatingSize": "", 
 	            "kitType": "LibraryKit", 
-	            "description": "Ion AmpliSeq RNA Library Kit", 
-	            "nucleotideType": "rna", 
+	            "description": "MuSeek Library Preparation Kit", 
+	            "nucleotideType": "dna", 
 	            "instrumentType": "", 
 	            "chipTypes": "", 
 	            "runMode": "", 
-	            "parts": [
-	                {
-	                    "barcode": "4482335", 
-	                    "id": 20076, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20076/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20040/"
-	                }
-	            ], 
+	            "parts": [], 
 	            "flowCount": 0, 
-	            "applicationType": "AMPS_RNA", 
-	            "uid": "LIB0013", 
+	            "applicationType": "GENS", 
+	            "uid": "LIB0012", 
 	            "libraryReadLength": 0, 
-	            "resource_uri": "/rundb/api/v1/activepgmlibrarykitinfo/20040/", 
-	            "id": 20040, 
-	            "categories": "", 
-	            "name": "Ion AmpliSeq RNA Library Kit"
+	            "resource_uri": "/rundb/api/v1/activepgmlibrarykitinfo/20025/", 
+	            "id": 20025, 
+	            "categories": "filter_muSeek", 
+	            "name": "MuSeek(tm) Library Preparation Kit"
 	        }
 	    ]
 	}

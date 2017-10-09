@@ -63,26 +63,26 @@ Example Response
 	    }, 
 	    "objects": [
 	        {
-	            "misc_diskspace": 135791.989539146, 
-	            "expName": "S5-540_AmpliSeqExome", 
+	            "misc_diskspace": 0, 
+	            "expName": "S5-540_WholeTranscriptomeRNA", 
 	            "basecall_state": "Local", 
 	            "in_process": false, 
-	            "misc_state": "Local", 
-	            "timeStamp": "2017-03-18T06:39:37.000203+00:00", 
+	            "misc_state": "Deleted", 
+	            "timeStamp": "2017-07-22T13:15:56.000197+00:00", 
 	            "basecall_keep": false, 
-	            "misc_keep": false, 
+	            "misc_keep": null, 
 	            "output_keep": false, 
-	            "basecall_diskspace": 175688.629077911, 
-	            "resultsName": "S5-540_AmpliSeqExome", 
+	            "basecall_diskspace": 175694.536458969, 
+	            "resultsName": "Auto_S5-540_WholeTranscriptomeRNA_91", 
 	            "output_state": "Local", 
 	            "sigproc_state": "Local", 
-	            "sigproc_keep": true, 
-	            "sigproc_diskspace": 0.0317573547363281, 
-	            "diskusage": 371907, 
-	            "resource_uri": "/rundb/api/v1/compositedatamanagement/5/", 
-	            "expDir": "/results/S5_DemoData/S5-540_AmpliSeqExome", 
-	            "id": 5, 
-	            "output_diskspace": 60428.8543195724
+	            "sigproc_keep": false, 
+	            "sigproc_diskspace": 0.0160617828369141, 
+	            "diskusage": 229301, 
+	            "resource_uri": "/rundb/api/v1/compositedatamanagement/3/", 
+	            "expDir": "/results/S5_DemoData/S5-540_WholeTranscriptomeRNA", 
+	            "id": 3, 
+	            "output_diskspace": 53607.1456193924
 	        }
 	    ]
 	}

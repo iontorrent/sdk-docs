@@ -17,6 +17,8 @@ field                 help text                                                 
 ===================== ============================================================================== ======= ======== ======== ===== ====== ======== 
 **sample**            A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    true  false  related  
 --------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**cellNum**           Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
+--------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **biopsyDays**        Integer data. Ex: 2673                                                         0       true     false    false false  integer  
 --------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **resource_uri**      Unicode string data. Ex: "Hello World"                                         n/a     false    true     false false  string   
@@ -64,12 +66,36 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 0, 
+	        "total_count": 2, 
 	        "offset": 0, 
 	        "limit": 1, 
-	        "next": null
+	        "next": "/rundb/api/v1/samplesetitem/?offset=1&limit=1&format=json"
 	    }, 
-	    "objects": []
+	    "objects": [
+	        {
+	            "sample": "/rundb/api/v1/sample/6/", 
+	            "cellNum": "", 
+	            "biopsyDays": 0, 
+	            "resource_uri": "/rundb/api/v1/samplesetitem/1/", 
+	            "nucleotideType": "", 
+	            "gender": "", 
+	            "relationshipGroup": 0, 
+	            "coupleId": "", 
+	            "cellularityPct": null, 
+	            "id": 1, 
+	            "relationshipRole": "", 
+	            "pcrPlateColumn": "1", 
+	            "cancerType": "", 
+	            "controlType": "", 
+	            "sampleSet": "/rundb/api/v1/sampleset/1/", 
+	            "lastModifiedDate": "2017-08-28T21:21:14.000040+00:00", 
+	            "dnabarcode": "/rundb/api/v1/dnabarcode/595/", 
+	            "pcrPlateRow": "A", 
+	            "creationDate": "2017-08-28T21:21:14.000040+00:00", 
+	            "embryoId": "", 
+	            "description": ""
+	        }
+	    ]
 	}
 
 Allowed HTTP methods

@@ -116,20 +116,20 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 46, 
+	        "total_count": 48, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/ionchefplantemplatesummary/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "origin": "|5.4.0.RC3", 
+	            "origin": "|5.6.0.RC1", 
 	            "isReverseRun": false, 
-	            "planDisplayedName": "Oncomine TagSeq Liquid Biopsy", 
+	            "planDisplayedName": "Oncomine TagSeq S540 Liquid Biopsy", 
 	            "storage_options": "A", 
 	            "preAnalysis": true, 
-	            "planShortID": "9HMOG", 
-	            "planStatus": "inactive", 
+	            "planShortID": "IIC5P", 
+	            "planStatus": "planned", 
 	            "runMode": "single", 
 	            "templatingKitBarcode": null, 
 	            "sampleTubeLabel": null, 
@@ -137,23 +137,23 @@ Example Response
 	            "samplePrepKitName": null, 
 	            "reverse_primer": null, 
 	            "seqKitBarcode": null, 
-	            "id": 102, 
+	            "id": 96, 
 	            "metaData": {}, 
 	            "isFavorite": false, 
 	            "samplePrepProtocol": "", 
 	            "isPlanGroup": false, 
-	            "templatingKitName": "Ion Chef S530 V1", 
+	            "templatingKitName": "Ion Chef S540 V1", 
 	            "runType": "TAG_SEQUENCING", 
 	            "planPGM": "", 
 	            "isSystemDefault": false, 
 	            "autoName": null, 
 	            "isReusable": true, 
 	            "controlSequencekitname": null, 
-	            "date": "2017-04-10T04:56:32.000003+00:00", 
+	            "date": "2017-08-01T20:07:01.000785+00:00", 
 	            "isSystem": true, 
 	            "libkit": null, 
-	            "categories": "", 
-	            "planName": "Oncomine_TagSeq_Liquid_Biopsy", 
+	            "categories": "Oncomine;barcodes_8", 
+	            "planName": "Oncomine_TagSeq_S540_Liquid_Biopsy", 
 	            "templatingSize": "", 
 	            "pairedEndLibraryAdapterName": null, 
 	            "adapter": null, 
@@ -166,9 +166,9 @@ Example Response
 	            "libraryReadLength": 200, 
 	            "runname": null, 
 	            "usePreBeadfind": true, 
-	            "planGUID": "f71a0fd1-88a1-4943-88f4-cbf997afe25d", 
+	            "planGUID": "fcb562b4-3a6d-4291-87d0-bbf1d584fa8e", 
 	            "cycles": null, 
-	            "resource_uri": "/rundb/api/v1/ionchefplantemplatesummary/102/"
+	            "resource_uri": "/rundb/api/v1/ionchefplantemplatesummary/96/"
 	        }
 	    ]
 	}

@@ -38,7 +38,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 40, 
+	        "total_count": 20, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/datamanagementhistory/?offset=1&limit=1&format=json"
@@ -46,12 +46,12 @@ Example Response
 	    "objects": [
 	        {
 	            "username": "ionadmin", 
-	            "created": "2017-04-21T21:21:03.000286+00:00", 
-	            "text": "Export Pending for Signal Processing Input to /mnt/results.<br>User Comment: ", 
-	            "object_pk": 3, 
-	            "resultsName": "Auto_S5-540_WholeTranscriptomeRNA_91", 
-	            "id": 46, 
-	            "resource_uri": "/rundb/api/v1/datamanagementhistory/46/"
+	            "created": "2017-07-22T06:59:07.000501+00:00", 
+	            "text": "Started from Local Basecalling Input /results/S5_DemoData/S5-530_cfDNA.", 
+	            "object_pk": 1, 
+	            "resultsName": "Auto_S5-530_cfDNA_89", 
+	            "id": 8, 
+	            "resource_uri": "/rundb/api/v1/datamanagementhistory/8/"
 	        }
 	    ]
 	}

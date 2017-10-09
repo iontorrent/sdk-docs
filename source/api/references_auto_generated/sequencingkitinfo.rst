@@ -69,37 +69,43 @@ Example Response
 	    }, 
 	    "objects": [
 	        {
-	            "isActive": false, 
+	            "isActive": true, 
 	            "samplePrep_instrumentType": "", 
 	            "templatingSize": "", 
 	            "kitType": "SequencingKit", 
-	            "description": "Ion PI Sequencing 200 Kit", 
-	            "name": "ProtonI200Kit", 
+	            "description": "Ion PGM Install Kit", 
+	            "name": "IonPGMInstallKit", 
 	            "nucleotideType": "", 
-	            "instrumentType": "proton", 
-	            "chipTypes": "900;P1.0.19;P1.0.20;P1.1.17;P1.1.541;P1.2.18;P2.0.1;P2.1.1;P2.3.1", 
+	            "instrumentType": "pgm", 
+	            "chipTypes": "", 
 	            "runMode": "", 
 	            "parts": [
 	                {
-	                    "barcode": "4482283", 
-	                    "id": 20077, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20077/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20041/"
+	                    "barcode": "4480217", 
+	                    "id": 20019, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20019/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20020/"
 	                }, 
 	                {
-	                    "barcode": "4482285", 
-	                    "id": 20080, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20080/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20041/"
+	                    "barcode": "4480282", 
+	                    "id": 20020, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20020/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20020/"
+	                }, 
+	                {
+	                    "barcode": "4480284", 
+	                    "id": 20021, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20021/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20020/"
 	                }
 	            ], 
-	            "flowCount": 400, 
+	            "flowCount": 100, 
 	            "applicationType": "", 
-	            "uid": "SEQ0011", 
+	            "uid": "SEQ0006", 
 	            "libraryReadLength": 0, 
-	            "resource_uri": "/rundb/api/v1/sequencingkitinfo/20041/", 
-	            "id": 20041, 
-	            "categories": "", 
+	            "resource_uri": "/rundb/api/v1/sequencingkitinfo/20020/", 
+	            "id": 20020, 
+	            "categories": "readLengthDerivableFromFlows;", 
 	            "defaultFlowOrder": null
 	        }
 	    ]

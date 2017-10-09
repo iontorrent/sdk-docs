@@ -42,22 +42,22 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 6, 
+	        "total_count": 1, 
 	        "offset": 0, 
 	        "limit": 1, 
-	        "next": "/rundb/api/v1/message/?offset=1&limit=1&format=json"
+	        "next": null
 	    }, 
 	    "objects": [
 	        {
-	            "body": "All Data Management Auto Actions are disabled and /results/ is 38.38% full   <a href='/data/datamanagement/' >  Visit Data Management</a>", 
+	            "body": "There is an update available for your Torrent Server. <a class=\"btn btn-success\" href=\"/admin/update\">Update Now</a>", 
 	            "status": "unread", 
-	            "level": 40, 
+	            "level": 20, 
 	            "route": "_StaffOnly", 
 	            "expires": "read", 
-	            "time": "2017-04-05T23:01:38.000971+00:00", 
-	            "id": 23, 
-	            "tags": "Home_all_auto_actions_disabled", 
-	            "resource_uri": "/rundb/api/v1/message/23/"
+	            "time": "2017-09-14T06:44:22.000934+00:00", 
+	            "id": 25, 
+	            "tags": "new-upgrade", 
+	            "resource_uri": "/rundb/api/v1/message/25/"
 	        }
 	    ]
 	}

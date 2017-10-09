@@ -61,60 +61,84 @@ Example Response
 	    }, 
 	    "objects": [
 	        {
-	            "status": "Completed with 96 error(s)", 
+	            "status": "Completed", 
 	            "processedflows": 0, 
-	            "libmetrics": null, 
+	            "libmetrics": {
+	                "i100Q20_reads": 0, 
+	                "aveKeyCounts": 88, 
+	                "id": 1, 
+	                "resource_uri": "", 
+	                "q20_mean_alignment_length": 0
+	            }, 
 	            "representative": false, 
 	            "analysis_metrics": {
-	                "ignored": 279237, 
-	                "lib": 34331404, 
-	                "total_wells": 40796160, 
-	                "pinned": 439629, 
-	                "live": 34628090, 
-	                "excluded": 3236330, 
-	                "bead": 34629257, 
+	                "ignored": 1042801, 
+	                "lib": 139085639, 
+	                "total_wells": 164699136, 
+	                "pinned": 2329, 
+	                "live": 140339912, 
+	                "excluded": 16543404, 
+	                "bead": 140400602, 
 	                "resource_uri": "", 
-	                "id": 3, 
-	                "empty": 2211707, 
-	                "libFinal": 0
+	                "id": 1, 
+	                "empty": 6710000, 
+	                "libFinal": 93974105
 	            }, 
-	            "timeStamp": "2017-03-10T14:48:06.000375+00:00", 
+	            "timeStamp": "2017-07-22T13:15:56.000197+00:00", 
 	            "analysismetrics": {
-	                "ignored": 279237, 
-	                "lib": 34331404, 
-	                "total_wells": 40796160, 
-	                "pinned": 439629, 
-	                "live": 34628090, 
-	                "excluded": 3236330, 
-	                "bead": 34629257, 
+	                "ignored": 1042801, 
+	                "lib": 139085639, 
+	                "total_wells": 164699136, 
+	                "pinned": 2329, 
+	                "live": 140339912, 
+	                "excluded": 16543404, 
+	                "bead": 140400602, 
 	                "resource_uri": "", 
-	                "id": 3, 
-	                "empty": 2211707, 
-	                "libFinal": 0
+	                "id": 1, 
+	                "empty": 6710000, 
+	                "libFinal": 93974105
 	            }, 
-	            "reportLink": "/output/Home/Auto_S5-530_cfDNA_89_001/", 
+	            "reportLink": "/output/Home/Auto_S5-540_WholeTranscriptomeRNA_91_003/", 
 	            "reportStatus": "Nothing", 
-	            "quality_metrics": null, 
-	            "resultsName": "Auto_S5-530_cfDNA_89", 
+	            "quality_metrics": {
+	                "q0_mean_read_length": 149.579903660696, 
+	                "q0_reads": 93969124, 
+	                "q0_bases": "14055892515", 
+	                "q20_reads": 93969124, 
+	                "q20_bases": "11916010889", 
+	                "q20_mean_read_length": 149, 
+	                "id": 1, 
+	                "resource_uri": ""
+	            }, 
+	            "resultsName": "Auto_S5-540_WholeTranscriptomeRNA_91", 
 	            "projects": [
 	                {
 	                    "resource_uri": "", 
 	                    "id": 1, 
 	                    "name": "demo", 
-	                    "modified": "2017-04-04T01:58:32.000439+00:00"
+	                    "modified": "2017-08-14T18:58:52.000246+00:00"
 	                }
 	            ], 
-	            "qualitymetrics": null, 
-	            "eas": {
-	                "chipType": "530", 
-	                "reference": "hg19", 
-	                "isPQ": false, 
-	                "references": "hg19", 
-	                "barcodeKitName": "IonCode - TagSequencing", 
+	            "qualitymetrics": {
+	                "q0_mean_read_length": 149.579903660696, 
+	                "q0_reads": 93969124, 
+	                "q0_bases": "14055892515", 
+	                "q20_reads": 93969124, 
+	                "q20_bases": "11916010889", 
+	                "q20_mean_read_length": 149, 
+	                "id": 1, 
 	                "resource_uri": ""
 	            }, 
-	            "resource_uri": "/rundb/api/v1/compositeresult/1/", 
-	            "id": 1, 
+	            "eas": {
+	                "chipType": "540", 
+	                "reference": "", 
+	                "isPQ": false, 
+	                "references": "", 
+	                "barcodeKitName": "IonXpressRNA", 
+	                "resource_uri": ""
+	            }, 
+	            "resource_uri": "/rundb/api/v1/compositeresult/3/", 
+	            "id": 3, 
 	            "autoExempt": false, 
 	            "isShowAllMetrics": true
 	        }

@@ -64,12 +64,39 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 0, 
+	        "total_count": 1, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": null
 	    }, 
-	    "objects": []
+	    "objects": [
+	        {
+	            "readyForPlanning": true, 
+	            "status": "created", 
+	            "libraryPrepInstrument": "", 
+	            "libraryPrepType": "", 
+	            "libraryPrepPlateType": "", 
+	            "description": "", 
+	            "resource_uri": "/rundb/api/v1/sampleset/1/", 
+	            "sampleCount": 2, 
+	            "displayedName": "Ampliseq on Chef", 
+	            "SampleGroupType_CV": null, 
+	            "pcrPlateSerialNum": "", 
+	            "libraryPrepInstrumentData": null, 
+	            "libraryPrepKitName": "", 
+	            "samples": [
+	                "/rundb/api/v1/samplesetitem/2/", 
+	                "/rundb/api/v1/samplesetitem/1/"
+	            ], 
+	            "lastModifiedDate": "2017-08-28T21:21:14.000027+00:00", 
+	            "sampleGroupTypeName": "", 
+	            "combinedLibraryTubeLabel": "", 
+	            "creationDate": "2017-08-28T21:21:14.000027+00:00", 
+	            "libraryPrepTypeDisplayedName": "", 
+	            "id": 1, 
+	            "libraryPrepKitDisplayedName": ""
+	        }
+	    ]
 	}
 
 Allowed HTTP methods

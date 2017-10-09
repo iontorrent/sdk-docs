@@ -40,21 +40,21 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 6, 
+	        "total_count": 7, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/floworder/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "description": "Ion default samba flow order", 
-	            "resource_uri": "/rundb/api/v1/floworder/1/", 
-	            "flowOrder": "TACGTACGTCTGAGCATCGATCGATGTACAGC", 
-	            "isActive": true, 
+	            "description": "Ion contradanzon flow order", 
+	            "resource_uri": "/rundb/api/v1/floworder/3/", 
+	            "flowOrder": "TACGTACGTAGCTTGACGTACGTCATGCATCGATCAGCTAAGCTGACGTAGCTAGCATCGATCCAGTCATGACTGACGTAGCTGACTGGATCAGTCATGCATCG", 
+	            "isActive": false, 
 	            "isSystem": true, 
-	            "id": 1, 
-	            "isDefault": true, 
-	            "name": "Ion samba"
+	            "id": 3, 
+	            "isDefault": false, 
+	            "name": "Ion contradanzon"
 	        }
 	    ]
 	}

@@ -204,21 +204,21 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 46, 
+	        "total_count": 48, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/ionchefplantemplate/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "planDisplayedName": "Oncomine TagSeq Liquid Biopsy", 
+	            "planDisplayedName": "Oncomine TagSeq S540 Liquid Biopsy", 
 	            "autoAnalyze": true, 
 	            "templatingKitBarcode": null, 
 	            "preAnalysis": true, 
 	            "thumbnailanalysisargs": "", 
 	            "applicationGroup": "/rundb/api/v1/applicationgroup/7/", 
 	            "platform": "S5", 
-	            "categories": "", 
+	            "categories": "Oncomine;barcodes_8", 
 	            "planPGM": "", 
 	            "prebasecallerargs": "", 
 	            "alignmentargs": "", 
@@ -235,16 +235,16 @@ Example Response
 	            "isReverseRun": false, 
 	            "storage_options": "A", 
 	            "thumbnailalignmentargs": "", 
-	            "chipType": "530", 
+	            "chipType": "540", 
 	            "library": "hg19", 
 	            "runMode": "single", 
-	            "planName": "Oncomine_TagSeq_Liquid_Biopsy", 
+	            "planName": "Oncomine_TagSeq_S540_Liquid_Biopsy", 
 	            "seqKitBarcode": null, 
 	            "barcodeId": "TagSequencing", 
 	            "isPlanGroup": false, 
 	            "realign": false, 
 	            "sampleGroupingName": "Self", 
-	            "experiment": "/rundb/api/v1/experiment/94/", 
+	            "experiment": "/rundb/api/v1/experiment/88/", 
 	            "bedfile": "", 
 	            "applicationCategoryDisplayedName": "", 
 	            "isReusable": true, 
@@ -257,9 +257,9 @@ Example Response
 	            "basecallerargs": "", 
 	            "earlyDatFileDeletion": false, 
 	            "parentPlan": null, 
-	            "origin": "|5.4.0.RC3", 
+	            "origin": "|5.6.0.RC1", 
 	            "forward3primeadapter": "ATCACCGACTGCCCATAGAGAGGCTGAGAC", 
-	            "planStatus": "inactive", 
+	            "planStatus": "planned", 
 	            "samplePrepKitName": null, 
 	            "applicationGroupDisplayedName": "Oncology - Liquid Biopsy", 
 	            "metaData": {}, 
@@ -267,38 +267,8 @@ Example Response
 	            "qcValues": [
 	                {
 	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/102/", 
-	                    "id": 306, 
-	                    "qcType": {
-	                        "description": "", 
-	                        "minThreshold": 0, 
-	                        "maxThreshold": 100, 
-	                        "defaultThreshold": 30, 
-	                        "qcName": "Usable Sequence (%)", 
-	                        "id": 3, 
-	                        "resource_uri": "/rundb/api/v1/qctype/3/"
-	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/306/"
-	                }, 
-	                {
-	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/102/", 
-	                    "id": 305, 
-	                    "qcType": {
-	                        "description": "", 
-	                        "minThreshold": 1, 
-	                        "maxThreshold": 100, 
-	                        "defaultThreshold": 30, 
-	                        "qcName": "Key Signal (1-100)", 
-	                        "id": 2, 
-	                        "resource_uri": "/rundb/api/v1/qctype/2/"
-	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/305/"
-	                }, 
-	                {
-	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/102/", 
-	                    "id": 304, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/96/", 
+	                    "id": 286, 
 	                    "qcType": {
 	                        "description": "", 
 	                        "minThreshold": 0, 
@@ -308,15 +278,45 @@ Example Response
 	                        "id": 1, 
 	                        "resource_uri": "/rundb/api/v1/qctype/1/"
 	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/304/"
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/286/"
+	                }, 
+	                {
+	                    "threshold": 30, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/96/", 
+	                    "id": 287, 
+	                    "qcType": {
+	                        "description": "", 
+	                        "minThreshold": 1, 
+	                        "maxThreshold": 100, 
+	                        "defaultThreshold": 30, 
+	                        "qcName": "Key Signal (1-100)", 
+	                        "id": 2, 
+	                        "resource_uri": "/rundb/api/v1/qctype/2/"
+	                    }, 
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/287/"
+	                }, 
+	                {
+	                    "threshold": 30, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/96/", 
+	                    "id": 288, 
+	                    "qcType": {
+	                        "description": "", 
+	                        "minThreshold": 0, 
+	                        "maxThreshold": 100, 
+	                        "defaultThreshold": 30, 
+	                        "qcName": "Usable Sequence (%)", 
+	                        "id": 3, 
+	                        "resource_uri": "/rundb/api/v1/qctype/3/"
+	                    }, 
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/288/"
 	                }
 	            ], 
 	            "analysisargs": "", 
 	            "thumbnailcalibrateargs": "", 
-	            "templatingKitName": "Ion Chef S530 V1", 
+	            "templatingKitName": "Ion Chef S540 V1", 
 	            "runType": "TAG_SEQUENCING", 
 	            "username": null, 
-	            "planShortID": "9HMOG", 
+	            "planShortID": "IIC5P", 
 	            "sampleDisplayedName": "", 
 	            "prethumbnailbasecallerargs": "", 
 	            "controlSequencekitname": null, 
@@ -332,14 +332,14 @@ Example Response
 	            "libraryReadLength": 200, 
 	            "runname": null, 
 	            "chefInfo": {}, 
-	            "planGUID": "f71a0fd1-88a1-4943-88f4-cbf997afe25d", 
+	            "planGUID": "fcb562b4-3a6d-4291-87d0-bbf1d584fa8e", 
 	            "sampleTubeLabel": null, 
 	            "ionstatsargs": "", 
 	            "samplePrepProtocol": "", 
 	            "sample": "", 
 	            "planExecutedDate": null, 
 	            "reverse_primer": null, 
-	            "id": 102, 
+	            "id": 96, 
 	            "barcodedSamples": {}, 
 	            "custom_args": false, 
 	            "regionfile": "", 
@@ -349,7 +349,7 @@ Example Response
 	            "autoName": null, 
 	            "libraryKey": "TCAG", 
 	            "flows": 500, 
-	            "date": "2017-04-10T04:56:32.000003+00:00", 
+	            "date": "2017-08-01T20:07:01.000785+00:00", 
 	            "isSystem": true, 
 	            "variantfrequency": "", 
 	            "sampleSetDisplayedName": "", 
@@ -359,7 +359,7 @@ Example Response
 	            "sampleGrouping": "/rundb/api/v1/samplegrouptype_cv/2/", 
 	            "chipBarcode": "", 
 	            "usePreBeadfind": true, 
-	            "resource_uri": "/rundb/api/v1/ionchefplantemplate/102/", 
+	            "resource_uri": "/rundb/api/v1/ionchefplantemplate/96/", 
 	            "libraryPrepTypeDisplayedName": "", 
 	            "reverse3primeadapter": ""
 	        }

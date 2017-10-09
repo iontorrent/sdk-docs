@@ -40,30 +40,41 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 28, 
+	        "total_count": 15, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/PluginResultJob/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "grid_engine_jobid": 614, 
-	            "id": 26, 
-	            "state": "Started", 
-	            "starttime": "2017-04-12T21:53:49.000858+00:00", 
-	            "endtime": null, 
+	            "grid_engine_jobid": -1, 
+	            "id": 19, 
+	            "state": "Completed", 
+	            "starttime": "2017-08-09T20:26:03.000549+00:00", 
+	            "endtime": "2017-08-09T20:30:11.000942+00:00", 
 	            "config": {
-	                "only_barcodes": "", 
-	                "spadesOptions": "-k 21  ", 
-	                "spadesversion": "3.1.0", 
-	                "RAM": "32G", 
-	                "min_reads": "500", 
-	                "bgenome": "None", 
-	                "runSpades": "1", 
-	                "fraction_of_reads": ".5"
+	                "compressedType": "zip", 
+	                "bamCreate": "on", 
+	                "xlsCreate": "off", 
+	                "zipFASTQ": "off", 
+	                "vcfCreate": "on", 
+	                "zipXLS": "off", 
+	                "delimiter_select": ".", 
+	                "zipVCF": "on", 
+	                "zipBAM": "on", 
+	                "fastqCreate": "off", 
+	                "select_dialog": [
+	                    "run_name", 
+	                    "samplename", 
+	                    "instrument", 
+	                    "", 
+	                    "", 
+	                    "", 
+	                    ""
+	                ]
 	            }, 
-	            "run_level": "default", 
-	            "resource_uri": "/rundb/api/v1/PluginResultJob/26/"
+	            "run_level": "last", 
+	            "resource_uri": "/rundb/api/v1/PluginResultJob/19/"
 	        }
 	    ]
 	}

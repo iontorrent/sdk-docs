@@ -106,7 +106,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 86, 
+	        "total_count": 88, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/experimentanalysissettings/?offset=1&limit=1&format=json"
@@ -144,7 +144,7 @@ Example Response
 	            "alignmentargs": "", 
 	            "isDuplicateReads": false, 
 	            "libraryKey": "TCAG", 
-	            "date": "2017-03-08T16:27:32.000442+00:00", 
+	            "date": "2017-07-22T06:43:55.000629+00:00", 
 	            "libraryKitName": "Ion Xpress Plus Fragment Library Kit", 
 	            "thumbnailbeadfindargs": "", 
 	            "calibrateargs": "", 

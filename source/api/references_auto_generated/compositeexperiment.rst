@@ -62,7 +62,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 3, 
+	        "total_count": 8, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/mesh/v1/compositeexperiment/?offset=1&limit=1&format=json"
@@ -96,7 +96,7 @@ Example Response
 	                        "empty": 6710000, 
 	                        "libFinal": 93974105
 	                    }, 
-	                    "timeStamp": "2017-03-10T12:37:26.000026+00:00", 
+	                    "timeStamp": "2017-07-22T13:15:56.000197+00:00", 
 	                    "analysismetrics": {
 	                        "ignored": 1042801, 
 	                        "lib": 139085639, 
@@ -128,7 +128,7 @@ Example Response
 	                            "resource_uri": "", 
 	                            "id": 1, 
 	                            "name": "demo", 
-	                            "modified": "2017-04-04T01:58:32.000439+00:00"
+	                            "modified": "2017-08-14T18:58:52.000246+00:00"
 	                        }
 	                    ], 
 	                    "status_display": "Completed", 
@@ -159,7 +159,7 @@ Example Response
 	            "library": "", 
 	            "sample": "", 
 	            "runMode": "single", 
-	            "storage_options": "KI", 
+	            "storage_options": "A", 
 	            "references": "", 
 	            "repResult": "/rundb/api/v1/compositeresult/3/", 
 	            "id": 91, 
@@ -170,7 +170,7 @@ Example Response
 	            "applicationCategoryDisplayedName": "RNA Sequencing", 
 	            "star": false, 
 	            "sampleDisplayedName": "", 
-	            "resultDate": "2017-03-10T12:37:26.000026+00:00", 
+	            "resultDate": "2017-07-22T13:15:56.000197+00:00", 
 	            "flows": 500, 
 	            "plan": {
 	                "runType": "RNA", 
@@ -179,12 +179,12 @@ Example Response
 	                "resource_uri": ""
 	            }, 
 	            "date": "2017-02-21T12:59:23+00:00", 
-	            "ftpStatus": "Complete", 
+	            "ftpStatus": "0", 
 	            "displayName": "S5-540 WholeTranscriptomeRNA", 
 	            "notes": "", 
 	            "chipDescription": "540", 
 	            "pgmName": "S16", 
-	            "keep": true, 
+	            "keep": false, 
 	            "expName": "S5-540_WholeTranscriptomeRNA", 
 	            "resource_uri": "/rundb/api/mesh/v1/compositeexperiment/91/"
 	        }

@@ -40,19 +40,19 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 1, 
+	        "total_count": 2, 
 	        "offset": 0, 
 	        "limit": 1, 
-	        "next": null
+	        "next": "/rundb/api/v1/project/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
 	            "name": "demo", 
 	            "creator": "/rundb/api/v1/user/1/", 
-	            "created": "2017-03-10T06:19:47.000249+00:00", 
-	            "modified": "2017-04-04T01:58:32.000439+00:00", 
+	            "created": "2017-07-22T06:59:07.000475+00:00", 
+	            "modified": "2017-08-14T18:58:52.000246+00:00", 
 	            "id": 1, 
-	            "resultsCount": 6, 
+	            "resultsCount": 5, 
 	            "public": true, 
 	            "resource_uri": "/rundb/api/v1/project/1/"
 	        }

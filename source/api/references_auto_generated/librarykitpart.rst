@@ -39,10 +39,10 @@ Example Response
 	    }, 
 	    "objects": [
 	        {
-	            "barcode": "4482335", 
-	            "id": 20076, 
-	            "resource_uri": "/rundb/api/v1/librarykitpart/20076/", 
-	            "kit": "/rundb/api/v1/kitinfo/20040/"
+	            "barcode": "A31204", 
+	            "id": 20243, 
+	            "resource_uri": "/rundb/api/v1/librarykitpart/20243/", 
+	            "kit": "/rundb/api/v1/kitinfo/20103/"
 	        }
 	    ]
 	}

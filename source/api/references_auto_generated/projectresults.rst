@@ -75,30 +75,30 @@ Example Response
 	    }, 
 	    "objects": [
 	        {
-	            "reference": "hg19", 
+	            "reference": "", 
 	            "reportStatus": "Nothing", 
-	            "runid": "Z6MPC", 
-	            "id": 6, 
+	            "runid": "MJMQ3", 
+	            "id": 3, 
 	            "metaData": {}, 
-	            "log": "/output/Home/Reanalyze_006/log.html", 
-	            "timeStamp": "2017-04-04T04:29:06.000356+00:00", 
-	            "resultsName": "Reanalyze", 
+	            "log": "/output/Home/Auto_S5-540_WholeTranscriptomeRNA_91_003/log.html", 
+	            "timeStamp": "2017-07-22T13:15:56.000197+00:00", 
+	            "resultsName": "Auto_S5-540_WholeTranscriptomeRNA_91", 
 	            "status": "Completed", 
 	            "processedflows": 0, 
 	            "processedCycles": 0, 
 	            "representative": false, 
-	            "diskusage": 73494, 
+	            "diskusage": 229301, 
 	            "projects": [
 	                "/rundb/api/v1/project/1/"
 	            ], 
 	            "resultsType": "", 
 	            "parentIDs": "", 
 	            "timeToComplete": "0", 
-	            "reportLink": "/output/Home/Reanalyze_006/", 
-	            "resource_uri": "/rundb/api/v1/projectresults/6/", 
+	            "reportLink": "/output/Home/Auto_S5-540_WholeTranscriptomeRNA_91_003/", 
+	            "resource_uri": "/rundb/api/v1/projectresults/3/", 
 	            "framesProcessed": 0, 
 	            "autoExempt": false, 
-	            "analysisVersion": "db:5.4.15-1,an:5.4.3-1,"
+	            "analysisVersion": "db:5.6.18-1,an:5.6.5-1,"
 	        }
 	    ]
 	}

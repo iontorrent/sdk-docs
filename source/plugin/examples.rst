@@ -67,7 +67,7 @@ It produces an HTML output but does not take any parameters.
 
             na = '<strong>NA</strong>'
             # creates a results object that is written out later.  This holds data that can be scrapped by a LIMS system, 
-			and will be part of the TS database
+			and will be part of the |TS| database
             exp_log_data = self.read_explog()
             results_json = {
                 'Project': exp_log_data.get('Project', None) or na,
@@ -75,7 +75,7 @@ It produces an HTML output but does not take any parameters.
                 'Library': exp_log_data.get('Library', None) or na,
             }
 
-            # open up an html file to dump interesting log file findings to
+            # open up an HTML file to dump interesting log file findings to
             with open(self.startplugin_json['runinfo']['results_dir'] + '/LogParser_block.html', 'w') as html_handle:
                 html_handle.write('<html><body>')
                 html_handle.write("Project is: %s<br \>" % results_json['Project'])

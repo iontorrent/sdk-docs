@@ -84,15 +84,15 @@ Example Response
 	                    "kit": "/rundb/api/v1/kitinfo/20042/"
 	                }, 
 	                {
-	                    "barcode": "01", 
-	                    "id": 20123, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20123/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20042/"
-	                }, 
-	                {
 	                    "barcode": "100020579", 
 	                    "id": 20085, 
 	                    "resource_uri": "/rundb/api/v1/kitpart/20085/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20042/"
+	                }, 
+	                {
+	                    "barcode": "01", 
+	                    "id": 20123, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20123/", 
 	                    "kit": "/rundb/api/v1/kitinfo/20042/"
 	                }
 	            ], 

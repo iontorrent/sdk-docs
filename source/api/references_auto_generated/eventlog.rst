@@ -36,19 +36,19 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 51, 
+	        "total_count": 34, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/eventlog/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "username": "ionadmin", 
-	            "created": "2017-04-21T21:21:03.000286+00:00", 
-	            "text": "Export Pending for Signal Processing Input to /mnt/results.<br>User Comment: ", 
-	            "object_pk": 3, 
-	            "id": 46, 
-	            "resource_uri": "/rundb/api/v1/eventlog/46/"
+	            "username": "system", 
+	            "created": "2017-07-22T06:58:07.000662+00:00", 
+	            "text": "Updated Planned Run from explog: CopyOfSystemDefault_S5-530_cfDNA (97).", 
+	            "object_pk": 97, 
+	            "id": 2, 
+	            "resource_uri": "/rundb/api/v1/eventlog/2/"
 	        }
 	    ]
 	}

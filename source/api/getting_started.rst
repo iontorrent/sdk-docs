@@ -8,7 +8,7 @@ API Overview
 
 Our API is RESTful and HTTP based. All resources use HTTP standard verbs return JSON data.
 
-The main API endpoint for Torrent Suite is ``/rundb/api/v1/``. This endpoint returns a JSON object containing information
+The main API endpoint for |TS| is ``/rundb/api/v1/``. This endpoint returns a JSON object containing information
 for each resource available from the API. To see each resource's list endpoint, go to ``/rundb/api/v1/resource-name/`` .
 To see each resource's schema, go to ``/rundb/api/v1/resource-name/schema/``.
 
@@ -17,7 +17,7 @@ To see each resource's schema, go to ``/rundb/api/v1/resource-name/schema/``.
 Authentication
 --------------
 
-To use the API you need to authenticate as an existing TS user. To see API keys for each TS user, go to ``/admin/tastypie/apikey/`` .
+To use the API you need to authenticate as an existing |TS| user. To see API keys for each |TS| user, go to ``/admin/tastypie/apikey/`` .
 You must include an API key with every API request. There are two methods:
 
 As a header. Format is ``Authorization: ApiKey <username>:<api_key>``

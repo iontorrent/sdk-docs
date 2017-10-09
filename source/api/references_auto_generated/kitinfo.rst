@@ -70,53 +70,35 @@ Example Response
 	    "objects": [
 	        {
 	            "isActive": false, 
-	            "samplePrep_instrumentType": "OT", 
+	            "samplePrep_instrumentType": "", 
 	            "templatingSize": "", 
-	            "kitType": "TemplatingKit", 
-	            "description": "Ion PI Template OT2 200 Kit", 
-	            "name": "Ion PI Template OT2 200 Kit", 
+	            "kitType": "ControlSequenceKit", 
+	            "description": "Ion PGM Controls Kit v2", 
+	            "name": "Ion PGM Controls Kit v2", 
 	            "nucleotideType": "", 
-	            "instrumentType": "proton", 
-	            "chipTypes": "900;P1.0.19;P1.0.20;P1.1.17;P1.1.541;P1.2.18;P2.0.1;P2.1.1;P2.3.1", 
+	            "instrumentType": "pgm", 
+	            "chipTypes": "", 
 	            "runMode": "", 
 	            "parts": [
 	                {
-	                    "barcode": "4482286", 
-	                    "id": 20074, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20074/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20038/"
+	                    "barcode": "4482010", 
+	                    "id": 20072, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20072/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20037/"
 	                }, 
 	                {
-	                    "barcode": "4482287", 
-	                    "id": 20081, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20081/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20038/"
-	                }, 
-	                {
-	                    "barcode": "4482288", 
-	                    "id": 20082, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20082/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20038/"
-	                }, 
-	                {
-	                    "barcode": "4482289", 
-	                    "id": 20083, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20083/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20038/"
-	                }, 
-	                {
-	                    "barcode": "4482297", 
-	                    "id": 20084, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20084/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20038/"
+	                    "barcode": "4482011", 
+	                    "id": 20073, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20073/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20037/"
 	                }
 	            ], 
 	            "flowCount": 0, 
 	            "applicationType": "", 
-	            "uid": "TEMPLT0005", 
+	            "uid": "CONSEQ0003", 
 	            "libraryReadLength": 0, 
-	            "resource_uri": "/rundb/api/v1/kitinfo/20038/", 
-	            "id": 20038, 
+	            "resource_uri": "/rundb/api/v1/kitinfo/20037/", 
+	            "id": 20037, 
 	            "categories": "", 
 	            "defaultFlowOrder": null
 	        }

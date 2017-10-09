@@ -68,7 +68,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 28, 
+	        "total_count": 15, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/pluginresult/?offset=1&limit=1&format=json"
@@ -77,40 +77,39 @@ Example Response
 	        {
 	            "major": false, 
 	            "can_terminate": false, 
-	            "resultName": "Auto_S5-540_WholeTranscriptomeRNA_91", 
-	            "pluginVersion": "5.4.0.0", 
-	            "result": "/rundb/api/v1/results/3/", 
+	            "resultName": "Auto_user_CB1-42-r9723-314wfa-tl_94", 
+	            "pluginVersion": "5.6.0.0", 
+	            "result": "/rundb/api/v1/results/6/", 
 	            "owner": "/rundb/api/v1/user/1/", 
-	            "id": 32, 
-	            "size": "32843", 
+	            "id": 22, 
+	            "size": "25470", 
 	            "state": "Completed", 
 	            "store": {}, 
 	            "files": [
-	                "FilteredBam_block.html", 
-	                "FilterDuplicates.html"
+	                "FileExporter_block.html"
 	            ], 
-	            "URL": "/output/Home/Auto_S5-540_WholeTranscriptomeRNA_91_003/plugin_out/FilterDuplicates_out.32/", 
+	            "URL": "/output/Home/Auto_user_CB1-42-r9723-314wfa-tl_94_006/plugin_out/FileExporter_out.22/", 
 	            "plugin_result_jobs": [
 	                {
 	                    "grid_engine_jobid": -1, 
-	                    "id": 32, 
+	                    "id": 22, 
 	                    "state": "Completed", 
-	                    "starttime": "2017-04-25T20:46:14.000002+00:00", 
-	                    "endtime": "2017-04-25T20:46:16.000092+00:00", 
+	                    "starttime": "2017-08-23T21:46:33.000336+00:00", 
+	                    "endtime": "2017-08-23T21:46:34.000183+00:00", 
 	                    "config": {}, 
-	                    "run_level": "default", 
-	                    "resource_uri": "/rundb/api/v1/PluginResultJob/32/"
+	                    "run_level": "last", 
+	                    "resource_uri": "/rundb/api/v1/PluginResultJob/22/"
 	                }
 	            ], 
-	            "path": "/results/analysis/output/Home/Auto_S5-540_WholeTranscriptomeRNA_91_003/plugin_out/FilterDuplicates_out.32", 
-	            "endtime": "2017-04-25T20:46:16.000092+00:00", 
+	            "path": "/results/analysis/output/Home/Auto_user_CB1-42-r9723-314wfa-tl_94_006/plugin_out/FileExporter_out.22", 
+	            "endtime": "2017-08-23T21:46:34.000183+00:00", 
 	            "apikey": null, 
-	            "plugin": "/rundb/api/v1/plugin/25/", 
-	            "reportLink": "/output/Home/Auto_S5-540_WholeTranscriptomeRNA_91_003/", 
-	            "pluginName": "FilterDuplicates", 
-	            "starttime": "2017-04-25T20:46:14.000002+00:00", 
-	            "inodes": "7", 
-	            "resource_uri": "/rundb/api/v1/pluginresult/32/"
+	            "plugin": "/rundb/api/v1/plugin/10/", 
+	            "reportLink": "/output/Home/Auto_user_CB1-42-r9723-314wfa-tl_94_006/", 
+	            "pluginName": "FileExporter", 
+	            "starttime": "2017-08-23T21:46:33.000336+00:00", 
+	            "inodes": "6", 
+	            "resource_uri": "/rundb/api/v1/pluginresult/22/"
 	        }
 	    ]
 	}

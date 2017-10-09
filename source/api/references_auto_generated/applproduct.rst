@@ -115,96 +115,160 @@ Example Response
 	            "defaultHotSpotRegionBedFileName": "", 
 	            "isTargetRegionBEDFileSupported": true, 
 	            "isSamplePrepKitSupported": true, 
-	            "defaultSeqKit": null, 
-	            "defaultBarcodeKitName": "RNA_Barcode_None", 
+	            "defaultSeqKit": {
+	                "isActive": true, 
+	                "samplePrep_instrumentType": "", 
+	                "templatingSize": "", 
+	                "kitType": "SequencingKit", 
+	                "description": "Precision ID S5 Sequencing Kit", 
+	                "name": "precisionIDS5Kit", 
+	                "nucleotideType": "", 
+	                "instrumentType": "S5", 
+	                "chipTypes": "", 
+	                "runMode": "", 
+	                "parts": [
+	                    {
+	                        "barcode": "100041073B", 
+	                        "id": 20236, 
+	                        "resource_uri": "/rundb/api/v1/kitpart/20236/", 
+	                        "kit": "/rundb/api/v1/kitinfo/20111/"
+	                    }, 
+	                    {
+	                        "barcode": "100041074B", 
+	                        "id": 20237, 
+	                        "resource_uri": "/rundb/api/v1/kitpart/20237/", 
+	                        "kit": "/rundb/api/v1/kitinfo/20111/"
+	                    }, 
+	                    {
+	                        "barcode": "A33208", 
+	                        "id": 20260, 
+	                        "resource_uri": "/rundb/api/v1/kitpart/20260/", 
+	                        "kit": "/rundb/api/v1/kitinfo/20111/"
+	                    }, 
+	                    {
+	                        "barcode": "100049484", 
+	                        "id": 20263, 
+	                        "resource_uri": "/rundb/api/v1/kitpart/20263/", 
+	                        "kit": "/rundb/api/v1/kitinfo/20111/"
+	                    }
+	                ], 
+	                "flowCount": 650, 
+	                "applicationType": "AMPS", 
+	                "uid": "SEQ0028", 
+	                "libraryReadLength": 0, 
+	                "resource_uri": "/rundb/api/v1/kitinfo/20111/", 
+	                "id": 20111, 
+	                "categories": "filter_s5HidKit", 
+	                "defaultFlowOrder": null
+	            }, 
+	            "defaultBarcodeKitName": null, 
 	            "isHotSpotBEDFileBySampleSupported": true, 
-	            "id": 20021, 
+	            "id": 20024, 
 	            "isTargetRegionBEDFileBySampleSupported": true, 
 	            "isReferenceSelectionSupported": true, 
-	            "productCode": "AMPS_RNA_2", 
+	            "productCode": "AMPS_HID_S5_530", 
 	            "applicationGroup": {
-	                "name": "RNA", 
-	                "description": "RNA", 
+	                "name": "HID", 
+	                "description": "Human Identification", 
 	                "applications": [
 	                    {
 	                        "applicationGroups": [
-	                            "/rundb/api/v1/applicationgroup/2/"
+	                            "/rundb/api/v1/applicationgroup/1/", 
+	                            "/rundb/api/v1/applicationgroup/6/", 
+	                            "/rundb/api/v1/applicationgroup/8/"
 	                        ], 
-	                        "description": "RNA Sequencing", 
-	                        "nucleotideType": "rna", 
+	                        "description": "AmpliSeq DNA", 
+	                        "nucleotideType": "dna", 
 	                        "barcode": "", 
 	                        "meta": {}, 
-	                        "alternate_name": "RNA Sequencing", 
-	                        "runType": "RNA", 
-	                        "id": 5, 
+	                        "alternate_name": "AmpliSeq DNA", 
+	                        "runType": "AMPS", 
+	                        "id": 2, 
 	                        "isActive": true, 
-	                        "resource_uri": "/rundb/api/v1/runtype/5/"
-	                    }, 
-	                    {
-	                        "applicationGroups": [
-	                            "/rundb/api/v1/applicationgroup/2/", 
-	                            "/rundb/api/v1/applicationgroup/5/", 
-	                            "/rundb/api/v1/applicationgroup/9/"
-	                        ], 
-	                        "description": "AmpliSeq RNA", 
-	                        "nucleotideType": "rna", 
-	                        "barcode": "", 
-	                        "meta": {}, 
-	                        "alternate_name": "AmpliSeq RNA", 
-	                        "runType": "AMPS_RNA", 
-	                        "id": 6, 
-	                        "isActive": true, 
-	                        "resource_uri": "/rundb/api/v1/runtype/6/"
+	                        "resource_uri": "/rundb/api/v1/runtype/2/"
 	                    }
 	                ], 
-	                "uid": "APPLGROUP_0002", 
-	                "id": 2, 
+	                "uid": "APPLGROUP_0008", 
+	                "id": 8, 
 	                "isActive": true, 
-	                "resource_uri": "/rundb/api/v1/applicationgroup/2/"
+	                "resource_uri": "/rundb/api/v1/applicationgroup/8/"
 	            }, 
 	            "isControlSeqTypeBySampleSupported": false, 
-	            "defaultChipType": null, 
+	            "defaultChipType": "530", 
 	            "appl": {
 	                "applicationGroups": [
-	                    "/rundb/api/v1/applicationgroup/2/", 
-	                    "/rundb/api/v1/applicationgroup/5/", 
-	                    "/rundb/api/v1/applicationgroup/9/"
+	                    "/rundb/api/v1/applicationgroup/1/", 
+	                    "/rundb/api/v1/applicationgroup/6/", 
+	                    "/rundb/api/v1/applicationgroup/8/"
 	                ], 
-	                "description": "AmpliSeq RNA", 
-	                "nucleotideType": "rna", 
+	                "description": "AmpliSeq DNA", 
+	                "nucleotideType": "dna", 
 	                "barcode": "", 
 	                "meta": {}, 
-	                "alternate_name": "AmpliSeq RNA", 
-	                "runType": "AMPS_RNA", 
-	                "id": 6, 
+	                "alternate_name": "AmpliSeq DNA", 
+	                "runType": "AMPS", 
+	                "id": 2, 
 	                "isActive": true, 
-	                "resource_uri": "/rundb/api/v1/runtype/6/"
+	                "resource_uri": "/rundb/api/v1/runtype/2/"
 	            }, 
 	            "categories": "", 
 	            "instrumentType": "s5", 
-	            "isDefault": true, 
+	            "isDefault": false, 
 	            "isTargetTechniqueSelectionSupported": true, 
 	            "description": "", 
-	            "isHotspotRegionBEDFileSuppported": false, 
+	            "isHotspotRegionBEDFileSuppported": true, 
 	            "isVisible": false, 
-	            "productName": "AMPS_RNA_S5_S5XL_default", 
+	            "productName": "AMPS_HID_S5_530", 
 	            "isBarcodeKitSelectionRequired": false, 
-	            "isDefaultBarcoded": true, 
+	            "isDefaultBarcoded": false, 
 	            "isTargetRegionBEDFileSelectionRequiredForRefSelection": true, 
 	            "defaultTargetRegionBedFileName": "", 
-	            "isActive": true, 
+	            "isActive": false, 
 	            "isReferenceBySampleSupported": true, 
-	            "defaultFlowCount": 500, 
-	            "defaultLibKit": null, 
-	            "barcodeKitSelectableType": "rna", 
-	            "isDefaultForInstrumentType": true, 
-	            "defaultGenomeRefName": "", 
+	            "defaultFlowCount": 1000, 
+	            "defaultLibKit": {
+	                "isActive": true, 
+	                "samplePrep_instrumentType": "IC", 
+	                "templatingSize": "", 
+	                "kitType": "LibraryPrepKit", 
+	                "description": "Precision ID Chef DL8", 
+	                "name": "Ion Chef HID Library V2", 
+	                "nucleotideType": "", 
+	                "instrumentType": "", 
+	                "chipTypes": "", 
+	                "runMode": "", 
+	                "parts": [
+	                    {
+	                        "barcode": "A32926C", 
+	                        "id": 20245, 
+	                        "resource_uri": "/rundb/api/v1/kitpart/20245/", 
+	                        "kit": "/rundb/api/v1/kitinfo/20105/"
+	                    }, 
+	                    {
+	                        "barcode": "A33212", 
+	                        "id": 20261, 
+	                        "resource_uri": "/rundb/api/v1/kitpart/20261/", 
+	                        "kit": "/rundb/api/v1/kitinfo/20105/"
+	                    }
+	                ], 
+	                "flowCount": 0, 
+	                "applicationType": "AMPS", 
+	                "uid": "LPREP0003", 
+	                "libraryReadLength": 0, 
+	                "resource_uri": "/rundb/api/v1/kitinfo/20105/", 
+	                "id": 20105, 
+	                "categories": "filter_s5HidKit", 
+	                "defaultFlowOrder": null
+	            }, 
+	            "barcodeKitSelectableType": "all", 
+	            "isDefaultForInstrumentType": false, 
+	            "defaultGenomeRefName": "hg19", 
 	            "defaultSamplePrepKit": null, 
 	            "defaultControlSeqKit": null, 
-	            "defaultIonChefPrepKit": null, 
-	            "resource_uri": "/rundb/api/v1/applproduct/20021/", 
+	            "defaultIonChefPrepKit": "/rundb/api/v1/kitinfo/20106/", 
+	            "resource_uri": "/rundb/api/v1/applproduct/20024/", 
 	            "defaultIonChefSequencingKit": null, 
-	            "defaultTemplateKit": null
+	            "defaultTemplateKit": "/rundb/api/v1/kitinfo/20106/"
 	        }
 	    ]
 	}

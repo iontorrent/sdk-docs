@@ -29,7 +29,9 @@ field                   help text                                               
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **id**                  Integer data. Ex: 2673                                                                 false    false    true  true   integer  
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**description**         Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
+**sampleDisplayedName** Unicode string data. Ex: "Hello World"                                         n/a     true     true     true  false  string   
+----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**cellNum**             Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **sampleExternalId**    Unicode string data. Ex: "Hello World"                                         n/a     true     true     true  false  string   
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
@@ -45,7 +47,7 @@ field                   help text                                               
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **sampleSet**           A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    true  false  related  
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**sampleDisplayedName** Unicode string data. Ex: "Hello World"                                         n/a     true     true     true  false  string   
+**description**         Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **lastModifiedDate**    A date & time as a string. Ex: "2010-11-10T03:07:43"                           true    false    false    true  false  datetime 
 ----------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
@@ -78,12 +80,45 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 0, 
+	        "total_count": 2, 
 	        "offset": 0, 
 	        "limit": 1, 
-	        "next": null
+	        "next": "/rundb/api/v1/samplesetiteminfo/?offset=1&limit=1&format=json"
 	    }, 
-	    "objects": []
+	    "objects": [
+	        {
+	            "relationshipGroup": 0, 
+	            "sampleDescription": "", 
+	            "dnabarcodeKit": "IonCode Barcodes 1-32", 
+	            "sample": "/rundb/api/v1/sample/6/", 
+	            "pcrPlateColumn": "1", 
+	            "cancerType": "", 
+	            "attribute_dict": {}, 
+	            "id": 1, 
+	            "sampleDisplayedName": "sample 1", 
+	            "cellNum": "", 
+	            "sampleExternalId": "", 
+	            "coupleId": "", 
+	            "pcrPlateRow": "A", 
+	            "sampleSetPk": 1, 
+	            "sampleSetStatus": "created", 
+	            "embryoId": "", 
+	            "sampleSet": "/rundb/api/v1/sampleset/1/", 
+	            "description": "", 
+	            "lastModifiedDate": "2017-08-28T21:21:14.000040+00:00", 
+	            "sampleSetGroupType": "", 
+	            "relationshipRole": "", 
+	            "samplePk": 6, 
+	            "dnabarcode": "IonCode_0125", 
+	            "creationDate": "2017-08-28T21:21:14.000040+00:00", 
+	            "biopsyDays": 0, 
+	            "nucleotideType": "", 
+	            "gender": "", 
+	            "cellularityPct": null, 
+	            "controlType": "", 
+	            "resource_uri": "/rundb/api/v1/samplesetiteminfo/1/"
+	        }
+	    ]
 	}
 
 Allowed HTTP methods

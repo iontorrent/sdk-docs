@@ -50,28 +50,12 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 2, 
+	        "total_count": 0, 
 	        "offset": 0, 
 	        "limit": 1, 
-	        "next": "/rundb/api/v1/filemonitor/?offset=1&limit=1&format=json"
+	        "next": null
 	    }, 
-	    "objects": [
-	        {
-	            "status": "Complete", 
-	            "updated": "2017-03-14T03:46:14.000171+00:00", 
-	            "name": "GRCh38.p2.mask1.zip", 
-	            "created": "2017-03-14T03:41:11.000026+00:00", 
-	            "url": "http://ionupdates.com/reference_downloads/GRCh38.p2.mask1.zip", 
-	            "md5sum": null, 
-	            "celery_task_id": "cebba665-096a-48a7-82cb-2fac99d6ddad", 
-	            "local_dir": "/results/referenceLibrary/temp/tmp4NGc6h", 
-	            "progress": "4663793607", 
-	            "size": "4663793607", 
-	            "id": 2, 
-	            "tags": "reference", 
-	            "resource_uri": "/rundb/api/v1/filemonitor/2/"
-	        }
-	    ]
+	    "objects": []
 	}
 
 Allowed HTTP methods

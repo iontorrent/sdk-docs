@@ -67,43 +67,43 @@ Example Response
 	    }, 
 	    "objects": [
 	        {
-	            "isActive": true, 
+	            "isActive": false, 
 	            "samplePrep_instrumentType": "IC", 
-	            "templatingSize": "", 
+	            "templatingSize": "200;400", 
 	            "kitType": "IonChefPrepKit", 
-	            "description": "ION PGM IC 200 KIT", 
+	            "description": "Ion 541 Kit-Chef", 
 	            "nucleotideType": "", 
-	            "instrumentType": "pgm", 
-	            "chipTypes": "", 
+	            "instrumentType": "S5", 
+	            "chipTypes": "541", 
 	            "runMode": "", 
 	            "parts": [
 	                {
-	                    "barcode": "100020580", 
-	                    "id": 20086, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20086/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20042/"
+	                    "barcode": "A30523", 
+	                    "id": 20221, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20221/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20095/"
 	                }, 
 	                {
-	                    "barcode": "01", 
-	                    "id": 20123, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20123/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20042/"
+	                    "barcode": "A27755", 
+	                    "id": 20222, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20222/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20095/"
 	                }, 
 	                {
-	                    "barcode": "100020579", 
-	                    "id": 20085, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20085/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20042/"
+	                    "barcode": "A27754", 
+	                    "id": 20223, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20223/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20095/"
 	                }
 	            ], 
-	            "flowCount": 0, 
+	            "flowCount": 500, 
 	            "applicationType": "", 
-	            "uid": "ICPREP0001", 
-	            "libraryReadLength": 0, 
-	            "resource_uri": "/rundb/api/v1/ionchefprepkitinfo/20042/", 
-	            "id": 20042, 
-	            "categories": "", 
-	            "name": "ION PGM IC 200 KIT"
+	            "uid": "ICPREP0008", 
+	            "libraryReadLength": 200, 
+	            "resource_uri": "/rundb/api/v1/ionchefprepkitinfo/20095/", 
+	            "id": 20095, 
+	            "categories": "s5v1Kit;flowOverridable;multipleReadLength;s5541", 
+	            "name": "Ion Chef S541 V1"
 	        }
 	    ]
 	}

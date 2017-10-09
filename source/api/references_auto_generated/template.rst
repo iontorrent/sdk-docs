@@ -46,12 +46,12 @@ Example Response
 	    "objects": [
 	        {
 	            "isofficial": true, 
-	            "name": "TF_1", 
-	            "sequence": "GAATAATCCAGCCCGCCAGGCATGGAAGAGCGTCGTAAAGTATTGCAGGTTCAGGCGGCGGAAAGCGTGATTGACTACTGGCAAATAAAGTACGTTCCACCTTTGACACCATTTTCCGTAGTGAACTGACGCTGCCAAACGCCGACCGCG", 
+	            "name": "TF_A", 
+	            "sequence": "TGTTTTAGGGTCCCCGGGGTTAAAAGGTTTCGAACTCAACAGCTGTCTGGCAGCTCGCTCTACGATCTGAGACTGCCAAGGCACACAGGGGATAGG", 
 	            "comments": " ", 
 	            "key": "ATCG", 
-	            "id": 5, 
-	            "resource_uri": "/rundb/api/v1/template/5/"
+	            "id": 1, 
+	            "resource_uri": "/rundb/api/v1/template/1/"
 	        }
 	    ]
 	}

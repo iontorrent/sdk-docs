@@ -112,10 +112,10 @@ according to the following scheme.
 * Feature
     * EXPORT: Used to indicate that this plugin is run last because it exports data.
 
-* RunType
+* :ref:`getting_started_run_types`
     * COMPOSITE: Block based chip runs.
     * THUMB: A thumbnail result.
-    * FULLCHIP: PGM Full chip results.
+    * FULLCHIP: |PGM| Full chip results.
 
 * :ref:`getting_started_run_levels`
     * PRE
@@ -142,8 +142,8 @@ The plugin framework creates this file and directs the Grid Engine to execute th
 Run Levels
 ~~~~~~~~~~
 
-To use the run levels, you must assign them to your plugin class.  The run levels, block and conventional, are described in the Getting Started 
-section.  While it is technically possible, we do not recommend that you assign run levels from both groups concurrently.
+To use the run levels, you must assign them to your plugin class.  If none are assigned the plugin will use DEFAULT runlevel. The run levels, block and conventional,
+are described in the Getting Started section.  While it is technically possible, we do not recommend that you assign run levels from both groups concurrently.
 
 Clusters
 ~~~~~~~~
@@ -194,14 +194,14 @@ Configuration
 
 In many situations for plugins, there needs to be some sort of configuration declared before the plugin run time, which means that the plugin needs to implement an 
 interface to allow users to configure it.
-Users can select from 3 configuration options in the Torrent Browser: global, plan, and manual. The HTML pages can reference static assets, see :ref:`plugin_files`.
+Users can select from 3 configuration options in |TS|: global, plan, and manual. The HTML pages can reference static assets, see :ref:`plugin_files`.
 
 Global Configuration
 ~~~~~~~~~~~~~~~~~~~~
 
-Include an html file named *config.html* in your root plugin directory to enable global configuration.
-This HTMl window appears in an iframe on the global plugin configuration page at */configure/plugins/*.
-Click the gear icon next to a plugin, then select "Configure".
+Include an HTML file named *config.html* in your root plugin directory to enable global configuration.
+This HTML window appears in an iframe on the global plugin configuration page at */configure/plugins/*.
+Click the |gear_icon| (Settings) next to a plugin, then select "Configure".
 
 **Reading Configuration**
 
@@ -218,8 +218,8 @@ Write to the plugin api endpoint with a PUT request.
 Plan Configuration
 ~~~~~~~~~~~~~~~~~~
 
-Include an html file named *plan.html* in your root plugin directory to enable plan configuration.
-This HTMl window appears in an iframe on the planning wizard plugin configuration page at */plan/page_plan_plugins/*.
+Include an HTML file named *plan.html* in your root plugin directory to enable plan configuration.
+This HTML window appears in an iframe on the planning screen plugin configuration page at */plan/page_plan_plugins/*.
 Click the checkbox next to a plugin, then select "Configure".
 
 **Reading Configuration**
@@ -233,8 +233,8 @@ window.serializeForm is called by the parent frame to gather the current configu
 Manual Configuration
 ~~~~~~~~~~~~~~~~~~~~
 
-Include an html file named *instance.html* in your root plugin directory to enable manual configuration.
-The HTMl window appears in an iframe on the report page at */report/<ID>/*.
+Include an HTML file named *instance.html* in your root plugin directory to enable manual configuration.
+The HTML window appears in an iframe on the report page at */report/<ID>/*.
 Click "Select Plugins To Run", then select a plugin.
 
 **Reading Configuration**
@@ -252,9 +252,72 @@ window.parent.$.colorbox.close()
 Barcode Table UI
 ~~~~~~~~~~~~~~~~
 
-Plugin Barcode Table UI allows plugins to generate a simple GUI that can be used to select barcodes to process and specify per-barcode parameters for a plugin. 
-The table is similar to the barcode sample table in Plan Wizard with one row per barcode and columns specified by the individual plugin. 
+Plugin Barcode Table UI is an optional service provided by the plugin framework. It allows plugins to generate a simple GUI that can be used to select which barcodes
+to process and specify per-barcode parameters. The table is similar to the barcode sample table in plan screen with one row per barcode and columns specified by the plugin.
 This UI is provided for manual plugin launch only and is an opt-in service for plugins to use if desired.
+
+**Defining table columns**
+
+    ::
+    
+        def barcodetable_columns(self):
+            # plugin class method to specify which columns to display
+            # inputs: none
+            # outputs: list of columns and options to show
+            columns_list = [
+                {
+                    "field": "selected",
+                    "editable": True
+                },       
+                {
+                    "field": "barcode_name",
+                    "editable": False
+                },
+                {
+                    "field": "sample",
+                    "editable": False
+                },
+                ...
+            ]
+            return columns_list
+
+    List of available columns can be retrieved from framework by executing the following command line:
+
+        ::
+
+            python /results/plugins/<myPlugin>/<myPlugin>.py --bctable-columns
+
+**Providing default table contents (optional)**
+
+Plugin barcode table will be populated on page load from existing samples information entered during run planning.
+Additionally, the plugin can modify or augment this initial data if it specifies the following function:
+
+::
+
+    def barcodetable_data(self, data, planconfig={}, globalconfig={}):
+        # plugin class method to specify default table contents
+        # inputs:
+        #    data - same structure as in barcodes.json
+        #    planconfig - plugin configuration from planning (plan.html)
+        #    globalconfig - plugin global configuration (config.html)
+        # outputs:
+        #    data, modified as needed
+        return data
+
+**Changing instance.html**
+
+Plugin's instance.html must add the contents of barcodes table to the plugin data before POSTing it to the results API.  This data will be written
+to startplugin.json file at plugin runtime under "pluginconfig" section.
+
+Helper TB_plugin_functions js variable is available to interact with the barcode table UI:
+
+    * TB_plugin_functions.get_plugin_barcodetable()
+            returns table data as json object
+    * TB_plugin_functions.update_plugin_barcodetable(data)
+            can be used to update the table with data json object
+    * TB_plugin_functions.plugin_barcodetable_div
+            barcode table DIV element
+
 
 Input Files
 -----------
@@ -277,8 +340,8 @@ By default all the barcodes where the filtered key is true are not included in t
         aligned <bool>: Flags if the reads in bam_file are aligned to the reference genome.
         bam_file <string>: Name of reads file. (May or may not be be aligned to the reference.)
         bam_filepath <string>: Full file path to bam_file on the local torrent server. (File may not exist if read_count is 0.)
-        control_sequence_type <string>: Currently either ERCC Mix 1 or ERCC Mix 2 and only defined in Plan Wizard for RNA Sequencing. (Purpose unspecified.)
-        filtered <bool>: Flags if the barcode passed the Torrent Suite analysis pipeline filtering criteria.
+        control_sequence_type <string>: Currently either ERCC Mix 1 or ERCC Mix 2 and only defined in plan screen for RNA Sequencing. (Purpose unspecified.)
+        filtered <bool>: Flags if the barcode passed the |TS| analysis pipeline filtering criteria.
         hotspot_filepath <string>: Full file path to HotSpot target regions (BED) file on the local torrent server. ("" if not used.)
         genome_urlpath <string>: URL path used to specify the genome for applications like IGV. Typically the path to the FASTA file on the local torrent server.
         nucleotide_type <string>: Currently either DNA or RNA depending on application. Primarily used to distinguish barcodes with AmpliSeq DNA+RNA runs.
@@ -300,8 +363,8 @@ By default all the barcodes where the filtered key is true are not included in t
         barcode_name <string>: Name of the barcode in the barcode set (barcode_name).
         barcode_sequence <string>: DNA sequence used to identify this barcode.
         barcode_type <string>: User-specified type for this barcode.
-        control_sequence_type <string>: Currently either ERCC Mix 1 or ERCC Mix 2 and only defined in Plan Wizard for RNA Sequencing. (Purpose unspecified.)
-        filtered <bool>: Flags if the barcode passed the Torrent Suite analysis pipeline filtering criteria.
+        control_sequence_type <string>: Currently either ERCC Mix 1 or ERCC Mix 2 and only defined in plan screen for RNA Sequencing. (Purpose unspecified.)
+        filtered <bool>: Flags if the barcode passed the |TS| analysis pipeline filtering criteria.
         hotspot_filepath <string>: Full file path to HotSpot target regions (BED) file on the local torrent server. ("" if not used.)
         genome_urlpath <string>: URL path used to specify the genome for applications like IGV. Typically the path to the FASTA file on the local torrent server.
         nucleotide_type <string>: Currently either DNA or RNA depending on application. Primarily used to distinguish barcodes with AmpliSeq DNA+RNA runs.
@@ -393,7 +456,7 @@ By default all the barcodes where the filtered key is true are not included in t
 3. Barcodes with a sample name provided (i.e. not "") are represented with filtered == false, regardless of read_count value.
 4. The bam_filepath value is set to the expected location of the bam_file on the Torrent Server. Barcodes with read_count == 0 may not have a bam_file saved, so you can expect a failure to find the bam_file at bam_filepath. If read_count > 0 then a missing bam_file should be treated as an unexpected error. (This would most likely be a result of automated deletion of old files to make space on the server.)
 5. Although control_sequence_type and nucleotide_type appear to be general attributes, at 5.0.3 these are only defined for barcodes that were specified 
-   (associated with samples) in the Plan. For nonbarcoded elements or barcodes with no sample data that had sufficient reads. these attributes have the value "".
+   (associated with samples) in the plan. For nonbarcoded elements or barcodes with no sample data that had sufficient reads. these attributes have the value "".
 
 startplugin.json
 ~~~~~~~~~~~~~~~~
@@ -666,8 +729,7 @@ Output Files
 ------------
 
 The primary output of all of the plugins is the report HTML file, which is produced by the plugin.  Name this file \*_block.html or \*_block.php. There can be any number 
-of them, and they are all displayed in separate iFrames.  If the plugin is marked "major" via the major_block attribute, this indicates to the report that the output 
-from the plugin is displayed as if it were part of the report.  This means that it appears in the primary body of the report instead of in the Plugin Summary tab at the bottom. If plugin output doesn't contain a _block.html or _block.php file then all html/php files in the plugin result folder will be shown as links in the plugin section.
+of them, and they are all displayed in separate iFrames. If plugin output doesn't contain a _block.html or _block.php file then all HTML/PHP files in the plugin result folder will be shown as links in the plugin section.
 
 Additionally, the SGE produces a log file for recording the standard output of the plugin execution, which is called drmaa_stdout.txt.  This contains all the information 
 printed from the controlling script, including the standard output of the plugin itself, and is a primary source of information for debugging.
