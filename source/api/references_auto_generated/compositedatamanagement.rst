@@ -74,7 +74,7 @@ Example Response
 	            "output_keep": false, 
 	            "basecall_diskspace": 175694.536458969, 
 	            "resultsName": "Auto_S5-540_WholeTranscriptomeRNA_91", 
-	            "output_state": "Local", 
+	            "output_state": "Error", 
 	            "sigproc_state": "Local", 
 	            "sigproc_keep": false, 
 	            "sigproc_diskspace": 0.0160617828369141, 
@@ -87,12 +87,22 @@ Example Response
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

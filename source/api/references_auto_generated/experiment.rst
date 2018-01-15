@@ -55,6 +55,8 @@ field                         help text                                         
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **chefInstrumentName**        Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefSolutionsSerialNum**    Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **sample**                    Unicode string data. Ex: "Hello World"                                                             n/a     false    true     true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **log**                       Unicode string data. Ex: "Hello World"                                                             {}      false    false    true  false  string   
@@ -66,6 +68,8 @@ field                         help text                                         
 **eas_set**                   Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related  
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **chefLogPath**               Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefFlexibleWorkflow**      Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **platform**                  Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -155,6 +159,8 @@ field                         help text                                         
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **status**                    Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefReagentsSerialNum**     Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **cycles**                    Integer data. Ex: 2673                                                                             n/a     false    false    false false  integer  
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **chefChipType2**             Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
@@ -176,7 +182,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 88, 
+	        "total_count": 95, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/experiment/?offset=1&limit=1&format=json"
@@ -203,6 +209,7 @@ Example Response
 	            "chefReagentsPart": "", 
 	            "metaData": {}, 
 	            "chefInstrumentName": "", 
+	            "chefSolutionsSerialNum": "", 
 	            "sample": "", 
 	            "log": {}, 
 	            "sequencekitbarcode": "", 
@@ -211,6 +218,7 @@ Example Response
 	                {
 	                    "ionstatsargs": "", 
 	                    "isEditable": true, 
+	                    "endBarcodeKitName": "", 
 	                    "hotSpotRegionBedFile": "", 
 	                    "results": [], 
 	                    "mixedTypeRNA_reference": null, 
@@ -253,6 +261,7 @@ Example Response
 	                }
 	            ], 
 	            "chefLogPath": null, 
+	            "chefFlexibleWorkflow": "", 
 	            "platform": "PGM", 
 	            "chefScriptVersion": "", 
 	            "samples": [], 
@@ -297,6 +306,7 @@ Example Response
 	            "storageHost": "", 
 	            "expName": "ca9e2550-8adb-4d9b-9156-321bbbb1498e", 
 	            "status": "planned", 
+	            "chefReagentsSerialNum": "", 
 	            "cycles": 0, 
 	            "chefChipType2": "", 
 	            "chefChipType1": "", 
@@ -307,11 +317,20 @@ Example Response
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- patch
-- put
-- delete
+- GET
+- PATCH
+- PUT
+- DELETE
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- PATCH
+- PUT
+- DELETE
 

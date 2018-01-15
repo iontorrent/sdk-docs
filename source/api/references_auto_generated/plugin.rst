@@ -87,54 +87,64 @@ Example Response
 	        {
 	            "active": true, 
 	            "availableVersions": [
-	                "5.6.0.0"
+	                "5.8.0.1", 
+	                "5.8.0.0", 
+	                "5.6.0.1"
 	            ], 
-	            "id": 16, 
-	            "isPlanConfig": true, 
+	            "id": 27, 
+	            "isPlanConfig": false, 
 	            "isSupported": true, 
-	            "script": "smallRNA.py", 
+	            "script": "FieldSupport.py", 
 	            "selected": true, 
-	            "version": "5.6.0.0", 
-	            "hasAbout": false, 
-	            "input": "/configure/plugins/plugin/16/configure/report/", 
-	            "majorBlock": true, 
+	            "version": "5.8.0.0", 
+	            "hasAbout": true, 
+	            "input": "False", 
+	            "majorBlock": false, 
 	            "status": {}, 
-	            "description": "Run the small RNA pipeline.", 
+	            "description": "Generate an enhanced CSA", 
 	            "defaultSelected": false, 
 	            "pluginsettings": {
 	                "depends": [], 
 	                "features": [], 
 	                "runtypes": [
-	                    "wholechip", 
-	                    "thumbnail", 
-	                    "composite"
+	                    "thumbnail"
 	                ], 
 	                "runlevels": [
-	                    "default"
+	                    "last"
 	                ]
 	            }, 
-	            "date": "2017-08-01T20:08:28.000127+00:00", 
-	            "path": "/results/plugins/smallRNA", 
-	            "isConfig": true, 
-	            "isInstance": true, 
-	            "name": "smallRNA", 
+	            "date": "2017-12-05T00:11:03.000826+00:00", 
+	            "path": "/results/plugins/FieldSupport", 
+	            "isConfig": false, 
+	            "isInstance": false, 
+	            "name": "FieldSupport", 
 	            "userinputfields": {}, 
 	            "url": "", 
 	            "config": {}, 
-	            "packageName": "ion-plugin-smallrna", 
-	            "versionedName": "smallRNA--v5.6.0.0", 
-	            "isUpgradable": false, 
-	            "resource_uri": "/rundb/api/v1/plugin/16/"
+	            "packageName": "ion-plugin-fieldsupport", 
+	            "versionedName": "FieldSupport--v5.8.0.0", 
+	            "isUpgradable": true, 
+	            "resource_uri": "/rundb/api/v1/plugin/27/"
 	        }
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

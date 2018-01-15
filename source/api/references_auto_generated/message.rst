@@ -42,32 +42,30 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 1, 
+	        "total_count": 0, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": null
 	    }, 
-	    "objects": [
-	        {
-	            "body": "There is an update available for your Torrent Server. <a class=\"btn btn-success\" href=\"/admin/update\">Update Now</a>", 
-	            "status": "unread", 
-	            "level": 20, 
-	            "route": "_StaffOnly", 
-	            "expires": "read", 
-	            "time": "2017-09-14T06:44:22.000934+00:00", 
-	            "id": 25, 
-	            "tags": "new-upgrade", 
-	            "resource_uri": "/rundb/api/v1/message/25/"
-	        }
-	    ]
+	    "objects": []
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

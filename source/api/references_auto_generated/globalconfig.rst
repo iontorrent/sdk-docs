@@ -97,7 +97,7 @@ Example Response
 	            "selected": false, 
 	            "check_news_posts": true, 
 	            "realign": false, 
-	            "ts_update_status": "Ready to install", 
+	            "ts_update_status": "No updates", 
 	            "mark_duplicates": false, 
 	            "auto_archive_enable": true, 
 	            "enable_auto_security": true, 
@@ -116,12 +116,22 @@ Example Response
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

@@ -43,7 +43,7 @@ Example Response
 	    }, 
 	    "objects": [
 	        {
-	            "percentfull": 37.6235898046785, 
+	            "percentfull": 37.5185171378513, 
 	            "name": "Home", 
 	            "filesPrefix": "/results/", 
 	            "comments": "", 
@@ -53,12 +53,22 @@ Example Response
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

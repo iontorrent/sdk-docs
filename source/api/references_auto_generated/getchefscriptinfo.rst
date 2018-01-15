@@ -26,15 +26,22 @@ Example Response
 	{
 	    "object": {
 	        "availableversion": {
-	            "IS_scripts": "000609", 
+	            "IS_scripts": "000704", 
 	            "Compatible_Chef_release": [
-	                "IC.5.6.0"
+	                "IC.5.8.0"
 	            ]
 	        }
 	    }
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
+- GET
+
+
+Allowed detail HTTP methods
+---------------------------
+
+None
 

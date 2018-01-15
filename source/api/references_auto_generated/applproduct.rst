@@ -25,6 +25,8 @@ field                                                     help text             
 --------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **defaultSeqKit**                                         A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    false false  related 
 --------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**isControlSeqTypeBySampleSupported**                     Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **defaultBarcodeKitName**                                 Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string  
 --------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **isHotSpotBEDFileBySampleSupported**                     Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
@@ -39,7 +41,7 @@ field                                                     help text             
 --------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **applicationGroup**                                      A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    false false  related 
 --------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**isControlSeqTypeBySampleSupported**                     Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
+**dualBarcodingRule**                                     Unicode string data. Ex: "Hello World"                                                 false    false    true  false  string  
 --------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **defaultChipType**                                       Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string  
 --------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
@@ -66,6 +68,8 @@ field                                                     help text             
 **isDefaultBarcoded**                                     Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
 --------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **isTargetRegionBEDFileSelectionRequiredForRefSelection** Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
+--------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**isDualBarcodingBySampleSupported**                      Boolean data. Ex: True                                                         false   false    false    true  false  boolean 
 --------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **defaultTargetRegionBedFileName**                        Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string  
 --------------------------------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
@@ -104,7 +108,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 49, 
+	        "total_count": 55, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/applproduct/?offset=1&limit=1&format=json"
@@ -116,66 +120,87 @@ Example Response
 	            "isTargetRegionBEDFileSupported": true, 
 	            "isSamplePrepKitSupported": true, 
 	            "defaultSeqKit": {
-	                "isActive": true, 
-	                "samplePrep_instrumentType": "", 
-	                "templatingSize": "", 
 	                "kitType": "SequencingKit", 
-	                "description": "Precision ID S5 Sequencing Kit", 
-	                "name": "precisionIDS5Kit", 
-	                "nucleotideType": "", 
-	                "instrumentType": "S5", 
-	                "chipTypes": "", 
+	                "uid": "SEQ0009", 
 	                "runMode": "", 
+	                "flowCount": 500, 
+	                "id": 20033, 
+	                "description": "Ion PGM Sequencing 200 Kit v2", 
+	                "defaultCartridgeUsageCount": null, 
 	                "parts": [
 	                    {
-	                        "barcode": "100041073B", 
-	                        "id": 20236, 
-	                        "resource_uri": "/rundb/api/v1/kitpart/20236/", 
-	                        "kit": "/rundb/api/v1/kitinfo/20111/"
+	                        "barcode": "4482006", 
+	                        "id": 20054, 
+	                        "resource_uri": "/rundb/api/v1/kitpart/20054/", 
+	                        "kit": "/rundb/api/v1/kitinfo/20033/"
 	                    }, 
 	                    {
-	                        "barcode": "100041074B", 
-	                        "id": 20237, 
-	                        "resource_uri": "/rundb/api/v1/kitpart/20237/", 
-	                        "kit": "/rundb/api/v1/kitinfo/20111/"
+	                        "barcode": "4482007", 
+	                        "id": 20055, 
+	                        "resource_uri": "/rundb/api/v1/kitpart/20055/", 
+	                        "kit": "/rundb/api/v1/kitinfo/20033/"
 	                    }, 
 	                    {
-	                        "barcode": "A33208", 
-	                        "id": 20260, 
-	                        "resource_uri": "/rundb/api/v1/kitpart/20260/", 
-	                        "kit": "/rundb/api/v1/kitinfo/20111/"
+	                        "barcode": "4482008", 
+	                        "id": 20056, 
+	                        "resource_uri": "/rundb/api/v1/kitpart/20056/", 
+	                        "kit": "/rundb/api/v1/kitinfo/20033/"
 	                    }, 
 	                    {
-	                        "barcode": "100049484", 
-	                        "id": 20263, 
-	                        "resource_uri": "/rundb/api/v1/kitpart/20263/", 
-	                        "kit": "/rundb/api/v1/kitinfo/20111/"
+	                        "barcode": "4482009", 
+	                        "id": 20057, 
+	                        "resource_uri": "/rundb/api/v1/kitpart/20057/", 
+	                        "kit": "/rundb/api/v1/kitinfo/20033/"
 	                    }
 	                ], 
-	                "flowCount": 650, 
-	                "applicationType": "AMPS", 
-	                "uid": "SEQ0028", 
+	                "categories": "readLengthDerivableFromFlows;", 
+	                "instrumentType": "pgm", 
+	                "defaultFlowOrder": null, 
+	                "samplePrep_instrumentType": "", 
+	                "cartridgeExpirationDayLimit": null, 
+	                "isActive": true, 
+	                "chipTypes": "", 
+	                "templatingSize": "", 
+	                "name": "IonPGM200Kit-v2", 
+	                "nucleotideType": "", 
 	                "libraryReadLength": 0, 
-	                "resource_uri": "/rundb/api/v1/kitinfo/20111/", 
-	                "id": 20111, 
-	                "categories": "filter_s5HidKit", 
-	                "defaultFlowOrder": null
+	                "applicationType": "", 
+	                "cartridgeBetweenUsageAbsoluteMaxDayLimit": null, 
+	                "resource_uri": "/rundb/api/v1/kitinfo/20033/"
 	            }, 
+	            "isControlSeqTypeBySampleSupported": false, 
 	            "defaultBarcodeKitName": null, 
 	            "isHotSpotBEDFileBySampleSupported": true, 
-	            "id": 20024, 
+	            "id": 20001, 
 	            "isTargetRegionBEDFileBySampleSupported": true, 
 	            "isReferenceSelectionSupported": true, 
-	            "productCode": "AMPS_HID_S5_530", 
+	            "productCode": "AMPS_0", 
 	            "applicationGroup": {
-	                "name": "HID", 
-	                "description": "Human Identification", 
+	                "name": "DNA", 
+	                "description": "DNA", 
 	                "applications": [
 	                    {
 	                        "applicationGroups": [
 	                            "/rundb/api/v1/applicationgroup/1/", 
+	                            "/rundb/api/v1/applicationgroup/3/", 
+	                            "/rundb/api/v1/applicationgroup/4/"
+	                        ], 
+	                        "description": "Generic Sequencing", 
+	                        "nucleotideType": "dna", 
+	                        "barcode": "", 
+	                        "meta": {}, 
+	                        "alternate_name": "Other", 
+	                        "runType": "GENS", 
+	                        "id": 1, 
+	                        "isActive": true, 
+	                        "resource_uri": "/rundb/api/v1/runtype/1/"
+	                    }, 
+	                    {
+	                        "applicationGroups": [
+	                            "/rundb/api/v1/applicationgroup/1/", 
 	                            "/rundb/api/v1/applicationgroup/6/", 
-	                            "/rundb/api/v1/applicationgroup/8/"
+	                            "/rundb/api/v1/applicationgroup/8/", 
+	                            "/rundb/api/v1/applicationgroup/10/"
 	                        ], 
 	                        "description": "AmpliSeq DNA", 
 	                        "nucleotideType": "dna", 
@@ -186,20 +211,64 @@ Example Response
 	                        "id": 2, 
 	                        "isActive": true, 
 	                        "resource_uri": "/rundb/api/v1/runtype/2/"
+	                    }, 
+	                    {
+	                        "applicationGroups": [
+	                            "/rundb/api/v1/applicationgroup/1/"
+	                        ], 
+	                        "description": "TargetSeq", 
+	                        "nucleotideType": "dna", 
+	                        "barcode": "", 
+	                        "meta": {}, 
+	                        "alternate_name": "TargetSeq", 
+	                        "runType": "TARS", 
+	                        "id": 3, 
+	                        "isActive": true, 
+	                        "resource_uri": "/rundb/api/v1/runtype/3/"
+	                    }, 
+	                    {
+	                        "applicationGroups": [
+	                            "/rundb/api/v1/applicationgroup/1/", 
+	                            "/rundb/api/v1/applicationgroup/4/"
+	                        ], 
+	                        "description": "Whole Genome", 
+	                        "nucleotideType": "dna", 
+	                        "barcode": "", 
+	                        "meta": {}, 
+	                        "alternate_name": "Whole Genome", 
+	                        "runType": "WGNM", 
+	                        "id": 4, 
+	                        "isActive": true, 
+	                        "resource_uri": "/rundb/api/v1/runtype/4/"
+	                    }, 
+	                    {
+	                        "applicationGroups": [
+	                            "/rundb/api/v1/applicationgroup/1/"
+	                        ], 
+	                        "description": "AmpliSeq Exome", 
+	                        "nucleotideType": "dna", 
+	                        "barcode": "", 
+	                        "meta": {}, 
+	                        "alternate_name": "AmpliSeq Exome", 
+	                        "runType": "AMPS_EXOME", 
+	                        "id": 7, 
+	                        "isActive": true, 
+	                        "resource_uri": "/rundb/api/v1/runtype/7/"
 	                    }
 	                ], 
-	                "uid": "APPLGROUP_0008", 
-	                "id": 8, 
+	                "uid": "APPLGROUP_0001", 
+	                "id": 1, 
 	                "isActive": true, 
-	                "resource_uri": "/rundb/api/v1/applicationgroup/8/"
+	                "resource_uri": "/rundb/api/v1/applicationgroup/1/"
 	            }, 
-	            "isControlSeqTypeBySampleSupported": false, 
-	            "defaultChipType": "530", 
+	            "dualBarcodingRule": "", 
+	            "defaultChipType": "318", 
 	            "appl": {
 	                "applicationGroups": [
 	                    "/rundb/api/v1/applicationgroup/1/", 
 	                    "/rundb/api/v1/applicationgroup/6/", 
-	                    "/rundb/api/v1/applicationgroup/8/"
+	                    "/rundb/api/v1/applicationgroup/8/", 
+	                    "/rundb/api/v1/applicationgroup/10/"
 	                ], 
 	                "description": "AmpliSeq DNA", 
 	                "nucleotideType": "dna", 
@@ -212,73 +281,81 @@ Example Response
 	                "resource_uri": "/rundb/api/v1/runtype/2/"
 	            }, 
 	            "categories": "", 
-	            "instrumentType": "s5", 
-	            "isDefault": false, 
+	            "instrumentType": "pgm", 
+	            "isDefault": true, 
 	            "isTargetTechniqueSelectionSupported": true, 
 	            "description": "", 
 	            "isHotspotRegionBEDFileSuppported": true, 
-	            "isVisible": false, 
-	            "productName": "AMPS_HID_S5_530", 
+	            "isVisible": true, 
+	            "productName": "AMPS_default", 
 	            "isBarcodeKitSelectionRequired": false, 
 	            "isDefaultBarcoded": false, 
 	            "isTargetRegionBEDFileSelectionRequiredForRefSelection": true, 
+	            "isDualBarcodingBySampleSupported": false, 
 	            "defaultTargetRegionBedFileName": "", 
-	            "isActive": false, 
+	            "isActive": true, 
 	            "isReferenceBySampleSupported": true, 
-	            "defaultFlowCount": 1000, 
+	            "defaultFlowCount": 500, 
 	            "defaultLibKit": {
-	                "isActive": true, 
-	                "samplePrep_instrumentType": "IC", 
-	                "templatingSize": "", 
-	                "kitType": "LibraryPrepKit", 
-	                "description": "Precision ID Chef DL8", 
-	                "name": "Ion Chef HID Library V2", 
-	                "nucleotideType": "", 
-	                "instrumentType": "", 
-	                "chipTypes": "", 
+	                "kitType": "LibraryKit", 
+	                "uid": "LIB0008", 
 	                "runMode": "", 
+	                "flowCount": 0, 
+	                "id": 20012, 
+	                "description": "Ion AmpliSeq 2.0 Library Kit", 
+	                "defaultCartridgeUsageCount": null, 
 	                "parts": [
 	                    {
-	                        "barcode": "A32926C", 
-	                        "id": 20245, 
-	                        "resource_uri": "/rundb/api/v1/kitpart/20245/", 
-	                        "kit": "/rundb/api/v1/kitinfo/20105/"
-	                    }, 
-	                    {
-	                        "barcode": "A33212", 
-	                        "id": 20261, 
-	                        "resource_uri": "/rundb/api/v1/kitpart/20261/", 
-	                        "kit": "/rundb/api/v1/kitinfo/20105/"
+	                        "barcode": "4475345", 
+	                        "id": 20034, 
+	                        "resource_uri": "/rundb/api/v1/kitpart/20034/", 
+	                        "kit": "/rundb/api/v1/kitinfo/20012/"
 	                    }
 	                ], 
-	                "flowCount": 0, 
-	                "applicationType": "AMPS", 
-	                "uid": "LPREP0003", 
+	                "categories": "", 
+	                "instrumentType": "", 
+	                "defaultFlowOrder": null, 
+	                "samplePrep_instrumentType": "", 
+	                "cartridgeExpirationDayLimit": null, 
+	                "isActive": true, 
+	                "chipTypes": "", 
+	                "templatingSize": "", 
+	                "name": "Ion AmpliSeq 2.0 Library Kit", 
+	                "nucleotideType": "dna", 
 	                "libraryReadLength": 0, 
-	                "resource_uri": "/rundb/api/v1/kitinfo/20105/", 
-	                "id": 20105, 
-	                "categories": "filter_s5HidKit", 
-	                "defaultFlowOrder": null
+	                "applicationType": "AMPS_ANY", 
+	                "cartridgeBetweenUsageAbsoluteMaxDayLimit": null, 
+	                "resource_uri": "/rundb/api/v1/kitinfo/20012/"
 	            }, 
 	            "barcodeKitSelectableType": "all", 
-	            "isDefaultForInstrumentType": false, 
+	            "isDefaultForInstrumentType": true, 
 	            "defaultGenomeRefName": "hg19", 
 	            "defaultSamplePrepKit": null, 
 	            "defaultControlSeqKit": null, 
-	            "defaultIonChefPrepKit": "/rundb/api/v1/kitinfo/20106/", 
-	            "resource_uri": "/rundb/api/v1/applproduct/20024/", 
-	            "defaultIonChefSequencingKit": null, 
-	            "defaultTemplateKit": "/rundb/api/v1/kitinfo/20106/"
+	            "defaultIonChefPrepKit": "/rundb/api/v1/kitinfo/20042/", 
+	            "resource_uri": "/rundb/api/v1/applproduct/20001/", 
+	            "defaultIonChefSequencingKit": "/rundb/api/v1/kitinfo/20033/", 
+	            "defaultTemplateKit": "/rundb/api/v1/kitinfo/20034/"
 	        }
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

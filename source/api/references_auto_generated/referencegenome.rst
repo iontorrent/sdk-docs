@@ -39,7 +39,7 @@ field              help text                                            default 
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **celery_task_id** Unicode string data. Ex: "Hello World"                                                false    false    true  false  string   
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
-**date**           A date & time as a string. Ex: "2010-11-10T03:07:43" 2017-09-20T05:16:15.000679+00:00 false    false    false false  datetime 
+**date**           A date & time as a string. Ex: "2010-11-10T03:07:43" 2017-12-19T21:15:09.000838+00:00 false    false    false false  datetime 
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **verbose_error**  Unicode string data. Ex: "Hello World"                                                false    false    true  false  string   
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
@@ -83,12 +83,22 @@ Example Response
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

@@ -38,7 +38,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 9, 
+	        "total_count": 10, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/applicationgroup/?offset=1&limit=1&format=json"
@@ -68,7 +68,8 @@ Example Response
 	                    "applicationGroups": [
 	                        "/rundb/api/v1/applicationgroup/1/", 
 	                        "/rundb/api/v1/applicationgroup/6/", 
-	                        "/rundb/api/v1/applicationgroup/8/"
+	                        "/rundb/api/v1/applicationgroup/8/", 
+	                        "/rundb/api/v1/applicationgroup/10/"
 	                    ], 
 	                    "description": "AmpliSeq DNA", 
 	                    "nucleotideType": "dna", 
@@ -132,12 +133,22 @@ Example Response
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

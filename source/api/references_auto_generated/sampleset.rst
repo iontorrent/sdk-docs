@@ -64,10 +64,10 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 1, 
+	        "total_count": 2, 
 	        "offset": 0, 
 	        "limit": 1, 
-	        "next": null
+	        "next": "/rundb/api/v1/sampleset/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
@@ -78,15 +78,23 @@ Example Response
 	            "libraryPrepPlateType": "", 
 	            "description": "", 
 	            "resource_uri": "/rundb/api/v1/sampleset/1/", 
-	            "sampleCount": 2, 
+	            "sampleCount": 10, 
 	            "displayedName": "Ampliseq on Chef", 
 	            "SampleGroupType_CV": null, 
 	            "pcrPlateSerialNum": "", 
 	            "libraryPrepInstrumentData": null, 
 	            "libraryPrepKitName": "", 
 	            "samples": [
+	                "/rundb/api/v1/samplesetitem/1/", 
 	                "/rundb/api/v1/samplesetitem/2/", 
-	                "/rundb/api/v1/samplesetitem/1/"
+	                "/rundb/api/v1/samplesetitem/3/", 
+	                "/rundb/api/v1/samplesetitem/5/", 
+	                "/rundb/api/v1/samplesetitem/7/", 
+	                "/rundb/api/v1/samplesetitem/9/", 
+	                "/rundb/api/v1/samplesetitem/11/", 
+	                "/rundb/api/v1/samplesetitem/13/", 
+	                "/rundb/api/v1/samplesetitem/15/", 
+	                "/rundb/api/v1/samplesetitem/17/"
 	            ], 
 	            "lastModifiedDate": "2017-08-28T21:21:14.000027+00:00", 
 	            "sampleGroupTypeName": "", 
@@ -99,12 +107,22 @@ Example Response
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

@@ -88,7 +88,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 116, 
+	        "total_count": 117, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/analysisargs/?offset=1&limit=1&format=json"
@@ -103,13 +103,13 @@ Example Response
 	            "thumbnailanalysisargs": "", 
 	            "samplePrepKitName": "", 
 	            "id": 1, 
-	            "creationDate": "2017-09-06T23:16:29.000331+00:00", 
+	            "creationDate": "2017-12-05T00:10:34.000865+00:00", 
 	            "sequenceKitName": "", 
 	            "analysisargs": "Analysis --args-json /opt/ion/config/args_314_analysis.json", 
 	            "thumbnailcalibrateargs": "", 
 	            "applGroup": null, 
 	            "chip_default": true, 
-	            "lastModifiedDate": "2017-09-06T23:16:29.000331+00:00", 
+	            "lastModifiedDate": "2017-12-05T00:10:34.000865+00:00", 
 	            "beadfindargs": "justBeadFind --args-json /opt/ion/config/args_314_beadfind.json", 
 	            "templateKitName": "", 
 	            "prebasecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 20", 
@@ -131,12 +131,22 @@ Example Response
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

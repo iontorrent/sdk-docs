@@ -31,6 +31,8 @@ field                  help text                                                
 ---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **size**               Unicode string data. Ex: "Hello World"                                                             -1      false    false    false false  string   
 ---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**validation_errors**  Unicode string data. Ex: "Hello World"                                                             {}      false    false    true  false  string   
+---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **state**              Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
 ---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **store**              Unicode string data. Ex: "Hello World"                                                             {}      false    false    true  false  string   
@@ -83,6 +85,7 @@ Example Response
 	            "owner": "/rundb/api/v1/user/1/", 
 	            "id": 22, 
 	            "size": "25470", 
+	            "validation_errors": {}, 
 	            "state": "Completed", 
 	            "store": {}, 
 	            "files": [
@@ -114,12 +117,22 @@ Example Response
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

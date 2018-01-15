@@ -39,15 +39,15 @@ Attributes & Properties
 +-----------------+------------+--------------+----------+----------------------------------------------------------------------------------------------------------------+
 | Attribute Name  | Required   | Type         | Default  | Description                                                                                                    |
 +=================+============+==============+==========+================================================================================================================+
-| name            | No         | string       | Empty    | Stores the name of the plugin in addition to the name of the class itself for logging                          |
+| name            | No         | string       | Empty    | Stores the name of the plugin in addition to the name of the class itself for logging.                         |
 +-----------------+------------+--------------+----------+----------------------------------------------------------------------------------------------------------------+
-| version         | Yes        | string       | Empty    | The four number version number for the plugin                                                                  |
+| version         | Yes        | string       | Empty    | The four number version number for the plugin.                                                                 |
 +-----------------+------------+--------------+----------+----------------------------------------------------------------------------------------------------------------+
-| runtypes        | No         | list(string) | Empty    | Indicates if this plugin is used for wholechip and/or thumbnails                                               |
+| runtypes        | No         | list(string) | Empty    | Indicates if this plugin is used for wholechip and/or thumbnails.                                              |
 +-----------------+------------+--------------+----------+----------------------------------------------------------------------------------------------------------------+
 | features        | No         | list(string) | Empty    | Holds a list of current features enabled for this plugin.                                                      |
 +-----------------+------------+--------------+----------+----------------------------------------------------------------------------------------------------------------+
-| runlevels       | Yes        | list(string) | Empty    | Holds a list for each run level that this plugin executes during the pipeline execution                        |
+| runlevels       | Yes        | list(string) | Empty    | Holds a list for each run level that this plugin executes during the pipeline execution.                       |
 +-----------------+------------+--------------+----------+----------------------------------------------------------------------------------------------------------------+
 | depends         | No         | list(string) | Empty    | Lists all plugins which are executed before this one, if present.                                              |
 +-----------------+------------+--------------+----------+----------------------------------------------------------------------------------------------------------------+
@@ -132,7 +132,7 @@ When you execute plugins, they are controlled with a script which is written to 
 The plugin framework creates this file and directs the Grid Engine to execute this as the entry point for the plugin execution.  The file handles the following:
 
 * Updating the status in the database to be reflected in the run results page
-* Setting up environmental variables (These are used in legacy plugins)
+* Setting up environmental variables (these are used in legacy plugins)
 * Setting the umask to 0000
 * Preventing core files from being written from core dumps
 * Implementing the use of the output.json to create output (currently incomplete)
@@ -206,14 +206,14 @@ Click the |gear_icon| (Settings) next to a plugin, then select "Configure".
 **Reading Configuration**
 
 Read from the plugin api endpoint.
-"/rundb/api/v1/plugin/" + TB_plugin.pk + "/",
+"/rundb/api/v1/plugin/" + TB_plugin.pk + "/"
 Or
 Read the window.TB_plugin js variable.
 
 **Writing Configuration**
 
 Write to the plugin api endpoint with a PUT request.
-"/rundb/api/v1/plugin/" + TB_plugin.pk + "/",
+"/rundb/api/v1/plugin/" + TB_plugin.pk + "/"
 
 Plan Configuration
 ~~~~~~~~~~~~~~~~~~
@@ -306,7 +306,7 @@ Additionally, the plugin can modify or augment this initial data if it specifies
 
 **Changing instance.html**
 
-Plugin's instance.html must add the contents of barcodes table to the plugin data before POSTing it to the results API.  This data will be written
+The plugin's instance.html must add the contents of barcodes table to the plugin data before POSTing it to the results API.  This data will be written
 to startplugin.json file at plugin runtime under "pluginconfig" section.
 
 Helper TB_plugin_functions js variable is available to interact with the barcode table UI:

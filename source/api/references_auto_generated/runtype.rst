@@ -44,7 +44,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 10, 
+	        "total_count": 11, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/runtype/?offset=1&limit=1&format=json"
@@ -52,29 +52,37 @@ Example Response
 	    "objects": [
 	        {
 	            "applicationGroups": [
-	                "/rundb/api/v1/applicationgroup/1/", 
-	                "/rundb/api/v1/applicationgroup/3/", 
-	                "/rundb/api/v1/applicationgroup/4/"
+	                "/rundb/api/v1/applicationgroup/9/"
 	            ], 
-	            "description": "Generic Sequencing", 
-	            "nucleotideType": "dna", 
+	            "description": "Mixed Samples (DNA/RNA)", 
+	            "nucleotideType": "dna_rna", 
 	            "barcode": "", 
 	            "meta": {}, 
-	            "alternate_name": "Other", 
-	            "runType": "GENS", 
-	            "id": 1, 
-	            "isActive": true, 
-	            "resource_uri": "/rundb/api/v1/runtype/1/"
+	            "alternate_name": "Mixed Samples (DNA/RNA)", 
+	            "runType": "MIXED", 
+	            "id": 11, 
+	            "isActive": false, 
+	            "resource_uri": "/rundb/api/v1/runtype/11/"
 	        }
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

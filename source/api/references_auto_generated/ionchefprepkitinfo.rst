@@ -12,45 +12,51 @@ Ion Chef Prep Kit Info  Resource
 Resource Fields
 ---------------
 
-============================= ================================================================================================== ======= ======== ======== ===== ====== ======= 
-field                         help text                                                                                          default nullable readonly blank unique type    
-============================= ================================================================================================== ======= ======== ======== ===== ====== ======= 
-**isActive**                  Boolean data. Ex: True                                                                             true    false    false    true  false  boolean 
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**samplePrep_instrumentType** Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**templatingSize**            Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**kitType**                   Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**description**               Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**nucleotideType**            Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**instrumentType**            Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**chipTypes**                 Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**runMode**                   Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**parts**                     Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     false    false    false false  related 
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**flowCount**                 Integer data. Ex: 2673                                                                             n/a     false    false    false false  integer 
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**applicationType**           Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**uid**                       Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false true   string  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**libraryReadLength**         Integer data. Ex: 2673                                                                             0       false    false    false false  integer 
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**resource_uri**              Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**id**                        Integer data. Ex: 2673                                                                                     false    false    true  true   integer 
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**categories**                Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**name**                      Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false true   string  
-============================= ================================================================================================== ======= ======== ======== ===== ====== ======= 
+============================================ ================================================================================================== ======= ======== ======== ===== ====== ======= 
+field                                        help text                                                                                          default nullable readonly blank unique type    
+============================================ ================================================================================================== ======= ======== ======== ===== ====== ======= 
+**isActive**                                 Boolean data. Ex: True                                                                             true    false    false    true  false  boolean 
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**samplePrep_instrumentType**                Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**templatingSize**                           Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string  
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**kitType**                                  Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string  
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**description**                              Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**nucleotideType**                           Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**defaultCartridgeUsageCount**               Integer data. Ex: 2673                                                                             n/a     true     false    false false  integer 
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**instrumentType**                           Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**chipTypes**                                Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**runMode**                                  Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**parts**                                    Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     false    false    false false  related 
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**flowCount**                                Integer data. Ex: 2673                                                                             n/a     false    false    false false  integer 
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**applicationType**                          Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string  
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**cartridgeExpirationDayLimit**              Integer data. Ex: 2673                                                                             n/a     true     false    false false  integer 
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**libraryReadLength**                        Integer data. Ex: 2673                                                                             0       false    false    false false  integer 
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**cartridgeBetweenUsageAbsoluteMaxDayLimit** Integer data. Ex: 2673                                                                             n/a     true     false    false false  integer 
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**resource_uri**                             Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string  
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**uid**                                      Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false true   string  
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**id**                                       Integer data. Ex: 2673                                                                                     false    false    true  true   integer 
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**categories**                               Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string  
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**name**                                     Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false true   string  
+============================================ ================================================================================================== ======= ======== ======== ===== ====== ======= 
 
 Example Response
 ^^^^^^^^^^^^^^^^
@@ -60,60 +66,61 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 13, 
+	        "total_count": 14, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/ionchefprepkitinfo/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "isActive": false, 
+	            "isActive": true, 
 	            "samplePrep_instrumentType": "IC", 
-	            "templatingSize": "200;400", 
+	            "templatingSize": "", 
 	            "kitType": "IonChefPrepKit", 
-	            "description": "Ion 541 Kit-Chef", 
+	            "description": "Precision ID Chef Reagents", 
 	            "nucleotideType": "", 
+	            "defaultCartridgeUsageCount": null, 
 	            "instrumentType": "S5", 
-	            "chipTypes": "541", 
+	            "chipTypes": "510;520;530", 
 	            "runMode": "", 
 	            "parts": [
 	                {
-	                    "barcode": "A30523", 
-	                    "id": 20221, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20221/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20095/"
-	                }, 
-	                {
-	                    "barcode": "A27755", 
-	                    "id": 20222, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20222/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20095/"
-	                }, 
-	                {
-	                    "barcode": "A27754", 
-	                    "id": 20223, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20223/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20095/"
+	                    "barcode": "A32882C", 
+	                    "id": 20246, 
+	                    "resource_uri": "/rundb/api/v1/kitpart/20246/", 
+	                    "kit": "/rundb/api/v1/kitinfo/20106/"
 	                }
 	            ], 
-	            "flowCount": 500, 
-	            "applicationType": "", 
-	            "uid": "ICPREP0008", 
-	            "libraryReadLength": 200, 
-	            "resource_uri": "/rundb/api/v1/ionchefprepkitinfo/20095/", 
-	            "id": 20095, 
-	            "categories": "s5v1Kit;flowOverridable;multipleReadLength;s5541", 
-	            "name": "Ion Chef S541 V1"
+	            "flowCount": 0, 
+	            "applicationType": "AMPS", 
+	            "cartridgeExpirationDayLimit": null, 
+	            "libraryReadLength": 0, 
+	            "cartridgeBetweenUsageAbsoluteMaxDayLimit": null, 
+	            "resource_uri": "/rundb/api/v1/ionchefprepkitinfo/20106/", 
+	            "uid": "ICPREP0011", 
+	            "id": 20106, 
+	            "categories": "filter_s5HidKit", 
+	            "name": "Ion Chef HID S530 V2"
 	        }
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

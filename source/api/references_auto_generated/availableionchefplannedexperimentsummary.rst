@@ -31,7 +31,7 @@ field                           help text                                       
 ------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **runMode**                     Unicode string data. Ex: "Hello World"                                                 false    false    true  false  string   
 ------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**templatingKitBarcode**        Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
+**isCustom_kitSettings**        Boolean data. Ex: True                                                         false   false    false    true  false  boolean  
 ------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **sampleTubeLabel**             Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 ------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
@@ -58,6 +58,8 @@ field                           help text                                       
 **templatingKitName**           Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 ------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **runType**                     Unicode string data. Ex: "Hello World"                                         GENS    false    false    false false  string   
+------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**templatingKitBarcode**        Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 ------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **planPGM**                     Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 ------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
@@ -126,12 +128,22 @@ Example Response
 	    "objects": []
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

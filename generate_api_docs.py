@@ -131,7 +131,8 @@ for resource_name, resource_values in main_schema_request.json().items():
             json_formatted_schema = json.dumps(single_resource_schema_request.json()["fields"], indent=4)
             json_formatted_schema = "\n".join(["\t" + json_line for json_line in json_formatted_schema.split("\n")])
 
-            allowed_http_methods = single_resource_schema_request.json()["allowed_detail_http_methods"]
+            allowed_detail_http_methods = single_resource_schema_request.json()["allowed_detail_http_methods"]
+            allowed_list_http_methods = single_resource_schema_request.json()["allowed_list_http_methods"]
 
             title = lower_case_to_title_case(resource_name).title() + " Resource\n"
 
@@ -179,10 +180,22 @@ for resource_name, resource_values in main_schema_request.json().items():
             output_file.write(json_formatted_demo + "\n")
 
             # Write out http methods
-            output_file.write("\nAllowed HTTP methods\n")
-            output_file.write("--------------------" + "\n\n")
-            for allowed_http_method in allowed_http_methods:
-                output_file.write("- " + allowed_http_method + "\n")
+            output_file.write("\nAllowed list HTTP methods\n")
+            output_file.write("-------------------------" + "\n\n")
+            if not allowed_list_http_methods:
+                output_file.write("None\n")
+            else:
+                for allowed_http_method in allowed_list_http_methods:
+                    output_file.write("- " + allowed_http_method.upper() + "\n")
+            output_file.write("\n")
+
+            output_file.write("\nAllowed detail HTTP methods\n")
+            output_file.write("---------------------------" + "\n\n")
+            if not allowed_detail_http_methods:
+                output_file.write("None\n")
+            else:
+                for allowed_http_method in allowed_detail_http_methods:
+                    output_file.write("- " + allowed_http_method.upper() + "\n")
             output_file.write("\n")
 
             """

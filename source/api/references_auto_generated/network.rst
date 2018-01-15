@@ -36,7 +36,14 @@ Example Response
 	    "route": true
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
+- GET
+
+
+Allowed detail HTTP methods
+---------------------------
+
+None
 

@@ -19,6 +19,8 @@ field                                 help text                                 
 ------------------------------------- -------------------------------------------------------------------------------------------------- -------------- -------- -------- ----- ------ -------- 
 **isEditable**                        Boolean data. Ex: True                                                                             false          false    false    true  false  boolean  
 ------------------------------------- -------------------------------------------------------------------------------------------------- -------------- -------- -------- ----- ------ -------- 
+**endBarcodeKitName**                 Unicode string data. Ex: "Hello World"                                                                            true     false    false false  string   
+------------------------------------- -------------------------------------------------------------------------------------------------- -------------- -------- -------- ----- ------ -------- 
 **hotSpotRegionBedFile**              Unicode string data. Ex: "Hello World"                                                             n/a            true     false    false false  string   
 ------------------------------------- -------------------------------------------------------------------------------------------------- -------------- -------- -------- ----- ------ -------- 
 **results**                           Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a            true     false    true  false  related  
@@ -106,7 +108,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 88, 
+	        "total_count": 95, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/experimentanalysissettings/?offset=1&limit=1&format=json"
@@ -115,6 +117,7 @@ Example Response
 	        {
 	            "ionstatsargs": "", 
 	            "isEditable": true, 
+	            "endBarcodeKitName": "", 
 	            "hotSpotRegionBedFile": "", 
 	            "results": [], 
 	            "mixedTypeRNA_reference": null, 
@@ -158,12 +161,22 @@ Example Response
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

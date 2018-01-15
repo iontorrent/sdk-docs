@@ -31,7 +31,7 @@ field                           help text                                       
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **runMode**                     Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**templatingKitBarcode**        Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
+**isCustom_kitSettings**        Boolean data. Ex: True                               false   false    false    true  false  boolean  
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **sampleTubeLabel**             Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -56,6 +56,8 @@ field                           help text                                       
 **templatingKitName**           Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **runType**                     Unicode string data. Ex: "Hello World"               GENS    false    false    false false  string   
+------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**templatingKitBarcode**        Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planPGM**                     Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -116,7 +118,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 35, 
+	        "total_count": 34, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/onetouchplantemplatesummary/?offset=1&limit=1&format=json"
@@ -129,9 +131,9 @@ Example Response
 	            "storage_options": "A", 
 	            "preAnalysis": true, 
 	            "planShortID": "FDXPW", 
-	            "planStatus": "inactive", 
+	            "planStatus": "planned", 
 	            "runMode": "single", 
-	            "templatingKitBarcode": null, 
+	            "isCustom_kitSettings": false, 
 	            "sampleTubeLabel": null, 
 	            "planExecutedDate": null, 
 	            "samplePrepKitName": null, 
@@ -144,12 +146,13 @@ Example Response
 	            "isPlanGroup": false, 
 	            "templatingKitName": "Ion PI Template OT2 200 Kit v3", 
 	            "runType": "AMPS_RNA", 
+	            "templatingKitBarcode": null, 
 	            "planPGM": "", 
 	            "isSystemDefault": false, 
 	            "autoName": null, 
 	            "isReusable": true, 
 	            "controlSequencekitname": null, 
-	            "date": "2017-08-10T22:57:27.000213+00:00", 
+	            "date": "2017-12-05T00:07:09.000850+00:00", 
 	            "isSystem": true, 
 	            "libkit": null, 
 	            "categories": "", 
@@ -173,12 +176,22 @@ Example Response
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

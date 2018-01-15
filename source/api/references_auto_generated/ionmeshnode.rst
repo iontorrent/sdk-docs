@@ -59,10 +59,18 @@ Example Response
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- patch
-- get
-- delete
+- PATCH
+- GET
+- DELETE
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- PATCH
+- GET
+- DELETE
 

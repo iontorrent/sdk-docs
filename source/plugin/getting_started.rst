@@ -3,7 +3,7 @@
 Getting Started with Plugins
 ============================
 The plugin framework is primarily an extension of the analysis pipeline and executes custom python modules (plugins) 
-at different points in the pipeline process.  There are 3 reason for writing a plugin:
+at different points in the pipeline process.  There are 3 reasons for writing a plugin:
 
 #. Data Management: the transfer or backup of data to a secondary file server or remote site.
 #. Quality Assurance/Quality Control: These plugins check the quality of the data and give you access 
@@ -41,13 +41,13 @@ Enter the following python code into a file called *MyPlugin.py* inside a new di
 
 Compress the *MyPlugin* directory (ZIP file format). See :ref:`plugin_packaging` for help. Click *Install or Upgrade Plugin* to upload the archive
 on the |TS| plugins page. Navigate to an existing |TS| run report, click *Select Plugins to Run*, then select *MyPlugin*.
-The plugin code executes and the output displays in an iframe on the report
+The plugin code executes and the output displays in an iframe on the report.
 
 
 Pipeline Overview
 -----------------
 
-Plugins are fundamentally an ability to extend the functionality of the analysis pipeline.  At certain stages of the pipeline execution, each of these stages is represented as "Run Levels".
+Plugins are fundamentally an ability to extend the functionality of the analysis pipeline.  At certain stages of the pipeline execution, each of these stages is represented as a "Run Level".
 
 Configuration
 ^^^^^^^^^^^^^
@@ -104,9 +104,9 @@ This strategy is the default for non-block-level specific run levels and is used
 Run Types
 ^^^^^^^^^
 
-Run Types define which type of data the plugin is capable of running on, this controls whether the plugin is executed on a
-specific report type when it is selected during planning. If no run types are defined the plugin will be launched for thumbnail
-and |PGM| reports only, in order to auto-run on |S5|/|PROTON| reports the plugin must include COMPOSITE in its runtypes specification.
+Run Types define which type of data the plugin is capable of running on. This controls whether the plugin is executed on a
+specific report type when it is selected during planning. If no run types are defined, the plugin will be launched for thumbnail
+and |PGM| reports only. In order to auto-run on |S5|/|PROTON| reports, the plugin must include COMPOSITE in its runtypes specification.
 
 * COMPOSITE: Plugin will run on |S5|/|PROTON| report.
 * THUMB: Plugin will run on |S5|/|PROTON| thumbnail report.
@@ -130,7 +130,7 @@ signal processing step.
 Plugin Code
 -----------
 
-You must write the code for all plugins in python, so a basic understanding of both python and object oriented programming is required.
+You must write the code for all plugins in python, therefore a basic understanding of both python and object oriented programming is required.
 
 In order for the plugin to function, it must inherit from the base class IonPlugin contained in the module at ion.plugin. 
 At a minimum, the version attribute and launch method need to be overridden.
@@ -161,7 +161,7 @@ Launch Method
 ^^^^^^^^^^^^^
 The one required override method to implement in the plugin class is the launch method, which has only 
 the self argument, and an unused "Data" argument with the "None" default.  
-This method performs all the required actions to achieve the goal of the plugin as well as produce all the results files.
+This method performs all the required actions to achieve the goal of the plugin as well as to produce all the results files.
 
 .. _plugin_packaging:
 

@@ -66,7 +66,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 2, 
+	        "total_count": 19, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/samplesetitem/?offset=1&limit=1&format=json"
@@ -98,12 +98,22 @@ Example Response
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

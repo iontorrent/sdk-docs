@@ -57,29 +57,39 @@ Example Response
 	    }, 
 	    "objects": [
 	        {
-	            "displayedValue": "Ion PGM Hi-Q Chef for STR", 
+	            "displayedValue": "Immunology", 
 	            "sequencing_instrumentType": "", 
-	            "description": "Use Ion Chef script protocol optimized for HID", 
-	            "categories": "hidSamplePrep", 
-	            "value": "anneal62no10xab", 
-	            "samplePrep_instrumentType": "IC", 
-	            "cv_type": "samplePrepProtocol", 
+	            "description": "Immunology", 
+	            "categories": "AMPS_RNA", 
+	            "value": "immunology", 
+	            "samplePrep_instrumentType": "", 
+	            "cv_type": "applicationCategory", 
 	            "isVisible": true, 
-	            "uid": "CV0001", 
-	            "resource_uri": "/rundb/api/v1/common_cv/1/", 
-	            "id": 1, 
+	            "uid": "APPCAT0007", 
+	            "resource_uri": "/rundb/api/v1/common_cv/10/", 
+	            "id": 10, 
 	            "isActive": true, 
 	            "isDefault": false
 	        }
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

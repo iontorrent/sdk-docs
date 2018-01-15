@@ -31,7 +31,7 @@ field                           help text                                       
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **runMode**                     Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**templatingKitBarcode**        Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
+**isCustom_kitSettings**        Boolean data. Ex: True                               false   false    false    true  false  boolean  
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **sampleTubeLabel**             Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -56,6 +56,8 @@ field                           help text                                       
 **templatingKitName**           Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **runType**                     Unicode string data. Ex: "Hello World"               GENS    false    false    false false  string   
+------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**templatingKitBarcode**        Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planPGM**                     Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
@@ -116,45 +118,46 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 48, 
+	        "total_count": 56, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/ionchefplantemplatesummary/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "origin": "|5.6.0.RC1", 
+	            "origin": "|5.8.0", 
 	            "isReverseRun": false, 
-	            "planDisplayedName": "Oncomine TagSeq S540 Liquid Biopsy", 
+	            "planDisplayedName": "Oncomine Comprehensive v3 Fusions for 550", 
 	            "storage_options": "A", 
 	            "preAnalysis": true, 
-	            "planShortID": "IIC5P", 
+	            "planShortID": "Y2E01", 
 	            "planStatus": "planned", 
 	            "runMode": "single", 
-	            "templatingKitBarcode": null, 
+	            "isCustom_kitSettings": false, 
 	            "sampleTubeLabel": null, 
 	            "planExecutedDate": null, 
 	            "samplePrepKitName": null, 
 	            "reverse_primer": null, 
 	            "seqKitBarcode": null, 
-	            "id": 96, 
+	            "id": 123, 
 	            "metaData": {}, 
 	            "isFavorite": false, 
 	            "samplePrepProtocol": "", 
 	            "isPlanGroup": false, 
-	            "templatingKitName": "Ion Chef S540 V1", 
-	            "runType": "TAG_SEQUENCING", 
+	            "templatingKitName": "Ion Chef S550 V1", 
+	            "runType": "AMPS_RNA", 
+	            "templatingKitBarcode": null, 
 	            "planPGM": "", 
 	            "isSystemDefault": false, 
 	            "autoName": null, 
 	            "isReusable": true, 
 	            "controlSequencekitname": null, 
-	            "date": "2017-08-01T20:07:01.000785+00:00", 
+	            "date": "2017-12-05T00:10:38.000438+00:00", 
 	            "isSystem": true, 
 	            "libkit": null, 
-	            "categories": "Oncomine;barcodes_8", 
-	            "planName": "Oncomine_TagSeq_S540_Liquid_Biopsy", 
-	            "templatingSize": "", 
+	            "categories": "Oncomine;onco_solidTumor", 
+	            "planName": "Oncomine_Comprehensive_v3_Fusions_for_550", 
+	            "templatingSize": "200", 
 	            "pairedEndLibraryAdapterName": null, 
 	            "adapter": null, 
 	            "irworkflow": "", 
@@ -166,19 +169,29 @@ Example Response
 	            "libraryReadLength": 200, 
 	            "runname": null, 
 	            "usePreBeadfind": true, 
-	            "planGUID": "fcb562b4-3a6d-4291-87d0-bbf1d584fa8e", 
+	            "planGUID": "5de7dbc0-17db-441c-abfb-ec6c060d988c", 
 	            "cycles": null, 
-	            "resource_uri": "/rundb/api/v1/ionchefplantemplatesummary/96/"
+	            "resource_uri": "/rundb/api/v1/ionchefplantemplatesummary/123/"
 	        }
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

@@ -12,47 +12,55 @@ Composite Experiment  Resource
 Resource Fields
 ---------------
 
-=================== ================================================================================================== ======= ======== ======== ===== ====== ======== 
-field               help text                                                                                          default nullable readonly blank unique type     
-=================== ================================================================================================== ======= ======== ======== ===== ====== ======== 
-**ftpStatus**       Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**storage_options** Unicode string data. Ex: "Hello World"                                                             A       false    false    false false  string   
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**displayName**     Unicode string data. Ex: "Hello World"                                                                     false    false    false false  string   
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chipType**        Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string   
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**platform**        Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**notes**           Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**runMode**         Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**results**         Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     false    false    false false  related  
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**resultDate**      A date & time as a string. Ex: "2010-11-10T03:07:43"                                               true    true     false    false false  datetime 
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**flows**           Integer data. Ex: 2673                                                                             n/a     false    false    false false  integer  
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**repResult**       A single related resource. Can be either a URI or set of nested resource data.                     n/a     true     false    true  false  related  
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**date**            A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     false    false    false false  datetime 
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**expName**         Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string   
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**pgmName**         Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string   
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**_host**           Host this resource is located on.                                                                  n/a     false    true     false false  string   
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**star**            Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**resource_uri**    Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**id**              Integer data. Ex: 2673                                                                                     false    false    true  true   integer  
-------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**plan**            A single related resource. Can be either a URI or set of nested resource data.                     n/a     true     false    true  false  related  
-=================== ================================================================================================== ======= ======== ======== ===== ====== ======== 
+========================== ================================================================================================== ======= ======== ======== ===== ====== ======== 
+field                      help text                                                                                          default nullable readonly blank unique type     
+========================== ================================================================================================== ======= ======== ======== ===== ====== ======== 
+**storage_options**        Unicode string data. Ex: "Hello World"                                                             A       false    false    false false  string   
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chipType**               Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string   
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**results**                Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     false    false    false false  related  
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**runMode**                Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefStartTime**          A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     true     false    false false  datetime 
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**_host**                  Host this resource is located on.                                                                  n/a     false    true     false false  string   
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**id**                     Integer data. Ex: 2673                                                                                     false    false    true  true   integer  
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefSolutionsSerialNum** Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**platform**               Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**status**                 Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**star**                   Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**resultDate**             A date & time as a string. Ex: "2010-11-10T03:07:43"                                               true    true     false    false false  datetime 
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**flows**                  Integer data. Ex: 2673                                                                             n/a     false    false    false false  integer  
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**plan**                   A single related resource. Can be either a URI or set of nested resource data.                     n/a     true     false    true  false  related  
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**date**                   A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     false    false    false false  datetime 
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**ftpStatus**              Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**displayName**            Unicode string data. Ex: "Hello World"                                                                     false    false    false false  string   
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**notes**                  Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**pgmName**                Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string   
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**repResult**              A single related resource. Can be either a URI or set of nested resource data.                     n/a     true     false    true  false  related  
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**expName**                Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string   
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefReagentsSerialNum**  Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+-------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**resource_uri**           Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
+========================== ================================================================================================== ======= ======== ======== ===== ====== ======== 
 
 Example Response
 ^^^^^^^^^^^^^^^^
@@ -69,7 +77,7 @@ Example Response
 	    }, 
 	    "objects": [
 	        {
-	            "chipInstrumentType": "S5", 
+	            "chipDescription": "540", 
 	            "chipType": "540", 
 	            "results": [
 	                {
@@ -161,12 +169,15 @@ Example Response
 	            "runMode": "single", 
 	            "storage_options": "A", 
 	            "references": "", 
+	            "chefStartTime": null, 
 	            "repResult": "/rundb/api/v1/compositeresult/3/", 
 	            "id": 91, 
 	            "barcodedSamples": {}, 
+	            "chefSolutionsSerialNum": "", 
 	            "barcodeId": "IonXpressRNA", 
 	            "sampleSetName": "", 
 	            "platform": "S5", 
+	            "status": "run", 
 	            "applicationCategoryDisplayedName": "RNA Sequencing", 
 	            "star": false, 
 	            "sampleDisplayedName": "", 
@@ -182,22 +193,33 @@ Example Response
 	            "ftpStatus": "0", 
 	            "displayName": "S5-540 WholeTranscriptomeRNA", 
 	            "notes": "", 
-	            "chipDescription": "540", 
+	            "chipInstrumentType": "S5", 
 	            "pgmName": "S16", 
 	            "keep": false, 
 	            "expName": "S5-540_WholeTranscriptomeRNA", 
+	            "chefReagentsSerialNum": "", 
 	            "resource_uri": "/rundb/api/mesh/v1/compositeexperiment/91/"
 	        }
 	    ], 
 	    "warnings": []
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 

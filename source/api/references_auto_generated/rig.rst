@@ -15,11 +15,13 @@ Resource Fields
 =================== ============================================================================== ============= ======== ======== ===== ====== ======= 
 field               help text                                                                      default       nullable readonly blank unique type    
 =================== ============================================================================== ============= ======== ======== ===== ====== ======= 
-**version**         Unicode string data. Ex: "Hello World"                                         {}            false    false    true  false  string  
+**display_state**   Unicode string data. Ex: "Hello World"                                                       false    false    true  false  string  
 ------------------- ------------------------------------------------------------------------------ ------------- -------- -------- ----- ------ ------- 
 **name**            Unicode string data. Ex: "Hello World"                                         n/a           false    false    false true   string  
 ------------------- ------------------------------------------------------------------------------ ------------- -------- -------- ----- ------ ------- 
 **state**           Unicode string data. Ex: "Hello World"                                                       false    false    true  false  string  
+------------------- ------------------------------------------------------------------------------ ------------- -------- -------- ----- ------ ------- 
+**version**         Unicode string data. Ex: "Hello World"                                         {}            false    false    true  false  string  
 ------------------- ------------------------------------------------------------------------------ ------------- -------- -------- ----- ------ ------- 
 **ftprootdir**      Unicode string data. Ex: "Hello World"                                         results       false    false    false false  string  
 ------------------- ------------------------------------------------------------------------------ ------------- -------- -------- ----- ------ ------- 
@@ -71,9 +73,10 @@ Example Response
 	    }, 
 	    "objects": [
 	        {
-	            "version": {}, 
+	            "display_state": "", 
 	            "name": "default", 
 	            "state": "", 
+	            "version": {}, 
 	            "ftprootdir": "results", 
 	            "last_clean_date": "", 
 	            "updatehome": "192.168.201.1", 
@@ -101,12 +104,22 @@ Example Response
 	    ]
 	}
 
-Allowed HTTP methods
---------------------
+Allowed list HTTP methods
+-------------------------
 
-- get
-- post
-- put
-- delete
-- patch
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
+
+
+Allowed detail HTTP methods
+---------------------------
+
+- GET
+- POST
+- PUT
+- DELETE
+- PATCH
 
