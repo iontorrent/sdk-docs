@@ -57,7 +57,7 @@ Example Response
 	            "thumbnailcalibrateargs": "", 
 	            "beadfindargs": "justBeadFind --args-json /opt/ion/config/args_314_beadfind.json", 
 	            "instrumentType": "pgm", 
-	            "prebasecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 20", 
+	            "prebasecallerargs": "BaseCaller --barcode-filter-minreads 20", 
 	            "description": "314v2", 
 	            "prethumbnailbasecallerargs": "", 
 	            "alignmentargs": "tmap mapall ... stage1 map4", 
@@ -66,7 +66,7 @@ Example Response
 	            "thumbnailbeadfindargs": "", 
 	            "calibrateargs": "Calibration", 
 	            "name": "314", 
-	            "basecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 20", 
+	            "basecallerargs": "BaseCaller --barcode-filter-minreads 20", 
 	            "earlyDatFileDeletion": "", 
 	            "resource_uri": "/rundb/api/v1/chip/1/"
 	        }

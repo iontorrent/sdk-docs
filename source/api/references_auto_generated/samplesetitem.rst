@@ -66,32 +66,32 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 19, 
+	        "total_count": 16, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/samplesetitem/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "sample": "/rundb/api/v1/sample/6/", 
+	            "sample": "/rundb/api/v1/sample/8/", 
 	            "cellNum": "", 
 	            "biopsyDays": 0, 
-	            "resource_uri": "/rundb/api/v1/samplesetitem/1/", 
+	            "resource_uri": "/rundb/api/v1/samplesetitem/3/", 
 	            "nucleotideType": "", 
 	            "gender": "", 
 	            "relationshipGroup": 0, 
 	            "coupleId": "", 
 	            "cellularityPct": null, 
-	            "id": 1, 
+	            "id": 3, 
 	            "relationshipRole": "", 
-	            "pcrPlateColumn": "1", 
+	            "pcrPlateColumn": "", 
 	            "cancerType": "", 
 	            "controlType": "", 
 	            "sampleSet": "/rundb/api/v1/sampleset/1/", 
-	            "lastModifiedDate": "2017-08-28T21:21:14.000040+00:00", 
-	            "dnabarcode": "/rundb/api/v1/dnabarcode/595/", 
-	            "pcrPlateRow": "A", 
-	            "creationDate": "2017-08-28T21:21:14.000040+00:00", 
+	            "lastModifiedDate": "2017-11-01T16:19:12.000420+00:00", 
+	            "dnabarcode": null, 
+	            "pcrPlateRow": "", 
+	            "creationDate": "2017-11-01T16:19:12.000420+00:00", 
 	            "embryoId": "", 
 	            "description": ""
 	        }

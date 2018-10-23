@@ -19,8 +19,6 @@ field                                        help text                          
 -------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **samplePrep_instrumentType**                Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
 -------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**templatingSize**                           Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string  
--------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **kitType**                                  Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string  
 -------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **description**                              Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
@@ -75,7 +73,6 @@ Example Response
 	        {
 	            "isActive": true, 
 	            "samplePrep_instrumentType": "", 
-	            "templatingSize": "", 
 	            "kitType": "LibraryKit", 
 	            "description": "MuSeek Library Preparation Kit", 
 	            "nucleotideType": "dna", 

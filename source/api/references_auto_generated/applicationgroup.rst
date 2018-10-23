@@ -38,7 +38,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 10, 
+	        "total_count": 12, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/applicationgroup/?offset=1&limit=1&format=json"
@@ -123,6 +123,20 @@ Example Response
 	                    "id": 7, 
 	                    "isActive": true, 
 	                    "resource_uri": "/rundb/api/v1/runtype/7/"
+	                }, 
+	                {
+	                    "applicationGroups": [
+	                        "/rundb/api/v1/applicationgroup/1/"
+	                    ], 
+	                    "description": "AmpliSeq HD - DNA", 
+	                    "nucleotideType": "dna", 
+	                    "barcode": "", 
+	                    "meta": {}, 
+	                    "alternate_name": "AmpliSeq HD - DNA", 
+	                    "runType": "AMPS_HD_DNA", 
+	                    "id": 12, 
+	                    "isActive": true, 
+	                    "resource_uri": "/rundb/api/v1/runtype/12/"
 	                }
 	            ], 
 	            "uid": "APPLGROUP_0001", 

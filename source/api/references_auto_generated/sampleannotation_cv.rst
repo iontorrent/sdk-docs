@@ -44,23 +44,23 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 43, 
+	        "total_count": 50, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/sampleannotation_cv/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "annotationType": "cancerType", 
-	            "uid": "SAMPLEANNOTATE_CV_0016", 
+	            "annotationType": "relationshipRole", 
+	            "uid": "SAMPLEANNOTATE_CV_0006", 
 	            "isIRCompatible": true, 
-	            "sampleGroupType_CV": null, 
-	            "value": "Esophageal Cancer", 
-	            "iRValue": "Esophageal Cancer", 
-	            "iRAnnotationType": "CancerType", 
-	            "id": 16, 
+	            "sampleGroupType_CV": "/rundb/api/v1/samplegrouptype_cv/4/", 
+	            "value": "Father", 
+	            "iRValue": "Father", 
+	            "iRAnnotationType": "Relation", 
+	            "id": 6, 
 	            "isActive": true, 
-	            "resource_uri": "/rundb/api/v1/sampleannotation_cv/16/"
+	            "resource_uri": "/rundb/api/v1/sampleannotation_cv/6/"
 	        }
 	    ]
 	}

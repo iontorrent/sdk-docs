@@ -83,8 +83,6 @@ field                           help text                                       
 ------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **planName**                    Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 ------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**templatingSize**              Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
-------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **pairedEndLibraryAdapterName** Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
 ------------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
 **adapter**                     Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
@@ -122,12 +120,29 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 0, 
+	        "total_count": 2, 
 	        "offset": 0, 
 	        "limit": 1, 
-	        "next": null
+	        "next": "/rundb/api/v1/availableionchefplannedexperiment/?offset=1&limit=1&format=json"
 	    }, 
-	    "objects": []
+	    "objects": [
+	        {
+	            "planName": "Ion_AmpliSeq_HD_for_Tumor_-_DNA", 
+	            "isReverseRun": false, 
+	            "chipType": "540", 
+	            "planShortID": "SP1XE", 
+	            "username": "ionadmin", 
+	            "samplePrepProtocol": "", 
+	            "isPlanGroup": false, 
+	            "planStatus": "pending", 
+	            "samplePrepProtocolName": "", 
+	            "experiment": "/rundb/api/v1/experiment/136/", 
+	            "sampleTubeLabel": "", 
+	            "date": "2018-04-13T22:17:13.000108+00:00", 
+	            "id": 143, 
+	            "templatingKitName": "Ion Chef S540 V1"
+	        }
+	    ]
 	}
 
 Allowed list HTTP methods

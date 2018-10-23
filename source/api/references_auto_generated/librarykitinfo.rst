@@ -19,8 +19,6 @@ field                                        help text                          
 -------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **samplePrep_instrumentType**                Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
 -------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**templatingSize**                           Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string  
--------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **kitType**                                  Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string  
 -------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **description**                              Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
@@ -66,7 +64,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 26, 
+	        "total_count": 27, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/librarykitinfo/?offset=1&limit=1&format=json"
@@ -75,7 +73,6 @@ Example Response
 	        {
 	            "isActive": true, 
 	            "samplePrep_instrumentType": "", 
-	            "templatingSize": "", 
 	            "kitType": "LibraryKit", 
 	            "description": "MuSeek Library Preparation Kit", 
 	            "nucleotideType": "dna", 

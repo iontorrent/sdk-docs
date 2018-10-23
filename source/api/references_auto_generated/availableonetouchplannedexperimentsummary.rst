@@ -79,8 +79,6 @@ field                           help text                                       
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planName**                    Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**templatingSize**              Unicode string data. Ex: "Hello World"                       true     false    false false  string   
-------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **pairedEndLibraryAdapterName** Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **adapter**                     Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
@@ -118,12 +116,64 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 0, 
+	        "total_count": 1, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": null
 	    }, 
-	    "objects": []
+	    "objects": [
+	        {
+	            "origin": "gui|5.8.0", 
+	            "isReverseRun": false, 
+	            "planDisplayedName": "Ion ReproSeq Aneuploidy - Ion PGM System", 
+	            "storage_options": "A", 
+	            "preAnalysis": true, 
+	            "planShortID": "6TGIO", 
+	            "planStatus": "planned", 
+	            "runMode": "single", 
+	            "isCustom_kitSettings": false, 
+	            "sampleTubeLabel": "", 
+	            "planExecutedDate": null, 
+	            "samplePrepKitName": null, 
+	            "reverse_primer": null, 
+	            "seqKitBarcode": null, 
+	            "id": 131, 
+	            "metaData": {
+	                "fromTemplate": "Ion_ReproSeq_Aneuploidy_-_Ion_PGM_System", 
+	                "fromTemplateSource": "ION"
+	            }, 
+	            "isFavorite": false, 
+	            "samplePrepProtocol": "", 
+	            "isPlanGroup": false, 
+	            "templatingKitName": "Ion PGM Template IA Tech Access Kit", 
+	            "runType": "WGNM", 
+	            "templatingKitBarcode": null, 
+	            "planPGM": null, 
+	            "isSystemDefault": false, 
+	            "autoName": null, 
+	            "isReusable": false, 
+	            "controlSequencekitname": null, 
+	            "date": "2018-02-26T17:28:33.000588+00:00", 
+	            "isSystem": false, 
+	            "libkit": null, 
+	            "categories": "repro", 
+	            "planName": "Ion_ReproSeq_Aneuploidy_-_Ion_PGM_System", 
+	            "pairedEndLibraryAdapterName": "", 
+	            "adapter": null, 
+	            "irworkflow": "", 
+	            "planExecuted": false, 
+	            "username": "ionadmin", 
+	            "usePostBeadfind": true, 
+	            "storageHost": null, 
+	            "expName": "", 
+	            "libraryReadLength": 0, 
+	            "runname": null, 
+	            "usePreBeadfind": true, 
+	            "planGUID": "d1ed9718-b6f4-4dfd-8de5-bbd150092997", 
+	            "cycles": null, 
+	            "resource_uri": "/rundb/api/v1/availableonetouchplannedexperimentsummary/131/"
+	        }
+	    ]
 	}
 
 Allowed list HTTP methods

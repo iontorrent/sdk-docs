@@ -39,7 +39,7 @@ field              help text                                            default 
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **celery_task_id** Unicode string data. Ex: "Hello World"                                                false    false    true  false  string   
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
-**date**           A date & time as a string. Ex: "2010-11-10T03:07:43" 2017-12-19T21:15:09.000838+00:00 false    false    false false  datetime 
+**date**           A date & time as a string. Ex: "2010-11-10T03:07:43" 2018-06-19T20:40:12.000844+00:00 false    false    false false  datetime 
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **verbose_error**  Unicode string data. Ex: "Hello World"                                                false    false    true  false  string   
 ------------------ ---------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
@@ -56,7 +56,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 3, 
+	        "total_count": 6, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/referencegenome/?offset=1&limit=1&format=json"
@@ -64,21 +64,21 @@ Example Response
 	    "objects": [
 	        {
 	            "status": "complete", 
-	            "reference_path": "/results/referenceLibrary/tmap-f3/e_coli_dh10b", 
-	            "name": "E. coli DH10B", 
-	            "short_name": "e_coli_dh10b", 
+	            "reference_path": "/results/referenceLibrary/tmap-f3/AmpliSeq_Mouse_Transcriptome_v1", 
+	            "name": "AmpliSeq Mouse Transcriptome v1", 
+	            "short_name": "AmpliSeq_Mouse_Transcriptome_v1", 
 	            "index_version": "tmap-f3", 
 	            "notes": "", 
 	            "enabled": true, 
 	            "species": "", 
-	            "identity_hash": null, 
-	            "source": "", 
-	            "version": "1", 
-	            "celery_task_id": "", 
-	            "date": "2017-07-22T06:50:25.000233+00:00", 
+	            "identity_hash": "92e672f416392e46e3137388d878efe7", 
+	            "source": "http://ionupdates.com/reference_downloads/AmpliSeq_Mouse_Transcriptome_v1.zip", 
+	            "version": "", 
+	            "celery_task_id": "370dd08d-d9d0-4f9f-8965-d0563a4461b7", 
+	            "date": "2018-01-23T22:42:16.000613+00:00", 
 	            "verbose_error": "", 
-	            "id": 1, 
-	            "resource_uri": "/rundb/api/v1/referencegenome/1/"
+	            "id": 4, 
+	            "resource_uri": "/rundb/api/v1/referencegenome/4/"
 	        }
 	    ]
 	}

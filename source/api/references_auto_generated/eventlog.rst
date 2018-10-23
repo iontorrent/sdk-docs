@@ -36,19 +36,19 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 46, 
+	        "total_count": 56, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/eventlog/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "username": "system", 
-	            "created": "2017-07-22T06:58:07.000662+00:00", 
-	            "text": "Updated Planned Run from explog: CopyOfSystemDefault_S5-530_cfDNA (97).", 
-	            "object_pk": 97, 
-	            "id": 2, 
-	            "resource_uri": "/rundb/api/v1/eventlog/2/"
+	            "username": "ionadmin", 
+	            "created": "2018-02-26T17:28:33.000742+00:00", 
+	            "text": "Created Planned Run: Ion_ReproSeq_Aneuploidy_-_Ion_PGM_System (131)", 
+	            "object_pk": 131, 
+	            "id": 51, 
+	            "resource_uri": "/rundb/api/v1/eventlog/51/"
 	        }
 	    ]
 	}

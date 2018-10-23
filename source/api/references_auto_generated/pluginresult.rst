@@ -70,49 +70,66 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 15, 
+	        "total_count": 17, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/pluginresult/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "major": false, 
+	            "major": true, 
 	            "can_terminate": false, 
 	            "resultName": "Auto_user_CB1-42-r9723-314wfa-tl_94", 
-	            "pluginVersion": "5.6.0.0", 
+	            "pluginVersion": "5.8.0.0", 
 	            "result": "/rundb/api/v1/results/6/", 
-	            "owner": "/rundb/api/v1/user/1/", 
-	            "id": 22, 
-	            "size": "25470", 
-	            "validation_errors": {}, 
-	            "state": "Completed", 
-	            "store": {}, 
+	            "owner": "/rundb/api/v1/user/2/", 
+	            "id": 24, 
+	            "size": "344884433", 
+	            "validation_errors": {
+	                "validation_errors": []
+	            }, 
+	            "state": "Error", 
+	            "store": {
+	                "reference": "/results/referenceLibrary/tmap-f3/hg19/hg19.fasta", 
+	                "barcoded": false, 
+	                "Error": "Failed running run_rnaseqanalysis.py.", 
+	                "genome": "hg19", 
+	                "launch_mode": "Manual", 
+	                "fpkm_thres": "0.3", 
+	                "cutadapt": "None", 
+	                "fraction_of_reads": "1"
+	            }, 
 	            "files": [
-	                "FileExporter_block.html"
+	                "RNASeqAnalysis.html"
 	            ], 
-	            "URL": "/output/Home/Auto_user_CB1-42-r9723-314wfa-tl_94_006/plugin_out/FileExporter_out.22/", 
+	            "URL": "/output/Home/Auto_user_CB1-42-r9723-314wfa-tl_94_006/plugin_out/RNASeqAnalysis_out.24/", 
 	            "plugin_result_jobs": [
 	                {
-	                    "grid_engine_jobid": -1, 
-	                    "id": 22, 
-	                    "state": "Completed", 
-	                    "starttime": "2017-08-23T21:46:33.000336+00:00", 
-	                    "endtime": "2017-08-23T21:46:34.000183+00:00", 
-	                    "config": {}, 
-	                    "run_level": "last", 
-	                    "resource_uri": "/rundb/api/v1/PluginResultJob/22/"
+	                    "grid_engine_jobid": 517, 
+	                    "id": 24, 
+	                    "state": "Error", 
+	                    "starttime": "2018-04-25T22:22:52.000576+00:00", 
+	                    "endtime": "2018-04-25T22:28:47.000816+00:00", 
+	                    "config": {
+	                        "cutadapt": "None", 
+	                        "fraction_of_reads": "1", 
+	                        "reference": "/results/referenceLibrary/tmap-f3/hg19/hg19.fasta", 
+	                        "genome": "hg19", 
+	                        "launch_mode": "Manual"
+	                    }, 
+	                    "run_level": "default", 
+	                    "resource_uri": "/rundb/api/v1/PluginResultJob/24/"
 	                }
 	            ], 
-	            "path": "/results/analysis/output/Home/Auto_user_CB1-42-r9723-314wfa-tl_94_006/plugin_out/FileExporter_out.22", 
-	            "endtime": "2017-08-23T21:46:34.000183+00:00", 
-	            "apikey": null, 
-	            "plugin": "/rundb/api/v1/plugin/10/", 
+	            "path": "/results/analysis/output/Home/Auto_user_CB1-42-r9723-314wfa-tl_94_006/plugin_out/RNASeqAnalysis_out.24", 
+	            "endtime": "2018-04-25T22:28:47.000816+00:00", 
+	            "apikey": "5a4f5fb12ef3d6c5490b3a41501097a506cd8d85", 
+	            "plugin": "/rundb/api/v1/plugin/29/", 
 	            "reportLink": "/output/Home/Auto_user_CB1-42-r9723-314wfa-tl_94_006/", 
-	            "pluginName": "FileExporter", 
-	            "starttime": "2017-08-23T21:46:33.000336+00:00", 
-	            "inodes": "6", 
-	            "resource_uri": "/rundb/api/v1/pluginresult/22/"
+	            "pluginName": "RNASeqAnalysis", 
+	            "starttime": "2018-04-25T22:22:52.000576+00:00", 
+	            "inodes": "33", 
+	            "resource_uri": "/rundb/api/v1/pluginresult/24/"
 	        }
 	    ]
 	}

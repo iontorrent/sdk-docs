@@ -50,9 +50,9 @@ Example Response
 	            "name": "demo", 
 	            "creator": "/rundb/api/v1/user/1/", 
 	            "created": "2017-07-22T06:59:07.000475+00:00", 
-	            "modified": "2017-08-14T18:58:52.000246+00:00", 
+	            "modified": "2018-02-28T17:32:01.000703+00:00", 
 	            "id": 1, 
-	            "resultsCount": 5, 
+	            "resultsCount": 6, 
 	            "public": true, 
 	            "resource_uri": "/rundb/api/v1/project/1/"
 	        }

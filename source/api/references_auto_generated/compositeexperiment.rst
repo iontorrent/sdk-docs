@@ -136,7 +136,7 @@ Example Response
 	                            "resource_uri": "", 
 	                            "id": 1, 
 	                            "name": "demo", 
-	                            "modified": "2017-08-14T18:58:52.000246+00:00"
+	                            "modified": "2018-02-28T17:32:01.000703+00:00"
 	                        }
 	                    ], 
 	                    "status_display": "Completed", 

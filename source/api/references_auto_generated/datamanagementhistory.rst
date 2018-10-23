@@ -38,7 +38,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 32, 
+	        "total_count": 36, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/datamanagementhistory/?offset=1&limit=1&format=json"

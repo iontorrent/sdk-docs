@@ -44,7 +44,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 11, 
+	        "total_count": 15, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/runtype/?offset=1&limit=1&format=json"
@@ -52,17 +52,19 @@ Example Response
 	    "objects": [
 	        {
 	            "applicationGroups": [
-	                "/rundb/api/v1/applicationgroup/9/"
+	                "/rundb/api/v1/applicationgroup/1/", 
+	                "/rundb/api/v1/applicationgroup/3/", 
+	                "/rundb/api/v1/applicationgroup/4/"
 	            ], 
-	            "description": "Mixed Samples (DNA/RNA)", 
-	            "nucleotideType": "dna_rna", 
+	            "description": "Generic Sequencing", 
+	            "nucleotideType": "dna", 
 	            "barcode": "", 
 	            "meta": {}, 
-	            "alternate_name": "Mixed Samples (DNA/RNA)", 
-	            "runType": "MIXED", 
-	            "id": 11, 
-	            "isActive": false, 
-	            "resource_uri": "/rundb/api/v1/runtype/11/"
+	            "alternate_name": "Other", 
+	            "runType": "GENS", 
+	            "id": 1, 
+	            "isActive": true, 
+	            "resource_uri": "/rundb/api/v1/runtype/1/"
 	        }
 	    ]
 	}

@@ -45,13 +45,13 @@ Example Response
 	    }, 
 	    "objects": [
 	        {
-	            "name": "refAnnot", 
+	            "name": "BED", 
 	            "version": "1.0", 
 	            "global_meta": {}, 
-	            "date": "2017-07-22T21:17:12.000925+00:00", 
-	            "path": "/results/publishers/refAnnot", 
-	            "id": 1, 
-	            "resource_uri": "/rundb/api/v1/publisher/refAnnot/"
+	            "date": "2017-07-22T21:17:13.000054+00:00", 
+	            "path": "/results/publishers/BED", 
+	            "id": 2, 
+	            "resource_uri": "/rundb/api/v1/publisher/BED/"
 	        }
 	    ]
 	}

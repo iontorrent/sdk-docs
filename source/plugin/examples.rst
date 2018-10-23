@@ -14,7 +14,7 @@ It produces an HTML output but does not take any parameters.
 ::
 
     #!/usr/bin/python
-    # Copyright (C) 2013 Ion Torrent Systems, Inc. All Rights Reserved
+    # Copyright (C) 2018 Thermo Fisher Scientific, Inc. All Rights Reserved
 
     #
     # Samples: LogParser
@@ -99,7 +99,7 @@ ______________________________
 ::
 
     #!/usr/bin/python
-    # Copyright (C) 2013 Ion Torrent Systems, Inc. All Rights Reserved
+    # Copyright (C) 2018 Thermo Fisher Scientific, Inc. All Rights Reserved
 
     #
     # Samples: LogParser
@@ -150,7 +150,7 @@ Accessing Barcode Data
 ::
 
     #!/usr/bin/python
-    # Copyright (C) 2013 Ion Torrent Systems, Inc. All Rights Reserved
+    # Copyright (C) 2018 Thermo Fisher Scientific, Inc. All Rights Reserved
 
     #
     # Samples: LogParser
@@ -207,10 +207,86 @@ Using the REST API
 
     import json
     import requests
-    api_response = requests.get('http://HOSTNAME/APPNAME/api/v1/APIENDPOINT/?ARG1=VAL1&api_key=' + self.startplugin['runinfo']['api_key'])
+    api_response = requests.get('http://HOSTNAME/APPNAME/api/v1/APIENDPOINT/?ARG1=VAL1&pluginresult=self.startplugin['runinfo']['pluginresult']&api_key=' + self.startplugin['runinfo']['api_key'])
     api_response.raise_for_status()
     api_json_response = json.loads(api_response.content)
 
+Note: api-key is tied to the specific plugin run so the system must also get which "pluginresult" is sending the API request.
+
+Example 1:
+How to get the installed annotation files during the plugin execution?
+
+::
+
+    #!/usr/bin/env python
+    # -*- coding: utf-8 -*-
+    # Copyright (C) 2018 Thermo Fisher Scientific, Inc. All Rights Reserved
+
+    import os
+    import sys
+    import requests
+    import json
+
+    from ion.plugin import RunType, PluginCLI, IonPlugin
+
+    API_VER = '/v1'
+
+    class PluginApiTest(IonPlugin):
+        """
+           This will make REST api call to get the installed annotation files
+           with 'api_key' corresponding to the specific plugin run
+        """
+
+        version = "1.0"
+        runtypes = [RunType.THUMB, RunType.FULLCHIP]
+
+        def launch(self):
+            sp_json_fpath = os.path.join(
+                os.environ.get('RESULTS_DIR', ''),
+                'startplugin.json'
+            )
+
+            with open(sp_json_fpath, 'r') as sp_fh:
+                sp_json = json.load(sp_fh)
+
+            endpoint = '/content'
+            auth_params = {
+                'api_key': sp_json['runinfo']['api_key'],
+                'pluginresult': sp_json['runinfo']['pluginresult'],
+            }
+            query_params = {
+                'type': 'Annotation'
+            }
+            request_params = {}
+            request_params.update(auth_params)
+            request_params.update(query_params)
+
+            url = sp_json['runinfo']['api_url'] + API_VER + endpoint
+            resp = requests.get(url, params=request_params)
+            if resp:
+                print(resp.url)
+                print(resp.json())
+                sys.exit(0)
+            else:
+                print(resp.status_code)
+                sys.exit(1)
+
+
+    if __name__ == "__main__":
+        PluginCLI()
+
+Example 2:
+Use the below query_params to list all the files of mm10 auxiliary references for RNASeqAnalysis. Please note the type of camelcase, AuxiliaryReference.
+
+::
+
+    ...
+    query_params = {
+        'application_tags__icontains' : 'RNA',
+        'extra':'mm10',
+        'type' :'AuxiliaryReference'
+    }
+    ...
 
 Displaying Progress
 -------------------
@@ -234,7 +310,7 @@ Here is a simple example of how to construct a method to do this.
 Rendering Templates
 -------------------
 
-When outputting HTML files, using templates can be cleaner than assembling long stings. Below is an example of using `Django templates <https://docs.djangoproject.com/en/1.7/topics/templates/>`_.
+When outputting HTML files, using templates can be cleaner than assembling long strings. Below is an example of using `Django templates <https://docs.djangoproject.com/en/1.7/topics/templates/>`_.
 This example uses an HTML template named *progress_block_template.html* inside a *templates* directory inside the plugins root directory.
 
 ::

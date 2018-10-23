@@ -108,7 +108,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 55, 
+	        "total_count": 59, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/applproduct/?offset=1&limit=1&format=json"
@@ -120,53 +120,52 @@ Example Response
 	            "isTargetRegionBEDFileSupported": true, 
 	            "isSamplePrepKitSupported": true, 
 	            "defaultSeqKit": {
+	                "isActive": true, 
+	                "samplePrep_instrumentType": "OT_IC_IA", 
 	                "kitType": "SequencingKit", 
-	                "uid": "SEQ0009", 
-	                "runMode": "", 
-	                "flowCount": 500, 
-	                "id": 20033, 
-	                "description": "Ion PGM Sequencing 200 Kit v2", 
+	                "defaultFlowOrder": null, 
+	                "name": "IonPGMHiQView", 
+	                "nucleotideType": "", 
 	                "defaultCartridgeUsageCount": null, 
+	                "instrumentType": "pgm", 
+	                "chipTypes": "", 
+	                "runMode": "", 
 	                "parts": [
 	                    {
-	                        "barcode": "4482006", 
-	                        "id": 20054, 
-	                        "resource_uri": "/rundb/api/v1/kitpart/20054/", 
-	                        "kit": "/rundb/api/v1/kitinfo/20033/"
+	                        "barcode": "A30044", 
+	                        "id": 20203, 
+	                        "resource_uri": "/rundb/api/v1/kitpart/20203/", 
+	                        "kit": "/rundb/api/v1/kitinfo/20090/"
 	                    }, 
 	                    {
-	                        "barcode": "4482007", 
-	                        "id": 20055, 
-	                        "resource_uri": "/rundb/api/v1/kitpart/20055/", 
-	                        "kit": "/rundb/api/v1/kitinfo/20033/"
+	                        "barcode": "A30043", 
+	                        "id": 20204, 
+	                        "resource_uri": "/rundb/api/v1/kitpart/20204/", 
+	                        "kit": "/rundb/api/v1/kitinfo/20090/"
 	                    }, 
 	                    {
-	                        "barcode": "4482008", 
-	                        "id": 20056, 
-	                        "resource_uri": "/rundb/api/v1/kitpart/20056/", 
-	                        "kit": "/rundb/api/v1/kitinfo/20033/"
+	                        "barcode": "A30275", 
+	                        "id": 20205, 
+	                        "resource_uri": "/rundb/api/v1/kitpart/20205/", 
+	                        "kit": "/rundb/api/v1/kitinfo/20090/"
 	                    }, 
 	                    {
-	                        "barcode": "4482009", 
-	                        "id": 20057, 
-	                        "resource_uri": "/rundb/api/v1/kitpart/20057/", 
-	                        "kit": "/rundb/api/v1/kitinfo/20033/"
+	                        "barcode": "A25590", 
+	                        "id": 20206, 
+	                        "resource_uri": "/rundb/api/v1/kitpart/20206/", 
+	                        "kit": "/rundb/api/v1/kitinfo/20090/"
 	                    }
 	                ], 
-	                "categories": "readLengthDerivableFromFlows;", 
-	                "instrumentType": "pgm", 
-	                "defaultFlowOrder": null, 
-	                "samplePrep_instrumentType": "", 
-	                "cartridgeExpirationDayLimit": null, 
-	                "isActive": true, 
-	                "chipTypes": "", 
-	                "templatingSize": "", 
-	                "name": "IonPGM200Kit-v2", 
-	                "nucleotideType": "", 
-	                "libraryReadLength": 0, 
+	                "flowCount": 500, 
 	                "applicationType": "", 
+	                "cartridgeExpirationDayLimit": null, 
+	                "libraryReadLength": 0, 
 	                "cartridgeBetweenUsageAbsoluteMaxDayLimit": null, 
-	                "resource_uri": "/rundb/api/v1/kitinfo/20033/"
+	                "resource_uri": "/rundb/api/v1/kitinfo/20090/", 
+	                "uid": "SEQ0024", 
+	                "id": 20090, 
+	                "categories": "flowOverridable;readLengthDerivableFromFlows;", 
+	                "description": "Ion PGM Hi-Q View Sequencing Kit"
 	            }, 
 	            "isControlSeqTypeBySampleSupported": false, 
 	            "defaultBarcodeKitName": null, 
@@ -254,6 +253,20 @@ Example Response
 	                        "id": 7, 
 	                        "isActive": true, 
 	                        "resource_uri": "/rundb/api/v1/runtype/7/"
+	                    }, 
+	                    {
+	                        "applicationGroups": [
+	                            "/rundb/api/v1/applicationgroup/1/"
+	                        ], 
+	                        "description": "AmpliSeq HD - DNA", 
+	                        "nucleotideType": "dna", 
+	                        "barcode": "", 
+	                        "meta": {}, 
+	                        "alternate_name": "AmpliSeq HD - DNA", 
+	                        "runType": "AMPS_HD_DNA", 
+	                        "id": 12, 
+	                        "isActive": true, 
+	                        "resource_uri": "/rundb/api/v1/runtype/12/"
 	                    }
 	                ], 
 	                "uid": "APPLGROUP_0001", 
@@ -297,13 +310,16 @@ Example Response
 	            "isReferenceBySampleSupported": true, 
 	            "defaultFlowCount": 500, 
 	            "defaultLibKit": {
+	                "isActive": true, 
+	                "samplePrep_instrumentType": "", 
 	                "kitType": "LibraryKit", 
-	                "uid": "LIB0008", 
-	                "runMode": "", 
-	                "flowCount": 0, 
-	                "id": 20012, 
-	                "description": "Ion AmpliSeq 2.0 Library Kit", 
+	                "defaultFlowOrder": null, 
+	                "name": "Ion AmpliSeq 2.0 Library Kit", 
+	                "nucleotideType": "dna", 
 	                "defaultCartridgeUsageCount": null, 
+	                "instrumentType": "", 
+	                "chipTypes": "", 
+	                "runMode": "", 
 	                "parts": [
 	                    {
 	                        "barcode": "4475345", 
@@ -312,30 +328,26 @@ Example Response
 	                        "kit": "/rundb/api/v1/kitinfo/20012/"
 	                    }
 	                ], 
-	                "categories": "", 
-	                "instrumentType": "", 
-	                "defaultFlowOrder": null, 
-	                "samplePrep_instrumentType": "", 
-	                "cartridgeExpirationDayLimit": null, 
-	                "isActive": true, 
-	                "chipTypes": "", 
-	                "templatingSize": "", 
-	                "name": "Ion AmpliSeq 2.0 Library Kit", 
-	                "nucleotideType": "dna", 
-	                "libraryReadLength": 0, 
+	                "flowCount": 0, 
 	                "applicationType": "AMPS_ANY", 
+	                "cartridgeExpirationDayLimit": null, 
+	                "libraryReadLength": 0, 
 	                "cartridgeBetweenUsageAbsoluteMaxDayLimit": null, 
-	                "resource_uri": "/rundb/api/v1/kitinfo/20012/"
+	                "resource_uri": "/rundb/api/v1/kitinfo/20012/", 
+	                "uid": "LIB0008", 
+	                "id": 20012, 
+	                "categories": "", 
+	                "description": "Ion AmpliSeq 2.0 Library Kit"
 	            }, 
 	            "barcodeKitSelectableType": "all", 
 	            "isDefaultForInstrumentType": true, 
 	            "defaultGenomeRefName": "hg19", 
 	            "defaultSamplePrepKit": null, 
 	            "defaultControlSeqKit": null, 
-	            "defaultIonChefPrepKit": "/rundb/api/v1/kitinfo/20042/", 
+	            "defaultIonChefPrepKit": "/rundb/api/v1/kitinfo/20093/", 
 	            "resource_uri": "/rundb/api/v1/applproduct/20001/", 
-	            "defaultIonChefSequencingKit": "/rundb/api/v1/kitinfo/20033/", 
-	            "defaultTemplateKit": "/rundb/api/v1/kitinfo/20034/"
+	            "defaultIonChefSequencingKit": "/rundb/api/v1/kitinfo/20090/", 
+	            "defaultTemplateKit": "/rundb/api/v1/kitinfo/20091/"
 	        }
 	    ]
 	}

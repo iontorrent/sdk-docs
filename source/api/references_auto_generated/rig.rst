@@ -39,7 +39,7 @@ field               help text                                                   
 ------------------- ------------------------------------------------------------------------------ ------------- -------- -------- ----- ------ ------- 
 **updateflag**      Boolean data. Ex: True                                                         false         false    false    true  false  boolean 
 ------------------- ------------------------------------------------------------------------------ ------------- -------- -------- ----- ------ ------- 
-**location**        A single related resource. Can be either a URI or set of nested resource data. n/a           false    false    false false  related 
+**location**        A single related resource. Can be either a URI or set of nested resource data. n/a           true     false    true  false  related 
 ------------------- ------------------------------------------------------------------------------ ------------- -------- -------- ----- ------ ------- 
 **last_init_date**  Unicode string data. Ex: "Hello World"                                                       false    false    true  false  string  
 ------------------- ------------------------------------------------------------------------------ ------------- -------- -------- ----- ------ ------- 
@@ -66,7 +66,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 3, 
+	        "total_count": 4, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/rig/?offset=1&limit=1&format=json"

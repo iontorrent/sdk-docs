@@ -88,7 +88,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 117, 
+	        "total_count": 129, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/analysisargs/?offset=1&limit=1&format=json"
@@ -103,16 +103,16 @@ Example Response
 	            "thumbnailanalysisargs": "", 
 	            "samplePrepKitName": "", 
 	            "id": 1, 
-	            "creationDate": "2017-12-05T00:10:34.000865+00:00", 
+	            "creationDate": "2018-06-08T06:20:39.000036+00:00", 
 	            "sequenceKitName": "", 
 	            "analysisargs": "Analysis --args-json /opt/ion/config/args_314_analysis.json", 
 	            "thumbnailcalibrateargs": "", 
 	            "applGroup": null, 
 	            "chip_default": true, 
-	            "lastModifiedDate": "2017-12-05T00:10:34.000865+00:00", 
+	            "lastModifiedDate": "2018-06-08T06:20:39.000036+00:00", 
 	            "beadfindargs": "justBeadFind --args-json /opt/ion/config/args_314_beadfind.json", 
 	            "templateKitName": "", 
-	            "prebasecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 20", 
+	            "prebasecallerargs": "BaseCaller --barcode-filter-minreads 20", 
 	            "description": "Ion 314 chip v2 analysis arguments", 
 	            "prethumbnailbasecallerargs": "", 
 	            "applType": null, 
@@ -124,7 +124,7 @@ Example Response
 	            "calibrateargs": "Calibration", 
 	            "libraryKitName": "", 
 	            "name": "ion_default_314", 
-	            "basecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 20", 
+	            "basecallerargs": "BaseCaller --barcode-filter-minreads 20", 
 	            "lastModifiedUser": null, 
 	            "resource_uri": "/rundb/api/v1/analysisargs/1/"
 	        }

@@ -131,8 +131,6 @@ field                                 help text                                 
 ------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **mixedTypeRNA_reference**            Unicode string data. Ex: "Hello World"                                                                     true     false    true  false  string   
 ------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**templatingSize**                    Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string   
-------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **childPlans**                        A list of data. Ex: ['abc', 26.73, 8]                                                              []      false    false    false false  list     
 ------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **pairedEndLibraryAdapterName**       Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
@@ -214,12 +212,322 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 0, 
+	        "total_count": 1, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": null
 	    }, 
-	    "objects": []
+	    "objects": [
+	        {
+	            "planDisplayedName": "Ion ReproSeq Aneuploidy - Ion PGM System", 
+	            "autoAnalyze": true, 
+	            "endBarcodeKitName": "", 
+	            "templatingKitBarcode": null, 
+	            "preAnalysis": true, 
+	            "thumbnailanalysisargs": "", 
+	            "applicationGroup": "/rundb/api/v1/applicationgroup/1/", 
+	            "mixedTypeRNA_hotSpotRegionBedFile": "", 
+	            "mixedTypeRNA_targetRegionBedFile": "", 
+	            "platform": "", 
+	            "categories": "repro", 
+	            "planPGM": null, 
+	            "prebasecallerargs": "BaseCaller --barcode-filter 0.01 --barcode-filter-minreads 20 --extra-trim-left 30", 
+	            "alignmentargs": "tmap mapall ... stage1 map4", 
+	            "thumbnailbasecallerargs": "", 
+	            "libkit": null, 
+	            "projects": [], 
+	            "notes": "", 
+	            "sequencekitname": "IonPGMHiQ", 
+	            "base_recalibration_mode": "standard_recal", 
+	            "storageHost": null, 
+	            "expName": "", 
+	            "thumbnailionstatsargs": "", 
+	            "cycles": null, 
+	            "isReverseRun": false, 
+	            "storage_options": "A", 
+	            "thumbnailalignmentargs": "", 
+	            "chipType": "318", 
+	            "library": "hg19", 
+	            "runMode": "single", 
+	            "sampleTubeLabel": "", 
+	            "seqKitBarcode": null, 
+	            "barcodeId": "Ion SingleSeq Barcode set 1-24", 
+	            "isPlanGroup": false, 
+	            "realign": false, 
+	            "sampleGroupingName": "Self", 
+	            "experiment": "/rundb/api/v1/experiment/123/", 
+	            "bedfile": "", 
+	            "applicationCategoryDisplayedName": "Reproductive", 
+	            "isReusable": false, 
+	            "isDuplicateReads": false, 
+	            "sampleSets": [], 
+	            "thumbnailbeadfindargs": "", 
+	            "librarykitname": "IonPicoPlex", 
+	            "sseBedFile": "", 
+	            "adapter": null, 
+	            "basecallerargs": "BaseCaller  --barcode-filter 0.01 --barcode-filter-minreads 20 --extra-trim-left 30", 
+	            "earlyDatFileDeletion": false, 
+	            "parentPlan": null, 
+	            "origin": "gui|5.8.0", 
+	            "forward3primeadapter": "ATCACCGACTGCCCATAGAGAGGAAAGCGG", 
+	            "planStatus": "planned", 
+	            "isCustom_kitSettings": false, 
+	            "samplePrepKitName": null, 
+	            "applicationGroupDisplayedName": "DNA", 
+	            "metaData": {
+	                "fromTemplate": "Ion_ReproSeq_Aneuploidy_-_Ion_PGM_System", 
+	                "fromTemplateSource": "ION"
+	            }, 
+	            "isFavorite": false, 
+	            "qcValues": [
+	                {
+	                    "threshold": 30, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/131/", 
+	                    "id": 370, 
+	                    "qcType": {
+	                        "description": "", 
+	                        "minThreshold": 0, 
+	                        "maxThreshold": 100, 
+	                        "defaultThreshold": 30, 
+	                        "qcName": "Bead Loading (%)", 
+	                        "id": 1, 
+	                        "resource_uri": "/rundb/api/v1/qctype/1/"
+	                    }, 
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/370/"
+	                }, 
+	                {
+	                    "threshold": 30, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/131/", 
+	                    "id": 371, 
+	                    "qcType": {
+	                        "description": "", 
+	                        "minThreshold": 1, 
+	                        "maxThreshold": 100, 
+	                        "defaultThreshold": 30, 
+	                        "qcName": "Key Signal (1-100)", 
+	                        "id": 2, 
+	                        "resource_uri": "/rundb/api/v1/qctype/2/"
+	                    }, 
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/371/"
+	                }, 
+	                {
+	                    "threshold": 30, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/131/", 
+	                    "id": 372, 
+	                    "qcType": {
+	                        "description": "", 
+	                        "minThreshold": 0, 
+	                        "maxThreshold": 100, 
+	                        "defaultThreshold": 30, 
+	                        "qcName": "Usable Sequence (%)", 
+	                        "id": 3, 
+	                        "resource_uri": "/rundb/api/v1/qctype/3/"
+	                    }, 
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/372/"
+	                }
+	            ], 
+	            "analysisargs": "Analysis --args-json /opt/ion/config/args_318_analysis.json --mixed-first-flow 51 --mixed-last-flow 111", 
+	            "thumbnailcalibrateargs": "", 
+	            "templatingKitName": "Ion PGM Template IA Tech Access Kit", 
+	            "runType": "WGNM", 
+	            "username": "ionadmin", 
+	            "planShortID": "6TGIO", 
+	            "sampleDisplayedName": "", 
+	            "prethumbnailbasecallerargs": "", 
+	            "controlSequencekitname": null, 
+	            "tfKey": "ATCG", 
+	            "mixedTypeRNA_reference": "", 
+	            "childPlans": [], 
+	            "pairedEndLibraryAdapterName": "", 
+	            "reverselibrarykey": "", 
+	            "irworkflow": "", 
+	            "planExecuted": false, 
+	            "project": "", 
+	            "usePostBeadfind": true, 
+	            "libraryReadLength": 0, 
+	            "runname": null, 
+	            "chefInfo": {}, 
+	            "planGUID": "d1ed9718-b6f4-4dfd-8de5-bbd150092997", 
+	            "ionstatsargs": "ionstats alignment", 
+	            "samplePrepProtocol": "", 
+	            "sample": "", 
+	            "planExecutedDate": null, 
+	            "reverse_primer": null, 
+	            "id": 131, 
+	            "barcodedSamples": {
+	                "Sample 6": {
+	                    "dualBarcodes": [], 
+	                    "barcodeSampleInfo": {
+	                        "SingleSeq_006": {
+	                            "description": "", 
+	                            "reference": "hg19", 
+	                            "targetRegionBedFile": "", 
+	                            "hotSpotRegionBedFile": "", 
+	                            "nucleotideType": "DNA", 
+	                            "controlSequenceType": "", 
+	                            "externalId": "", 
+	                            "endBarcode": "", 
+	                            "controlType": "", 
+	                            "sseBedFile": ""
+	                        }
+	                    }, 
+	                    "barcodes": [
+	                        "SingleSeq_006"
+	                    ]
+	                }, 
+	                "Sample 7": {
+	                    "dualBarcodes": [], 
+	                    "barcodeSampleInfo": {
+	                        "SingleSeq_007": {
+	                            "description": "", 
+	                            "reference": "hg19", 
+	                            "targetRegionBedFile": "", 
+	                            "hotSpotRegionBedFile": "", 
+	                            "nucleotideType": "DNA", 
+	                            "controlSequenceType": "", 
+	                            "externalId": "", 
+	                            "endBarcode": "", 
+	                            "controlType": "", 
+	                            "sseBedFile": ""
+	                        }
+	                    }, 
+	                    "barcodes": [
+	                        "SingleSeq_007"
+	                    ]
+	                }, 
+	                "Sample 4": {
+	                    "dualBarcodes": [], 
+	                    "barcodeSampleInfo": {
+	                        "SingleSeq_004": {
+	                            "description": "", 
+	                            "reference": "hg19", 
+	                            "targetRegionBedFile": "", 
+	                            "hotSpotRegionBedFile": "", 
+	                            "nucleotideType": "DNA", 
+	                            "controlSequenceType": "", 
+	                            "externalId": "", 
+	                            "endBarcode": "", 
+	                            "controlType": "", 
+	                            "sseBedFile": ""
+	                        }
+	                    }, 
+	                    "barcodes": [
+	                        "SingleSeq_004"
+	                    ]
+	                }, 
+	                "Sample 5": {
+	                    "dualBarcodes": [], 
+	                    "barcodeSampleInfo": {
+	                        "SingleSeq_005": {
+	                            "description": "", 
+	                            "reference": "hg19", 
+	                            "targetRegionBedFile": "", 
+	                            "hotSpotRegionBedFile": "", 
+	                            "nucleotideType": "DNA", 
+	                            "controlSequenceType": "", 
+	                            "externalId": "", 
+	                            "endBarcode": "", 
+	                            "controlType": "", 
+	                            "sseBedFile": ""
+	                        }
+	                    }, 
+	                    "barcodes": [
+	                        "SingleSeq_005"
+	                    ]
+	                }, 
+	                "Sample 2": {
+	                    "dualBarcodes": [], 
+	                    "barcodeSampleInfo": {
+	                        "SingleSeq_002": {
+	                            "description": "", 
+	                            "reference": "hg19", 
+	                            "targetRegionBedFile": "", 
+	                            "hotSpotRegionBedFile": "", 
+	                            "nucleotideType": "DNA", 
+	                            "controlSequenceType": "", 
+	                            "externalId": "", 
+	                            "endBarcode": "", 
+	                            "controlType": "", 
+	                            "sseBedFile": ""
+	                        }
+	                    }, 
+	                    "barcodes": [
+	                        "SingleSeq_002"
+	                    ]
+	                }, 
+	                "Sample 3": {
+	                    "dualBarcodes": [], 
+	                    "barcodeSampleInfo": {
+	                        "SingleSeq_003": {
+	                            "description": "", 
+	                            "reference": "hg19", 
+	                            "targetRegionBedFile": "", 
+	                            "hotSpotRegionBedFile": "", 
+	                            "nucleotideType": "DNA", 
+	                            "controlSequenceType": "", 
+	                            "externalId": "", 
+	                            "endBarcode": "", 
+	                            "controlType": "", 
+	                            "sseBedFile": ""
+	                        }
+	                    }, 
+	                    "barcodes": [
+	                        "SingleSeq_003"
+	                    ]
+	                }, 
+	                "Sample 1": {
+	                    "dualBarcodes": [], 
+	                    "barcodeSampleInfo": {
+	                        "SingleSeq_001": {
+	                            "description": "", 
+	                            "reference": "hg19", 
+	                            "targetRegionBedFile": "", 
+	                            "hotSpotRegionBedFile": "", 
+	                            "nucleotideType": "DNA", 
+	                            "controlSequenceType": "", 
+	                            "externalId": "", 
+	                            "endBarcode": "", 
+	                            "controlType": "", 
+	                            "sseBedFile": ""
+	                        }
+	                    }, 
+	                    "barcodes": [
+	                        "SingleSeq_001"
+	                    ]
+	                }
+	            }, 
+	            "custom_args": false, 
+	            "regionfile": "", 
+	            "selectedPlugins": {
+	                "FilterDuplicates": {
+	                    "userInput": "", 
+	                    "version": "5.8.0.0", 
+	                    "features": [], 
+	                    "name": "FilterDuplicates", 
+	                    "id": 34
+	                }
+	            }, 
+	            "beadfindargs": "justBeadFind --args-json /opt/ion/config/args_318_beadfind.json", 
+	            "isSystemDefault": false, 
+	            "autoName": null, 
+	            "libraryKey": "TCAG", 
+	            "flows": 250, 
+	            "date": "2018-02-26T17:28:33.000588+00:00", 
+	            "isSystem": false, 
+	            "variantfrequency": "", 
+	            "planName": "Ion_ReproSeq_Aneuploidy_-_Ion_PGM_System", 
+	            "calibrateargs": "Calibration", 
+	            "flowsInOrder": "", 
+	            "libraryPrepType": "", 
+	            "sampleGrouping": "/rundb/api/v1/samplegrouptype_cv/2/", 
+	            "chipBarcode": "", 
+	            "sampleSetDisplayedName": "", 
+	            "usePreBeadfind": true, 
+	            "resource_uri": "/rundb/api/v1/availableonetouchplannedexperiment/131/", 
+	            "libraryPrepTypeDisplayedName": "", 
+	            "reverse3primeadapter": ""
+	        }
+	    ]
 	}
 
 Allowed list HTTP methods

@@ -91,8 +91,6 @@ field                           help text                                       
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planName**                    Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**templatingSize**              Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **parentPlan**                  Unicode string data. Ex: "Hello World"                                                             None    false    false    true  false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **childPlans**                  A list of data. Ex: ['abc', 26.73, 8]                                                              []      false    false    false false  list     
@@ -136,53 +134,41 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 95, 
+	        "total_count": 111, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/plannedexperimentdb/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "origin": "|5.8.0", 
+	            "origin": "gui|5.10.0.RC4", 
 	            "isReverseRun": false, 
-	            "planDisplayedName": "Oncomine Comprehensive v3 Fusions for 550", 
+	            "planDisplayedName": "Ion AmpliSeq HD for Tumor - DNA", 
 	            "storage_options": "A", 
 	            "preAnalysis": true, 
-	            "planShortID": "Y2E01", 
-	            "username": null, 
-	            "planStatus": "planned", 
+	            "planShortID": "SP1XE", 
+	            "username": "ionadmin", 
+	            "planStatus": "pending", 
 	            "runMode": "single", 
 	            "isCustom_kitSettings": false, 
-	            "sampleTubeLabel": null, 
+	            "sampleTubeLabel": "", 
 	            "planExecutedDate": null, 
 	            "samplePrepKitName": null, 
 	            "reverse_primer": null, 
-	            "applicationGroup": "/rundb/api/v1/applicationgroup/5/", 
+	            "applicationGroup": "/rundb/api/v1/applicationgroup/1/", 
 	            "seqKitBarcode": null, 
-	            "id": 123, 
-	            "metaData": {}, 
+	            "id": 143, 
+	            "metaData": {
+	                "fromTemplate": "Ion_AmpliSeq_HD_for_Tumor_-_DNA", 
+	                "fromTemplateSource": "ION"
+	            }, 
 	            "sampleSets": [], 
 	            "isFavorite": false, 
 	            "qcValues": [
 	                {
 	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/123/", 
-	                    "id": 358, 
-	                    "qcType": {
-	                        "description": "", 
-	                        "minThreshold": 0, 
-	                        "maxThreshold": 100, 
-	                        "defaultThreshold": 30, 
-	                        "qcName": "Bead Loading (%)", 
-	                        "id": 1, 
-	                        "resource_uri": "/rundb/api/v1/qctype/1/"
-	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/358/"
-	                }, 
-	                {
-	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/123/", 
-	                    "id": 359, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/143/", 
+	                    "id": 407, 
 	                    "qcType": {
 	                        "description": "", 
 	                        "minThreshold": 1, 
@@ -192,12 +178,12 @@ Example Response
 	                        "id": 2, 
 	                        "resource_uri": "/rundb/api/v1/qctype/2/"
 	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/359/"
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/407/"
 	                }, 
 	                {
 	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/123/", 
-	                    "id": 360, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/143/", 
+	                    "id": 408, 
 	                    "qcType": {
 	                        "description": "", 
 	                        "minThreshold": 0, 
@@ -207,31 +193,45 @@ Example Response
 	                        "id": 3, 
 	                        "resource_uri": "/rundb/api/v1/qctype/3/"
 	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/360/"
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/408/"
+	                }, 
+	                {
+	                    "threshold": 30, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/143/", 
+	                    "id": 406, 
+	                    "qcType": {
+	                        "description": "", 
+	                        "minThreshold": 0, 
+	                        "maxThreshold": 100, 
+	                        "defaultThreshold": 30, 
+	                        "qcName": "Bead Loading (%)", 
+	                        "id": 1, 
+	                        "resource_uri": "/rundb/api/v1/qctype/1/"
+	                    }, 
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/406/"
 	                }
 	            ], 
 	            "samplePrepProtocol": "", 
 	            "isPlanGroup": false, 
-	            "experiment": "/rundb/api/v1/experiment/115/", 
+	            "experiment": "/rundb/api/v1/experiment/136/", 
 	            "projects": [], 
-	            "runType": "AMPS_RNA", 
+	            "runType": "AMPS_HD_DNA", 
 	            "templatingKitBarcode": null, 
-	            "templatingKitName": "Ion Chef S550 V1", 
-	            "planPGM": "", 
+	            "templatingKitName": "Ion Chef S540 V1", 
+	            "planPGM": null, 
 	            "isSystemDefault": false, 
 	            "autoName": null, 
-	            "isReusable": true, 
+	            "isReusable": false, 
 	            "controlSequencekitname": null, 
-	            "date": "2017-12-05T00:10:38.000438+00:00", 
-	            "isSystem": true, 
+	            "date": "2018-04-13T22:17:13.000108+00:00", 
+	            "isSystem": false, 
 	            "libkit": null, 
-	            "categories": "Oncomine;onco_solidTumor", 
-	            "planName": "Oncomine_Comprehensive_v3_Fusions_for_550", 
-	            "templatingSize": "200", 
+	            "categories": "onco_solidTumor;onco_heme;", 
+	            "planName": "Ion_AmpliSeq_HD_for_Tumor_-_DNA", 
 	            "parentPlan": null, 
 	            "childPlans": [], 
-	            "pairedEndLibraryAdapterName": null, 
-	            "sampleGrouping": "/rundb/api/v1/samplegrouptype_cv/7/", 
+	            "pairedEndLibraryAdapterName": "", 
+	            "sampleGrouping": "/rundb/api/v1/samplegrouptype_cv/2/", 
 	            "adapter": null, 
 	            "irworkflow": "", 
 	            "planExecuted": false, 
@@ -242,9 +242,9 @@ Example Response
 	            "libraryReadLength": 200, 
 	            "runname": null, 
 	            "usePreBeadfind": true, 
-	            "planGUID": "5de7dbc0-17db-441c-abfb-ec6c060d988c", 
+	            "planGUID": "1d75abf5-4d15-43f5-bb08-1c89d7344175", 
 	            "cycles": null, 
-	            "resource_uri": "/rundb/api/v1/plannedexperimentdb/123/"
+	            "resource_uri": "/rundb/api/v1/plannedexperimentdb/143/"
 	        }
 	    ]
 	}

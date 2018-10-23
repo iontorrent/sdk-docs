@@ -131,8 +131,6 @@ field                                 help text                                 
 ------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **mixedTypeRNA_reference**            Unicode string data. Ex: "Hello World"                                                                     true     false    true  false  string   
 ------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**templatingSize**                    Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string   
-------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **childPlans**                        A list of data. Ex: ['abc', 26.73, 8]                                                              []      false    false    false false  list     
 ------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **pairedEndLibraryAdapterName**       Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
@@ -214,14 +212,14 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 56, 
+	        "total_count": 66, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/ionchefplantemplate/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "planDisplayedName": "Oncomine Comprehensive v3 Fusions for 550", 
+	            "planDisplayedName": "Ion AmpliSeq HD for Tumor - DNA and Fusions - Separate Libraries", 
 	            "autoAnalyze": true, 
 	            "endBarcodeKitName": "", 
 	            "templatingKitBarcode": null, 
@@ -231,7 +229,7 @@ Example Response
 	            "mixedTypeRNA_hotSpotRegionBedFile": null, 
 	            "mixedTypeRNA_targetRegionBedFile": null, 
 	            "platform": "S5", 
-	            "categories": "Oncomine;onco_solidTumor", 
+	            "categories": "onco_solidTumor;onco_heme;", 
 	            "planPGM": "", 
 	            "prebasecallerargs": "", 
 	            "alignmentargs": "", 
@@ -248,41 +246,41 @@ Example Response
 	            "isReverseRun": false, 
 	            "storage_options": "A", 
 	            "thumbnailalignmentargs": "", 
-	            "chipType": "550", 
-	            "library": "", 
+	            "chipType": "540", 
+	            "library": "hg19", 
 	            "runMode": "single", 
 	            "sampleTubeLabel": null, 
 	            "seqKitBarcode": null, 
-	            "barcodeId": "IonXpress", 
+	            "barcodeId": "Ion AmpliSeq HD Dual Barcode Kit 1-24", 
 	            "isPlanGroup": false, 
 	            "realign": false, 
-	            "sampleGroupingName": "Single Fusions", 
-	            "experiment": "/rundb/api/v1/experiment/115/", 
+	            "sampleGroupingName": "DNA and Fusions", 
+	            "experiment": "/rundb/api/v1/experiment/134/", 
 	            "bedfile": "", 
-	            "applicationCategoryDisplayedName": "Oncology - Solid Tumor", 
+	            "applicationCategoryDisplayedName": "Oncology - Solid Tumor | Oncology - HemeOnc", 
 	            "isReusable": true, 
 	            "isDuplicateReads": false, 
 	            "sampleSets": [], 
 	            "thumbnailbeadfindargs": "", 
-	            "librarykitname": "Ion AmpliSeq Library Kit Plus", 
+	            "librarykitname": "Ion AmpliSeq HD Library Kit", 
 	            "sseBedFile": "", 
 	            "adapter": null, 
 	            "basecallerargs": "", 
 	            "earlyDatFileDeletion": false, 
 	            "parentPlan": null, 
-	            "origin": "|5.8.0", 
+	            "origin": "|5.10.0.RC4", 
 	            "forward3primeadapter": "ATCACCGACTGCCCATAGAGAGGCTGAGAC", 
 	            "planStatus": "planned", 
 	            "isCustom_kitSettings": false, 
 	            "samplePrepKitName": null, 
-	            "applicationGroupDisplayedName": "DNA and Fusions", 
+	            "applicationGroupDisplayedName": "DNA and Fusions (Separate Libraries)", 
 	            "metaData": {}, 
 	            "isFavorite": false, 
 	            "qcValues": [
 	                {
 	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/123/", 
-	                    "id": 358, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/141/", 
+	                    "id": 400, 
 	                    "qcType": {
 	                        "description": "", 
 	                        "minThreshold": 0, 
@@ -292,12 +290,12 @@ Example Response
 	                        "id": 1, 
 	                        "resource_uri": "/rundb/api/v1/qctype/1/"
 	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/358/"
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/400/"
 	                }, 
 	                {
 	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/123/", 
-	                    "id": 359, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/141/", 
+	                    "id": 401, 
 	                    "qcType": {
 	                        "description": "", 
 	                        "minThreshold": 1, 
@@ -307,12 +305,12 @@ Example Response
 	                        "id": 2, 
 	                        "resource_uri": "/rundb/api/v1/qctype/2/"
 	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/359/"
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/401/"
 	                }, 
 	                {
 	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/123/", 
-	                    "id": 360, 
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/141/", 
+	                    "id": 402, 
 	                    "qcType": {
 	                        "description": "", 
 	                        "minThreshold": 0, 
@@ -322,21 +320,20 @@ Example Response
 	                        "id": 3, 
 	                        "resource_uri": "/rundb/api/v1/qctype/3/"
 	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/360/"
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/402/"
 	                }
 	            ], 
 	            "analysisargs": "", 
 	            "thumbnailcalibrateargs": "", 
-	            "templatingKitName": "Ion Chef S550 V1", 
-	            "runType": "AMPS_RNA", 
+	            "templatingKitName": "Ion Chef S540 V1", 
+	            "runType": "AMPS_HD_DNA_RNA", 
 	            "username": null, 
-	            "planShortID": "Y2E01", 
+	            "planShortID": "A628Z", 
 	            "sampleDisplayedName": "", 
 	            "prethumbnailbasecallerargs": "", 
 	            "controlSequencekitname": null, 
 	            "tfKey": "ATCG", 
 	            "mixedTypeRNA_reference": null, 
-	            "templatingSize": "200", 
 	            "childPlans": [], 
 	            "pairedEndLibraryAdapterName": null, 
 	            "reverselibrarykey": "", 
@@ -347,42 +344,53 @@ Example Response
 	            "libraryReadLength": 200, 
 	            "runname": null, 
 	            "chefInfo": {}, 
-	            "planGUID": "5de7dbc0-17db-441c-abfb-ec6c060d988c", 
+	            "planGUID": "e52fac66-4086-433e-b8e7-ad1d1403946f", 
 	            "ionstatsargs": "", 
 	            "samplePrepProtocol": "", 
 	            "sample": "", 
 	            "planExecutedDate": null, 
 	            "reverse_primer": null, 
-	            "id": 123, 
+	            "id": 141, 
 	            "barcodedSamples": {}, 
 	            "custom_args": false, 
 	            "regionfile": "", 
 	            "selectedPlugins": {
 	                "coverageAnalysis": {
 	                    "userInput": {}, 
-	                    "version": "5.6.0.1", 
+	                    "version": "5.8.0.8", 
 	                    "features": [], 
 	                    "name": "coverageAnalysis", 
-	                    "id": 14
+	                    "id": 41
+	                }, 
+	                "variantCaller": {
+	                    "userInput": {
+	                        "meta": {
+	                            "configuration": "ampliseq_hd_ffpe"
+	                        }
+	                    }, 
+	                    "version": "5.8.0.19", 
+	                    "features": [], 
+	                    "name": "variantCaller", 
+	                    "id": 36
 	                }
 	            }, 
 	            "beadfindargs": "", 
 	            "isSystemDefault": false, 
 	            "autoName": null, 
 	            "libraryKey": "TCAG", 
-	            "flows": 400, 
-	            "date": "2017-12-05T00:10:38.000438+00:00", 
+	            "flows": 500, 
+	            "date": "2018-04-12T05:54:10.000222+00:00", 
 	            "isSystem": true, 
 	            "variantfrequency": "", 
-	            "planName": "Oncomine_Comprehensive_v3_Fusions_for_550", 
+	            "planName": "Ion_AmpliSeq_HD_for_Tumor_-_DNA_and_Fusions_-_Separate_Libraries", 
 	            "calibrateargs": "", 
 	            "flowsInOrder": "", 
 	            "libraryPrepType": "", 
-	            "sampleGrouping": "/rundb/api/v1/samplegrouptype_cv/7/", 
+	            "sampleGrouping": "/rundb/api/v1/samplegrouptype_cv/6/", 
 	            "chipBarcode": "", 
 	            "sampleSetDisplayedName": "", 
 	            "usePreBeadfind": true, 
-	            "resource_uri": "/rundb/api/v1/ionchefplantemplate/123/", 
+	            "resource_uri": "/rundb/api/v1/ionchefplantemplate/141/", 
 	            "libraryPrepTypeDisplayedName": "", 
 	            "reverse3primeadapter": ""
 	        }

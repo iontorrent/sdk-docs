@@ -57,6 +57,8 @@ field                         help text                              default    
 ----------------------------- -------------------------------------- -------------- -------- -------- ----- ------ ------- 
 **records_to_display**        Integer data. Ex: 2673                 20             false    false    true  false  integer 
 ----------------------------- -------------------------------------- -------------- -------- -------- ----- ------ ------- 
+**telemetry_enabled**         Boolean data. Ex: True                 true           false    false    true  false  boolean 
+----------------------------- -------------------------------------- -------------- -------- -------- ----- ------ ------- 
 **default_library_key**       Unicode string data. Ex: "Hello World"                false    false    true  false  string  
 ----------------------------- -------------------------------------- -------------- -------- -------- ----- ------ ------- 
 **cluster_auto_disable**      Boolean data. Ex: True                 true           false    false    true  false  boolean 
@@ -97,7 +99,7 @@ Example Response
 	            "selected": false, 
 	            "check_news_posts": true, 
 	            "realign": false, 
-	            "ts_update_status": "No updates", 
+	            "ts_update_status": "Ready to install", 
 	            "mark_duplicates": false, 
 	            "auto_archive_enable": true, 
 	            "enable_auto_security": true, 
@@ -106,6 +108,7 @@ Example Response
 	            "default_flow_order": "TACG", 
 	            "name": "Config", 
 	            "records_to_display": 20, 
+	            "telemetry_enabled": true, 
 	            "default_library_key": "TCAG", 
 	            "cluster_auto_disable": true, 
 	            "web_root": "", 

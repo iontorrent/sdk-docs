@@ -19,8 +19,6 @@ field                                        help text                          
 -------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **samplePrep_instrumentType**                Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
 -------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**templatingSize**                           Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string  
--------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **kitType**                                  Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string  
 -------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **description**                              Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
@@ -66,7 +64,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 12, 
+	        "total_count": 9, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/activeionchefprepkitinfo/?offset=1&limit=1&format=json"
@@ -75,7 +73,6 @@ Example Response
 	        {
 	            "isActive": true, 
 	            "samplePrep_instrumentType": "IC", 
-	            "templatingSize": "", 
 	            "kitType": "IonChefPrepKit", 
 	            "description": "Precision ID Chef Reagents", 
 	            "nucleotideType": "", 
@@ -99,7 +96,7 @@ Example Response
 	            "resource_uri": "/rundb/api/v1/activeionchefprepkitinfo/20106/", 
 	            "uid": "ICPREP0011", 
 	            "id": 20106, 
-	            "categories": "filter_s5HidKit", 
+	            "categories": "filter_s5HidKit;samplePrepProtocol;s5hidSamplePrep", 
 	            "name": "Ion Chef HID S530 V2"
 	        }
 	    ]

@@ -54,7 +54,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 6, 
+	        "total_count": 7, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/compositeresult/?offset=1&limit=1&format=json"
@@ -116,7 +116,7 @@ Example Response
 	                    "resource_uri": "", 
 	                    "id": 1, 
 	                    "name": "demo", 
-	                    "modified": "2017-08-14T18:58:52.000246+00:00"
+	                    "modified": "2018-02-28T17:32:01.000703+00:00"
 	                }
 	            ], 
 	            "qualitymetrics": {

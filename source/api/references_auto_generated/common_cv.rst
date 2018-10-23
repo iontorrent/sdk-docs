@@ -50,24 +50,24 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 10, 
+	        "total_count": 13, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/common_cv/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "displayedValue": "Immunology", 
-	            "sequencing_instrumentType": "", 
-	            "description": "Immunology", 
-	            "categories": "AMPS_RNA", 
-	            "value": "immunology", 
-	            "samplePrep_instrumentType": "", 
-	            "cv_type": "applicationCategory", 
+	            "displayedValue": "Ion PGM Hi-Q Chef for STR", 
+	            "sequencing_instrumentType": "pgm", 
+	            "description": "Use Ion Chef script protocol optimized for HID STR on PGM", 
+	            "categories": "hidSamplePrep", 
+	            "value": "anneal62no10xab", 
+	            "samplePrep_instrumentType": "IC", 
+	            "cv_type": "samplePrepProtocol", 
 	            "isVisible": true, 
-	            "uid": "APPCAT0007", 
-	            "resource_uri": "/rundb/api/v1/common_cv/10/", 
-	            "id": 10, 
+	            "uid": "CV0001", 
+	            "resource_uri": "/rundb/api/v1/common_cv/1/", 
+	            "id": 1, 
 	            "isActive": true, 
 	            "isDefault": false
 	        }

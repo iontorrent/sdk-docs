@@ -80,7 +80,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 19, 
+	        "total_count": 16, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/samplesetiteminfo/?offset=1&limit=1&format=json"
@@ -89,34 +89,34 @@ Example Response
 	        {
 	            "relationshipGroup": 0, 
 	            "sampleDescription": "", 
-	            "dnabarcodeKit": "IonCode Barcodes 1-32", 
-	            "sample": "/rundb/api/v1/sample/6/", 
-	            "pcrPlateColumn": "1", 
+	            "dnabarcodeKit": "", 
+	            "sample": "/rundb/api/v1/sample/8/", 
+	            "pcrPlateColumn": "", 
 	            "cancerType": "", 
 	            "attribute_dict": {}, 
-	            "id": 1, 
-	            "sampleDisplayedName": "sample 1", 
+	            "id": 3, 
+	            "sampleDisplayedName": "1", 
 	            "cellNum": "", 
 	            "sampleExternalId": "", 
 	            "coupleId": "", 
-	            "pcrPlateRow": "A", 
+	            "pcrPlateRow": "", 
 	            "sampleSetPk": 1, 
 	            "sampleSetStatus": "created", 
 	            "embryoId": "", 
 	            "sampleSet": "/rundb/api/v1/sampleset/1/", 
 	            "description": "", 
-	            "lastModifiedDate": "2017-08-28T21:21:14.000040+00:00", 
+	            "lastModifiedDate": "2017-11-01T16:19:12.000420+00:00", 
 	            "sampleSetGroupType": "", 
 	            "relationshipRole": "", 
-	            "samplePk": 6, 
-	            "dnabarcode": "IonCode_0125", 
-	            "creationDate": "2017-08-28T21:21:14.000040+00:00", 
+	            "samplePk": 8, 
+	            "dnabarcode": "", 
+	            "creationDate": "2017-11-01T16:19:12.000420+00:00", 
 	            "biopsyDays": 0, 
 	            "nucleotideType": "", 
 	            "gender": "", 
 	            "cellularityPct": null, 
 	            "controlType": "", 
-	            "resource_uri": "/rundb/api/v1/samplesetiteminfo/1/"
+	            "resource_uri": "/rundb/api/v1/samplesetiteminfo/3/"
 	        }
 	    ]
 	}

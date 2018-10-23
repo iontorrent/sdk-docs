@@ -68,7 +68,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 6, 
+	        "total_count": 7, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/projectresults/?offset=1&limit=1&format=json"

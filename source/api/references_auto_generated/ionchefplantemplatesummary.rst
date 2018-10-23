@@ -79,8 +79,6 @@ field                           help text                                       
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planName**                    Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**templatingSize**              Unicode string data. Ex: "Hello World"                       true     false    false false  string   
-------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **pairedEndLibraryAdapterName** Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **adapter**                     Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
@@ -118,19 +116,19 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 56, 
+	        "total_count": 66, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/ionchefplantemplatesummary/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "origin": "|5.8.0", 
+	            "origin": "|5.10.0.RC4", 
 	            "isReverseRun": false, 
-	            "planDisplayedName": "Oncomine Comprehensive v3 Fusions for 550", 
+	            "planDisplayedName": "Ion AmpliSeq HD for Tumor - DNA and Fusions - Separate Libraries", 
 	            "storage_options": "A", 
 	            "preAnalysis": true, 
-	            "planShortID": "Y2E01", 
+	            "planShortID": "A628Z", 
 	            "planStatus": "planned", 
 	            "runMode": "single", 
 	            "isCustom_kitSettings": false, 
@@ -139,25 +137,24 @@ Example Response
 	            "samplePrepKitName": null, 
 	            "reverse_primer": null, 
 	            "seqKitBarcode": null, 
-	            "id": 123, 
+	            "id": 141, 
 	            "metaData": {}, 
 	            "isFavorite": false, 
 	            "samplePrepProtocol": "", 
 	            "isPlanGroup": false, 
-	            "templatingKitName": "Ion Chef S550 V1", 
-	            "runType": "AMPS_RNA", 
+	            "templatingKitName": "Ion Chef S540 V1", 
+	            "runType": "AMPS_HD_DNA_RNA", 
 	            "templatingKitBarcode": null, 
 	            "planPGM": "", 
 	            "isSystemDefault": false, 
 	            "autoName": null, 
 	            "isReusable": true, 
 	            "controlSequencekitname": null, 
-	            "date": "2017-12-05T00:10:38.000438+00:00", 
+	            "date": "2018-04-12T05:54:10.000222+00:00", 
 	            "isSystem": true, 
 	            "libkit": null, 
-	            "categories": "Oncomine;onco_solidTumor", 
-	            "planName": "Oncomine_Comprehensive_v3_Fusions_for_550", 
-	            "templatingSize": "200", 
+	            "categories": "onco_solidTumor;onco_heme;", 
+	            "planName": "Ion_AmpliSeq_HD_for_Tumor_-_DNA_and_Fusions_-_Separate_Libraries", 
 	            "pairedEndLibraryAdapterName": null, 
 	            "adapter": null, 
 	            "irworkflow": "", 
@@ -169,9 +166,9 @@ Example Response
 	            "libraryReadLength": 200, 
 	            "runname": null, 
 	            "usePreBeadfind": true, 
-	            "planGUID": "5de7dbc0-17db-441c-abfb-ec6c060d988c", 
+	            "planGUID": "e52fac66-4086-433e-b8e7-ad1d1403946f", 
 	            "cycles": null, 
-	            "resource_uri": "/rundb/api/v1/ionchefplantemplatesummary/123/"
+	            "resource_uri": "/rundb/api/v1/ionchefplantemplatesummary/141/"
 	        }
 	    ]
 	}

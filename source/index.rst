@@ -3,7 +3,7 @@ Ion Torrent SDK
 
 Release v\ |version|.
 
-This document reviews all the points of interest for programmatically interfacing with the |TS| system.
+This document reviews all the points of interest for programmatically interfacing with |TS|.
 
 -------------------
 
@@ -24,8 +24,7 @@ This section describes the plugin framework and explains how to create plugins u
 |TS| REST API
 ----------------------
 
-This section describes all of the REST API end points
- that |TS| makes available and the ways in which you access them.
+This section describes all of the REST API end points that |TS| makes available and the ways in which you access them.
 
 .. toctree::
     :maxdepth: 2

@@ -79,8 +79,6 @@ field                           help text                                       
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **planName**                    Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**templatingSize**              Unicode string data. Ex: "Hello World"                       true     false    false false  string   
-------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **pairedEndLibraryAdapterName** Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
 ------------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **adapter**                     Unicode string data. Ex: "Hello World"               n/a     true     false    false false  string   
@@ -118,60 +116,59 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 34, 
+	        "total_count": 37, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/onetouchplantemplatesummary/?offset=1&limit=1&format=json"
 	    }, 
 	    "objects": [
 	        {
-	            "origin": "|5.6.0.RC1", 
+	            "origin": "ampliseq.com|5.8.0", 
 	            "isReverseRun": false, 
-	            "planDisplayedName": "Ion AmpliSeq Transcriptome Mouse Gene Expression Panel OT2-Proton", 
+	            "planDisplayedName": "PGx Research Panel", 
 	            "storage_options": "A", 
 	            "preAnalysis": true, 
-	            "planShortID": "FDXPW", 
+	            "planShortID": "OO9C5", 
 	            "planStatus": "planned", 
-	            "runMode": "single", 
+	            "runMode": "", 
 	            "isCustom_kitSettings": false, 
 	            "sampleTubeLabel": null, 
 	            "planExecutedDate": null, 
 	            "samplePrepKitName": null, 
 	            "reverse_primer": null, 
 	            "seqKitBarcode": null, 
-	            "id": 89, 
+	            "id": 130, 
 	            "metaData": {}, 
 	            "isFavorite": false, 
 	            "samplePrepProtocol": "", 
 	            "isPlanGroup": false, 
-	            "templatingKitName": "Ion PI Template OT2 200 Kit v3", 
-	            "runType": "AMPS_RNA", 
+	            "templatingKitName": "Ion PGM Hi-Q OT2 Kit - 200", 
+	            "runType": "AMPS", 
 	            "templatingKitBarcode": null, 
-	            "planPGM": "", 
+	            "planPGM": null, 
 	            "isSystemDefault": false, 
 	            "autoName": null, 
 	            "isReusable": true, 
-	            "controlSequencekitname": null, 
-	            "date": "2017-12-05T00:07:09.000850+00:00", 
-	            "isSystem": true, 
+	            "controlSequencekitname": "", 
+	            "date": "2018-02-08T19:41:44.000698+00:00", 
+	            "isSystem": false, 
 	            "libkit": null, 
 	            "categories": "", 
-	            "planName": "Ion_AmpliSeq_Transcriptome_Mouse_Gene_Expression_Panel_OT2-Proton", 
-	            "templatingSize": "", 
-	            "pairedEndLibraryAdapterName": null, 
+	            "planName": "PGx_Research_Panel", 
+	            "pairedEndLibraryAdapterName": "", 
 	            "adapter": null, 
 	            "irworkflow": "", 
 	            "planExecuted": false, 
-	            "username": null, 
-	            "usePostBeadfind": false, 
+	            "username": "ionuser", 
+	            "usePostBeadfind": true, 
 	            "storageHost": null, 
 	            "expName": "", 
 	            "libraryReadLength": 0, 
 	            "runname": null, 
 	            "usePreBeadfind": true, 
-	            "planGUID": "c5299ab6-9142-4034-95f9-c1d178c67dda", 
+	            "planGUID": "7489c32d-d3ed-4cc1-a7a2-e59b819ea395", 
 	            "cycles": null, 
-	            "resource_uri": "/rundb/api/v1/onetouchplantemplatesummary/89/"
+	            "resource_uri": "/rundb/api/v1/onetouchplantemplatesummary/130/"
 	        }
 	    ]
 	}

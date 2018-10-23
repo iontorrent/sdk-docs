@@ -3,9 +3,9 @@
 Getting Started with Plugins
 ============================
 The plugin framework is primarily an extension of the analysis pipeline and executes custom python modules (plugins) 
-at different points in the pipeline process.  There are 3 reasons for writing a plugin:
+at different points in the pipeline process.  There are three reasons for writing a plugin:
 
-#. Data Management: the transfer or backup of data to a secondary file server or remote site.
+#. Data Management: The transfer or backup of data to a secondary file server or remote site.
 #. Quality Assurance/Quality Control: These plugins check the quality of the data and give you access 
    to some of the larger and transient data used in signal processing, which are eventually deleted.
 #. Application Analysis: This is broadest and most useful category which bridges the gap between general pipeline 
@@ -177,5 +177,5 @@ plugin. All other contents are a child of this root folder:
 
 Linux Bash Shell: 'zip -r --exclude=*.git* PluginName.zip PluginDirectory'
 
-After you create the archive, go to http://TS_hostname/configure/plugins/ on the |TS| Server, then
+After you create the archive, go to http://TS_hostname/configure/plugins/ on the |TS|, then
 click "Install or Upgrade Plugin" to submit your new archive.

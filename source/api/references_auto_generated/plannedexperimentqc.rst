@@ -34,7 +34,7 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 282, 
+	        "total_count": 318, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": "/rundb/api/v1/plannedexperimentqc/?offset=1&limit=1&format=json"

@@ -42,12 +42,24 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 0, 
+	        "total_count": 1, 
 	        "offset": 0, 
 	        "limit": 1, 
 	        "next": null
 	    }, 
-	    "objects": []
+	    "objects": [
+	        {
+	            "body": "There is an update available for your Torrent Server. <a class=\"btn btn-success\" href=\"/admin/update\">Update Now</a>", 
+	            "status": "unread", 
+	            "level": 20, 
+	            "route": "_StaffOnly", 
+	            "expires": "read", 
+	            "time": "2018-06-15T18:51:37.000649+00:00", 
+	            "id": 40, 
+	            "tags": "new-upgrade", 
+	            "resource_uri": "/rundb/api/v1/message/40/"
+	        }
+	    ]
 	}
 
 Allowed list HTTP methods

@@ -43,7 +43,7 @@ Example Response
 	    }, 
 	    "objects": [
 	        {
-	            "percentfull": 37.5185171378513, 
+	            "percentfull": 39.0445528646121, 
 	            "name": "Home", 
 	            "filesPrefix": "/results/", 
 	            "comments": "", 

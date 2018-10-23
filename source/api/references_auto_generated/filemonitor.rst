@@ -50,12 +50,28 @@ Example Response
 	{
 	    "meta": {
 	        "previous": null, 
-	        "total_count": 0, 
+	        "total_count": 9, 
 	        "offset": 0, 
 	        "limit": 1, 
-	        "next": null
+	        "next": "/rundb/api/v1/filemonitor/?offset=1&limit=1&format=json"
 	    }, 
-	    "objects": []
+	    "objects": [
+	        {
+	            "status": "Complete", 
+	            "updated": "2018-04-13T18:54:39.000796+00:00", 
+	            "name": "gene.gtf", 
+	            "created": "2018-04-13T18:54:08.000422+00:00", 
+	            "url": "http://updates.itw/internal_reference_downloads/hg19/gene.gtf", 
+	            "md5sum": "72fbd490a4d3be60e53e642d4401c944", 
+	            "celery_task_id": "7db1de03-b295-4b62-9cdc-9cbb4c6065b0", 
+	            "local_dir": "/tmp/tmppTeNvf", 
+	            "progress": "1111970946", 
+	            "size": "1111970946", 
+	            "id": 7, 
+	            "tags": "annotation", 
+	            "resource_uri": "/rundb/api/v1/filemonitor/7/"
+	        }
+	    ]
 	}
 
 Allowed list HTTP methods
