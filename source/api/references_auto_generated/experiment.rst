@@ -15,163 +15,163 @@ Resource Fields
 ============================= ================================================================================================== ======= ======== ======== ===== ====== ======== 
 field                         help text                                                                                          default nullable readonly blank unique type     
 ============================= ================================================================================================== ======= ======== ======== ===== ====== ======== 
-**isReverseRun**              Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
+**autoAnalyze**               Boolean data. Ex: True                                                                             true    false    false    true  false  boolean  
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefLotNumber**             Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chipType**                  Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefProtocolDeviationName** Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefReagentID**             Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**results**                   Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefSolutionsPart**         Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**runtype**                   Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefLastUpdate**            A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     true     false    false false  datetime 
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**storage_options**           Unicode string data. Ex: "Hello World"                                                             A       false    false    false false  string   
+**baselineRun**               Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **chefChipExpiration1**       Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **chefChipExpiration2**       Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**diskusage**                 Integer data. Ex: 2673                                                                             n/a     true     false    false false  integer  
+**chefChipType1**             Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefStatus**                Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+**chefChipType2**             Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**reverse_primer**            Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**seqKitBarcode**             Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**id**                        Integer data. Ex: 2673                                                                                     false    false    true  true   integer  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefReagentsPart**          Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**metaData**                  Unicode string data. Ex: "Hello World"                                                             {}      false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefInstrumentName**        Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefSolutionsSerialNum**    Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**sample**                    Unicode string data. Ex: "Hello World"                                                             n/a     false    true     true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**log**                       Unicode string data. Ex: "Hello World"                                                             {}      false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**sequencekitbarcode**        Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**resource_uri**              Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**eas_set**                   Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefLogPath**               Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefFlexibleWorkflow**      Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**platform**                  Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefScriptVersion**         Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**samples**                   Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefOperationMode**         Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefManufactureDate**       Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefSamplePos**             Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**pinnedRepResult**           Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefReagentsExpiration**    Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefSolutionsLot**          Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**reagentBarcode**            Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefProgress**              Floating point numeric data. Ex: 26.73                                                             0       false    false    true  false  float    
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefKitType**               Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**star**                      Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefPackageVer**            Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**usePreBeadfind**            Boolean data. Ex: True                                                                             true    false    false    true  false  boolean  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**isProton**                  Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**expCompInfo**               Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**flowsInOrder**              Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**flows**                     Integer data. Ex: 2673                                                                             n/a     false    false    false false  integer  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**resultDate**                A date & time as a string. Ex: "2010-11-10T03:07:43"                                               true    true     false    false false  datetime 
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefTipRackBarcode**        Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefRemainingSeconds**      Integer data. Ex: 2673                                                                             n/a     true     false    false false  integer  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**plan**                      A single related resource. Can be either a URI or set of nested resource data.                     n/a     true     false    true  false  related  
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**date**                      A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     false    false    false false  datetime 
+**chefEndTime**               A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     true     false    false false  datetime 
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **chefExtraInfo_1**           Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **chefExtraInfo_2**           Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**unique**                    Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false true   string   
+**chefFlexibleWorkflow**      Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**expDir**                    Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string   
+**chefInstrumentName**        Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**autoAnalyze**               Boolean data. Ex: True                                                                             true    false    false    true  false  boolean  
+**chefKitType**               Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**ftpStatus**                 Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+**chefLastUpdate**            A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     true     false    false false  datetime 
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefLogPath**               Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefLotNumber**             Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefManufactureDate**       Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **chefMessage**               Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefEndTime**               A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     true     false    false false  datetime 
+**chefOperationMode**         Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**displayName**               Unicode string data. Ex: "Hello World"                                                                     false    false    false false  string   
+**chefPackageVer**            Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**pgmName**                   Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string   
+**chefProgress**              Floating point numeric data. Ex: 26.73                                                             0       false    false    true  false  float    
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**runMode**                   Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+**chefProtocolDeviationName** Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**notes**                     Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+**chefReagentID**             Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**sequencekitname**           Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chipBarcode**               Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefStartTime**             A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     true     false    false false  datetime 
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefSolutionsExpiration**   Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+**chefReagentsExpiration**    Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **chefReagentsLot**           Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**storageHost**               Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**expName**                   Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string   
------------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**status**                    Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+**chefReagentsPart**          Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **chefReagentsSerialNum**     Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefRemainingSeconds**      Integer data. Ex: 2673                                                                             n/a     true     false    false false  integer  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefSamplePos**             Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefScriptVersion**         Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefSolutionsExpiration**   Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefSolutionsLot**          Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefSolutionsPart**         Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefSolutionsSerialNum**    Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefStartTime**             A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     true     false    false false  datetime 
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefStatus**                Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chefTipRackBarcode**        Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chipBarcode**               Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**chipType**                  Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **cycles**                    Integer data. Ex: 2673                                                                             n/a     false    false    false false  integer  
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefChipType2**             Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+**date**                      A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     false    false    false false  datetime 
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**chefChipType1**             Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+**diskusage**                 Integer data. Ex: 2673                                                                             n/a     true     false    false false  integer  
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**baselineRun**               Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
+**displayName**               Unicode string data. Ex: "Hello World"                                                                     false    false    false false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**user_ack**                  Unicode string data. Ex: "Hello World"                                                             U       false    false    false false  string   
+**eas_set**                   Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**expCompInfo**               Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**expDir**                    Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**expName**                   Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**flows**                     Integer data. Ex: 2673                                                                             n/a     false    false    false false  integer  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**flowsInOrder**              Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**ftpStatus**                 Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**id**                        Integer data. Ex: 2673                                                                                     false    false    true  true   integer  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**isProton**                  Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**isReverseRun**              Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**log**                       Unicode string data. Ex: "Hello World"                                                             {}      false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**metaData**                  Unicode string data. Ex: "Hello World"                                                             {}      false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**notes**                     Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**pgmName**                   Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**pinnedRepResult**           Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**plan**                      A single related resource. Can be either a URI or set of nested resource data.                     n/a     true     false    true  false  related  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**platform**                  Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **rawdatastyle**              Unicode string data. Ex: "Hello World"                                                             single  true     false    false false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**reagentBarcode**            Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**resource_uri**              Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**resultDate**                A date & time as a string. Ex: "2010-11-10T03:07:43"                                               true    true     false    false false  datetime 
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**results**                   Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**reverse_primer**            Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**runMode**                   Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**runtype**                   Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**sample**                    Unicode string data. Ex: "Hello World"                                                             n/a     false    true     true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**samples**                   Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**seqKitBarcode**             Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**sequencekitbarcode**        Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**sequencekitname**           Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**star**                      Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**status**                    Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**storageHost**               Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**storage_options**           Unicode string data. Ex: "Hello World"                                                             A       false    false    false false  string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**unique**                    Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false true   string   
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**usePreBeadfind**            Boolean data. Ex: True                                                                             true    false    false    true  false  boolean  
+----------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**user_ack**                  Unicode string data. Ex: "Hello World"                                                             U       false    false    false false  string   
 ============================= ================================================================================================== ======= ======== ======== ===== ====== ======== 
 
 Example Response
@@ -181,153 +181,138 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 112, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/experiment/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/experiment/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 136
+	    },
 	    "objects": [
 	        {
-	            "isReverseRun": false, 
-	            "chefLotNumber": "", 
-	            "chipType": "P1.1.17", 
-	            "chefProtocolDeviationName": null, 
-	            "chefReagentID": "", 
-	            "results": [], 
-	            "chefSolutionsPart": "", 
-	            "runtype": "GENS", 
-	            "chefLastUpdate": null, 
-	            "storage_options": "A", 
-	            "chefChipExpiration1": "", 
-	            "chefChipExpiration2": "", 
-	            "diskusage": null, 
-	            "chefStatus": "", 
-	            "reverse_primer": null, 
-	            "seqKitBarcode": "", 
-	            "id": 5, 
-	            "chefReagentsPart": "", 
-	            "metaData": {}, 
-	            "chefInstrumentName": "", 
-	            "chefSolutionsSerialNum": "", 
-	            "sample": "", 
-	            "log": {}, 
-	            "sequencekitbarcode": "", 
-	            "resource_uri": "/rundb/api/v1/experiment/5/", 
+	            "autoAnalyze": true,
+	            "baselineRun": false,
+	            "chefChipExpiration1": "",
+	            "chefChipExpiration2": "",
+	            "chefChipType1": "",
+	            "chefChipType2": "",
+	            "chefEndTime": null,
+	            "chefExtraInfo_1": "",
+	            "chefExtraInfo_2": "",
+	            "chefFlexibleWorkflow": "",
+	            "chefInstrumentName": "",
+	            "chefKitType": "",
+	            "chefLastUpdate": null,
+	            "chefLogPath": null,
+	            "chefLotNumber": "",
+	            "chefManufactureDate": "",
+	            "chefMessage": "",
+	            "chefOperationMode": "",
+	            "chefPackageVer": "",
+	            "chefProgress": 0,
+	            "chefProtocolDeviationName": null,
+	            "chefReagentID": "",
+	            "chefReagentsExpiration": "",
+	            "chefReagentsLot": "",
+	            "chefReagentsPart": "",
+	            "chefReagentsSerialNum": "",
+	            "chefRemainingSeconds": null,
+	            "chefSamplePos": "",
+	            "chefScriptVersion": "",
+	            "chefSolutionsExpiration": "",
+	            "chefSolutionsLot": "",
+	            "chefSolutionsPart": "",
+	            "chefSolutionsSerialNum": "",
+	            "chefStartTime": null,
+	            "chefStatus": "",
+	            "chefTipRackBarcode": "",
+	            "chipBarcode": "",
+	            "chipType": "530",
+	            "cycles": 0,
+	            "date": "2019-10-03T20:53:08.000599+00:00",
+	            "diskusage": 0,
+	            "displayName": "aa9309c5-5922-49f3-b901-987383b03e57",
 	            "eas_set": [
 	                {
-	                    "ionstatsargs": "", 
-	                    "isEditable": true, 
-	                    "endBarcodeKitName": "", 
-	                    "hotSpotRegionBedFile": "", 
-	                    "results": [], 
-	                    "mixedTypeRNA_reference": null, 
-	                    "mixedTypeRNA_targetRegionBedFile": null, 
-	                    "targetRegionBedFile": "", 
-	                    "thumbnailalignmentargs": "", 
-	                    "thumbnailanalysisargs": "", 
-	                    "id": 5, 
-	                    "barcodedSamples": {}, 
-	                    "base_recalibration_mode": "standard_recal", 
-	                    "reference": "", 
-	                    "isOneTimeOverride": false, 
-	                    "mixedTypeRNA_hotSpotRegionBedFile": null, 
-	                    "analysisargs": "", 
-	                    "thumbnailcalibrateargs": "", 
-	                    "realign": false, 
-	                    "selectedPlugins": {
-	                        "RNASeqAnalysis": {
-	                            "userInput": {}, 
-	                            "version": "5.8.0.0", 
-	                            "features": [], 
-	                            "name": "RNASeqAnalysis", 
-	                            "id": 29
-	                        }, 
-	                        "PartekFlowUploader": {
-	                            "userInput": {}, 
-	                            "version": "1.0", 
-	                            "features": [], 
-	                            "name": "PartekFlowUploader", 
-	                            "id": 9999
-	                        }
-	                    }, 
-	                    "experiment": "/rundb/api/v1/experiment/5/", 
-	                    "barcodeKitName": "IonXpressRNA", 
-	                    "beadfindargs": "", 
-	                    "threePrimeAdapter": "ATCACCGACTGCCCATAGAGAGGCTGAGAC", 
-	                    "thumbnailbasecallerargs": "", 
-	                    "status": "planned", 
-	                    "prebasecallerargs": "", 
-	                    "thumbnailionstatsargs": "", 
-	                    "prethumbnailbasecallerargs": "", 
-	                    "alignmentargs": "", 
-	                    "isDuplicateReads": false, 
-	                    "libraryKey": "TCAG", 
-	                    "date": "2018-01-12T19:38:34.000886+00:00", 
-	                    "libraryKitName": "Ion Total RNA Seq Kit v2", 
-	                    "thumbnailbeadfindargs": "", 
-	                    "calibrateargs": "", 
-	                    "tfKey": "ATCG", 
-	                    "libraryKitBarcode": null, 
-	                    "sseBedFile": "", 
-	                    "basecallerargs": "", 
-	                    "custom_args": false, 
-	                    "resource_uri": "/rundb/api/v1/experimentanalysissettings/5/"
+	                    "alignmentargs": "",
+	                    "analysisargs": "",
+	                    "barcodeKitName": "Ion Dual Barcode Kit 1-96",
+	                    "barcodedSamples": {},
+	                    "base_recalibration_mode": "standard_recal",
+	                    "basecallerargs": "",
+	                    "beadfindargs": "",
+	                    "calibrateargs": "",
+	                    "custom_args": false,
+	                    "date": "2019-10-03T20:53:08.000599+00:00",
+	                    "endBarcodeKitName": "",
+	                    "experiment": "/rundb/api/v1/experiment/163/",
+	                    "hotSpotRegionBedFile": "",
+	                    "id": 162,
+	                    "ionstatsargs": "",
+	                    "isDuplicateReads": false,
+	                    "isEditable": true,
+	                    "isOneTimeOverride": false,
+	                    "libraryKey": "TCAG",
+	                    "libraryKitBarcode": null,
+	                    "libraryKitName": "Ion AmpliSeq Library Kit Plus",
+	                    "mixedTypeRNA_hotSpotRegionBedFile": null,
+	                    "mixedTypeRNA_reference": null,
+	                    "mixedTypeRNA_targetRegionBedFile": null,
+	                    "prebasecallerargs": "",
+	                    "prethumbnailbasecallerargs": "",
+	                    "realign": false,
+	                    "reference": "",
+	                    "resource_uri": "/rundb/api/v1/experimentanalysissettings/162/",
+	                    "results": [],
+	                    "selectedPlugins": {},
+	                    "sseBedFile": "",
+	                    "status": "inactive",
+	                    "targetRegionBedFile": "",
+	                    "tfKey": "ATCG",
+	                    "threePrimeAdapter": "ATCACCGACTGCCCATAGAGAGGCTGAGAC",
+	                    "thumbnailalignmentargs": "",
+	                    "thumbnailanalysisargs": "",
+	                    "thumbnailbasecallerargs": "",
+	                    "thumbnailbeadfindargs": "",
+	                    "thumbnailcalibrateargs": "",
+	                    "thumbnailionstatsargs": ""
 	                }
-	            ], 
-	            "chefLogPath": null, 
-	            "chefFlexibleWorkflow": "", 
-	            "platform": "PROTON", 
-	            "chefScriptVersion": "", 
-	            "samples": [], 
-	            "chefOperationMode": "", 
-	            "chefManufactureDate": "", 
-	            "chefSamplePos": "", 
-	            "pinnedRepResult": false, 
-	            "chefReagentsExpiration": "", 
-	            "chefSolutionsLot": "", 
-	            "reagentBarcode": "", 
-	            "chefProgress": 0, 
-	            "chefKitType": "", 
-	            "star": false, 
-	            "chefPackageVer": "", 
-	            "usePreBeadfind": false, 
-	            "isProton": "True", 
-	            "expCompInfo": "", 
-	            "flowsInOrder": "", 
-	            "flows": 500, 
-	            "resultDate": "2017-07-22T06:41:42.000088+00:00", 
-	            "chefTipRackBarcode": "", 
-	            "chefRemainingSeconds": null, 
-	            "plan": "/rundb/api/v1/plannedexperiment/20/", 
-	            "date": "2017-07-22T06:41:42.000087+00:00", 
-	            "chefExtraInfo_1": "", 
-	            "chefExtraInfo_2": "", 
-	            "unique": "39ef1391-032b-44d8-a7a1-d11dbb6028e2", 
-	            "expDir": "", 
-	            "autoAnalyze": true, 
-	            "ftpStatus": "Complete", 
-	            "chefMessage": "", 
-	            "chefEndTime": null, 
-	            "displayName": "NN4E0", 
-	            "pgmName": "", 
-	            "runMode": "single", 
-	            "notes": "", 
-	            "sequencekitname": "ProtonI200Kit-v3", 
-	            "chipBarcode": "", 
-	            "chefStartTime": null, 
-	            "chefSolutionsExpiration": "", 
-	            "chefReagentsLot": "", 
-	            "storageHost": "", 
-	            "expName": "39ef1391-032b-44d8-a7a1-d11dbb6028e2", 
-	            "status": "planned", 
-	            "chefReagentsSerialNum": "", 
-	            "cycles": 0, 
-	            "chefChipType2": "", 
-	            "chefChipType1": "", 
-	            "baselineRun": false, 
-	            "user_ack": "U", 
-	            "rawdatastyle": "single"
+	            ],
+	            "expCompInfo": "",
+	            "expDir": "",
+	            "expName": "aa9309c5-5922-49f3-b901-987383b03e57",
+	            "flows": 500,
+	            "flowsInOrder": "",
+	            "ftpStatus": "",
+	            "id": 163,
+	            "isProton": "False",
+	            "isReverseRun": false,
+	            "log": {},
+	            "metaData": {},
+	            "notes": "",
+	            "pgmName": "",
+	            "pinnedRepResult": false,
+	            "plan": "/rundb/api/v1/plannedexperiment/170/",
+	            "platform": "S5",
+	            "rawdatastyle": "single",
+	            "reagentBarcode": "",
+	            "resource_uri": "/rundb/api/v1/experiment/163/",
+	            "resultDate": "2019-10-03T20:53:08.000620+00:00",
+	            "results": [],
+	            "reverse_primer": null,
+	            "runMode": "single",
+	            "runtype": "GENS",
+	            "sample": "",
+	            "samples": [],
+	            "seqKitBarcode": "",
+	            "sequencekitbarcode": "",
+	            "sequencekitname": "Ion S5 Sequencing Kit",
+	            "star": false,
+	            "status": "inactive",
+	            "storageHost": "",
+	            "storage_options": "A",
+	            "unique": "aa9309c5-5922-49f3-b901-987383b03e57",
+	            "usePreBeadfind": true,
+	            "user_ack": "U"
 	        }
 	    ]
 	}

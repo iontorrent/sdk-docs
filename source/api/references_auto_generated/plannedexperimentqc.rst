@@ -15,15 +15,15 @@ Resource Fields
 ===================== ============================================================================== ======= ======== ======== ===== ====== ======= 
 field                 help text                                                                      default nullable readonly blank unique type    
 ===================== ============================================================================== ======= ======== ======== ===== ====== ======= 
-**threshold**         Integer data. Ex: 2673                                                         0       false    false    false false  integer 
+**id**                Integer data. Ex: 2673                                                                 false    false    true  true   integer 
 --------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **plannedExperiment** A single related resource. Can be either a URI or set of nested resource data. n/a     false    false    false false  related 
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**id**                Integer data. Ex: 2673                                                                 false    false    true  true   integer 
 --------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **qcType**            A single related resource. Can be either a URI or set of nested resource data. n/a     false    false    false false  related 
 --------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **resource_uri**      Unicode string data. Ex: "Hello World"                                         n/a     false    true     false false  string  
+--------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**threshold**         Integer data. Ex: 2673                                                         0       false    false    false false  integer 
 ===================== ============================================================================== ======= ======== ======== ===== ====== ======= 
 
 Example Response
@@ -33,27 +33,27 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 318, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/plannedexperimentqc/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/plannedexperimentqc/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 390
+	    },
 	    "objects": [
 	        {
-	            "threshold": 30, 
-	            "plannedExperiment": "/rundb/api/v1/plannedexperiment/43/", 
-	            "id": 127, 
+	            "id": 489,
+	            "plannedExperiment": "/rundb/api/v1/plannedexperiment/170/",
 	            "qcType": {
-	                "description": "", 
-	                "minThreshold": 0, 
-	                "maxThreshold": 100, 
-	                "defaultThreshold": 30, 
-	                "qcName": "Bead Loading (%)", 
-	                "id": 1, 
-	                "resource_uri": "/rundb/api/v1/qctype/1/"
-	            }, 
-	            "resource_uri": "/rundb/api/v1/plannedexperimentqc/127/"
+	                "defaultThreshold": 30,
+	                "description": "",
+	                "id": 3,
+	                "maxThreshold": 100,
+	                "minThreshold": 0,
+	                "qcName": "Usable Sequence (%)",
+	                "resource_uri": "/rundb/api/v1/qctype/3/"
+	            },
+	            "resource_uri": "/rundb/api/v1/plannedexperimentqc/489/",
+	            "threshold": 30
 	        }
 	    ]
 	}

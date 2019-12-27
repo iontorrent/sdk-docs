@@ -15,27 +15,27 @@ Resource Fields
 ================= ====================================== ======= ======== ======== ===== ====== ======= 
 field             help text                              default nullable readonly blank unique type    
 ================= ====================================== ======= ======== ======== ===== ====== ======= 
-**direction**     Unicode string data. Ex: "Hello World" Forward false    false    false false  string  
+**chemistryType** Unicode string data. Ex: "Hello World"         false    false    true  false  string  
 ----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **description**   Unicode string data. Ex: "Hello World"         false    false    true  false  string  
 ----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**sequence**      Unicode string data. Ex: "Hello World" n/a     false    false    false false  string  
------------------ -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**chemistryType** Unicode string data. Ex: "Hello World"         false    false    true  false  string  
------------------ -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**runMode**       Unicode string data. Ex: "Hello World" single  false    false    true  false  string  
------------------ -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**isActive**      Boolean data. Ex: True                 true    false    false    true  false  boolean 
------------------ -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**uid**           Unicode string data. Ex: "Hello World" n/a     false    false    false true   string  
------------------ -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**resource_uri**  Unicode string data. Ex: "Hello World" n/a     false    true     false false  string  
+**direction**     Unicode string data. Ex: "Hello World" Forward false    false    false false  string  
 ----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **id**            Integer data. Ex: 2673                         false    false    true  true   integer 
+----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**isActive**      Boolean data. Ex: True                 true    false    false    true  false  boolean 
 ----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **isDefault**     Boolean data. Ex: True                 false   false    false    true  false  boolean 
 ----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **name**          Unicode string data. Ex: "Hello World" n/a     false    false    false true   string  
+----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**resource_uri**  Unicode string data. Ex: "Hello World" n/a     false    true     false false  string  
+----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**runMode**       Unicode string data. Ex: "Hello World" single  false    false    true  false  string  
+----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**sequence**      Unicode string data. Ex: "Hello World" n/a     false    false    false false  string  
+----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**uid**           Unicode string data. Ex: "Hello World" n/a     false    false    false true   string  
 ================= ====================================== ======= ======== ======== ===== ====== ======= 
 
 Example Response
@@ -45,25 +45,25 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 8, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/threeprimeadapter/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/threeprimeadapter/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 8
+	    },
 	    "objects": [
 	        {
-	            "direction": "Forward", 
-	            "description": "Default forward adapter", 
-	            "sequence": "ATCACCGACTGCCCATAGAGAGGCTGAGAC", 
-	            "chemistryType": "", 
-	            "runMode": "single", 
-	            "isActive": true, 
-	            "uid": "FWD_0001", 
-	            "resource_uri": "/rundb/api/v1/threeprimeadapter/1/", 
-	            "id": 1, 
-	            "isDefault": true, 
-	            "name": "Ion P1B"
+	            "chemistryType": "",
+	            "description": "Ion Xpress MuSeek adapter",
+	            "direction": "Forward",
+	            "id": 8,
+	            "isActive": true,
+	            "isDefault": false,
+	            "name": " Ion Xpress MuSeek adapter",
+	            "resource_uri": "/rundb/api/v1/threeprimeadapter/8/",
+	            "runMode": "single",
+	            "sequence": "TGCACTGAAGCACACAATCACCGACTGCCC",
+	            "uid": "FWD_0007"
 	        }
 	    ]
 	}

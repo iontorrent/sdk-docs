@@ -15,15 +15,15 @@ Resource Fields
 =================== ====================================== ======= ======== ======== ===== ====== ======= 
 field               help text                              default nullable readonly blank unique type    
 =================== ====================================== ======= ======== ======== ===== ====== ======= 
-**name**            Unicode string data. Ex: "Hello World" n/a     false    false    false false  string  
-------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**resource_uri**    Unicode string data. Ex: "Hello World" n/a     false    true     false false  string  
+**comments**        Unicode string data. Ex: "Hello World"         false    false    true  false  string  
 ------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **defaultlocation** Only one location can be the default   false   false    false    true  false  boolean 
 ------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**comments**        Unicode string data. Ex: "Hello World"         false    false    true  false  string  
-------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **id**              Integer data. Ex: 2673                         false    false    true  true   integer 
+------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**name**            Unicode string data. Ex: "Hello World" n/a     false    false    false false  string  
+------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**resource_uri**    Unicode string data. Ex: "Hello World" n/a     false    true     false false  string  
 =================== ====================================== ======= ======== ======== ===== ====== ======= 
 
 Example Response
@@ -33,19 +33,19 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 2, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/location/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/location/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 2
+	    },
 	    "objects": [
 	        {
-	            "name": "Disabled", 
-	            "resource_uri": "/rundb/api/v1/location/2/", 
-	            "defaultlocation": false, 
-	            "comments": "A location which will not be assigned to any File Servers so that Rigs assigned to this location will not be treated as valid Rigs when ionCrawler attempts to find new raw data directories. This is so that we do not have to delete a Rig from the Rigs table but still want to prevent new Experiments from appearing associated with the Rig.", 
-	            "id": 2
+	            "comments": "A location which will not be assigned to any File Servers so that Rigs assigned to this location will not be treated as valid Rigs when ionCrawler attempts to find new raw data directories. This is so that we do not have to delete a Rig from the Rigs table but still want to prevent new Experiments from appearing associated with the Rig.",
+	            "defaultlocation": false,
+	            "id": 2,
+	            "name": "Disabled",
+	            "resource_uri": "/rundb/api/v1/location/2/"
 	        }
 	    ]
 	}

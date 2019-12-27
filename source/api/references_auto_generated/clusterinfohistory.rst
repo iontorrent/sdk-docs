@@ -15,19 +15,19 @@ Resource Fields
 ================ ==================================================== ======= ======== ======== ===== ====== ======== 
 field            help text                                            default nullable readonly blank unique type     
 ================ ==================================================== ======= ======== ======== ===== ====== ======== 
-**username**     Unicode string data. Ex: "Hello World"               ION     false    false    true  false  string   
----------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**name**         Unicode string data. Ex: "Hello World"               n/a     true     true     false false  string   
----------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **created**      A date & time as a string. Ex: "2010-11-10T03:07:43" true    false    false    true  false  datetime 
----------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**text**         Unicode string data. Ex: "Hello World"                       false    false    false false  string   
----------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**object_pk**    Integer data. Ex: 2673                               n/a     false    false    false false  integer  
 ---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **id**           Integer data. Ex: 2673                                       false    false    true  true   integer  
 ---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**name**         Unicode string data. Ex: "Hello World"               n/a     true     true     false false  string   
+---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**object_pk**    Integer data. Ex: 2673                               n/a     false    false    false false  integer  
+---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **resource_uri** Unicode string data. Ex: "Hello World"               n/a     false    true     false false  string   
+---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**text**         Unicode string data. Ex: "Hello World"                       false    false    false false  string   
+---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**username**     Unicode string data. Ex: "Hello World"               ION     false    false    true  false  string   
 ================ ==================================================== ======= ======== ======== ===== ====== ======== 
 
 Example Response
@@ -37,12 +37,12 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 0, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": null
-	    }, 
+	        "limit": 1,
+	        "next": null,
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 0
+	    },
 	    "objects": []
 	}
 

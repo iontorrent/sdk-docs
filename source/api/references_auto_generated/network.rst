@@ -30,9 +30,9 @@ Example Response
 .. code-block:: javascript
 
 	{
-	    "eth_device": true, 
-	    "external_ip": "12.27.71.34", 
-	    "internal_ip": "10.45.2.119", 
+	    "eth_device": true,
+	    "external_ip": "12.27.71.34",
+	    "internal_ip": "10.45.2.119",
 	    "route": true
 	}
 

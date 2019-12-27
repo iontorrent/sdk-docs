@@ -17,21 +17,21 @@ field            help text                                            default nu
 ================ ==================================================== ======= ======== ======== ===== ====== ======== 
 **body**         Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
 ---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**status**       Unicode string data. Ex: "Hello World"               unread  false    false    true  false  string   
----------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**level**        Integer data. Ex: 2673                               20      false    false    false false  integer  
----------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**route**        Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
----------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **expires**      Unicode string data. Ex: "Hello World"               read    false    false    true  false  string   
----------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**time**         A date & time as a string. Ex: "2010-11-10T03:07:43" true    false    false    true  false  datetime 
 ---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **id**           Integer data. Ex: 2673                                       false    false    true  true   integer  
 ---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**tags**         Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
+**level**        Integer data. Ex: 2673                               20      false    false    false false  integer  
 ---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **resource_uri** Unicode string data. Ex: "Hello World"               n/a     false    true     false false  string   
+---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**route**        Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
+---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**status**       Unicode string data. Ex: "Hello World"               unread  false    false    true  false  string   
+---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**tags**         Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
+---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**time**         A date & time as a string. Ex: "2010-11-10T03:07:43" true    false    false    true  false  datetime 
 ================ ==================================================== ======= ======== ======== ===== ====== ======== 
 
 Example Response
@@ -41,25 +41,13 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 1, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": null
-	    }, 
-	    "objects": [
-	        {
-	            "body": "There is an update available for your Torrent Server. <a class=\"btn btn-success\" href=\"/admin/update\">Update Now</a>", 
-	            "status": "unread", 
-	            "level": 20, 
-	            "route": "_StaffOnly", 
-	            "expires": "read", 
-	            "time": "2018-06-15T18:51:37.000649+00:00", 
-	            "id": 40, 
-	            "tags": "new-upgrade", 
-	            "resource_uri": "/rundb/api/v1/message/40/"
-	        }
-	    ]
+	        "limit": 1,
+	        "next": null,
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 0
+	    },
+	    "objects": []
 	}
 
 Allowed list HTTP methods

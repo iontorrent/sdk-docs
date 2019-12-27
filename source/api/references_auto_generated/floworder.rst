@@ -17,19 +17,19 @@ field            help text                              default nullable readonl
 ================ ====================================== ======= ======== ======== ===== ====== ======= 
 **description**  Unicode string data. Ex: "Hello World"         false    false    true  false  string  
 ---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**resource_uri** Unicode string data. Ex: "Hello World" n/a     false    true     false false  string  
----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **flowOrder**    Unicode string data. Ex: "Hello World"         false    false    true  false  string  
----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**isActive**     Boolean data. Ex: True                 true    false    false    true  false  boolean 
----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**isSystem**     Boolean data. Ex: True                 false   false    false    true  false  boolean 
 ---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **id**           Integer data. Ex: 2673                         false    false    true  true   integer 
 ---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**isActive**     Boolean data. Ex: True                 true    false    false    true  false  boolean 
+---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **isDefault**    Boolean data. Ex: True                 false   false    false    true  false  boolean 
 ---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**isSystem**     Boolean data. Ex: True                 false   false    false    true  false  boolean 
+---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **name**         Unicode string data. Ex: "Hello World" n/a     false    false    false true   string  
+---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**resource_uri** Unicode string data. Ex: "Hello World" n/a     false    true     false false  string  
 ================ ====================================== ======= ======== ======== ===== ====== ======= 
 
 Example Response
@@ -39,22 +39,22 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 7, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/floworder/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/floworder/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 7
+	    },
 	    "objects": [
 	        {
-	            "description": "Ion contradanzon flow order", 
-	            "resource_uri": "/rundb/api/v1/floworder/3/", 
-	            "flowOrder": "TACGTACGTAGCTTGACGTACGTCATGCATCGATCAGCTAAGCTGACGTAGCTAGCATCGATCCAGTCATGACTGACGTAGCTGACTGGATCAGTCATGCATCG", 
-	            "isActive": false, 
-	            "isSystem": true, 
-	            "id": 3, 
-	            "isDefault": false, 
-	            "name": "Ion contradanzon"
+	            "description": "Ion samba.c.2step.pgs flow order",
+	            "flowOrder": "TACGTACGTCTGAGCATCGGATCGCGATGTACAGCTACGTACGGAGTCTAGCTGACGTACGTCATGTGCATCGATCAGCTAGCTGACGTAGCTAGCATCGATCAGTCATGACTGACGTAGCTGACTGATCAGTCATGCATCGTACGTACGTAGCTGACGTACGTCATGCATCGATCAGCTAGCTGACGTAGCTAGCATCGATCAGTCATGACTGACGTAGCTGACTGATCAGTCATGCATCGTACGTACGTAGCTGACGTACGTCATGCATCGATCAGCTAGCTGACGTAGCTAGCATCGATCAGTCATGACTGACGTAGCTGACTGATCAGTCATGCATCG",
+	            "id": 7,
+	            "isActive": true,
+	            "isDefault": false,
+	            "isSystem": true,
+	            "name": "Ion samba.c.2step.pgs",
+	            "resource_uri": "/rundb/api/v1/floworder/7/"
 	        }
 	    ]
 	}

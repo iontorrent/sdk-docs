@@ -30,25 +30,25 @@ Example Response
 .. code-block:: javascript
 
 	{
-	    "meta_version": "5.10.0", 
-	    "locked": false, 
-	    "logs": false, 
+	    "locked": false,
+	    "logs": false,
+	    "meta_version": "5.12.1",
 	    "versions": {
-	        "ion-docs": "5.10.2", 
-	        "ion-gpu": "5.10.0-1", 
-	        "ion-pipeline": "5.10.8-1", 
-	        "ion-torrentpy": "5.10.8-1", 
-	        "ion-tsconfig": "5.10.4-1", 
-	        "ion-chefupdates": "5.10.0", 
-	        "ion-rsmts": "5.6.1-1", 
-	        "ion-sampledata": "1.2.0-1", 
-	        "ion-publishers": "5.10.2-1", 
-	        "ion-dbreports": "5.10.26-1", 
-	        "ion-analysis": "5.10.10-1", 
-	        "ion-onetouchupdater": "5.0.2-1", 
-	        "ion-torrentr": "5.10.9-1", 
-	        "ion-plugins": "5.10.12-1", 
-	        "ion-referencelibrary": "2.2.0"
+	        "ion-analysis": "5.12.27-1",
+	        "ion-chefupdates": "5.12.3",
+	        "ion-dbreports": "5.12.60-1",
+	        "ion-docs": "5.12.1",
+	        "ion-gpu": "5.12.1-1",
+	        "ion-onetouchupdater": "5.0.2-1",
+	        "ion-pipeline": "5.12.17-1",
+	        "ion-plugins": "5.12.15-1",
+	        "ion-publishers": "5.12.1-1",
+	        "ion-referencelibrary": "2.2.0",
+	        "ion-rsmts": "5.12.5-1",
+	        "ion-sampledata": "1.2.0-1",
+	        "ion-torrentpy": "5.12.21-1",
+	        "ion-torrentr": "5.12.23-1",
+	        "ion-tsconfig": "5.12.23-1"
 	    }
 	}
 

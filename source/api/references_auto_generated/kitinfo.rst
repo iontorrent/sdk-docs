@@ -15,47 +15,47 @@ Resource Fields
 ============================================ ================================================================================================== ======= ======== ======== ===== ====== ======= 
 field                                        help text                                                                                          default nullable readonly blank unique type    
 ============================================ ================================================================================================== ======= ======== ======== ===== ====== ======= 
-**isActive**                                 Boolean data. Ex: True                                                                             true    false    false    true  false  boolean 
+**applicationType**                          Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string  
 -------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**samplePrep_instrumentType**                Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
+**cartridgeBetweenUsageAbsoluteMaxDayLimit** Integer data. Ex: 2673                                                                             n/a     true     false    false false  integer 
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**cartridgeExpirationDayLimit**              Integer data. Ex: 2673                                                                             n/a     true     false    false false  integer 
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**categories**                               Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string  
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**chipTypes**                                Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**defaultCartridgeUsageCount**               Integer data. Ex: 2673                                                                             n/a     true     false    false false  integer 
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**defaultFlowOrder**                         A single related resource. Can be either a URI or set of nested resource data.                     n/a     true     false    false false  related 
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**description**                              Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**flowCount**                                Integer data. Ex: 2673                                                                             n/a     false    false    false false  integer 
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**id**                                       Integer data. Ex: 2673                                                                                     false    false    true  true   integer 
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**instrumentType**                           Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**isActive**                                 Boolean data. Ex: True                                                                             true    false    false    true  false  boolean 
 -------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **kitType**                                  Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string  
 -------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**defaultFlowOrder**                         A single related resource. Can be either a URI or set of nested resource data.                     n/a     true     false    false false  related 
+**libraryReadLength**                        Integer data. Ex: 2673                                                                             0       false    false    false false  integer 
 -------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **name**                                     Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false true   string  
 -------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **nucleotideType**                           Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
 -------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**defaultCartridgeUsageCount**               Integer data. Ex: 2673                                                                             n/a     true     false    false false  integer 
--------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**instrumentType**                           Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
--------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**chipTypes**                                Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
--------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**runMode**                                  Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
--------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **parts**                                    Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     false    false    false false  related 
--------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**flowCount**                                Integer data. Ex: 2673                                                                             n/a     false    false    false false  integer 
--------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**applicationType**                          Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string  
--------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**cartridgeExpirationDayLimit**              Integer data. Ex: 2673                                                                             n/a     true     false    false false  integer 
--------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**libraryReadLength**                        Integer data. Ex: 2673                                                                             0       false    false    false false  integer 
--------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**cartridgeBetweenUsageAbsoluteMaxDayLimit** Integer data. Ex: 2673                                                                             n/a     true     false    false false  integer 
 -------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **resource_uri**                             Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string  
 -------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**runMode**                                  Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**samplePrep_instrumentType**                Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
+-------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **uid**                                      Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false true   string  
--------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**id**                                       Integer data. Ex: 2673                                                                                     false    false    true  true   integer 
--------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**categories**                               Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string  
--------------------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**description**                              Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string  
 ============================================ ================================================================================================== ======= ======== ======== ===== ====== ======= 
 
 Example Response
@@ -65,48 +65,42 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 114, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/kitinfo/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/kitinfo/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 113
+	    },
 	    "objects": [
 	        {
-	            "isActive": false, 
-	            "samplePrep_instrumentType": "", 
-	            "kitType": "ControlSequenceKit", 
-	            "defaultFlowOrder": null, 
-	            "name": "Ion PGM Controls Kit v2", 
-	            "nucleotideType": "", 
-	            "defaultCartridgeUsageCount": null, 
-	            "instrumentType": "pgm", 
-	            "chipTypes": "", 
-	            "runMode": "", 
+	            "applicationType": "AMPS",
+	            "cartridgeBetweenUsageAbsoluteMaxDayLimit": null,
+	            "cartridgeExpirationDayLimit": null,
+	            "categories": "carrierSeq",
+	            "chipTypes": "550",
+	            "defaultCartridgeUsageCount": null,
+	            "defaultFlowOrder": null,
+	            "description": "Ion Torrent CarrierSeq ECS Kit with Ion 550 Chips",
+	            "flowCount": 0,
+	            "id": 20118,
+	            "instrumentType": "",
+	            "isActive": true,
+	            "kitType": "LibraryKit",
+	            "libraryReadLength": 0,
+	            "name": "Ion Torrent CarrierSeq ECS Kit with Ion 550 Chips",
+	            "nucleotideType": "",
 	            "parts": [
 	                {
-	                    "barcode": "4482010", 
-	                    "id": 20072, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20072/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20037/"
-	                }, 
-	                {
-	                    "barcode": "4482011", 
-	                    "id": 20073, 
-	                    "resource_uri": "/rundb/api/v1/kitpart/20073/", 
-	                    "kit": "/rundb/api/v1/kitinfo/20037/"
+	                    "barcode": "A43587",
+	                    "id": 20269,
+	                    "kit": "/rundb/api/v1/kitinfo/20118/",
+	                    "resource_uri": "/rundb/api/v1/kitpart/20269/"
 	                }
-	            ], 
-	            "flowCount": 0, 
-	            "applicationType": "", 
-	            "cartridgeExpirationDayLimit": null, 
-	            "libraryReadLength": 0, 
-	            "cartridgeBetweenUsageAbsoluteMaxDayLimit": null, 
-	            "resource_uri": "/rundb/api/v1/kitinfo/20037/", 
-	            "uid": "CONSEQ0003", 
-	            "id": 20037, 
-	            "categories": "", 
-	            "description": "Ion PGM Controls Kit v2"
+	            ],
+	            "resource_uri": "/rundb/api/v1/kitinfo/20118/",
+	            "runMode": "",
+	            "samplePrep_instrumentType": "",
+	            "uid": "LIB0030"
 	        }
 	    ]
 	}

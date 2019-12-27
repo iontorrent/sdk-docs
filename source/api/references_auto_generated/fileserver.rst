@@ -15,15 +15,15 @@ Resource Fields
 ================ ====================================== ======= ======== ======== ===== ====== ======= 
 field            help text                              default nullable readonly blank unique type    
 ================ ====================================== ======= ======== ======== ===== ====== ======= 
-**percentfull**  Floating point numeric data. Ex: 26.73 0       true     false    false false  float   
----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**name**         Unicode string data. Ex: "Hello World" n/a     false    false    false false  string  
+**comments**     Unicode string data. Ex: "Hello World"         false    false    true  false  string  
 ---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **filesPrefix**  Unicode string data. Ex: "Hello World" n/a     false    false    false false  string  
 ---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**comments**     Unicode string data. Ex: "Hello World"         false    false    true  false  string  
----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **id**           Integer data. Ex: 2673                         false    false    true  true   integer 
+---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**name**         Unicode string data. Ex: "Hello World" n/a     false    false    false false  string  
+---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**percentfull**  Floating point numeric data. Ex: 26.73 0       true     false    false false  float   
 ---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **resource_uri** Unicode string data. Ex: "Hello World" n/a     false    true     false false  string  
 ================ ====================================== ======= ======== ======== ===== ====== ======= 
@@ -35,19 +35,19 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 1, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": null
-	    }, 
+	        "limit": 1,
+	        "next": null,
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 1
+	    },
 	    "objects": [
 	        {
-	            "percentfull": 39.0445528646121, 
-	            "name": "Home", 
-	            "filesPrefix": "/results/", 
-	            "comments": "", 
-	            "id": 1, 
+	            "comments": "",
+	            "filesPrefix": "/results/",
+	            "id": 1,
+	            "name": "Home",
+	            "percentfull": 40.1362957221239,
 	            "resource_uri": "/rundb/api/v1/fileserver/1/"
 	        }
 	    ]

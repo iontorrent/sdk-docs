@@ -36,17 +36,17 @@ Example Response
 .. code-block:: javascript
 
 	{
-	    "hoursSinceSolutionFirstUse": "", 
-	    "numberSolutionSerialUsage": 0, 
-	    "errorCodes": [
-	        "E305"
-	    ], 
-	    "allowRunToContinue": false, 
+	    "allowRunToContinue": false,
 	    "detailMessages": {
 	        "E305": "Missing chef inputs filter option ['chefReagentsSerialNum', 'chefSolutionsSerialNum', 'kitName']"
-	    }, 
-	    "numberReagentSerialUsage": 0, 
-	    "hoursSinceReagentFirstUse": ""
+	    },
+	    "errorCodes": [
+	        "E305"
+	    ],
+	    "hoursSinceReagentFirstUse": "",
+	    "hoursSinceSolutionFirstUse": "",
+	    "numberReagentSerialUsage": 0,
+	    "numberSolutionSerialUsage": 0
 	}
 
 Allowed list HTTP methods

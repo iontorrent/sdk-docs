@@ -15,17 +15,17 @@ Resource Fields
 ==================== ====================================== ======= ======== ======== ===== ====== ======= 
 field                help text                              default nullable readonly blank unique type    
 ==================== ====================================== ======= ======== ======== ===== ====== ======= 
+**defaultThreshold** Integer data. Ex: 2673                 0       false    false    false false  integer 
+-------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **description**      Unicode string data. Ex: "Hello World"         false    false    true  false  string  
 -------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**minThreshold**     Integer data. Ex: 2673                 0       false    false    false false  integer 
+**id**               Integer data. Ex: 2673                         false    false    true  true   integer 
 -------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **maxThreshold**     Integer data. Ex: 2673                 100     false    false    false false  integer 
 -------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**defaultThreshold** Integer data. Ex: 2673                 0       false    false    false false  integer 
+**minThreshold**     Integer data. Ex: 2673                 0       false    false    false false  integer 
 -------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **qcName**           Unicode string data. Ex: "Hello World" n/a     false    false    false true   string  
--------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**id**               Integer data. Ex: 2673                         false    false    true  true   integer 
 -------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **resource_uri**     Unicode string data. Ex: "Hello World" n/a     false    true     false false  string  
 ==================== ====================================== ======= ======== ======== ===== ====== ======= 
@@ -37,21 +37,21 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 3, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/qctype/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/qctype/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 3
+	    },
 	    "objects": [
 	        {
-	            "description": "", 
-	            "minThreshold": 0, 
-	            "maxThreshold": 100, 
-	            "defaultThreshold": 30, 
-	            "qcName": "Bead Loading (%)", 
-	            "id": 1, 
-	            "resource_uri": "/rundb/api/v1/qctype/1/"
+	            "defaultThreshold": 30,
+	            "description": "",
+	            "id": 3,
+	            "maxThreshold": 100,
+	            "minThreshold": 0,
+	            "qcName": "Usable Sequence (%)",
+	            "resource_uri": "/rundb/api/v1/qctype/3/"
 	        }
 	    ]
 	}

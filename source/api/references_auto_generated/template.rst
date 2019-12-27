@@ -15,19 +15,19 @@ Resource Fields
 ================ ====================================== ======= ======== ======== ===== ====== ======= 
 field            help text                              default nullable readonly blank unique type    
 ================ ====================================== ======= ======== ======== ===== ====== ======= 
-**isofficial**   Boolean data. Ex: True                 true    false    false    true  false  boolean 
----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**name**         Unicode string data. Ex: "Hello World" n/a     false    false    false false  string  
----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**sequence**     Unicode string data. Ex: "Hello World"         false    false    true  false  string  
----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **comments**     Unicode string data. Ex: "Hello World"         false    false    true  false  string  
----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**key**          Unicode string data. Ex: "Hello World" n/a     false    false    false false  string  
 ---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **id**           Integer data. Ex: 2673                         false    false    true  true   integer 
 ---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**isofficial**   Boolean data. Ex: True                 true    false    false    true  false  boolean 
+---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**key**          Unicode string data. Ex: "Hello World" n/a     false    false    false false  string  
+---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**name**         Unicode string data. Ex: "Hello World" n/a     false    false    false false  string  
+---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **resource_uri** Unicode string data. Ex: "Hello World" n/a     false    true     false false  string  
+---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**sequence**     Unicode string data. Ex: "Hello World"         false    false    true  false  string  
 ================ ====================================== ======= ======== ======== ===== ====== ======= 
 
 Example Response
@@ -37,21 +37,21 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 6, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/template/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/template/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 6
+	    },
 	    "objects": [
 	        {
-	            "isofficial": true, 
-	            "name": "TF_A", 
-	            "sequence": "TGTTTTAGGGTCCCCGGGGTTAAAAGGTTTCGAACTCAACAGCTGTCTGGCAGCTCGCTCTACGATCTGAGACTGCCAAGGCACACAGGGGATAGG", 
-	            "comments": " ", 
-	            "key": "ATCG", 
-	            "id": 1, 
-	            "resource_uri": "/rundb/api/v1/template/1/"
+	            "comments": " ",
+	            "id": 6,
+	            "isofficial": true,
+	            "key": "ATCG",
+	            "name": "TF_1",
+	            "resource_uri": "/rundb/api/v1/template/6/",
+	            "sequence": "GAATAATCCAGCCCGCCAGGCATGGAAGAGCGTCGTAAAGTATTGCAGGTTCAGGCGGCGGAAAGCGTGATTGACTACTGGCAAATAAAGTACGTTCCACCTTTGACACCATTTTCCGTAGTGAACTGACGCTGCCAAACGCCGACCGCG"
 	        }
 	    ]
 	}

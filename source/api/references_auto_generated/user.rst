@@ -15,27 +15,27 @@ Resource Fields
 ================ ===================================================================================================== ================================ ======== ======== ===== ====== ======== 
 field            help text                                                                                             default                          nullable readonly blank unique type     
 ================ ===================================================================================================== ================================ ======== ======== ===== ====== ======== 
-**profile**      A single related resource. Can be either a URI or set of nested resource data.                        n/a                              false    false    false false  related  
----------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
-**username**     Required. 30 characters or fewer. Letters, numbers and @/./+/-/_ characters                           n/a                              false    false    false true   string   
----------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
-**first_name**   Unicode string data. Ex: "Hello World"                                                                                                 false    false    true  false  string   
----------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
-**last_name**    Unicode string data. Ex: "Hello World"                                                                                                 false    false    true  false  string   
----------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
-**is_active**    Designates whether this user should be treated as active. Unselect this instead of deleting accounts. true                             false    false    true  false  boolean  
+**date_joined**  A date & time as a string. Ex: "2010-11-10T03:07:43"                                                  2019-11-19T06:33:10.000022+00:00 false    false    false false  datetime 
 ---------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **email**        Unicode string data. Ex: "Hello World"                                                                                                 false    false    true  false  string   
 ---------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
-**last_login**   A date & time as a string. Ex: "2010-11-10T03:07:43"                                                  2018-06-19T20:40:18.000722+00:00 false    false    false false  datetime 
+**first_name**   Unicode string data. Ex: "Hello World"                                                                                                 false    false    true  false  string   
 ---------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **full_name**    Unicode string data. Ex: "Hello World"                                                                n/a                              false    false    false false  string   
 ---------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
-**resource_uri** Unicode string data. Ex: "Hello World"                                                                n/a                              false    true     false false  string   
----------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
 **id**           Integer data. Ex: 2673                                                                                                                 false    false    true  true   integer  
 ---------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
-**date_joined**  A date & time as a string. Ex: "2010-11-10T03:07:43"                                                  2018-06-19T20:40:18.000722+00:00 false    false    false false  datetime 
+**is_active**    Designates whether this user should be treated as active. Unselect this instead of deleting accounts. true                             false    false    true  false  boolean  
+---------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
+**last_login**   A date & time as a string. Ex: "2010-11-10T03:07:43"                                                  2019-11-19T06:33:10.000022+00:00 false    false    false false  datetime 
+---------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
+**last_name**    Unicode string data. Ex: "Hello World"                                                                                                 false    false    true  false  string   
+---------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
+**profile**      A single related resource. Can be either a URI or set of nested resource data.                        n/a                              false    false    false false  related  
+---------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
+**resource_uri** Unicode string data. Ex: "Hello World"                                                                n/a                              false    true     false false  string   
+---------------- ----------------------------------------------------------------------------------------------------- -------------------------------- -------- -------- ----- ------ -------- 
+**username**     Required. 30 characters or fewer. Letters, numbers and @/./+/-/_ characters                           n/a                              false    false    false true   string   
 ================ ===================================================================================================== ================================ ======== ======== ===== ====== ======== 
 
 Example Response
@@ -45,33 +45,34 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 6, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/user/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/user/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 6
+	    },
 	    "objects": [
 	        {
+	            "date_joined": "2017-07-24T18:11:45.000735+00:00",
+	            "email": "yourname@mail.com",
+	            "first_name": "",
+	            "full_name": "",
+	            "id": 6,
+	            "is_active": true,
+	            "last_login": "2017-07-24T18:11:45.000735+00:00",
+	            "last_name": "",
 	            "profile": {
-	                "phone_number": "", 
-	                "name": "", 
-	                "title": "Lab Contact", 
-	                "last_read_news_post": "1984-11-06T00:00:00+00:00", 
-	                "note": "", 
-	                "id": 3, 
-	                "resource_uri": ""
-	            }, 
-	            "username": "lab_contact", 
-	            "first_name": "", 
-	            "last_name": "", 
-	            "is_active": true, 
-	            "email": "ionuser@iontorrent.com", 
-	            "last_login": "2017-07-22T06:43:37.000251+00:00", 
-	            "full_name": "", 
-	            "resource_uri": "/rundb/api/v1/user/3/", 
-	            "id": 3, 
-	            "date_joined": "2017-07-22T06:43:37.000251+00:00"
+	                "id": 6,
+	                "last_read_news_post": "1984-11-06T00:00:00+00:00",
+	                "name": "",
+	                "needs_activation": false,
+	                "note": "",
+	                "phone_number": "",
+	                "resource_uri": "",
+	                "title": "user"
+	            },
+	            "resource_uri": "/rundb/api/v1/user/6/",
+	            "username": "dm_contact"
 	        }
 	    ]
 	}

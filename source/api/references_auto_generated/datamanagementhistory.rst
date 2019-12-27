@@ -15,19 +15,19 @@ Resource Fields
 ================ ==================================================== ======= ======== ======== ===== ====== ======== 
 field            help text                                            default nullable readonly blank unique type     
 ================ ==================================================== ======= ======== ======== ===== ====== ======== 
-**username**     Unicode string data. Ex: "Hello World"               ION     false    false    true  false  string   
----------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **created**      A date & time as a string. Ex: "2010-11-10T03:07:43" true    false    false    true  false  datetime 
----------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**text**         Unicode string data. Ex: "Hello World"                       false    false    false false  string   
----------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**object_pk**    Integer data. Ex: 2673                               n/a     false    false    false false  integer  
----------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**resultsName**  Unicode string data. Ex: "Hello World"               n/a     true     true     false false  string   
 ---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **id**           Integer data. Ex: 2673                                       false    false    true  true   integer  
 ---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**object_pk**    Integer data. Ex: 2673                               n/a     false    false    false false  integer  
+---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **resource_uri** Unicode string data. Ex: "Hello World"               n/a     false    true     false false  string   
+---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**resultsName**  Unicode string data. Ex: "Hello World"               n/a     true     true     false false  string   
+---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**text**         Unicode string data. Ex: "Hello World"                       false    false    false false  string   
+---------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**username**     Unicode string data. Ex: "Hello World"               ION     false    false    true  false  string   
 ================ ==================================================== ======= ======== ======== ===== ====== ======== 
 
 Example Response
@@ -37,21 +37,21 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 36, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/datamanagementhistory/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/datamanagementhistory/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 36
+	    },
 	    "objects": [
 	        {
-	            "username": "ionadmin", 
-	            "created": "2017-07-22T06:59:07.000501+00:00", 
-	            "text": "Started from Local Basecalling Input /results/S5_DemoData/S5-530_cfDNA.", 
-	            "object_pk": 1, 
-	            "resultsName": "Auto_S5-530_cfDNA_89", 
-	            "id": 8, 
-	            "resource_uri": "/rundb/api/v1/datamanagementhistory/8/"
+	            "created": "2018-05-29T17:32:06.000459+00:00",
+	            "id": 59,
+	            "object_pk": 7,
+	            "resource_uri": "/rundb/api/v1/datamanagementhistory/59/",
+	            "resultsName": "CA_Combined_demo_001",
+	            "text": "Src Dir not found: /results/analysis/output/Home/CA_Combined_demo_001_007. Setting action_state to Deleted",
+	            "username": "dm_agent"
 	        }
 	    ]
 	}

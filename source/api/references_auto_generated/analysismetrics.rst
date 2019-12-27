@@ -15,77 +15,77 @@ Resource Fields
 ========================= ============================================================================== ======= ======== ======== ===== ====== ======= 
 field                     help text                                                                      default nullable readonly blank unique type    
 ========================= ============================================================================== ======= ======== ======== ===== ====== ======= 
-**libLive**               Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+**adjusted_addressable**  Integer data. Ex: 2673                                                         0       false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**ignored**               Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
-------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**washout_ambiguous**     Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
-------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**tfLive**                Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
-------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**sysIE**                 Floating point numeric data. Ex: 26.73                                         n/a     false    false    false false  float   
+**amb**                   Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **bead**                  Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**tfKp**                  Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
-------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**washout_live**          Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
-------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**id**                    Integer data. Ex: 2673                                                                 false    false    true  true   integer 
-------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**libFinal**              Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
-------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**loading**               Floating point numeric data. Ex: 26.73                                         0       false    false    false false  float   
-------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**lib**                   Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
-------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**keypass_all_beads**     Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
-------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **dud**                   Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
-------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**sysCF**                 Floating point numeric data. Ex: 26.73                                         n/a     false    false    false false  float   
-------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**pinned**                Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
-------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**live**                  Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
-------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**excluded**              Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
-------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**tf**                    Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **empty**                 Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**tfFinal**               Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+**excluded**              Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**amb**                   Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+**id**                    Integer data. Ex: 2673                                                                 false    false    true  true   integer 
+------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**ignored**               Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**keypass_all_beads**     Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**lib**                   Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**libFinal**              Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**libKp**                 Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**libLive**               Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**libMix**                Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **lib_pass_basecaller**   Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **lib_pass_cafie**        Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**washout_dud**           Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+**live**                  Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**libMix**                Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+**loading**               Floating point numeric data. Ex: 26.73                                         0       false    false    false false  float   
+------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**pinned**                Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **report**                A single related resource. Can be either a URI or set of nested resource data. n/a     false    false    false false  related 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**libKp**                 Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+**resource_uri**          Unicode string data. Ex: "Hello World"                                         n/a     false    true     false false  string  
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**adjusted_addressable**  Integer data. Ex: 2673                                                         0       false    false    false false  integer 
+**sysCF**                 Floating point numeric data. Ex: 26.73                                         n/a     false    false    false false  float   
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **sysDR**                 Floating point numeric data. Ex: 26.73                                         n/a     false    false    false false  float   
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**total**                 Integer data. Ex: 2673                                                         0       false    false    false false  integer 
+**sysIE**                 Floating point numeric data. Ex: 26.73                                         n/a     false    false    false false  float   
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**washout_test_fragment** Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+**tf**                    Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**washout_library**       Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+**tfFinal**               Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**washout**               Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+**tfKp**                  Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**tfLive**                Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **tfMix**                 Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**resource_uri**          Unicode string data. Ex: "Hello World"                                         n/a     false    true     false false  string  
+**total**                 Integer data. Ex: 2673                                                         0       false    false    false false  integer 
+------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**washout**               Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**washout_ambiguous**     Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**washout_dud**           Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**washout_library**       Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**washout_live**          Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
+------------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**washout_test_fragment** Integer data. Ex: 2673                                                         n/a     false    false    false false  integer 
 ========================= ============================================================================== ======= ======== ======== ===== ====== ======= 
 
 Example Response
@@ -95,50 +95,50 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 6, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/analysismetrics/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/analysismetrics/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 6
+	    },
 	    "objects": [
 	        {
-	            "libLive": 0, 
-	            "ignored": 1042801, 
-	            "washout_ambiguous": 0, 
-	            "tfLive": 0, 
-	            "sysIE": 0.465626595541835, 
-	            "bead": 140400602, 
-	            "tfKp": 0, 
-	            "washout_live": 0, 
-	            "id": 1, 
-	            "libFinal": 93974105, 
-	            "loading": 94.7655552064634, 
-	            "lib": 139085639, 
-	            "keypass_all_beads": 0, 
-	            "dud": 60690, 
-	            "sysCF": 0.603865925222635, 
-	            "pinned": 2329, 
-	            "live": 140339912, 
-	            "excluded": 16543404, 
-	            "tf": 1254273, 
-	            "empty": 6710000, 
-	            "tfFinal": 1198552, 
-	            "amb": 0, 
-	            "lib_pass_basecaller": 0, 
-	            "lib_pass_cafie": 0, 
-	            "washout_dud": 0, 
-	            "libMix": 0, 
-	            "report": "/rundb/api/v1/results/3/", 
-	            "libKp": 0, 
-	            "adjusted_addressable": 148155732, 
-	            "sysDR": 0.168037705589086, 
-	            "total": 164699136, 
-	            "washout_test_fragment": 0, 
-	            "washout_library": 0, 
-	            "washout": 0, 
-	            "tfMix": 0, 
-	            "resource_uri": "/rundb/api/v1/analysismetrics/1/"
+	            "adjusted_addressable": 2709,
+	            "amb": 0,
+	            "bead": 2195,
+	            "dud": 0,
+	            "empty": 499,
+	            "excluded": 7291,
+	            "id": 6,
+	            "ignored": 9,
+	            "keypass_all_beads": 0,
+	            "lib": 2170,
+	            "libFinal": 1526,
+	            "libKp": 0,
+	            "libLive": 0,
+	            "libMix": 0,
+	            "lib_pass_basecaller": 0,
+	            "lib_pass_cafie": 0,
+	            "live": 2195,
+	            "loading": 81.0262089331857,
+	            "pinned": 6,
+	            "report": "/rundb/api/v1/results/6/",
+	            "resource_uri": "/rundb/api/v1/analysismetrics/6/",
+	            "sysCF": 0.902389362454414,
+	            "sysDR": 0.0903240870684385,
+	            "sysIE": 1.01652704179287,
+	            "tf": 25,
+	            "tfFinal": 25,
+	            "tfKp": 0,
+	            "tfLive": 0,
+	            "tfMix": 0,
+	            "total": 10000,
+	            "washout": 0,
+	            "washout_ambiguous": 0,
+	            "washout_dud": 0,
+	            "washout_library": 0,
+	            "washout_live": 0,
+	            "washout_test_fragment": 0
 	        }
 	    ]
 	}

@@ -12,51 +12,67 @@ Sample Set Item  Resource
 Resource Fields
 ---------------
 
-===================== ============================================================================== ======= ======== ======== ===== ====== ======== 
-field                 help text                                                                      default nullable readonly blank unique type     
-===================== ============================================================================== ======= ======== ======== ===== ====== ======== 
-**sample**            A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    true  false  related  
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**cellNum**           Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**biopsyDays**        Integer data. Ex: 2673                                                         0       true     false    false false  integer  
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**resource_uri**      Unicode string data. Ex: "Hello World"                                         n/a     false    true     false false  string   
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**nucleotideType**    Unicode string data. Ex: "Hello World"                                                 false    false    true  false  string   
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**gender**            Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**relationshipGroup** Integer data. Ex: 2673                                                         n/a     false    false    false false  integer  
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**coupleId**          Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**cellularityPct**    Integer data. Ex: 2673                                                         n/a     true     false    false false  integer  
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**id**                Integer data. Ex: 2673                                                                 false    false    true  true   integer  
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**relationshipRole**  Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**pcrPlateColumn**    Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**cancerType**        Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**controlType**       Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**sampleSet**         A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    true  false  related  
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**lastModifiedDate**  A date & time as a string. Ex: "2010-11-10T03:07:43"                           true    false    false    true  false  datetime 
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**dnabarcode**        A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    true  false  related  
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**pcrPlateRow**       Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**creationDate**      A date & time as a string. Ex: "2010-11-10T03:07:43"                           true    false    false    true  false  datetime 
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**embryoId**          Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
---------------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
-**description**       Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
-===================== ============================================================================== ======= ======== ======== ===== ====== ======== 
+======================== ============================================================================== ======= ======== ======== ===== ====== ======== 
+field                    help text                                                                      default nullable readonly blank unique type     
+======================== ============================================================================== ======= ======== ======== ===== ====== ======== 
+**assayGroup**           Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**biopsyDays**           Integer data. Ex: 2673                                                         0       true     false    false false  integer  
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**cancerType**           Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**cellNum**              Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**cellularityPct**       Integer data. Ex: 2673                                                         n/a     true     false    false false  integer  
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**controlType**          Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**coupleId**             Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**creationDate**         A date & time as a string. Ex: "2010-11-10T03:07:43"                           true    false    false    true  false  datetime 
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**description**          Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**dnabarcode**           A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    true  false  related  
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**embryoId**             Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**gender**               Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**id**                   Integer data. Ex: 2673                                                                 false    false    true  true   integer  
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**lastModifiedDate**     A date & time as a string. Ex: "2010-11-10T03:07:43"                           true    false    false    true  false  datetime 
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**mouseStrains**         Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**nucleotideType**       Unicode string data. Ex: "Hello World"                                                 false    false    true  false  string   
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**panelPoolType**        Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**pcrPlateColumn**       Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**pcrPlateRow**          Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**population**           Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**relationshipGroup**    Integer data. Ex: 2673                                                         n/a     false    false    false false  integer  
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**relationshipRole**     Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**resource_uri**         Unicode string data. Ex: "Hello World"                                         n/a     false    true     false false  string   
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**sample**               A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    true  false  related  
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**sampleCollectionDate** A date & time as a string. Ex: "2010-11-10T03:07:43"                           n/a     true     false    false false  datetime 
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**sampleReceiptDate**    A date & time as a string. Ex: "2010-11-10T03:07:43"                           n/a     true     false    false false  datetime 
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**sampleSet**            A single related resource. Can be either a URI or set of nested resource data. n/a     true     false    true  false  related  
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**sampleSource**         Unicode string data. Ex: "Hello World"                                         n/a     true     false    false false  string   
+------------------------ ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ -------- 
+**tubePosition**         Unicode string data. Ex: "Hello World"                                                 true     false    false false  string   
+======================== ============================================================================== ======= ======== ======== ===== ====== ======== 
 
 Example Response
 ^^^^^^^^^^^^^^^^
@@ -65,35 +81,43 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 16, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/samplesetitem/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/samplesetitem/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 16
+	    },
 	    "objects": [
 	        {
-	            "sample": "/rundb/api/v1/sample/8/", 
-	            "cellNum": "", 
-	            "biopsyDays": 0, 
-	            "resource_uri": "/rundb/api/v1/samplesetitem/3/", 
-	            "nucleotideType": "", 
-	            "gender": "", 
-	            "relationshipGroup": 0, 
-	            "coupleId": "", 
-	            "cellularityPct": null, 
-	            "id": 3, 
-	            "relationshipRole": "", 
-	            "pcrPlateColumn": "", 
-	            "cancerType": "", 
-	            "controlType": "", 
-	            "sampleSet": "/rundb/api/v1/sampleset/1/", 
-	            "lastModifiedDate": "2017-11-01T16:19:12.000420+00:00", 
-	            "dnabarcode": null, 
-	            "pcrPlateRow": "", 
-	            "creationDate": "2017-11-01T16:19:12.000420+00:00", 
-	            "embryoId": "", 
-	            "description": ""
+	            "assayGroup": null,
+	            "biopsyDays": 0,
+	            "cancerType": "",
+	            "cellNum": "",
+	            "cellularityPct": null,
+	            "controlType": "",
+	            "coupleId": "",
+	            "creationDate": "2017-11-01T18:48:24.000678+00:00",
+	            "description": "",
+	            "dnabarcode": null,
+	            "embryoId": "",
+	            "gender": "",
+	            "id": 19,
+	            "lastModifiedDate": "2017-11-01T18:48:24.000678+00:00",
+	            "mouseStrains": null,
+	            "nucleotideType": "",
+	            "panelPoolType": null,
+	            "pcrPlateColumn": "",
+	            "pcrPlateRow": "",
+	            "population": null,
+	            "relationshipGroup": 0,
+	            "relationshipRole": "",
+	            "resource_uri": "/rundb/api/v1/samplesetitem/19/",
+	            "sample": "/rundb/api/v1/sample/16/",
+	            "sampleCollectionDate": null,
+	            "sampleReceiptDate": null,
+	            "sampleSet": "/rundb/api/v1/sampleset/2/",
+	            "sampleSource": null,
+	            "tubePosition": ""
 	        }
 	    ]
 	}

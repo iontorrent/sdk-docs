@@ -15,19 +15,19 @@ Resource Fields
 ================ ================================================================================================== ======= ======== ======== ===== ====== ======= 
 field            help text                                                                                          default nullable readonly blank unique type    
 ================ ================================================================================================== ======= ======== ======== ===== ====== ======= 
-**name**         Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string  
----------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**description**  Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string  
----------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **applications** Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    false false  related 
 ---------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**uid**          Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false true   string  
+**description**  Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string  
 ---------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **id**           Integer data. Ex: 2673                                                                                     false    false    true  true   integer 
 ---------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **isActive**     Boolean data. Ex: True                                                                             true    false    false    true  false  boolean 
 ---------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**name**         Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false false  string  
+---------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **resource_uri** Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string  
+---------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**uid**          Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false true   string  
 ================ ================================================================================================== ======= ======== ======== ===== ====== ======= 
 
 Example Response
@@ -37,112 +37,36 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 12, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/applicationgroup/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/applicationgroup/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 12
+	    },
 	    "objects": [
 	        {
-	            "name": "DNA", 
-	            "description": "DNA", 
 	            "applications": [
 	                {
+	                    "alternate_name": "AmpliSeq HD - Fusions",
 	                    "applicationGroups": [
-	                        "/rundb/api/v1/applicationgroup/1/", 
-	                        "/rundb/api/v1/applicationgroup/3/", 
-	                        "/rundb/api/v1/applicationgroup/4/"
-	                    ], 
-	                    "description": "Generic Sequencing", 
-	                    "nucleotideType": "dna", 
-	                    "barcode": "", 
-	                    "meta": {}, 
-	                    "alternate_name": "Other", 
-	                    "runType": "GENS", 
-	                    "id": 1, 
-	                    "isActive": true, 
-	                    "resource_uri": "/rundb/api/v1/runtype/1/"
-	                }, 
-	                {
-	                    "applicationGroups": [
-	                        "/rundb/api/v1/applicationgroup/1/", 
-	                        "/rundb/api/v1/applicationgroup/6/", 
-	                        "/rundb/api/v1/applicationgroup/8/", 
-	                        "/rundb/api/v1/applicationgroup/10/"
-	                    ], 
-	                    "description": "AmpliSeq DNA", 
-	                    "nucleotideType": "dna", 
-	                    "barcode": "", 
-	                    "meta": {}, 
-	                    "alternate_name": "AmpliSeq DNA", 
-	                    "runType": "AMPS", 
-	                    "id": 2, 
-	                    "isActive": true, 
-	                    "resource_uri": "/rundb/api/v1/runtype/2/"
-	                }, 
-	                {
-	                    "applicationGroups": [
-	                        "/rundb/api/v1/applicationgroup/1/"
-	                    ], 
-	                    "description": "TargetSeq", 
-	                    "nucleotideType": "dna", 
-	                    "barcode": "", 
-	                    "meta": {}, 
-	                    "alternate_name": "TargetSeq", 
-	                    "runType": "TARS", 
-	                    "id": 3, 
-	                    "isActive": true, 
-	                    "resource_uri": "/rundb/api/v1/runtype/3/"
-	                }, 
-	                {
-	                    "applicationGroups": [
-	                        "/rundb/api/v1/applicationgroup/1/", 
-	                        "/rundb/api/v1/applicationgroup/4/"
-	                    ], 
-	                    "description": "Whole Genome", 
-	                    "nucleotideType": "dna", 
-	                    "barcode": "", 
-	                    "meta": {}, 
-	                    "alternate_name": "Whole Genome", 
-	                    "runType": "WGNM", 
-	                    "id": 4, 
-	                    "isActive": true, 
-	                    "resource_uri": "/rundb/api/v1/runtype/4/"
-	                }, 
-	                {
-	                    "applicationGroups": [
-	                        "/rundb/api/v1/applicationgroup/1/"
-	                    ], 
-	                    "description": "AmpliSeq Exome", 
-	                    "nucleotideType": "dna", 
-	                    "barcode": "", 
-	                    "meta": {}, 
-	                    "alternate_name": "AmpliSeq Exome", 
-	                    "runType": "AMPS_EXOME", 
-	                    "id": 7, 
-	                    "isActive": true, 
-	                    "resource_uri": "/rundb/api/v1/runtype/7/"
-	                }, 
-	                {
-	                    "applicationGroups": [
-	                        "/rundb/api/v1/applicationgroup/1/"
-	                    ], 
-	                    "description": "AmpliSeq HD - DNA", 
-	                    "nucleotideType": "dna", 
-	                    "barcode": "", 
-	                    "meta": {}, 
-	                    "alternate_name": "AmpliSeq HD - DNA", 
-	                    "runType": "AMPS_HD_DNA", 
-	                    "id": 12, 
-	                    "isActive": true, 
-	                    "resource_uri": "/rundb/api/v1/runtype/12/"
+	                        "/rundb/api/v1/applicationgroup/12/"
+	                    ],
+	                    "barcode": "",
+	                    "description": "AmpliSeq HD - Fusions",
+	                    "id": 13,
+	                    "isActive": true,
+	                    "meta": {},
+	                    "nucleotideType": "rna",
+	                    "resource_uri": "/rundb/api/v1/runtype/13/",
+	                    "runType": "AMPS_HD_RNA"
 	                }
-	            ], 
-	            "uid": "APPLGROUP_0001", 
-	            "id": 1, 
-	            "isActive": true, 
-	            "resource_uri": "/rundb/api/v1/applicationgroup/1/"
+	            ],
+	            "description": "Fusions",
+	            "id": 12,
+	            "isActive": true,
+	            "name": "Fusions",
+	            "resource_uri": "/rundb/api/v1/applicationgroup/12/",
+	            "uid": "APPLGROUP_0012"
 	        }
 	    ]
 	}

@@ -15,51 +15,51 @@ Resource Fields
 ====================== ================================================================================================== ======= ======== ======== ===== ====== ======== 
 field                  help text                                                                                          default nullable readonly blank unique type     
 ====================== ================================================================================================== ======= ======== ======== ===== ====== ======== 
-**major**              Boolean data. Ex: True                                                                             n/a     false    true     false false  boolean  
+**URL**                Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
+---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**apikey**             Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **can_terminate**      Boolean data. Ex: True                                                                             n/a     false    true     false false  boolean  
 ---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**resultName**         Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
+**endtime**            A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     false    true     false false  datetime 
 ---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**pluginVersion**      Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
----------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**result**             A single related resource. Can be either a URI or set of nested resource data.                     n/a     false    false    false false  related  
----------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**owner**              A single related resource. Can be either a URI or set of nested resource data.                     n/a     false    false    false false  related  
+**files**              A list of data. Ex: ['abc', 26.73, 8]                                                              n/a     false    true     false false  list     
 ---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **id**                 Integer data. Ex: 2673                                                                                     false    false    true  true   integer  
 ---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**inodes**             Unicode string data. Ex: "Hello World"                                                             -1      false    false    false false  string   
+---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**major**              Boolean data. Ex: True                                                                             n/a     false    true     false false  boolean  
+---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**owner**              A single related resource. Can be either a URI or set of nested resource data.                     n/a     false    false    false false  related  
+---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**path**               Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
+---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**plugin**             A single related resource. Can be either a URI or set of nested resource data.                     n/a     false    false    false false  related  
+---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**pluginName**         Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
+---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**pluginVersion**      Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
+---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**plugin_result_jobs** Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     false    false    false false  related  
+---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**reportLink**         Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
+---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**resource_uri**       Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
+---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**result**             A single related resource. Can be either a URI or set of nested resource data.                     n/a     false    false    false false  related  
+---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**resultName**         Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
+---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **size**               Unicode string data. Ex: "Hello World"                                                             -1      false    false    false false  string   
 ---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**validation_errors**  Unicode string data. Ex: "Hello World"                                                             {}      false    false    true  false  string   
+**starttime**          A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     false    true     false false  datetime 
 ---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **state**              Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
 ---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **store**              Unicode string data. Ex: "Hello World"                                                             {}      false    false    true  false  string   
 ---------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**files**              A list of data. Ex: ['abc', 26.73, 8]                                                              n/a     false    true     false false  list     
----------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**URL**                Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
----------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**plugin_result_jobs** Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     false    false    false false  related  
----------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**path**               Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
----------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**endtime**            A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     false    true     false false  datetime 
----------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**apikey**             Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
----------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**plugin**             A single related resource. Can be either a URI or set of nested resource data.                     n/a     false    false    false false  related  
----------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**reportLink**         Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
----------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**pluginName**         Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
----------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**starttime**          A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     false    true     false false  datetime 
----------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**inodes**             Unicode string data. Ex: "Hello World"                                                             -1      false    false    false false  string   
----------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**resource_uri**       Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
+**validation_errors**  Unicode string data. Ex: "Hello World"                                                             {}      false    false    true  false  string   
 ====================== ================================================================================================== ======= ======== ======== ===== ====== ======== 
 
 Example Response
@@ -69,67 +69,72 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 17, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/pluginresult/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/pluginresult/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 18
+	    },
 	    "objects": [
 	        {
-	            "major": true, 
-	            "can_terminate": false, 
-	            "resultName": "Auto_user_CB1-42-r9723-314wfa-tl_94", 
-	            "pluginVersion": "5.8.0.0", 
-	            "result": "/rundb/api/v1/results/6/", 
-	            "owner": "/rundb/api/v1/user/2/", 
-	            "id": 24, 
-	            "size": "344884433", 
-	            "validation_errors": {
-	                "validation_errors": []
-	            }, 
-	            "state": "Error", 
-	            "store": {
-	                "reference": "/results/referenceLibrary/tmap-f3/hg19/hg19.fasta", 
-	                "barcoded": false, 
-	                "Error": "Failed running run_rnaseqanalysis.py.", 
-	                "genome": "hg19", 
-	                "launch_mode": "Manual", 
-	                "fpkm_thres": "0.3", 
-	                "cutadapt": "None", 
-	                "fraction_of_reads": "1"
-	            }, 
+	            "URL": "/output/Home/Auto_user_CB1-42-r9723-314wfa-tl_94_006/plugin_out/PathogenomixRipseqNGS_out.25/",
+	            "apikey": "7b20b457ab2701e26f93a9ca774338b5e33d779a",
+	            "can_terminate": false,
+	            "endtime": "2019-01-17T23:50:39.000550+00:00",
 	            "files": [
-	                "RNASeqAnalysis.html"
-	            ], 
-	            "URL": "/output/Home/Auto_user_CB1-42-r9723-314wfa-tl_94_006/plugin_out/RNASeqAnalysis_out.24/", 
+	                "status_block.html"
+	            ],
+	            "id": 25,
+	            "inodes": "7",
+	            "major": false,
+	            "owner": "/rundb/api/v1/user/1/",
+	            "path": "/results/analysis/output/Home/Auto_user_CB1-42-r9723-314wfa-tl_94_006/plugin_out/PathogenomixRipseqNGS_out.25",
+	            "plugin": "/rundb/api/v1/plugin/64/",
+	            "pluginName": "PathogenomixRipseqNGS",
+	            "pluginVersion": "5.10.0.5",
 	            "plugin_result_jobs": [
 	                {
-	                    "grid_engine_jobid": 517, 
-	                    "id": 24, 
-	                    "state": "Error", 
-	                    "starttime": "2018-04-25T22:22:52.000576+00:00", 
-	                    "endtime": "2018-04-25T22:28:47.000816+00:00", 
 	                    "config": {
-	                        "cutadapt": "None", 
-	                        "fraction_of_reads": "1", 
-	                        "reference": "/results/referenceLibrary/tmap-f3/hg19/hg19.fasta", 
-	                        "genome": "hg19", 
-	                        "launch_mode": "Manual"
-	                    }, 
-	                    "run_level": "default", 
-	                    "resource_uri": "/rundb/api/v1/PluginResultJob/24/"
+	                        "copyNumberThreshold": "20",
+	                        "email": "osaebo",
+	                        "generateAllPrimerCombinations": true,
+	                        "generateReversedPrimerSets": false,
+	                        "isNC": false,
+	                        "maxClusterVariation": "1.0",
+	                        "ncCT": "33",
+	                        "password": "xl3eple",
+	                        "primerCheckLength": "12",
+	                        "primerCheckMaxErrors": "3",
+	                        "primers": ">V1_2_A_F\nGTGCCTAAYACATGCAWGT\n>V1_2_A_R\nCTGGDCCGTRTCTCAGT",
+	                        "readLengthThreshold": "100",
+	                        "safetyMarginCT": "3",
+	                        "sampleCT": "16",
+	                        "trimEndsWithNoPrimer": "21",
+	                        "useCT": false,
+	                        "useFullPrimerCoverageReadsOnly": false,
+	                        "useReadsWithNoPrimer": false,
+	                        "useWalkingInsDel": false
+	                    },
+	                    "endtime": "2019-01-17T23:50:39.000550+00:00",
+	                    "grid_engine_jobid": 518,
+	                    "id": 25,
+	                    "resource_uri": "/rundb/api/v1/PluginResultJob/25/",
+	                    "run_level": "last",
+	                    "starttime": "2019-01-17T23:50:33.000769+00:00",
+	                    "state": "Completed"
 	                }
-	            ], 
-	            "path": "/results/analysis/output/Home/Auto_user_CB1-42-r9723-314wfa-tl_94_006/plugin_out/RNASeqAnalysis_out.24", 
-	            "endtime": "2018-04-25T22:28:47.000816+00:00", 
-	            "apikey": "5a4f5fb12ef3d6c5490b3a41501097a506cd8d85", 
-	            "plugin": "/rundb/api/v1/plugin/29/", 
-	            "reportLink": "/output/Home/Auto_user_CB1-42-r9723-314wfa-tl_94_006/", 
-	            "pluginName": "RNASeqAnalysis", 
-	            "starttime": "2018-04-25T22:22:52.000576+00:00", 
-	            "inodes": "33", 
-	            "resource_uri": "/rundb/api/v1/pluginresult/24/"
+	            ],
+	            "reportLink": "/output/Home/Auto_user_CB1-42-r9723-314wfa-tl_94_006/",
+	            "resource_uri": "/rundb/api/v1/pluginresult/25/",
+	            "result": "/rundb/api/v1/results/6/",
+	            "resultName": "Auto_user_CB1-42-r9723-314wfa-tl_94",
+	            "size": "25475",
+	            "starttime": "2019-01-17T23:50:33.000769+00:00",
+	            "state": "Completed",
+	            "store": {},
+	            "validation_errors": {
+	                "validation_errors": []
+	            }
 	        }
 	    ]
 	}

@@ -15,21 +15,21 @@ Resource Fields
 ======================== ====================================== ======= ======== ======== ===== ====== ======= 
 field                    help text                              default nullable readonly blank unique type    
 ======================== ====================================== ======= ======== ======== ===== ====== ======= 
-**name**                 Unicode string data. Ex: "Hello World" n/a     false    false    false false  string  
------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**id**                   Integer data. Ex: 2673                         false    false    true  true   integer 
+**description**          Unicode string data. Ex: "Hello World"         false    false    false false  string  
 ------------------------ -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **earlyDatFileDeletion** Unicode string data. Ex: "Hello World"         false    false    true  false  string  
 ------------------------ -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**slots**                Integer data. Ex: 2673                 n/a     false    false    false false  integer 
------------------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**resource_uri**         Unicode string data. Ex: "Hello World" n/a     false    true     false false  string  
+**id**                   Integer data. Ex: 2673                         false    false    true  true   integer 
 ------------------------ -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **instrumentType**       Unicode string data. Ex: "Hello World"         false    false    true  false  string  
 ------------------------ -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **isActive**             Boolean data. Ex: True                 true    false    false    true  false  boolean 
 ------------------------ -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**description**          Unicode string data. Ex: "Hello World"         false    false    false false  string  
+**name**                 Unicode string data. Ex: "Hello World" n/a     false    false    false false  string  
+------------------------ -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**resource_uri**         Unicode string data. Ex: "Hello World" n/a     false    true     false false  string  
+------------------------ -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**slots**                Integer data. Ex: 2673                 n/a     false    false    false false  integer 
 ======================== ====================================== ======= ======== ======== ===== ====== ======= 
 
 Example Response
@@ -39,36 +39,36 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 28, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/chip/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/chip/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 15
+	    },
 	    "objects": [
 	        {
-	            "ionstatsargs": "ionstats alignment", 
-	            "thumbnailionstatsargs": "", 
-	            "thumbnailalignmentargs": "", 
-	            "thumbnailanalysisargs": "", 
-	            "slots": 1, 
-	            "id": 1, 
-	            "analysisargs": "Analysis --args-json /opt/ion/config/args_314_analysis.json", 
-	            "thumbnailcalibrateargs": "", 
-	            "beadfindargs": "justBeadFind --args-json /opt/ion/config/args_314_beadfind.json", 
-	            "instrumentType": "pgm", 
-	            "prebasecallerargs": "BaseCaller --barcode-filter-minreads 20", 
-	            "description": "314v2", 
-	            "prethumbnailbasecallerargs": "", 
-	            "alignmentargs": "tmap mapall ... stage1 map4", 
-	            "thumbnailbasecallerargs": "", 
-	            "isActive": true, 
-	            "thumbnailbeadfindargs": "", 
-	            "calibrateargs": "Calibration", 
-	            "name": "314", 
-	            "basecallerargs": "BaseCaller --barcode-filter-minreads 20", 
-	            "earlyDatFileDeletion": "", 
-	            "resource_uri": "/rundb/api/v1/chip/1/"
+	            "alignmentargs": "tmap mapall ... stage1 map4",
+	            "analysisargs": "Analysis --args-json /opt/ion/config/args_520_analysis.json",
+	            "basecallerargs": "BaseCaller --trim-qual-cutoff 15 --barcode-filter-minreads 10 --phasing-residual-filter=2.0 --num-unfiltered 1000 --barcode-filter-postpone 1 --qual-filter true --qual-filter-slope 0.040 --qual-filter-offset 1.0 --wells-normalization on",
+	            "beadfindargs": "justBeadFind --args-json /opt/ion/config/args_520_beadfind.json",
+	            "calibrateargs": "Calibration --num-calibration-regions 1,1",
+	            "description": "510",
+	            "earlyDatFileDeletion": "",
+	            "id": 28,
+	            "instrumentType": "S5",
+	            "ionstatsargs": "ionstats alignment",
+	            "isActive": true,
+	            "name": "510",
+	            "prebasecallerargs": "BaseCaller --trim-qual-cutoff 15 --barcode-filter-minreads 10 --phasing-residual-filter=2.0 --wells-normalization on",
+	            "prethumbnailbasecallerargs": "BaseCaller --trim-qual-cutoff 15 --barcode-filter-minreads 10 --phasing-residual-filter=2.0 --wells-normalization on",
+	            "resource_uri": "/rundb/api/v1/chip/28/",
+	            "slots": 1,
+	            "thumbnailalignmentargs": "tmap mapall ... stage1 map4",
+	            "thumbnailanalysisargs": "Analysis --args-json /opt/ion/config/args_520_analysis.json --thumbnail true",
+	            "thumbnailbasecallerargs": "BaseCaller --trim-qual-cutoff 15 --barcode-filter-minreads 10 --phasing-residual-filter=2.0 --qual-filter true --qual-filter-slope 0.040 --qual-filter-offset 1.0 --wells-normalization on",
+	            "thumbnailbeadfindargs": "justBeadFind --args-json /opt/ion/config/args_520_beadfind.json --thumbnail true",
+	            "thumbnailcalibrateargs": "Calibration",
+	            "thumbnailionstatsargs": "ionstats alignment"
 	        }
 	    ]
 	}

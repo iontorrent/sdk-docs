@@ -15,31 +15,31 @@ Resource Fields
 ================== ==================================================== ======= ======== ======== ===== ====== ======== 
 field              help text                                            default nullable readonly blank unique type     
 ================== ==================================================== ======= ======== ======== ===== ====== ======== 
-**status**         Unicode string data. Ex: "Hello World"                       false    false    false false  string   
------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**updated**        A date & time as a string. Ex: "2010-11-10T03:07:43" true    false    false    true  false  datetime 
------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**name**           Unicode string data. Ex: "Hello World"                       false    false    false false  string   
+**celery_task_id** Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
 ------------------ ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **created**        A date & time as a string. Ex: "2010-11-10T03:07:43" true    false    false    true  false  datetime 
 ------------------ ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**url**            Unicode string data. Ex: "Hello World"               n/a     false    false    false false  string   
------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**md5sum**         Unicode string data. Ex: "Hello World"               None    true     false    false false  string   
------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**celery_task_id** Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
+**id**             Integer data. Ex: 2673                                       false    false    true  true   integer  
 ------------------ ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **local_dir**      Unicode string data. Ex: "Hello World"                       false    false    false false  string   
 ------------------ ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**md5sum**         Unicode string data. Ex: "Hello World"               None    true     false    false false  string   
+------------------ ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**name**           Unicode string data. Ex: "Hello World"                       false    false    false false  string   
+------------------ ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **progress**       Unicode string data. Ex: "Hello World"               0       false    false    false false  string   
+------------------ ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**resource_uri**   Unicode string data. Ex: "Hello World"               n/a     false    true     false false  string   
 ------------------ ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **size**           Unicode string data. Ex: "Hello World"               None    true     false    false false  string   
 ------------------ ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**id**             Integer data. Ex: 2673                                       false    false    true  true   integer  
+**status**         Unicode string data. Ex: "Hello World"                       false    false    false false  string   
 ------------------ ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **tags**           Unicode string data. Ex: "Hello World"                       false    false    false false  string   
 ------------------ ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**resource_uri**   Unicode string data. Ex: "Hello World"               n/a     false    true     false false  string   
+**updated**        A date & time as a string. Ex: "2010-11-10T03:07:43" true    false    false    true  false  datetime 
+------------------ ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**url**            Unicode string data. Ex: "Hello World"               n/a     false    false    false false  string   
 ================== ==================================================== ======= ======== ======== ===== ====== ======== 
 
 Example Response
@@ -49,27 +49,27 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 9, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/filemonitor/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/filemonitor/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 9
+	    },
 	    "objects": [
 	        {
-	            "status": "Complete", 
-	            "updated": "2018-04-13T18:54:39.000796+00:00", 
-	            "name": "gene.gtf", 
-	            "created": "2018-04-13T18:54:08.000422+00:00", 
-	            "url": "http://updates.itw/internal_reference_downloads/hg19/gene.gtf", 
-	            "md5sum": "72fbd490a4d3be60e53e642d4401c944", 
-	            "celery_task_id": "7db1de03-b295-4b62-9cdc-9cbb4c6065b0", 
-	            "local_dir": "/tmp/tmppTeNvf", 
-	            "progress": "1111970946", 
-	            "size": "1111970946", 
-	            "id": 7, 
-	            "tags": "annotation", 
-	            "resource_uri": "/rundb/api/v1/filemonitor/7/"
+	            "celery_task_id": "9791ab17-8fb1-409e-ab9f-1f02d8f0a256",
+	            "created": "2018-08-02T23:10:55.000145+00:00",
+	            "id": 11,
+	            "local_dir": "/results/referenceLibrary/temp/tmpBar9cj",
+	            "md5sum": null,
+	            "name": "mm10.zip",
+	            "progress": "4080979909",
+	            "resource_uri": "/rundb/api/v1/filemonitor/11/",
+	            "size": "4080979909",
+	            "status": "Complete",
+	            "tags": "reference",
+	            "updated": "2018-08-02T23:12:07.000540+00:00",
+	            "url": "http://updates.itw/internal_reference_downloads/mm10.zip"
 	        }
 	    ]
 	}

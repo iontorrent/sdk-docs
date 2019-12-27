@@ -17,13 +17,13 @@ field            help text                              default nullable readonl
 ================ ====================================== ======= ======== ======== ===== ====== ======= 
 **dataType**     Unicode string data. Ex: "Hello World" n/a     false    false    false true   string  
 ---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**resource_uri** Unicode string data. Ex: "Hello World" n/a     false    true     false false  string  
----------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **description**  Unicode string data. Ex: "Hello World" n/a     true     false    false false  string  
+---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
+**id**           Integer data. Ex: 2673                         false    false    true  true   integer 
 ---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
 **isActive**     Boolean data. Ex: True                 true    false    false    true  false  boolean 
 ---------------- -------------------------------------- ------- -------- -------- ----- ------ ------- 
-**id**           Integer data. Ex: 2673                         false    false    true  true   integer 
+**resource_uri** Unicode string data. Ex: "Hello World" n/a     false    true     false false  string  
 ================ ====================================== ======= ======== ======== ===== ====== ======= 
 
 Example Response
@@ -33,19 +33,19 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 2, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/sampleattributedatatype/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/sampleattributedatatype/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 2
+	    },
 	    "objects": [
 	        {
-	            "dataType": "Text", 
-	            "resource_uri": "/rundb/api/v1/sampleattributedatatype/1/", 
-	            "description": "Up to 1024 characters", 
-	            "isActive": true, 
-	            "id": 1
+	            "dataType": "Integer",
+	            "description": "Whole number",
+	            "id": 2,
+	            "isActive": true,
+	            "resource_uri": "/rundb/api/v1/sampleattributedatatype/2/"
 	        }
 	    ]
 	}

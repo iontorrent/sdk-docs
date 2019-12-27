@@ -26,10 +26,10 @@ Example Response
 	{
 	    "object": {
 	        "availableversion": {
-	            "IS_scripts": "000803", 
 	            "Compatible_Chef_release": [
-	                "IC.5.10.0"
-	            ]
+	                "IC.5.12.1.RC.1"
+	            ],
+	            "IS_scripts": "000905"
 	        }
 	    }
 	}

@@ -15,115 +15,115 @@ Resource Fields
 =============================== ================================================================================================== ======= ======== ======== ===== ====== ======== 
 field                           help text                                                                                          default nullable readonly blank unique type     
 =============================== ================================================================================================== ======= ======== ======== ===== ====== ======== 
-**origin**                      Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**isReverseRun**                Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**planDisplayedName**           Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**storage_options**             Unicode string data. Ex: "Hello World"                                                             A       false    false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**preAnalysis**                 Boolean data. Ex: True                                                                             true    false    false    true  false  boolean  
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**planShortID**                 Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**username**                    Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**planStatus**                  Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**runMode**                     Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**isCustom_kitSettings**        Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**sampleTubeLabel**             Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**planExecutedDate**            A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     true     false    false false  datetime 
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**samplePrepKitName**           Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**reverse_primer**              Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+**adapter**                     Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **applicationGroup**            A single related resource. Can be either a URI or set of nested resource data.                     n/a     true     false    true  false  related  
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**seqKitBarcode**               Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+**autoName**                    Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**id**                          Integer data. Ex: 2673                                                                                     false    false    true  true   integer  
+**categories**                  Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**metaData**                    Unicode string data. Ex: "Hello World"                                                             {}      false    false    true  false  string   
+**childPlans**                  A list of data. Ex: ['abc', 26.73, 8]                                                              []      false    false    false false  list     
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**sampleSets**                  Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related  
+**controlSequencekitname**      Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**isFavorite**                  Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
+**cycles**                      Integer data. Ex: 2673                                                                             n/a     true     false    false false  integer  
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**qcValues**                    Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related  
+**date**                        A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     true     false    false false  datetime 
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**samplePrepProtocol**          Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**isPlanGroup**                 Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
+**expName**                     Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **experiment**                  A single related resource. Can be either a URI or set of nested resource data.                     n/a     true     false    true  false  related  
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**id**                          Integer data. Ex: 2673                                                                                     false    false    true  true   integer  
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**irworkflow**                  Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**isCustom_kitSettings**        Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**isFavorite**                  Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**isPlanGroup**                 Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**isReusable**                  Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**isReverseRun**                Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**isSystem**                    Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**isSystemDefault**             Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**libkit**                      Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**libraryReadLength**           Integer data. Ex: 2673                                                                             0       false    false    false false  integer  
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**metaData**                    Unicode string data. Ex: "Hello World"                                                             {}      false    false    true  false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**origin**                      Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**pairedEndLibraryAdapterName** Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**parentPlan**                  Unicode string data. Ex: "Hello World"                                                             None    false    false    true  false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**planDisplayedName**           Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**planExecuted**                Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**planExecutedDate**            A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     true     false    false false  datetime 
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**planGUID**                    Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**planName**                    Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**planPGM**                     Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**planShortID**                 Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**planStatus**                  Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**preAnalysis**                 Boolean data. Ex: True                                                                             true    false    false    true  false  boolean  
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**project**                     Unicode string data. Ex: "Hello World"                                                             n/a     false    true     true  false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **projects**                    Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related  
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**qcValues**                    Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related  
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**resource_uri**                Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**reverse_primer**              Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**runMode**                     Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **runType**                     Unicode string data. Ex: "Hello World"                                                             GENS    false    false    false false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**runname**                     Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**sampleGrouping**              A single related resource. Can be either a URI or set of nested resource data.                     n/a     true     false    true  false  related  
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**samplePrepKitName**           Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**samplePrepProtocol**          Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**sampleSets**                  Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related  
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**sampleTubeLabel**             Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**seqKitBarcode**               Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**storageHost**                 Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
+------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**storage_options**             Unicode string data. Ex: "Hello World"                                                             A       false    false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **templatingKitBarcode**        Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **templatingKitName**           Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**planPGM**                     Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**isSystemDefault**             Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**autoName**                    Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**isReusable**                  Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**controlSequencekitname**      Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**date**                        A date & time as a string. Ex: "2010-11-10T03:07:43"                                               n/a     true     false    false false  datetime 
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**isSystem**                    Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**libkit**                      Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**categories**                  Unicode string data. Ex: "Hello World"                                                                     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**planName**                    Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**parentPlan**                  Unicode string data. Ex: "Hello World"                                                             None    false    false    true  false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**childPlans**                  A list of data. Ex: ['abc', 26.73, 8]                                                              []      false    false    false false  list     
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**pairedEndLibraryAdapterName** Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**sampleGrouping**              A single related resource. Can be either a URI or set of nested resource data.                     n/a     true     false    true  false  related  
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**adapter**                     Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**irworkflow**                  Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**planExecuted**                Boolean data. Ex: True                                                                             false   false    false    true  false  boolean  
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**project**                     Unicode string data. Ex: "Hello World"                                                             n/a     false    true     true  false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **usePostBeadfind**             Boolean data. Ex: True                                                                             true    false    false    true  false  boolean  
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**storageHost**                 Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**expName**                     Unicode string data. Ex: "Hello World"                                                                     false    false    true  false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**libraryReadLength**           Integer data. Ex: 2673                                                                             0       false    false    false false  integer  
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**runname**                     Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **usePreBeadfind**              Boolean data. Ex: True                                                                             true    false    false    true  false  boolean  
 ------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**planGUID**                    Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**cycles**                      Integer data. Ex: 2673                                                                             n/a     true     false    false false  integer  
-------------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**resource_uri**                Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string   
+**username**                    Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string   
 =============================== ================================================================================================== ======= ======== ======== ===== ====== ======== 
 
 Example Response
@@ -133,118 +133,115 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 111, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/plannedexperimentdb/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/plannedexperimentdb/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 135
+	    },
 	    "objects": [
 	        {
-	            "origin": "gui|5.10.0.RC4", 
-	            "isReverseRun": false, 
-	            "planDisplayedName": "Ion AmpliSeq HD for Tumor - DNA", 
-	            "storage_options": "A", 
-	            "preAnalysis": true, 
-	            "planShortID": "SP1XE", 
-	            "username": "ionadmin", 
-	            "planStatus": "pending", 
-	            "runMode": "single", 
-	            "isCustom_kitSettings": false, 
-	            "sampleTubeLabel": "", 
-	            "planExecutedDate": null, 
-	            "samplePrepKitName": null, 
-	            "reverse_primer": null, 
-	            "applicationGroup": "/rundb/api/v1/applicationgroup/1/", 
-	            "seqKitBarcode": null, 
-	            "id": 143, 
-	            "metaData": {
-	                "fromTemplate": "Ion_AmpliSeq_HD_for_Tumor_-_DNA", 
-	                "fromTemplateSource": "ION"
-	            }, 
-	            "sampleSets": [], 
-	            "isFavorite": false, 
+	            "adapter": null,
+	            "applicationGroup": "/rundb/api/v1/applicationgroup/5/",
+	            "autoName": null,
+	            "categories": "Oncomine;onco_solidTumor;barcodes_8;p4o",
+	            "childPlans": [],
+	            "controlSequencekitname": null,
+	            "cycles": null,
+	            "date": "2019-10-03T20:53:08.000623+00:00",
+	            "expName": "",
+	            "experiment": "/rundb/api/v1/experiment/163/",
+	            "id": 170,
+	            "irworkflow": "",
+	            "isCustom_kitSettings": false,
+	            "isFavorite": false,
+	            "isPlanGroup": false,
+	            "isReusable": true,
+	            "isReverseRun": false,
+	            "isSystem": true,
+	            "isSystemDefault": false,
+	            "libkit": null,
+	            "libraryReadLength": 200,
+	            "metaData": {},
+	            "origin": "|5.12.1",
+	            "pairedEndLibraryAdapterName": null,
+	            "parentPlan": null,
+	            "planDisplayedName": "Oncomine Tumor Specific Fusions",
+	            "planExecuted": false,
+	            "planExecutedDate": null,
+	            "planGUID": "aa9309c5-5922-49f3-b901-987383b03e57",
+	            "planName": "Oncomine_Tumor_Specific_Fusions",
+	            "planPGM": "",
+	            "planShortID": "OZT4F",
+	            "planStatus": "inactive",
+	            "preAnalysis": true,
+	            "project": "",
+	            "projects": [],
 	            "qcValues": [
 	                {
-	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/143/", 
-	                    "id": 407, 
+	                    "id": 487,
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/170/",
 	                    "qcType": {
-	                        "description": "", 
-	                        "minThreshold": 1, 
-	                        "maxThreshold": 100, 
-	                        "defaultThreshold": 30, 
-	                        "qcName": "Key Signal (1-100)", 
-	                        "id": 2, 
-	                        "resource_uri": "/rundb/api/v1/qctype/2/"
-	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/407/"
-	                }, 
-	                {
-	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/143/", 
-	                    "id": 408, 
-	                    "qcType": {
-	                        "description": "", 
-	                        "minThreshold": 0, 
-	                        "maxThreshold": 100, 
-	                        "defaultThreshold": 30, 
-	                        "qcName": "Usable Sequence (%)", 
-	                        "id": 3, 
-	                        "resource_uri": "/rundb/api/v1/qctype/3/"
-	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/408/"
-	                }, 
-	                {
-	                    "threshold": 30, 
-	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/143/", 
-	                    "id": 406, 
-	                    "qcType": {
-	                        "description": "", 
-	                        "minThreshold": 0, 
-	                        "maxThreshold": 100, 
-	                        "defaultThreshold": 30, 
-	                        "qcName": "Bead Loading (%)", 
-	                        "id": 1, 
+	                        "defaultThreshold": 30,
+	                        "description": "",
+	                        "id": 1,
+	                        "maxThreshold": 100,
+	                        "minThreshold": 0,
+	                        "qcName": "Bead Loading (%)",
 	                        "resource_uri": "/rundb/api/v1/qctype/1/"
-	                    }, 
-	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/406/"
+	                    },
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/487/",
+	                    "threshold": 30
+	                },
+	                {
+	                    "id": 488,
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/170/",
+	                    "qcType": {
+	                        "defaultThreshold": 30,
+	                        "description": "",
+	                        "id": 2,
+	                        "maxThreshold": 100,
+	                        "minThreshold": 1,
+	                        "qcName": "Key Signal (1-100)",
+	                        "resource_uri": "/rundb/api/v1/qctype/2/"
+	                    },
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/488/",
+	                    "threshold": 30
+	                },
+	                {
+	                    "id": 489,
+	                    "plannedExperiment": "/rundb/api/v1/plannedexperiment/170/",
+	                    "qcType": {
+	                        "defaultThreshold": 30,
+	                        "description": "",
+	                        "id": 3,
+	                        "maxThreshold": 100,
+	                        "minThreshold": 0,
+	                        "qcName": "Usable Sequence (%)",
+	                        "resource_uri": "/rundb/api/v1/qctype/3/"
+	                    },
+	                    "resource_uri": "/rundb/api/v1/plannedexperimentqc/489/",
+	                    "threshold": 30
 	                }
-	            ], 
-	            "samplePrepProtocol": "", 
-	            "isPlanGroup": false, 
-	            "experiment": "/rundb/api/v1/experiment/136/", 
-	            "projects": [], 
-	            "runType": "AMPS_HD_DNA", 
-	            "templatingKitBarcode": null, 
-	            "templatingKitName": "Ion Chef S540 V1", 
-	            "planPGM": null, 
-	            "isSystemDefault": false, 
-	            "autoName": null, 
-	            "isReusable": false, 
-	            "controlSequencekitname": null, 
-	            "date": "2018-04-13T22:17:13.000108+00:00", 
-	            "isSystem": false, 
-	            "libkit": null, 
-	            "categories": "onco_solidTumor;onco_heme;", 
-	            "planName": "Ion_AmpliSeq_HD_for_Tumor_-_DNA", 
-	            "parentPlan": null, 
-	            "childPlans": [], 
-	            "pairedEndLibraryAdapterName": "", 
-	            "sampleGrouping": "/rundb/api/v1/samplegrouptype_cv/2/", 
-	            "adapter": null, 
-	            "irworkflow": "", 
-	            "planExecuted": false, 
-	            "project": "", 
-	            "usePostBeadfind": false, 
-	            "storageHost": null, 
-	            "expName": "", 
-	            "libraryReadLength": 200, 
-	            "runname": null, 
-	            "usePreBeadfind": true, 
-	            "planGUID": "1d75abf5-4d15-43f5-bb08-1c89d7344175", 
-	            "cycles": null, 
-	            "resource_uri": "/rundb/api/v1/plannedexperimentdb/143/"
+	            ],
+	            "resource_uri": "/rundb/api/v1/plannedexperimentdb/170/",
+	            "reverse_primer": null,
+	            "runMode": "single",
+	            "runType": "AMPS_RNA",
+	            "runname": null,
+	            "sampleGrouping": "/rundb/api/v1/samplegrouptype_cv/7/",
+	            "samplePrepKitName": null,
+	            "samplePrepProtocol": "",
+	            "sampleSets": [],
+	            "sampleTubeLabel": null,
+	            "seqKitBarcode": null,
+	            "storageHost": null,
+	            "storage_options": "A",
+	            "templatingKitBarcode": null,
+	            "templatingKitName": "Ion Chef S530 V2",
+	            "usePostBeadfind": false,
+	            "usePreBeadfind": true,
+	            "username": null
 	        }
 	    ]
 	}

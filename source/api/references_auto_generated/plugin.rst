@@ -19,57 +19,57 @@ field                      help text                                            
 -------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **availableVersions**      A list of data. Ex: ['abc', 26.73, 8]                []      false    true     false false  list     
 -------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**id**                     Integer data. Ex: 2673                                       false    false    true  true   integer  
--------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**isPlanConfig**           Boolean data. Ex: True                               n/a     false    true     false false  boolean  
--------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**isSupported**            Boolean data. Ex: True                               n/a     false    true     false false  boolean  
--------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**script**                 Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
--------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**selected**               Boolean data. Ex: True                               false   false    false    true  false  boolean  
--------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**requires_configuration** Boolean data. Ex: True                               false   false    false    true  false  boolean  
--------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**version**                Unicode string data. Ex: "Hello World"               n/a     false    false    false false  string   
--------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**hasAbout**               Boolean data. Ex: True                               n/a     false    true     false false  boolean  
--------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**input**                  Unicode string data. Ex: "Hello World"               n/a     false    true     false false  string   
--------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**majorBlock**             Boolean data. Ex: True                               false   false    false    true  false  boolean  
--------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**status**                 Unicode string data. Ex: "Hello World"                       true     false    false false  string   
--------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**description**            Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
--------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**defaultSelected**        Boolean data. Ex: True                               false   false    false    true  false  boolean  
--------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**pluginsettings**         Unicode string data. Ex: "Hello World"                       true     false    false false  string   
+**config**                 Unicode string data. Ex: "Hello World"                       true     false    false false  string   
 -------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **date**                   A date & time as a string. Ex: "2010-11-10T03:07:43" true    false    false    true  false  datetime 
 -------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**path**                   Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
+**defaultSelected**        Boolean data. Ex: True                               false   false    false    true  false  boolean  
+-------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**description**            Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
+-------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**hasAbout**               Boolean data. Ex: True                               n/a     false    true     false false  boolean  
+-------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**id**                     Integer data. Ex: 2673                                       false    false    true  true   integer  
+-------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**input**                  Unicode string data. Ex: "Hello World"               n/a     false    true     false false  string   
 -------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **isConfig**               Boolean data. Ex: True                               n/a     false    true     false false  boolean  
 -------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **isInstance**             Boolean data. Ex: True                               n/a     false    true     false false  boolean  
 -------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**isPlanConfig**           Boolean data. Ex: True                               n/a     false    true     false false  boolean  
+-------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**isSupported**            Boolean data. Ex: True                               n/a     false    true     false false  boolean  
+-------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**isUpgradable**           Boolean data. Ex: True                               false   false    true     false false  boolean  
+-------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**majorBlock**             Boolean data. Ex: True                               false   false    false    true  false  boolean  
+-------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **name**                   Unicode string data. Ex: "Hello World"               n/a     false    false    false false  string   
--------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**userinputfields**        Unicode string data. Ex: "Hello World"               {}      true     false    false false  string   
--------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**url**                    Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
--------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**config**                 Unicode string data. Ex: "Hello World"                       true     false    false false  string   
 -------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **packageName**            Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
 -------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**versionedName**          Unicode string data. Ex: "Hello World"               n/a     false    true     false false  string   
+**path**                   Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
+-------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**pluginsettings**         Unicode string data. Ex: "Hello World"                       true     false    false false  string   
+-------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**requires_configuration** Boolean data. Ex: True                               false   false    false    true  false  boolean  
 -------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **resource_uri**           Unicode string data. Ex: "Hello World"               n/a     false    true     false false  string   
 -------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**isUpgradable**           Boolean data. Ex: True                               false   false    true     false false  boolean  
+**script**                 Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
+-------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**selected**               Boolean data. Ex: True                               false   false    false    true  false  boolean  
+-------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**status**                 Unicode string data. Ex: "Hello World"                       true     false    false false  string   
+-------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**url**                    Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
+-------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**userinputfields**        Unicode string data. Ex: "Hello World"               {}      true     false    false false  string   
+-------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**version**                Unicode string data. Ex: "Hello World"               n/a     false    false    false false  string   
+-------------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**versionedName**          Unicode string data. Ex: "Hello World"               n/a     false    true     false false  string   
 ========================== ==================================================== ======= ======== ======== ===== ====== ======== 
 
 Example Response
@@ -79,55 +79,55 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 16, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/plugin/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/plugin/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 16
+	    },
 	    "objects": [
 	        {
-	            "active": true, 
+	            "active": true,
 	            "availableVersions": [
-	                "5.8.0.0"
-	            ], 
-	            "id": 30, 
-	            "isPlanConfig": true, 
-	            "isSupported": true, 
-	            "script": "smallRNA.py", 
-	            "selected": true, 
-	            "requires_configuration": false, 
-	            "version": "5.8.0.0", 
-	            "hasAbout": false, 
-	            "input": "/configure/plugins/plugin/30/configure/report/", 
-	            "majorBlock": true, 
-	            "status": {}, 
-	            "description": "Run the small RNA pipeline.", 
-	            "defaultSelected": false, 
+	                "5.12.0.1"
+	            ],
+	            "config": {},
+	            "date": "2019-11-08T21:45:21.000653+00:00",
+	            "defaultSelected": false,
+	            "description": "Whole Transciptome AmpliSeq-RNA Analysis. (Ion supprted)",
+	            "hasAbout": true,
+	            "id": 90,
+	            "input": "/configure/plugins/plugin/90/configure/report/",
+	            "isConfig": false,
+	            "isInstance": true,
+	            "isPlanConfig": true,
+	            "isSupported": true,
+	            "isUpgradable": false,
+	            "majorBlock": true,
+	            "name": "immuneResponseRNA",
+	            "packageName": "ion-plugin-immuneresponserna",
+	            "path": "/results/plugins/immuneResponseRNA",
 	            "pluginsettings": {
-	                "depends": [], 
-	                "features": [], 
-	                "runtypes": [
-	                    "wholechip", 
-	                    "thumbnail", 
-	                    "composite"
-	                ], 
+	                "depends": [],
+	                "features": [],
 	                "runlevels": [
 	                    "default"
+	                ],
+	                "runtypes": [
+	                    "wholechip",
+	                    "thumbnail",
+	                    "composite"
 	                ]
-	            }, 
-	            "date": "2017-12-05T00:11:04.000271+00:00", 
-	            "path": "/results/plugins/smallRNA", 
-	            "isConfig": true, 
-	            "isInstance": true, 
-	            "name": "smallRNA", 
-	            "userinputfields": {}, 
-	            "url": "", 
-	            "config": {}, 
-	            "packageName": "ion-plugin-smallrna", 
-	            "versionedName": "smallRNA--v5.8.0.0", 
-	            "resource_uri": "/rundb/api/v1/plugin/30/", 
-	            "isUpgradable": false
+	            },
+	            "requires_configuration": false,
+	            "resource_uri": "/rundb/api/v1/plugin/90/",
+	            "script": "immuneResponseRNA.py",
+	            "selected": true,
+	            "status": {},
+	            "url": "",
+	            "userinputfields": {},
+	            "version": "5.12.0.1",
+	            "versionedName": "immuneResponseRNA--v5.12.0.1"
 	        }
 	    ]
 	}

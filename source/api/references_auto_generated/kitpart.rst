@@ -19,9 +19,9 @@ field            help text                                                      
 ---------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **id**           Integer data. Ex: 2673                                                                 false    false    true  true   integer 
 ---------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
-**resource_uri** Unicode string data. Ex: "Hello World"                                         n/a     false    true     false false  string  
----------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
 **kit**          A single related resource. Can be either a URI or set of nested resource data. n/a     false    false    false false  related 
+---------------- ------------------------------------------------------------------------------ ------- -------- -------- ----- ------ ------- 
+**resource_uri** Unicode string data. Ex: "Hello World"                                         n/a     false    true     false false  string  
 ================ ============================================================================== ======= ======== ======== ===== ====== ======= 
 
 Example Response
@@ -31,18 +31,18 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 263, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/kitpart/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/kitpart/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 253
+	    },
 	    "objects": [
 	        {
-	            "barcode": "100020580", 
-	            "id": 20086, 
-	            "resource_uri": "/rundb/api/v1/kitpart/20086/", 
-	            "kit": "/rundb/api/v1/kitinfo/20042/"
+	            "barcode": "A43587",
+	            "id": 20269,
+	            "kit": "/rundb/api/v1/kitinfo/20118/",
+	            "resource_uri": "/rundb/api/v1/kitpart/20269/"
 	        }
 	    ]
 	}

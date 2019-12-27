@@ -15,21 +15,21 @@ Resource Fields
 ===================== ==================================================== ======= ======== ======== ===== ====== ======== 
 field                 help text                                            default nullable readonly blank unique type     
 ===================== ==================================================== ======= ======== ======== ===== ====== ======== 
+**config**            Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
+--------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**endtime**           A date & time as a string. Ex: "2010-11-10T03:07:43" n/a     true     false    false false  datetime 
+--------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **grid_engine_jobid** Integer data. Ex: 2673                               n/a     true     false    false false  integer  
 --------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **id**                Integer data. Ex: 2673                                       false    false    true  true   integer  
 --------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**state**             Unicode string data. Ex: "Hello World"               n/a     false    false    false false  string   
---------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**starttime**         A date & time as a string. Ex: "2010-11-10T03:07:43" n/a     true     false    false false  datetime 
---------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**endtime**           A date & time as a string. Ex: "2010-11-10T03:07:43" n/a     true     false    false false  datetime 
---------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**config**            Unicode string data. Ex: "Hello World"                       false    false    true  false  string   
+**resource_uri**      Unicode string data. Ex: "Hello World"               n/a     false    true     false false  string   
 --------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
 **run_level**         Unicode string data. Ex: "Hello World"               n/a     false    false    false false  string   
 --------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
-**resource_uri**      Unicode string data. Ex: "Hello World"               n/a     false    true     false false  string   
+**starttime**         A date & time as a string. Ex: "2010-11-10T03:07:43" n/a     true     false    false false  datetime 
+--------------------- ---------------------------------------------------- ------- -------- -------- ----- ------ -------- 
+**state**             Unicode string data. Ex: "Hello World"               n/a     false    false    false false  string   
 ===================== ==================================================== ======= ======== ======== ===== ====== ======== 
 
 Example Response
@@ -39,42 +39,42 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 17, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/PluginResultJob/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/PluginResultJob/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 18
+	    },
 	    "objects": [
 	        {
-	            "grid_engine_jobid": -1, 
-	            "id": 19, 
-	            "state": "Completed", 
-	            "starttime": "2017-08-09T20:26:03.000549+00:00", 
-	            "endtime": "2017-08-09T20:30:11.000942+00:00", 
 	            "config": {
-	                "compressedType": "zip", 
-	                "bamCreate": "on", 
-	                "xlsCreate": "off", 
-	                "zipFASTQ": "off", 
-	                "vcfCreate": "on", 
-	                "zipXLS": "off", 
-	                "delimiter_select": ".", 
-	                "zipVCF": "on", 
-	                "zipBAM": "on", 
-	                "fastqCreate": "off", 
-	                "select_dialog": [
-	                    "run_name", 
-	                    "samplename", 
-	                    "instrument", 
-	                    "", 
-	                    "", 
-	                    "", 
-	                    ""
-	                ]
-	            }, 
-	            "run_level": "last", 
-	            "resource_uri": "/rundb/api/v1/PluginResultJob/19/"
+	                "copyNumberThreshold": "20",
+	                "email": "osaebo",
+	                "generateAllPrimerCombinations": true,
+	                "generateReversedPrimerSets": false,
+	                "isNC": false,
+	                "maxClusterVariation": "1.0",
+	                "ncCT": "33",
+	                "password": "xl3eple",
+	                "primerCheckLength": "12",
+	                "primerCheckMaxErrors": "3",
+	                "primers": ">V1_2_A_F\nGTGCCTAAYACATGCAWGT\n>V1_2_A_R\nCTGGDCCGTRTCTCAGT",
+	                "readLengthThreshold": "100",
+	                "safetyMarginCT": "3",
+	                "sampleCT": "16",
+	                "trimEndsWithNoPrimer": "21",
+	                "useCT": false,
+	                "useFullPrimerCoverageReadsOnly": false,
+	                "useReadsWithNoPrimer": false,
+	                "useWalkingInsDel": false
+	            },
+	            "endtime": "2019-01-17T23:50:39.000550+00:00",
+	            "grid_engine_jobid": 518,
+	            "id": 25,
+	            "resource_uri": "/rundb/api/v1/PluginResultJob/25/",
+	            "run_level": "last",
+	            "starttime": "2019-01-17T23:50:33.000769+00:00",
+	            "state": "Completed"
 	        }
 	    ]
 	}

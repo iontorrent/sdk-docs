@@ -15,27 +15,27 @@ Resource Fields
 ======================== ================================================================================================== ======= ======== ======== ===== ====== ======= 
 field                    help text                                                                                          default nullable readonly blank unique type    
 ======================== ================================================================================================== ======= ======== ======== ===== ====== ======= 
-**isIRCompatible**       Boolean data. Ex: True                                                                             false   false    false    true  false  boolean 
------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **description**          Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string  
------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**sampleAnnotation_set** Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related 
 ------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **displayedName**        Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false true   string  
 ------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**iRValue**              Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string  
------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **iRAnnotationType**     Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string  
 ------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**uid**                  Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false true   string  
------------------------- -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
-**sampleSets**           Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related 
+**iRValue**              Unicode string data. Ex: "Hello World"                                                             n/a     true     false    false false  string  
 ------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **id**                   Integer data. Ex: 2673                                                                                     false    false    true  true   integer 
 ------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **isActive**             Boolean data. Ex: True                                                                             true    false    false    true  false  boolean 
 ------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**isIRCompatible**       Boolean data. Ex: True                                                                             false   false    false    true  false  boolean 
+------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
 **resource_uri**         Unicode string data. Ex: "Hello World"                                                             n/a     false    true     false false  string  
+------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**sampleAnnotation_set** Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related 
+------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**sampleSets**           Many related resources. Can be either a list of URIs or list of individually nested resource data. n/a     true     false    true  false  related 
+------------------------ -------------------------------------------------------------------------------------------------- ------- -------- -------- ----- ------ ------- 
+**uid**                  Unicode string data. Ex: "Hello World"                                                             n/a     false    false    false true   string  
 ======================== ================================================================================================== ======= ======== ======== ===== ====== ======= 
 
 Example Response
@@ -45,28 +45,25 @@ Example Response
 
 	{
 	    "meta": {
-	        "previous": null, 
-	        "total_count": 7, 
-	        "offset": 0, 
-	        "limit": 1, 
-	        "next": "/rundb/api/v1/samplegrouptype_cv/?offset=1&limit=1&format=json"
-	    }, 
+	        "limit": 1,
+	        "next": "/rundb/api/v1/samplegrouptype_cv/?offset=1&limit=1&format=json",
+	        "offset": 0,
+	        "previous": null,
+	        "total_count": 7
+	    },
 	    "objects": [
 	        {
-	            "isIRCompatible": true, 
-	            "description": "", 
-	            "sampleAnnotation_set": [
-	                "/rundb/api/v1/sampleannotation_cv/1/", 
-	                "/rundb/api/v1/sampleannotation_cv/2/"
-	            ], 
-	            "displayedName": "Sample_Control", 
-	            "iRValue": "Paired_Sample|Sample_Control", 
-	            "iRAnnotationType": "RelationshipType", 
-	            "uid": "SAMPLEGROUP_CV_0001", 
-	            "sampleSets": [], 
-	            "id": 1, 
-	            "isActive": true, 
-	            "resource_uri": "/rundb/api/v1/samplegrouptype_cv/1/"
+	            "description": "",
+	            "displayedName": "Single Fusions",
+	            "iRAnnotationType": "RelationshipType",
+	            "iRValue": "SINGLE_RNA_FUSION",
+	            "id": 7,
+	            "isActive": true,
+	            "isIRCompatible": true,
+	            "resource_uri": "/rundb/api/v1/samplegrouptype_cv/7/",
+	            "sampleAnnotation_set": [],
+	            "sampleSets": [],
+	            "uid": "SAMPLEGROUP_CV_0007"
 	        }
 	    ]
 	}
