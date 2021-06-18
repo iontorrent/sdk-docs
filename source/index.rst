@@ -35,6 +35,13 @@ This section describes all of the REST API end points that |TS| makes available 
     api/examples
 
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Script Examples
+
+    codes/get_fasta_fastq
+
+
 Legal
 -----
 
